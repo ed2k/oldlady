@@ -33,7 +33,7 @@
 # 4.4 continue bid (step 4) until, qualify to finish auction
 # 5 setup info about declarer, dummy, contract etc prepare_trick_taking()
 # 6 start play  play_for_ais() ai.play_self or ai.play_dummy
-# 7 one trick is over (4 cards played), wait CONFIRM_TRICK
+# 7 once trick is over (4 cards played), wait CONFIRM_TRICK
 # 8.0 notify ai trick_complete tableau_button_release_event_cb()
 # 8.1 talbe setup for deal.next_trick
 # 8.2 play next, PLAY_CARD at bottom of tableau_button_release_event_cb()

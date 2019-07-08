@@ -23,7 +23,14 @@ DATA_DIR = "/local/scratch/oldlady-0.1.0"
 PKG_DATA_DIR = "/local/scratch/oldlady-0.1.0"
 SWI_PROLOG = "/x3/pl-5.6.49/src/pl"
 FL_DATA = "/x3/floater-imp/curdeck.tmp"
-DEAL_PATH = "../deal308/"
+
+import os
+
+ROOT_PATH = os.getcwd()
+if ROOT_PATH[-len('oldlady'):] == 'oldlady':
+    ROOT_PATH = os.path.abspath(os.path.join(os.getcwd(), '..'))
+DEAL_PATH = os.path.join(ROOT_PATH, "deal319")
+DDS_PATH = os.path.join(ROOT_PATH, "ddsprogs")
 testing = True
 hands = [
 ['KQJ763', '95', 'AT92', '3'],

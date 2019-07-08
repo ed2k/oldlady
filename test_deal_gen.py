@@ -1,5 +1,5 @@
 import sAi
-from sbridge import *
+from sbridge import Deal, test_deal_gen, Bid
 
 d = ['KQJ763.95.AT92.3', 'T.J8642.K8.JT752', 'A942.AQT7.J.AK96', '85.K3.Q76543.Q84']
 

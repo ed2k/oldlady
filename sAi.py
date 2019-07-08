@@ -27,7 +27,7 @@ import defs
 #sayc = bidding.Bidding ()
 def debug(s,level = 0):
     #if not defs.testing: return
-    print '-debug:',s
+    open('debug.log', 'a+').write('-debug: '+str(s)+'\n')
     
 class ComputerPlayer:
     """
@@ -119,7 +119,7 @@ class ComputerPlayer:
         return self.guess(self.deal.dummy)
     def guess(self,player):
         c,win = DealGenerator(self, player)
-        debug([str(c),win])
+        #debug([str(c),win])
         return c
         
     def play_from_hand (self, player):
@@ -785,40 +785,45 @@ class Translate2Tcl:
 
 
 def dds_solver_api(trump, currentTricks, deal):
-   '''deal is N-W,S-C 4x4 list, shdc -> 0123, always at the north point of view
+   '''deal is N-W,S-E 4x4 list, shdc -> 0123, always at the north point of view
 but trump is shdc -> 3210, and currentTricks is list shdc->3210, in play order
    return r[0] suit, r[1] rank, r[3] win trick for north
    '''
    if trump != 4: trump = 3-trump
    #debug(currentTricks)
    #for c in currentTricks: print str(c),
-   #print deal
+   #print currentTricks, deal
    # the play to solve is always at 0 (North), so last player is always 3(West)
    first = (4 - len(currentTricks)) % 4
    #if first == 2: first = 1
    test = [0,3,1,trump, first]
+   # 4x4 cards
+   n = []
    for i in PLAYERS:
-      for j in SUITS:
-         n = 0
-         for k in xrange(len(deal[i][j])):
-            n = n | (1 << STR2RANK[deal[i][j][k]])
-         test.append(n)
+      n.append('.'.join(deal[i]))
+   test.append(':'.join(n))
+   # at most 3cards (suit, rank)
+   s = []
+   r = []
    for c in currentTricks:
-      test.append(3-c.suit)
-      test.append(c.rank)
+      s.append(str(3-c.suit))
+      r.append(str(c.rank))
+   if len(currentTricks) > 0:   
+      test.append(':'.join(['.'.join(s),'.'.join(r)]))
    arg = ' '.join([str(x) for x in test])
-   arg = '../ddsprogs/dds '+arg
-   #debug(arg)
+   arg = defs.DDS_PATH + '/dds ' + arg
+   debug(arg)
    coutput = os.popen(arg).read()
-   #debug([coutput])
+   debug([coutput])
    lines = [x.split() for x in coutput.splitlines()[1:]]
    # win in decrease order, so if winmax changes, we don't need those result
-   winmax = int(lines[0][3])
+   #winmax = int(lines[0][3])
    r = [lines[0]]
    for line in lines[1:]:
-        if winmax > int(line[3]): break
-        r.append(line)
-   #print 'suit','shdc'[int(r[0])],'rank',r[1],'win tricks',r[3]
+        if line[0] == 'result:':
+            return [line]
+        
+   #print 'suit','shdc'[int(r[1])],'rank',r[2],'win tricks',r[3]
    return r
 
 def o2dstack_hand(hand):
@@ -854,12 +859,12 @@ def DealGenerator(ai, player):
      dummy should not be as ai.seat
     '''
     #ai.bidState.generateDealScript()
-    tempTcl = defs.DEAL_PATH+str(player)+'temp.tcl'
+    tempTcl = str(player)+'temp.tcl'
     open(tempTcl,'w').write(ai.bidState.distributionsScripts)
     
     myseat = ai.seat
     mine = o2dstack_hand(ai.deal.originalHand(myseat))
-    cmd = 'cd '+defs.DEAL_PATH+'; ./deal -i format/pbn -'+seat_str(myseat)+' "'+mine+'"'
+    cmd = defs.DEAL_PATH + '/deal -i format/pbn -'+seat_str(myseat)+' "'+mine+'"'
     others = PLAYERS[:]
     others.remove(myseat)
     if ai.deal.finishBidding():
@@ -879,7 +884,7 @@ def DealGenerator(ai, player):
            eargs.append(';')
         cmd +=  ' -e "'+' '.join(eargs)+'"'
     cmd += ' -i '+tempTcl+' 7'
-    #debug(cmd)
+    debug(cmd)
 
     deals = deal2list(os.popen(cmd).read())
     #print str(ai.deal.trick)
@@ -901,7 +906,7 @@ def DealGenerator(ai, player):
         tmp = []
         for p in ddeal:
             tmp.append('.'.join([''.join(d) for d in p]))
-        debug('  '.join(tmp))
+        #debug('  '.join(tmp))
         solutions = solver(player, ai.deal.contract.denom, currentTrick, ddeal)
         #debug([(str(x),y) for x,y in solutions])
         r += solutions
@@ -919,7 +924,7 @@ def solver(player, trump, currentTrick, deal):
           sdeal[i].append(''.join(d[j]))
 
     r = dds_solver_api(trump, currentTrick, sdeal)    
-    return [(Card(3-int(x[0]), int(x[1])),x[3]) for x in r]
+    return [(Card(3-int(x[1]), int(x[2])),x[3]) for x in r]
           
     
 def max_freq(xlist):

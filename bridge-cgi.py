@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python2.7
         
 TODO = """ a web server that take care of table manager and 3 player
  a client can use request/response mode to play bridge, instead of polling data.
@@ -34,7 +34,7 @@ MSG_SEPERATOR = '<f/>'
 def nothingtodo(s):
     pass
 import sAi
-sAi.debug = nothingtodo
+#sAi.debug = nothingtodo
 
 def nextStep(action, state, comps):
     rmsg = []
@@ -61,7 +61,7 @@ def do_GET(msg):
     ais = None
     try:
         #TODO from history conversation recontruct state
-        st, ais= pickle.load(open('/home/syed2k/tmp/floater-minibridge-state.pkl','rb'))
+        st, ais= pickle.load(open('/home/a/tmp/floater-minibridge-state.pkl','rb'))
     except:
         st = State()
         st.clientname = MANAGERNAME
@@ -72,7 +72,7 @@ def do_GET(msg):
     while data != MSG_SEPERATOR:
         messages = table_handle(st,ais,data)
         selfdata = []
-        print '--messages',messages
+        debug('--recv ' + str(messages))
         if messages is None:
             #print 'message should not be none'
             break; # why??? fixme
@@ -88,7 +88,7 @@ def do_GET(msg):
                 selfdata.append(m)
         data = MSG_SEPERATOR.join(selfdata)+MSG_SEPERATOR
     #write state to storage
-    pickle.dump((st,ais),open('/home/syed2k/tmp/floater-minibridge-state.pkl','wb'))
+    pickle.dump((st,ais),open('/home/a/tmp/floater-minibridge-state.pkl','wb'))
     return MSG_SEPERATOR+MSG_SEPERATOR.join(rsp)
 
 def table_handle(state,ais,data):
@@ -104,7 +104,7 @@ def table_handle(state,ais,data):
          if ais[NORTH].deal.dummy == NORTH: rmsg.append( state.send_new_hand()[SOUTH])
          else:rmsg.append( state.send_new_hand()[NORTH])
       elif mname == 'a':
-         print 'bids',args
+         #print 'bids',args
          # reused as table manager deal recorder
          tbdeal = ais[NORTH].deal
          if mfrom != MANAGERNAME and tbdeal.trick is not None: return rmsg
@@ -115,7 +115,7 @@ def table_handle(state,ais,data):
          for ai in ais: ai.bid_made(bid)
          state.deal.bid(bid)
          
-         print [state.bid_status.data]
+         #print [state.bid_status.data]
 
          if tbdeal.contract is not None and tbdeal.contract.is_pass():
              rmsg += nextStep('confirm_deal', state, ais)
@@ -130,8 +130,8 @@ def table_handle(state,ais,data):
 
              card = ais[tbdeal.player].play_self ()
              a = o2f_card(card)
-             print tbdeal.player,'lead play',card
-             for ai in ais: print ai.seat,ai.deal.player,
+             #print tbdeal.player,'lead play',card
+             for ai in ais: pass #print ai.seat,ai.deal.player,
              state.play_status += [a]
              rmsg.append(state.encode_message('play',[str(state.hand_id), convert_play2str(state.play_status)]))
       elif mname == 'p':
@@ -146,7 +146,7 @@ def table_handle(state,ais,data):
                   if tbdeal.player != NORTH and tbdeal.player != SOUTH: continue
               elif tbdeal.player != NORTH: continue
             
-          print '--',dummy, 'is dummy, whose turn',tbdeal.player
+          #print '--',dummy, 'is dummy, whose turn',tbdeal.player
           # todo, consider NORTH is dummy to exchange with SOUTH
           state.play_status = convert_str2play(args[1])
 
@@ -164,7 +164,7 @@ def table_handle(state,ais,data):
           if tbdeal.trickCompleted():
               for ai in ais:
                   ai.trick_complete()                      
-          print 'whose turn',tbdeal.player
+          #print 'whose turn',tbdeal.player
           # allow user play south and north if he is the contrator
           if dummy == NORTH or dummy == SOUTH:
              if tbdeal.player == SOUTH or tbdeal.player==NORTH: continue
@@ -175,7 +175,7 @@ def table_handle(state,ais,data):
           else:
               card = ais[tbdeal.declarer].play_dummy()
           a = o2f_card(card)
-          print 'playing',card
+          #print 'playing',card
           state.play_status += [a]
           rmsg.append(state.encode_message('play',[str(state.hand_id), convert_play2str(state.play_status)]))
           

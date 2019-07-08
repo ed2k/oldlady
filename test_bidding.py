@@ -66,8 +66,8 @@ class App:
 
         self.messages = []
         # print deal
-        print '-'*80       
-        print [floater_client.o2pbn_hand(self.deal.hands[s]) for s in sbridge.PLAYERS]
+        print ('-'*80)
+        print ([floater_client.o2pbn_hand(self.deal.hands[s]) for s in sbridge.PLAYERS])
 
         self.play_for_ais ()
         #self.update_scores ()
@@ -175,7 +175,7 @@ class App:
         elif self.action == CONFIRM_DEAL:
             if not self.deal.contract.is_pass ():
                 self.messages = self.rubber.score_game ()
-                print self.messages
+                print (self.messages)
                 self.update_scores ()
                 if len (self.messages) > 0:
                     self.action = CONFIRM_GAME
