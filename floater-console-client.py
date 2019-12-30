@@ -19,7 +19,7 @@ class ConsoleState(State):
       dealer = (self.hand_id-1) % 4
       ai = sAi.ComputerPlayer(dealer)
       ai.seat = self.own_seat()
-      print 'dealer','NESW'[dealer],'my seat','NESW'[ai.seat]
+      print ('dealer','NESW'[dealer],'my seat','NESW'[ai.seat])
 
       deal = sbridge.Deal(dealer)
       for p in sbridge.PLAYERS:
@@ -28,18 +28,16 @@ class ConsoleState(State):
          else: deal.hands[p] = self.deal.hands[p][:]
 
       ai.deal = deal
-      print 'myhand',
-      for c in ai.deal.hands[ai.seat]: print c,
-      print
-      for i in xrange(len(self.bid_status)):
+      print ('myhand', [c for c in ai.deal.hands[ai.seat]])
+      for i in range(len(self.bid_status)):
          ai.bid_made(f2o_bid(self.bid_status[i]))
       
       if ai.deal.trick is None:
          bid =  o2f_bid(ai.bid())
          # evaluate hand, provide reasoning, learn/discard human suggestion???
          self.ai = None
-         evaluate_deal(ai)
-         print 'AI suggest bid', bid
+         sAi.evaluate_deal(ai)
+         print ('AI suggest bid', bid)
          user = raw_input('>>>> ')
          if user == '': return bid
          return user
@@ -55,7 +53,7 @@ class ConsoleState(State):
       if (ai.seat != deal.declarer) and (deal.player != ai.seat): return None
       if (ai.seat == deal.declarer) and (deal.player != deal.dummy) and (deal.player != deal.declarer):
          return None         
-      print 'myseat','NESW'[ai.seat],'player','NESW'[deal.player], 'dummy','NESW'[deal.dummy],'declarer','NESW'[deal.declarer]      
+      print ('myseat','NESW'[ai.seat],'player','NESW'[deal.player], 'dummy','NESW'[deal.dummy],'declarer','NESW'[deal.declarer])
       #evaluate_deal(ai)
       # TODO, generate a deal based on bidding, and play history
       # use double dummy solver to find the best play.
@@ -67,7 +65,7 @@ class ConsoleState(State):
          card = ai.play_dummy()
       if deal.player == ai.seat: card = ai.play_self()
 
-      print 'Ai suggest play', str(card)
+      print ('Ai suggest play', str(card))
       if self.ai == 'auto': return  o2f_card(card)
       user = raw_input('>>>> ')
       if user == '': return  o2f_card(card)

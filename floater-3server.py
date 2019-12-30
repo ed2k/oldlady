@@ -34,23 +34,23 @@ class MyHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         start = len('/postit.yaws?flproxyB=')
         data = urllib.unquote(self.path[start:])
-        print 'r',[data]
+        print ('r',[data])
         rsp = []
         while data != '\r\n':
             messages = table_handle(st,data)
             selfdata = []
-            print 'messages',messages
+            print ('messages',messages)
             if messages is None:
-                print 'message should not be none'
+                print ('message should not be none')
                 break; # why??? fixme
             for m in messages:
                 if m is None: continue
                 if len(m) == 2: # single client message
-                    print 'p2p',m[0],m[1]
+                    print ('p2p',m[0],m[1])
                     rsp.append(m[1])
                     selfdata.append(m[1])
                 else:
-                    print 's>',m
+                    print ('s>',m)
                     rsp.append(m)
                     selfdata.append(m)
             data = '\r\n'.join(selfdata)+'\r\n'
@@ -69,7 +69,7 @@ def table_handle(state,data):
          if ais[NORTH].deal.dummy == NORTH: rmsg.append( state.send_new_hand()[SOUTH])
          else:rmsg.append( state.send_new_hand()[NORTH])
       elif mname == 'a':
-         print 'bids',args
+         print ('bids',args)
          # reused as table manager deal recorder
          tbdeal = ais[NORTH].deal
          if mfrom != MANAGERNAME and tbdeal.trick is not None: return rmsg
@@ -80,7 +80,7 @@ def table_handle(state,data):
          for ai in ais: ai.bid_made(bid)
          state.deal.bid(bid)
          
-         print [state.bid_status.data]
+         print ([state.bid_status.data])
 
          if tbdeal.contract is not None and tbdeal.contract.is_pass():
              rmsg += nextStep('confirm_deal', state, ais)
@@ -95,8 +95,7 @@ def table_handle(state,data):
 
              card = ais[tbdeal.player].play_self ()
              a = o2f_card(card)
-             print tbdeal.player,'lead play',card
-             for ai in ais: print ai.seat,ai.deal.player,
+             print (tbdeal.player,'lead play',card, [(ai.seat,ai.deal.player) for ai in ais])
              state.play_status += [a]
              rmsg.append(state.encode_message('play',[str(state.hand_id), convert_play2str(state.play_status)]))
       elif mname == 'p':
@@ -109,7 +108,7 @@ def table_handle(state,data):
               elif dummy == NORTH:
                   if tbdeal.player != NORTH and tbdeal.player != SOUTH: continue
               elif tbdeal.player != NORTH: continue
-              print dummy, 'is dummy, NORTH turn',tbdeal.player
+              print (dummy, 'is dummy, NORTH turn',tbdeal.player)
           # todo, consider NORTH is dummy to exchange with SOUTH
           state.play_status = convert_str2play(args[1])
 
@@ -127,7 +126,7 @@ def table_handle(state,data):
           if tbdeal.trickCompleted():
               for ai in ais:
                   ai.trick_complete()                      
-          print 'whose turn',tbdeal.player
+          print ('whose turn',tbdeal.player)
           # palyer take SOUTH also if dummy is NORTH
           if dummy == NORTH and tbdeal.player == SOUTH: continue
           if tbdeal.player == NORTH: continue
@@ -137,7 +136,7 @@ def table_handle(state,data):
           else:
               card = ais[tbdeal.declarer].play_dummy()
           a = o2f_card(card)
-          print 'playing',card
+          print ('playing',card)
           state.play_status += [a]
           rmsg.append(state.encode_message('play',[str(state.hand_id), convert_play2str(state.play_status)]))
           
@@ -164,10 +163,10 @@ if __name__ == "__main__":
    import socket, select
    try:
         server = HTTPServer(('', 10101), MyHandler)
-        print 'started httpserver...'
+        print ('started httpserver...')
         server.serve_forever()
    except KeyboardInterrupt:
-        print '^C received, shutting down server'
+        print ('^C received, shutting down server')
         server.socket.close()
 
 

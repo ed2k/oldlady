@@ -2,7 +2,7 @@ from floater_client import *
 
 def get_current_seated_msg(state):
    msg = []
-   for seat in xrange(4):
+   for seat in range(4):
       name = state.table_seated[seat]
       if name == '': continue
       m = state.encode_message('seated',[name,name_dict[seat],'ip','port'])
@@ -10,7 +10,7 @@ def get_current_seated_msg(state):
    return msg   
 
 def next_step(state):
-   print state.table_seated,state.deal
+   print (state.table_seated,state.deal)
    if state.all_seated() and state.deal is None:
       # deal new hand
       state.hand_id += 1
@@ -43,14 +43,14 @@ def table_handle(state,data):
       elif mname == 'C':
          rmsg.append(line)
       elif mname == 'a':
-         print args
+         print (args)
          state.bid_status = BidStatus(args[1])
          #TODO check if it is the right bidder
          state.deal.bid(f2o_bid(state.bid_status[-1]))
          rmsg.append(line)
          print [state.bid_status.data]
          if state.bid_status.data == ' p'*4:
-            print 'all pass'
+            print ('all pass')
             state.deal = None
             state.bid_status = BidStatus('')
       elif mname == 'p':
@@ -72,10 +72,10 @@ def send_messages(state,mm):
       if len(m) == 2: # single client message
         conn = state.seat_sock[m[0]]
         if conn != '':
-           print 'p2p',m[0],m[1]
+           print ('p2p',m[0],m[1])
            conn.send(m[1]+'\r\n')
       else:
-         if m != '*alive*' and m[0] != 'T': print 's',m
+         if m != '*alive*' and m[0] != 'T': print ('s',m)
          for conn in state.clients_conn: conn.send(m+'\r\n')
 
 TODO = """  work on a server that take care of table manager and 3 player

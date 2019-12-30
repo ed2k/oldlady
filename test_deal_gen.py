@@ -18,9 +18,9 @@ ai.deal.contract = Bid(7,3)
 ai.deal.hands[2] = nd.hands[2][:]
 ai.deal.trick = ''
 ai.deal.dummy = 2
-for i in xrange(30):
+for i in range(30):
     r = []
     for p in [0]:
         c,win = sAi.DealGenerator(ai, p)
         r.append([str(c),win])
-    print r
+    print (r)

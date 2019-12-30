@@ -27,7 +27,7 @@ if __name__ == "__main__":
          continue
       # check message
       if data.find("Internal error") >= 0:
-         print [data]
+         print ([data])
          time.sleep(1)
          continue
       #data = data[:-4]

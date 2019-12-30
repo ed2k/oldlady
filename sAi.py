@@ -27,6 +27,7 @@ import defs
 #sayc = bidding.Bidding ()
 def debug(s,level = 0):
     #if not defs.testing: return
+    print('sai:',s)
     open('debug.log', 'a+').write('-debug: '+str(s)+'\n')
     
 class ComputerPlayer:
@@ -90,7 +91,7 @@ class ComputerPlayer:
         #bid = sayc.choose_bid (self.deal.hands[self.seat], self.history)
         #print 'prolog:',self.seat,bid
         bid = self.bidState.evaluate_deal()
-        print self.seat,'pybid:',bid
+        print (self.seat,'pybid:',bid)
         return bid
         
     
@@ -918,9 +919,9 @@ def DealGenerator(ai, player):
 def solver(player, trump, currentTrick, deal):
     sdeal = [[],[],[],[]]
     #move my seat to North for solver
-    for i in xrange(4):
+    for i in range(4):
        d = deal[seat_move(player,i)]
-       for j in xrange(4):
+       for j in range(4):
           sdeal[i].append(''.join(d[j]))
 
     r = dds_solver_api(trump, currentTrick, sdeal)    

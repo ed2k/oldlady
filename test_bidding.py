@@ -86,18 +86,16 @@ class App:
         Update the displays of scores and tricks taken.
         """
 
-        print self.rubber.vulnerable[sbridge.WEST_EAST],
-        print self.rubber.vulnerable[sbridge.NORTH_SOUTH],
+        print (self.rubber.vulnerable[sbridge.WEST_EAST],
+            self.rubber.vulnerable[sbridge.NORTH_SOUTH],
+            self.rubber.above[sbridge.WEST_EAST],
+            self.rubber.above[sbridge.NORTH_SOUTH],
+            self.rubber.below[sbridge.WEST_EAST],
+            self.rubber.below[sbridge.NORTH_SOUTH],
 
-        print self.rubber.above[sbridge.WEST_EAST],
-        print self.rubber.above[sbridge.NORTH_SOUTH],
-
-        print self.rubber.below[sbridge.WEST_EAST],
-        print self.rubber.below[sbridge.NORTH_SOUTH],
-
-        print'Tricks WE', self.deal.tricks_taken[sbridge.WEST_EAST],
-        print 'NS',self.deal.tricks_taken[sbridge.NORTH_SOUTH],
-        print
+            'Tricks WE', self.deal.tricks_taken[sbridge.WEST_EAST],
+            'NS',self.deal.tricks_taken[sbridge.NORTH_SOUTH])
+        
     def play_for_ais (self):
         """
         Have the AIs make their moves, continuing until it is the human

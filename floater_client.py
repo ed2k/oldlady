@@ -29,7 +29,7 @@ def cardkn_52(card):
 def convert_str2play(line):
    '''a string of c7h3sa to a list of number'''
    played = []
-   for i in xrange(len(line)/2):
+   for i in range(len(line)/2):
       idx = i*2
       played.append(cardkn_52(line[idx:idx+2]))
    return played
@@ -96,7 +96,7 @@ class State:
       p = convert_play2str(self.play_status)
       b = str(self.bid_status)
       msg = []
-      for seat in xrange(4):
+      for seat in range(4):
          h = str(seat)+' '+o2pbn_hand(self.deal.hands[f2o(seat)])
          if  len(self.play_status) >= 1:
             h2 = str(o2f(self.deal.dummy))+' '+o2pbn_hand(self.deal.hands[self.deal.dummy])
@@ -110,9 +110,9 @@ class State:
          if seat == self.table_seated.index(name): return True
          return False
       if self.table_seated[seat] != '':
-         print seat,name,'seat taken by',self.table_seated[seat]
+         print (seat,name,'seat taken by',self.table_seated[seat])
          return False
-      print seat, name, 'seated',self.current_sock
+      print (seat, name, 'seated',self.current_sock)
       self.seat_sock[seat] = self.current_sock
       self.table_seated[seat] = name
       return True
@@ -148,8 +148,8 @@ class State:
       s = line.split()
       x = seat*13
       self.client_holding = [int(x) for x in s[x:x+13]]
-      print self.hand_id, self.client_holding
-      for i in xrange(4):
+      print (self.hand_id, self.client_holding)
+      for i in range(4):
          idx = i * 13
          self.deal.hands[i] = f2o_hand([int(x) for x in s[idx:idx+13]])
    def first_lead(self):
@@ -161,7 +161,7 @@ class State:
       odd = steps % 2
 
       # find out who is first one bid the same kind
-      for i in xrange(steps/2):
+      for i in range(steps/2):
          if auc[i*2+odd][1] == kind:
             r = (i*2+odd+handid -1) 
             return (r+1) % 4
@@ -171,13 +171,11 @@ class State:
       dealer = self.deal.dealer
 
       ai = sAi.ComputerPlayer(f2o(self.own_seat()))
-      print 'dealer','NESW'[dealer],'my seat','NESW'[ai.seat]
+      print ('dealer','NESW'[dealer],'my seat','NESW'[ai.seat])
          
       ai.new_deal(self.deal)
-      print 'myhand',
-      for c in ai.deal.hands[ai.seat]: print c,
-      print
-      for i in xrange(len(self.bid_status)):
+      print ('myhand', [c for c in ai.deal.hands[ai.seat]])
+      for i in range(len(self.bid_status)):
          ai.bid_made(f2o_bid(self.bid_status[i]))
       
       if ai.deal.trick is None:
@@ -196,7 +194,7 @@ class State:
       if (ai.seat != deal.declarer) and (deal.player != ai.seat): return None
       if (ai.seat == deal.declarer) and (deal.player != deal.dummy) and (deal.player != deal.declarer):
          return None         
-      print 'myseat','NESW'[ai.seat],'player','NESW'[deal.player], 'dummy','NESW'[deal.dummy],'declarer','NESW'[deal.declarer]      
+      print ('myseat','NESW'[ai.seat],'player','NESW'[deal.player], 'dummy','NESW'[deal.dummy],'declarer','NESW'[deal.declarer])
       card = None
       if (deal.player == deal.dummy) and (deal.declarer == ai.seat):
          card = ai.play_dummy()
@@ -271,7 +269,7 @@ def handle_auction(state):
 
 def sit_at_availabe_seat(table):
    ava = []
-   for s in xrange(4):
+   for s in range(4):
       if table[s] == '' : ava.append(s)
    if len(ava) == 0: return None
    seat = ava[random.randint(0,len(ava)-1)]
@@ -293,7 +291,7 @@ def handleData(state, data):
          rmsg.append('*alive*')
          continue      
       message = decode_message(line)
-      if message[0] != 'T': print state.clientname,message
+      if message[0] != 'T': print (state.clientname,message)
       if message[0] == 's':
          #todo, handle unseat info
          name,seat = message[3:5]
@@ -305,7 +303,7 @@ def handleData(state, data):
       elif message[0] == 'C': pass
       elif message[0] == 'T':         
          if state.where_is_my_seat() is None:
-            print 'T',state.table_seated
+            print ('T',state.table_seated)
             seat = sit_at_availabe_seat(state.table_seated)
             rmsg.append(state.encode_message('request_seat',[seat]))
          if state.client_holding != []: rmsg.append(handle_auction(state))
@@ -372,7 +370,7 @@ def one_client(st=State()):
       if messages is None: continue
       for m in messages:
          if m is None: continue
-         if m != '*alive*': print st.clientname,'s',m
+         if m != '*alive*': print (st.clientname,'s',m)
          s.send(m+'\r\n')
       time.sleep(random.random())
    
