@@ -31,10 +31,12 @@ if ROOT_PATH[-len('oldlady'):] == 'oldlady':
     ROOT_PATH = os.path.abspath(os.path.join(os.getcwd(), '..'))
 DEAL_PATH = os.path.join(ROOT_PATH, "deal319")
 DDS_PATH = os.path.join(ROOT_PATH, "ddsprogs")
-testing = True
+testing = False
 hands = [
 ['KQJ763', '95', 'AT92', '3'],
 ['T', 'J8642', 'K8', 'JT752'],
 ['A942', 'AQT7', 'J', 'AK96'],
 ['85', 'K3', 'Q76543', 'Q84'],
 ]
+hands = [x.split('.') for x in 
+['J643.AT8.J4.KQJ3', 'AK8.J632.A5.A874', '5.K975.K8762.952', 'QT972.Q4.QT93.T6']]

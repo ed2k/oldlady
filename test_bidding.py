@@ -21,7 +21,6 @@
 import floater_client
 import sAi
 import sbridge
-from sbridge import *
 import defs
 
 import os
@@ -51,7 +50,7 @@ class App:
     def distribute_deal(self):
         # clone deal to show AI only its own hand        
         for ai in self.ais:
-            deal = Deal(self.deal.dealer)
+            deal = sbridge.Deal(self.deal.dealer)
             deal.hands[ai.seat] = self.deal.hands[ai.seat][:]
             ai.new_deal(deal)
             
@@ -117,11 +116,11 @@ class App:
                     # show dummy hand to declarer
                     tm = self.deal
                     self.ais[tm.declarer].deal.hands[tm.dummy] = tm.hands[tm.dummy][:]
-                    p = seat_prev(tm.declarer)
+                    p = sbridge.seat_prev(tm.declarer)
                     self.ais[p].deal.hands[tm.dummy] = tm.hands[tm.dummy][:]
                     # dummy no need to think
                     self.ais[tm.dummy].deal.hands[tm.dummy] = None
-                    p = seat_next(tm.declarer)
+                    p = sbridge.seat_next(tm.declarer)
                     # play frist card
                     card = self.ais[p].play_self()
                     # show dummy to leader

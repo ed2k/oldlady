@@ -186,6 +186,8 @@ def seat_prev(seat): return (seat-1)%4
 def seat_next(seat): return (seat+1)%4
 def seat_move(a,b): return (a+b)%4
 def seat_str(seat): return 'NESW'[seat]
+
+
 class Card:
     """
     A single playing card.
@@ -291,6 +293,7 @@ class Bid:
         if d == 0: return 'new0'
         if d == 1 and n < 0: return 'new'
         return 'jump'
+
 class Trick:
     """
     A single trick during a deal.
@@ -343,7 +346,7 @@ class Deal:
             hand.sort(reverse = True)
         import defs
         if defs.testing:
-            test_deal_gen(self,defs.hands)
+            test_deal_gen(self, defs.hands)
             
     def __init__ (self, dealer):
         self.played_hands = [[],[],[],[]]
@@ -670,9 +673,9 @@ def print_hand(hand):
    for i in SUITS:
        r.append(''.join(suits[i]))
    r.reverse()
-   print r
+   print (r)
 
-def test_deal_gen(obj,hands):
+def test_deal_gen(obj, hands):
     import floater_client
     # for debuging biding, use the same deal
     if type(hands) == type(''):
@@ -692,7 +695,7 @@ def test_deal_gen(obj,hands):
                 h = []
                 for c in hands[p].split()[1:]:
                     suit = STR2SUIT[c[1].upper()]
-                    card = Card(suit,floater_client.PBN_HIDX[c[0].lower()]+2)
+                    card = Card(suit, floater_client.PBN_HIDX[c[0].lower()]+2)
                     h.append(card)
                 obj.hands[p] = h
     else:

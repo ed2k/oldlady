@@ -27,7 +27,7 @@ import defs
 #sayc = bidding.Bidding ()
 def debug(s,level = 0):
     #if not defs.testing: return
-    print('sai:',s)
+    #print('sai:',s)
     open('debug.log', 'a+').write('-debug: '+str(s)+'\n')
     
 class ComputerPlayer:
@@ -91,16 +91,13 @@ class ComputerPlayer:
         #bid = sayc.choose_bid (self.deal.hands[self.seat], self.history)
         #print 'prolog:',self.seat,bid
         bid = self.bidState.evaluate_deal()
-        print (self.seat,'pybid:',bid)
+        #print (self.seat,'pybid:',bid)
         return bid
         
     
     def play_self (self):
         """
         Play a card from the AI's own hand during a trick.
-
-        Currently, this is really dumb, and doesn't bother trying to keep
-        track of what cards have been played or anything.
         """
 
         #return self.play_from_hand (self.seat)
@@ -118,8 +115,8 @@ class ComputerPlayer:
         assert self.seat == self.deal.declarer
         #return self.play_from_hand (self.deal.dummy)
         return self.guess(self.deal.dummy)
-    def guess(self,player):
-        c,win = DealGenerator(self, player)
+    def guess(self, player):
+        c, win = DealGenerator(self, player)
         #debug([str(c),win])
         return c
         
@@ -386,7 +383,7 @@ class OneHand:
    def hcp(self): return hcp(self.hand)
    def shortage(self):
        points = 0
-       for s in SUITS:
+       for s in sbridge.SUITS:
            slen = len(self.suits[s])
            if slen == 0: points += 5
            elif slen == 1: points += 3
@@ -394,7 +391,7 @@ class OneHand:
        return points
    def lengthPoints(self):
        points = 0
-       for s in SUITS:
+       for s in sbridge.SUITS:
            slen = len(self.suits[s])
            if slen > 4: points += (slen -4)
        return points   
@@ -430,7 +427,7 @@ class OneHand:
        return response  
 
    def shape_type(self):
-       r = [len(self.suits[x]) for x in SUITS]
+       r = [len(self.suits[x]) for x in sbridge.SUITS]
        #print 'shape pattern',r
        r.sort()
        if r[0] <= 1: return 'unbalanced'
@@ -439,7 +436,7 @@ class OneHand:
    def getLongestSuit(self):
        idx = 0
        slen = 0
-       for s in SUITS:
+       for s in sbridge.SUITS:
            if self.suits[s] >= slen:
                idx = s
        return idx
@@ -447,28 +444,28 @@ class OneHand:
        return len(self.suits[self.getLongestSuit()])
    def newsuit(self,bid):
        r = []
-       for suit in xrange(4):
+       for suit in range(4):
            if suit == bid.denom: continue
            r.append(len(self.suits[suit]))
        return max(r)
    def getNew(self,bid):
        slen = self.newsuit(bid)
-       for suit in SUITS:
+       for suit in sbridge.SUITS:
            if suit == bid.denom: continue
            if len(self.suits[suit]) == slen:
                return bid.getNew(suit)       
    def getNew0(self, bid):
        slen = self.newsuit0(bid)
-       for suit in xrange(bid.denom+1,4):
+       for suit in range(bid.denom+1,4):
            if len(self.suits[suit]) == slen:
                return bid.getNew(suit)
    def newsuit0(self, bid):
        ''' intends to return max len suit in same level above prev valid bid
        '''
        denom = bid.denom
-       if denom == NO_TRUMP or denom == SPADES: return 0
+       if denom == sbridge.NO_TRUMP or denom == sbridge.SPADES: return 0
        r = []
-       for suit in xrange(denom+1,4):
+       for suit in range(denom+1,4):
            r.append(len(self.suits[suit]))
        return max(r)   
    def check(self, ruleseqs):
@@ -481,13 +478,13 @@ class OneHand:
       #print 'got',ruleseqs   
       return True
    def checkAndReturn(self, state):
-       bidsys = self.ai.bidState.bid_system[team(self.ai.deal.player)]
+       bidsys = self.ai.bidState.bid_system[sbridge.team(self.ai.deal.player)]
        ruleseqs = getattr(sAi,bidsys+'_'+state)
        for rule in ruleseqs:
            if self.check(rule[1]): return rule[0]
        return ' p'
    def check2(self, state):
-      bidsys = self.ai.bidState.bid_system[team(self.ai.deal.player)]
+      bidsys = self.ai.bidState.bid_system[sbridge.team(self.ai.deal.player)]
       rules = getattr(sAi, bidsys+'_'+state)       
       for rule in rules:
           if not self.check(rule[0]): continue
@@ -499,7 +496,7 @@ class OneHand:
               elif rule[1][:5] == 'refer':
                   return self.check2(rule[1].split()[1])
               else:
-                  print 'unknown item',rule
+                  print ('unknown item',rule)
               
           for onerule in rule[1:]:
               if self.check(onerule[1]): return onerule[0]
@@ -519,7 +516,7 @@ class OneHand:
        if symbol == 'len_minor': return max([len(self.suits[x]) for x in [0,1]])
        if symbol == 'suit': return len(self.suits[self.bidState.getBid('opening1').denom])
        if symbol in 'cdhs':
-           return  len(self.suits[KIDX[symbol]])
+           return  len(self.suits[sbridge.KIDX[symbol]])
        if symbol.find('..') > 0:
            minv, maxv = symbol.split('..')
            return (int(minv),int(maxv))
@@ -537,7 +534,7 @@ class OneHand:
           return (left >= minv) and (left <= maxv)
       if opcode == 'is': return left == right
       if opcode == 'isnot': return left != right
-      print 'unknown op',left,opcode,right
+      print ('unknown op',left,opcode,right)
 
 #first 8 chars are user for keywords
 BIDSTATE_IDX = {'opening1':0,'opening2':1,'respons1':2,'respons2':3,'openerNextBid':4, 'respons1_1n':2}
@@ -547,7 +544,7 @@ class AIBidStatus:
     def __init__(self, ai):
         self.ai = ai
         self.handsEval = []
-        for p in PLAYERS:
+        for p in sbridge.PLAYERS:
             self.handsEval.append(HandEvaluation())
         self.first5 = [None,None,None,None,None]
         # not pass, double
@@ -566,7 +563,7 @@ class AIBidStatus:
             if not bid.is_pass():
                 self.first5[0] = (player, bid)
                 return (player, bid)
-            player = seat_next(player)
+            player = sbridge.seat_next(player)
         return None
     def getBid(self, ask):
         if ask == 'respons1': return self.first5[2]
@@ -576,7 +573,7 @@ class AIBidStatus:
     def rcheck2(self,bid,state):
         ''' based on bidding history and biding system rules, find out possible
         rules that are corresponding to the biding''' 
-        bidsys = self.bid_system[team(seat_prev(self.ai.deal.player))]
+        bidsys = self.bid_system[sbridge.team(sbridge.seat_prev(self.ai.deal.player))]
         rules = getattr(sAi, bidsys+'_'+state)
         b = self.first5[0][1].difftype(bid)
         for rule in rules:
@@ -590,7 +587,7 @@ class AIBidStatus:
               elif rule[1][:5] == 'refer':
                   return self.rcheck2(bid,rule[1].split()[1])
               else:
-                  print 'unknown item',rule
+                  print ('unknown item',rule)
               
           for onerule in rule[1:]:
               if onerule[0] == str(bid) or onerule[0] == b:
@@ -601,12 +598,13 @@ class AIBidStatus:
 
 
     def evaluateBid(self, bid):
-        heval = self.handsEval[seat_prev(self.ai.deal.player)]
+        heval = self.handsEval[sbridge.seat_prev(self.ai.deal.player)]
         openbid = self.setOpening()
      
         if not bid.is_pass() and not bid.is_double() and not bid.is_redouble():
             self.currentBid = (self.ai.deal.player, bid)
-        if self.ai.seat == NORTH: print 'evaluateBid', str(bid), self.state
+        if self.ai.seat == sbridge.NORTH:
+            print ('N evaluateBid', str(bid), self.state)
         if openbid is None:
             heval.opening = False            
         elif openbid is not None and self.state == 'not opened':
@@ -619,7 +617,7 @@ class AIBidStatus:
             self.state = 'opening2'
             self.first5[1] = bid
             b = self.first5[0][1].difftype(bid)
-            if self.ai.seat == NORTH: print 'opening2',b
+            if self.ai.seat == sbridge.NORTH: print ('opening2',b)
             for rule in sayc_opening2:
                 if str(bid) == rule[0]:
                     heval.accept.append(rule[1])
@@ -636,10 +634,10 @@ class AIBidStatus:
             self.state = 'openerNextBid'
             self.first5[4] = bid
         elif self.state == 'openerNextBid':
-            if self.ai.seat == NORTH:
-               for p in PLAYERS:
+            if self.ai.seat == sbridge.NORTH:
+               for p in sbridge.PLAYERS:
                    heval = self.handsEval[p]  
-                   print 'rule', p, heval.accept
+                   print ('rule', p, heval.accept)
             self.generateDealScript()        
         
     def evaluate_deal(self):
@@ -671,7 +669,7 @@ class AIBidStatus:
            return openbid[1].getIncr(inc)
        if bid[1] == '_':
            n = int(bid[0])
-           return Bid(n, openbid[1].denom)
+           return sbridge.Bid(n, openbid[1].denom)
        elif bid == 'new':
            return self.hand.getNew(self.currentBid[1])
        elif bid == 'jumpshift':
@@ -684,21 +682,21 @@ class AIBidStatus:
            else: bid = '5'+'cdhs'[suit]
        elif bid == 'game in hand':
            bid = '2c'
-       return f2o_bid(bid)
+       return sbridge.f2o_bid(bid)
 
     def generateDealScript(self):
        tcl = []
-       for p in PLAYERS:
+       for p in sbridge.PLAYERS:
            if p == self.ai.seat: continue
            if self.ai.deal.hands[p] is not None: continue
            t =  Translate2Tcl(self, p)
            for rule in self.handsEval[p].accept:
                if rule is None:
-                   print 'generateDealScript sth wrong, rule is None'
+                   print ('generateDealScript sth wrong, rule is None')
                    continue
                tcl.append( t.go(rule))
        s = ' && '.join(tcl)
-       #print s
+       print ('gends', s)
        head = ''' source lib/utility.tcl
 main { if { 
 '''
@@ -747,6 +745,8 @@ class Translate2Tcl:
             if left[:7] in ['opening','respons']:
                 continue
             if left == 'shape_type':
+                if right == 'unbalanced':
+                    continue
                 f.append('['+right+ ' '+self.seat+']')
                 continue
             left = self.get(left)
@@ -781,7 +781,7 @@ class Translate2Tcl:
           return ' '.join([left, '>=', minv, '&&', left, '<=', maxv])
       if opcode == 'is': return ' '.join([left, '==', right])
       if opcode == 'isnot': return ' '.join([left, '!=', right])
-      print 'unknown op',left,opcode,right
+      print ('unknown op',left,opcode,right)
                  
 
 
@@ -832,8 +832,8 @@ def o2dstack_hand(hand):
    handnew = hand[:]
    handnew.sort(reverse=True)
 
-   h = o2pbn_hand(handnew).split('.')
-   for i in SUITS:
+   h = sbridge.o2pbn_hand(handnew).split('.')
+   for i in sbridge.SUITS:
       if h[i] == '': h[i] = '-'
    return ' '.join(h)
 
@@ -847,10 +847,10 @@ def deal2list(s):
         #debug(newdeal)
         ddeal = [[],[],[],[]]
         # put estimated deal in 4x4 format
-        for i in PLAYERS:
+        for i in sbridge.PLAYERS:
            d = newdeal[i].split('.')
            ddeal[i] = [[],[],[],[]]
-           for j in SUITS:
+           for j in sbridge.SUITS:
                ddeal[i][j] = list(d[j])
         r.append(ddeal)
     return r
@@ -865,15 +865,15 @@ def DealGenerator(ai, player):
     
     myseat = ai.seat
     mine = o2dstack_hand(ai.deal.originalHand(myseat))
-    cmd = defs.DEAL_PATH + '/deal -i format/pbn -'+seat_str(myseat)+' "'+mine+'"'
-    others = PLAYERS[:]
+    cmd = defs.DEAL_PATH + '/deal -i format/pbn -'+sbridge.seat_str(myseat)+' "'+mine+'"'
+    others = sbridge.PLAYERS[:]
     others.remove(myseat)
     if ai.deal.finishBidding():
         seat2 = ai.deal.dummy
         assert seat2 != myseat
         if ai.deal.hands[seat2] is not None:
             hand2 = o2dstack_hand(ai.deal.originalHand(seat2))
-            cmd += ' -'+seat_str(seat2)+' "'+ hand2 + '"'
+            cmd += ' -'+sbridge.seat_str(seat2)+' "'+ hand2 + '"'
             others.remove(seat2)
         # take out played cards
         eargs = []
@@ -891,16 +891,16 @@ def DealGenerator(ai, player):
     #print str(ai.deal.trick)
    
     currentTrick = []
-    seat = seat_prev(player)
+    seat = sbridge.seat_prev(player)
     while (len(ai.deal.played_hands[seat]) > len(ai.deal.played_hands[player])):
        currentTrick.insert(0,ai.deal.played_hands[seat][-1])
-       seat = seat_prev(seat)
+       seat = sbridge.seat_prev(seat)
 
     r = []
     for ddeal in deals:
         # remove played cards
-        for i in PLAYERS:
-           seat = f2o(i)
+        for i in sbridge.PLAYERS:
+           seat = sbridge.f2o(i)
            for c in ai.deal.played_hands[seat]:
               s = 3-c.suit
               ddeal[i][s].remove(str(c)[0])
@@ -920,12 +920,12 @@ def solver(player, trump, currentTrick, deal):
     sdeal = [[],[],[],[]]
     #move my seat to North for solver
     for i in range(4):
-       d = deal[seat_move(player,i)]
+       d = deal[sbridge.seat_move(player,i)]
        for j in range(4):
           sdeal[i].append(''.join(d[j]))
 
     r = dds_solver_api(trump, currentTrick, sdeal)    
-    return [(Card(3-int(x[1]), int(x[2])),x[3]) for x in r]
+    return [(sbridge.Card(3-int(x[1]), int(x[2])),x[3]) for x in r]
           
     
 def max_freq(xlist):
