@@ -14,5 +14,8 @@ visit localhost:8000/cn.bridge/bridge.html
 python2.7 oldlady/test_bidding.py
 
 # floater
-python2.7 
+assume deal319, ddsprog and oldlady directories are the same level
+oldlady> python3 floader_server.py
+deal319> python3 ../oldlady/floater-multi-clients.py
+deal319 python ../oldlady/floater_client.py
 

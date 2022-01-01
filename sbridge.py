@@ -53,7 +53,7 @@ f_op2argc = {'J':5,'S':4,'C':1,'s':4,'T':4,'e':3,'a':2,'p':2,'Y':3,'*':8}
 
 def f2o(idx):   return idx
 def o2f(idx) : return idx
-def f2o_card(c): return Card(c /13, (c % 13)+2)
+def f2o_card(c): return Card(c // 13, (c % 13)+2)
 def o2f_card(c): return c.suit*13 + c.rank-2
 def f2o_hand(hand): return [f2o_card(c) for c in hand]
 def o2f_hand(hand): return [o2f_card(c) for c in hand]
@@ -86,7 +86,7 @@ class BidGrid:
     def __init__(self, dealer):
         self.data = []
         self.dealer = dealer
-        self.data.append([x+10 for x in xrange(dealer)])
+        self.data.append([x+10 for x in range(dealer)])
         #print self.data
         self.col = dealer
     def next(self):
@@ -129,7 +129,7 @@ class BidGrid:
         #print 'getcontract',str(self)
         self.end()
         # last three has to be pass
-        for i in xrange(3):
+        for i in range(3):
             if not self.getBid().is_pass(): return None
             self.prev()
         while self.getBid().is_pass() or self.getBid().is_double() or self.getBid().is_redouble():
@@ -141,7 +141,7 @@ class BidGrid:
 
     def __str__(self):
         s = []
-        for y in xrange(len(self.data)):
+        for y in range(len(self.data)):
             s.append(' '.join([str(x) for x in self.data[y]]))
         return '\r\n'.join(s)
                 
@@ -200,8 +200,9 @@ class Card:
     def __str__ (self):
         return rank_to_string (self.rank) + denomination_to_string (self.suit)
 
-    def __cmp__ (self, other):
-        return self.suit.__cmp__ (other.suit) or self.rank.__cmp__ (other.rank)
+    def __lt__ (self, other):
+        return self.suit.__lt__(other.suit) or self.rank.__lt__(other.rank)
+
     def hcp(self):
         if self.rank > 10: return self.rank-10
         return 0
@@ -230,11 +231,16 @@ class Bid:
     def __init__ (self, level, denom=None):
         self.level = level
         self.denom = denom
-    def __cmp__(self, other):
+
+    def __lt__(self, other):
         d = self.level - other.level
         if d != 0: return d
         d = self.denom - other.denom
         return d
+    
+    def __ge__(self, other):
+        return not self.__lt__(other)
+
     def __str__ (self):
         if self.is_pass ():
             return "Pass"[:2]
@@ -437,7 +443,7 @@ class Deal:
             self.dummy = partner (self.declarer)
             self.player = (self.declarer + 1) % 4
             self.trick = Trick (self.player, self.contract.denom)
-            print 'dealer',self.dealer,'player',self.player, 'dummy',self.dummy,'declarer',self.declarer,'contract',self.contract
+            print('dealer',self.dealer,'player',self.player, 'dummy',self.dummy,'declarer',self.declarer,'contract',self.contract)
         else:
             self.contract = Bid (PASS)
     def finishBidding(self): return self.trick is not None

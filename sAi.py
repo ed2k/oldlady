@@ -496,7 +496,7 @@ class OneHand:
               elif rule[1][:5] == 'refer':
                   return self.check2(rule[1].split()[1])
               else:
-                  print ('unknown item',rule)
+                  print('unknown item',rule)
               
           for onerule in rule[1:]:
               if self.check(onerule[1]): return onerule[0]
@@ -760,7 +760,8 @@ class Translate2Tcl:
        if symbol == 'longest':return self.longest()
        if symbol == 'newsuit':return self.newsuit(self.bidState.currentBid[1])
        if symbol == 'newsuit0': return self.newsuit0(self.bidState.currentBid[1])
-       if symbol == 'hcp+shortage':return '[hcp '+self.seat+'] + [shortage '+ self.seat+']'
+       # if symbol == 'hcp+shortage':return '[hcp '+self.seat+'] + [shortage '+ self.seat+']'
+       if symbol == 'hcp+shortage':return '[hcp '+self.seat+']'
        if symbol == 'hcp+shortage+length':return self.hcp()+self.shortage()+self.lengthPoints()
        if symbol == 'shape_type': return 'shape_type'
        if symbol == 'len_major': return '[len_major '+self.seat+']'
@@ -866,7 +867,7 @@ def DealGenerator(ai, player):
     myseat = ai.seat
     mine = o2dstack_hand(ai.deal.originalHand(myseat))
     cmd = defs.DEAL_PATH + '/deal -i format/pbn -'+sbridge.seat_str(myseat)+' "'+mine+'"'
-    others = sbridge.PLAYERS[:]
+    others = list(sbridge.PLAYERS[:])
     others.remove(myseat)
     if ai.deal.finishBidding():
         seat2 = ai.deal.dummy

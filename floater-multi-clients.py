@@ -8,10 +8,10 @@ class PP(Thread):
         self.id = id
     def run(self):
         self.vfunc(State())
-        print self.id, 'done'
+        print(self.id, 'done')
    
 if __name__ == "__main__":
-   th = [PP(i,one_client) for i in xrange(3) ]
+   th = [PP(i,one_client) for i in range(3) ]
    for x in th: x.start()
    #for x in th: x.join()
    

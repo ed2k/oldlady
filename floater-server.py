@@ -18,7 +18,8 @@ def next_step(state):
       return state.send_new_hand()
    return [state.encode_message('announce_table',[])]
    
-def table_handle(state,data):
+def table_handle(state, data):
+   data = data.decode('utf-8')
    rmsg = []
    for line in data.split('\r\n')[:-1]:
       if line[:9] == "Floater '":
@@ -48,7 +49,7 @@ def table_handle(state,data):
          #TODO check if it is the right bidder
          state.deal.bid(f2o_bid(state.bid_status[-1]))
          rmsg.append(line)
-         print [state.bid_status.data]
+         print([state.bid_status.data])
          if state.bid_status.data == ' p'*4:
             print ('all pass')
             state.deal = None
@@ -73,10 +74,12 @@ def send_messages(state,mm):
         conn = state.seat_sock[m[0]]
         if conn != '':
            print ('p2p',m[0],m[1])
-           conn.send(m[1]+'\r\n')
+           conn.send(bytes(m[1]+'\r\n', 'utf-8'))
       else:
          if m != '*alive*' and m[0] != 'T': print ('s',m)
-         for conn in state.clients_conn: conn.send(m+'\r\n')
+         for conn in state.clients_conn:
+            conn.send(bytes(m+'\r\n', 'utf-8'))
+
 
 TODO = """  work on a server that take care of table manager and 3 player
  a client can use request/response mode to play bridge, instead of polling data.
@@ -107,17 +110,17 @@ if __name__ == "__main__":
       for i in fds[0] + fds[1]:
          if i == s:
             conn, addr = s.accept()
-            conn.send("Floater 'shake\r\n")
+            conn.send(bytes("Floater 'shake\r\n", 'utf-8'))
             st.clients_conn.append(conn)
          elif i in st.clients_conn:
             st.current_sock = i
             data = ''
-            try: data = i.recv(10240)                 # receive up to 1K bytes
+            try: data = i.recv(10240)  # receive up to 10K bytes
             except socket.error: pass
             if len(data) == 0: # receive nothing, close it
                i.close()
                st.remove_client(i)
                continue
             #print 'r',[data]
-            messages = table_handle(st,data)
+            messages = table_handle(st, data)
             send_messages(st, messages)

@@ -1,35 +1,33 @@
 import sys, random,time
 import defs
 
-
 import sbridge, sAi
 from sbridge import *
 
-   
-   
+
 def card_cmp(trump, c1, c2):
    if trump == 'n':
-      if c1/13 != c1/13: return 1
+      if c1//13 != c1//13: return 1
       if (c1 % 13) > (c2 % 13): return 1
       return -1
-   if c1/13 == c2/13:
+   if c1//13 == c2//13:
       if (c1 % 13) > (c2 % 13): return 1
       return -1
-   if 'cdhs'[c1/13] == trump: return 1
-   if 'cdhs'[c2/13] == trump: return -1
+   if 'cdhs'[c1//13] == trump: return 1
+   if 'cdhs'[c2//13] == trump: return -1
    return 1
  
 def card52_kn(idx):
    ''' convert 0-51 indexing of card to 2 char kind number representation
    such as c2, cj, '''
    i = idx
-   return 'cdhs'[ i/13]+'23456789tjqka'[ i % 13]
+   return 'cdhs'[i//13]+'23456789tjqka'[ i % 13]
 def cardkn_52(card):
    return KIDX[card[0].lower()] * 13 + PBN_HIDX[card[1].lower()]
 def convert_str2play(line):
    '''a string of c7h3sa to a list of number'''
    played = []
-   for i in range(len(line)/2):
+   for i in range(len(line)//2):
       idx = i*2
       played.append(cardkn_52(line[idx:idx+2]))
    return played
@@ -50,23 +48,32 @@ def pbn2f_hand(pbn):
    return rtn
       
 class BidStatus:
+   """2 char one bid step"""
    data = None
    def __init__(self, str): self.data = str
    def __str__(self): return self.data
-   def __len__(self): return len(self.data)/2
-   def __getitem__(self, idx):
-      if idx >=0:
-         i = idx *2
+   def __len__(self): return len(self.data)//2
+   def old_getitem(self, idx):
+      if idx >= 0:
+         i = idx * 2
       else:
          i = len(self.data) + idx*2
       return self.data[i:i+2]
-         
-   def __getslice__(self,i,j):
+   
+   def __getitem__(self, idx):
+      if type(idx) == type(0):
+         return self.old_getitem(idx)
+      i = idx.start
+      j = idx.stop
+      return self.__getslice__(i, j)
+
+   def __getslice__(self, i, j):
       r = []
       for idx in range(self.__len__())[i:j]:
-         r.append(self.__getitem__(idx))
+         r.append(self.old_getitem(idx))
       return r
-   
+
+
 class State:   
    clients_conn = [] # list of clients sockets
    current_sock = None # current client we are handling message from
@@ -137,14 +144,14 @@ class State:
       self.bid_status = BidStatus(bids)
       self.play_status = convert_str2play(plays)
       self.deal = sbridge.Deal((self.hand_id-1) % 4)
-      for x in xrange(4): self.deal.hands[x] = None
+      for x in range(4): self.deal.hands[x] = None
       if suit[1] == ' ':
          for s in suit.split('|'):
             self.deal.hands[int(s[0])] = f2o_hand(pbn2f_hand(s[2:]))
          self.client_holding = pbn2f_hand(suit.split('|')[0][2:])
          return
       # special case for floater server
-      line = file(defs.FL_DATA).read()
+      line = open(defs.FL_DATA).read()
       s = line.split()
       x = seat*13
       self.client_holding = [int(x) for x in s[x:x+13]]
@@ -194,7 +201,7 @@ class State:
       if (ai.seat != deal.declarer) and (deal.player != ai.seat): return None
       if (ai.seat == deal.declarer) and (deal.player != deal.dummy) and (deal.player != deal.declarer):
          return None         
-      print ('myseat','NESW'[ai.seat],'player','NESW'[deal.player], 'dummy','NESW'[deal.dummy],'declarer','NESW'[deal.declarer])
+      print('myseat','NESW'[ai.seat],'player','NESW'[deal.player], 'dummy','NESW'[deal.dummy],'declarer','NESW'[deal.declarer])
       card = None
       if (deal.player == deal.dummy) and (deal.declarer == ai.seat):
          card = ai.play_dummy()
@@ -264,7 +271,6 @@ def handle_auction(state):
    if r != seat: return None
    state.bid_status.data += state.handle_auction()
    return state.encode_message('auction_status',[str(state.hand_id),str(state.bid_status)])
-   
 
 
 def sit_at_availabe_seat(table):
@@ -280,6 +286,7 @@ def encode_args(seqs):
    return '\\'.join(len_seqs) + '\\'+''.join(seqs)
 
 def handleData(state, data):
+   data = data.decode('utf-8')
    rmsg = []
    for line in data.split('\r\n')[:-1]:
       if line[:9] == "Floater '":
@@ -363,7 +370,7 @@ def one_client(st=State()):
    s.connect(('localhost', 10100)) # connect to server on the port
 
    while True:
-      data = s.recv(10240)                 # receive up to 1K bytes
+      data = s.recv(10240)  # receive up to 10K bytes
       if len(data) == 0: break
       #print 'r----------',[data]
       messages = handleData(st,data)
@@ -371,9 +378,10 @@ def one_client(st=State()):
       for m in messages:
          if m is None: continue
          if m != '*alive*': print (st.clientname,'s',m)
-         s.send(m+'\r\n')
+         s.send(bytes(m+'\r\n', 'utf-8'))
       time.sleep(random.random())
-   
+
+
 if __name__ == "__main__":
    one_client()
 

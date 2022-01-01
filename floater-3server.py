@@ -2,7 +2,7 @@ from floater_client import *
 from sAi import *
 from sbridge import *
 
-from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
+from http.server import BaseHTTPRequestHandler, HTTPServer
 import urllib
 
 MANAGERNAME = "tableserver"
@@ -28,8 +28,11 @@ def nextStep(action, state, comps):
             rmsg.append(state.encode_message('auction_status',[str(state.hand_id),str(state.bid_status)]))
     return rmsg
 
+
 def httpResponse(msg):
-    return "Content-type: text\n\n"+msg    
+    return "Content-type: text\n\n"+msg
+
+
 class MyHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         start = len('/postit.yaws?flproxyB=')
@@ -168,5 +171,3 @@ if __name__ == "__main__":
    except KeyboardInterrupt:
         print ('^C received, shutting down server')
         server.socket.close()
-
-

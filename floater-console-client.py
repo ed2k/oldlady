@@ -4,12 +4,12 @@ import os
 
 def print_suits(suits):
    ''' print a hand, organized as 4 suit'''
-   for i in xrange(4):
+   for i in range(4):
       j = 3 - i
-      print 'CDHS'[j]+':',
+      print('CDHS'[j]+':',)
       for c in suits[j]:
-         print '0123456789TJQKA'[c],
-      print
+         print('0123456789TJQKA'[c],)
+      print()
 
       
    
