@@ -192,8 +192,7 @@ class Card:
     """
     A single playing card.
     """
-
-    def __init__ (self, suit, rank):
+    def __init__(self, suit, rank):
         self.suit = suit
         self.rank = rank
 
@@ -201,7 +200,10 @@ class Card:
         return rank_to_string (self.rank) + denomination_to_string (self.suit)
 
     def __lt__ (self, other):
-        return self.suit.__lt__(other.suit) or self.rank.__lt__(other.rank)
+        return self.suit < other.suit or self.rank < other.rank
+
+    def __eq__ (self, other):
+        return self.suit == other.suit and self.rank == other.rank
 
     def hcp(self):
         if self.rank > 10: return self.rank-10
@@ -240,6 +242,9 @@ class Bid:
     
     def __ge__(self, other):
         return not self.__lt__(other)
+
+    def __eq__(self, other):
+        return self.level == other.level and self.denom == other.denom
 
     def __str__ (self):
         if self.is_pass ():
@@ -458,11 +463,13 @@ class Deal:
     def play_card (self, card):
         """
         Play a card in the current trick.
-        """        
-        if self.hands[self.player] != None:
-            #print 'try to remove', self.player,card
-            #print_hand(self.hands[self.player])
-            self.hands[self.player].remove (card)
+        """
+        mycards = self.hands[self.player]
+        if mycards != None:
+            print(f'try to remove {card} from player {self.player}')
+            print_hand(mycards)
+            mycards.remove(card)
+            print_hand(mycards)
             
         self.trick.play_card (card)
         self.played_hands[self.player].append(card)
@@ -679,7 +686,7 @@ def print_hand(hand):
    for i in SUITS:
        r.append(''.join(suits[i]))
    r.reverse()
-   print (r)
+   print(r)
 
 def test_deal_gen(obj, hands):
     import floater_client

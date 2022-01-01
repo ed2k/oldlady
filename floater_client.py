@@ -181,7 +181,7 @@ class State:
       print ('dealer','NESW'[dealer],'my seat','NESW'[ai.seat])
          
       ai.new_deal(self.deal)
-      print ('myhand', [c for c in ai.deal.hands[ai.seat]])
+      print ('myhand', [str(c) for c in ai.deal.hands[ai.seat]])
       for i in range(len(self.bid_status)):
          ai.bid_made(f2o_bid(self.bid_status[i]))
       
