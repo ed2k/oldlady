@@ -38,6 +38,7 @@ class ComputerPlayer:
     """
     bidState = None
     def __init__ (self, seat):
+        self.algorithm = 'simple'
         self.seat = seat
         self.rubber = None
         self.deal = None
@@ -99,8 +100,9 @@ class ComputerPlayer:
         """
         Play a card from the AI's own hand during a trick.
         """
+        if 'simple' == self.algorithm:
+            return self.play_from_hand(self.seat)
 
-        #return self.play_from_hand (self.seat)
         # normally player just play its own card
         # so we return what card played to table manager
         return self.guess(self.seat)
@@ -113,14 +115,17 @@ class ComputerPlayer:
         no differently than playing its own.
         """
         assert self.seat == self.deal.declarer
-        #return self.play_from_hand (self.deal.dummy)
+        if 'simple' == self.algorithm:
+            return self.play_from_hand(self.deal.dummy)
         return self.guess(self.deal.dummy)
     def guess(self, player):
+        if 'simple' == self.algorithm:
+            return self.play_from_hand(player)
         c, win = DealGenerator(self, player)
         #debug([str(c),win])
         return c
         
-    def play_from_hand (self, player):
+    def play_from_hand(self, player):
         """
         Play a card during a trick from the specified player's hand.
 
@@ -135,7 +140,7 @@ class ComputerPlayer:
 
         if trick.leader == player:
             # Lead the highest-ranked card in the hand.
-            hand.sort (by_rank, None, True)
+            hand.sort()
             return hand[0]
 
         elif sbridge.team (trick.winner) == sbridge.team (player):
@@ -145,7 +150,7 @@ class ComputerPlayer:
                 candidates = [card for card in hand if card.suit != self.deal.contract.denom]
             if len (candidates) == 0:
                 candidates = hand
-            candidates.sort (by_rank)
+            candidates.sort(key=by_rank)
             return candidates[0]
 
         else:
@@ -159,7 +164,7 @@ class ComputerPlayer:
                     candidates = [card for card in in_suit if card.rank > trick.cards[trick.winner].rank]
                 if len (candidates) == 0:
                     candidates = in_suit
-                candidates.sort (by_rank)
+                candidates.sort(key=by_rank)
                 return candidates[0]
             elif len (trumps) > 0:
                 candidates = []
@@ -167,10 +172,10 @@ class ComputerPlayer:
                     candidates = [card for card in trumps if card.rank > trick.cards[trick.winner].rank]
                 if len (candidates) == 0:
                     candidates = trumps
-                candidates.sort (by_rank)
+                candidates.sort(key=by_rank)
                 return candidates[0]
             else:
-                garbage.sort (by_rank)
+                garbage.sort(key=by_rank)
                 return garbage[0]
     def player(self): return self.deal.player
     def partner(self): return partner(self.seat)
@@ -178,12 +183,11 @@ class ComputerPlayer:
     def rho(self): return seat_prev(self.seat)
 
 
-def by_rank (x, y):
+def by_rank (card:Card):
     """
     Sort function for comparing two cards strictly by rank.
     """
-
-    return cmp (x.rank, y.rank)
+    return  card.rank
 
 #--------------- AI bidding stuff -------------
 def hand2suits(hand):
@@ -437,7 +441,7 @@ class OneHand:
        idx = 0
        slen = 0
        for s in sbridge.SUITS:
-           if self.suits[s] >= slen:
+           if len(self.suits[s]) >= slen:
                idx = s
        return idx
    def longest(self):
