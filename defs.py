@@ -32,7 +32,7 @@ if ROOT_PATH[-len('oldlady'):] == 'oldlady':
 # 
 DEAL_PATH = os.path.join(ROOT_PATH, "../deal319")
 DDS_PATH = os.path.join(ROOT_PATH, "../ddsprogs")
-testing = True
+testing = False
 hands = [
 ['KQJ763', '95', 'AT92', '3'],
 ['T', 'J8642', 'K8', 'JT752'],

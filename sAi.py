@@ -38,7 +38,7 @@ class ComputerPlayer:
     """
     bidState = None
     def __init__ (self, seat):
-        self.algorithm = 'simple'
+        self.algorithm = 'debug'
         self.seat = seat
         self.rubber = None
         self.deal = None
@@ -118,6 +118,7 @@ class ComputerPlayer:
         if 'simple' == self.algorithm:
             return self.play_from_hand(self.deal.dummy)
         return self.guess(self.deal.dummy)
+
     def guess(self, player):
         if 'simple' == self.algorithm:
             return self.play_from_hand(player)
@@ -280,9 +281,9 @@ sayc_respons1= [
     ['opening1_type is 2major',
      ['2n', 'hcp > 10']],
     ['opening1_type is 3minor',
-     ['+2', 'tricks in 4..5']],
+     ['+2', 'hcp in 13..15'], ['+3', 'hcp in 16..20'], ['+4', 'hcp > 20']],
     ['opening1_type is 3major',
-     ['+1', 'tricks in 3..4']],    
+     ['+1', 'hcp in 13..15'], ['+3', 'hcp in 16..20'], ['+4', 'hcp > 20']],
     ]
 sayc_respons1_1n = [
     ['shape_type is balanced',
@@ -535,6 +536,7 @@ class OneHand:
       if opcode == '==': return (left == right)
       if opcode == 'in':
           minv,maxv = right
+          print([left, minv, maxv, right])
           return (left >= minv) and (left <= maxv)
       if opcode == 'is': return left == right
       if opcode == 'isnot': return left != right
@@ -834,8 +836,12 @@ but trump is shdc -> 3210, and currentTricks is list shdc->3210, in play order
 
 def o2dstack_hand(hand):
    '''deal stack  has format AK QJ - T98765432, from Spade to Club'''
+   def card_sort(card):
+        return card.suit * 100 + card.rank
    handnew = hand[:]
-   handnew.sort(reverse=True)
+   print_hand(handnew)
+   handnew.sort(reverse=True, key=card_sort)
+   print_hand(handnew)
 
    h = sbridge.o2pbn_hand(handnew).split('.')
    for i in sbridge.SUITS:
@@ -872,7 +878,9 @@ def DealGenerator(ai, player):
     mine = o2dstack_hand(ai.deal.originalHand(myseat))
     cmd = defs.DEAL_PATH + '/deal -i format/pbn -'+sbridge.seat_str(myseat)+' "'+mine+'"'
     others = list(sbridge.PLAYERS[:])
+    print(others)
     others.remove(myseat)
+    print(others)
     if ai.deal.finishBidding():
         seat2 = ai.deal.dummy
         assert seat2 != myseat
@@ -894,11 +902,12 @@ def DealGenerator(ai, player):
 
     deals = deal2list(os.popen(cmd).read())
     #print str(ai.deal.trick)
+    print('deals', deals)
    
     currentTrick = []
     seat = sbridge.seat_prev(player)
     while (len(ai.deal.played_hands[seat]) > len(ai.deal.played_hands[player])):
-       currentTrick.insert(0,ai.deal.played_hands[seat][-1])
+       currentTrick.insert(0, ai.deal.played_hands[seat][-1])
        seat = sbridge.seat_prev(seat)
 
     r = []
@@ -908,7 +917,9 @@ def DealGenerator(ai, player):
            seat = sbridge.f2o(i)
            for c in ai.deal.played_hands[seat]:
               s = 3-c.suit
+              print(ddeal[i][s])
               ddeal[i][s].remove(str(c)[0])
+              print(ddeal[i][s])
         tmp = []
         for p in ddeal:
             tmp.append('.'.join([''.join(d) for d in p]))

@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.7
+#!/usr/bin/env python3
         
 TODO = """ a web server that take care of table manager and 3 player
  a client can use request/response mode to play bridge, instead of polling data.
@@ -16,7 +16,7 @@ TODO = """ a web server that take care of table manager and 3 player
 """
 
 
-print "Content-type: text/plain\n"
+print ("Content-type: text/plain\n")
 
 import cgi
 import cgitb; cgitb.enable()
@@ -183,5 +183,5 @@ def table_handle(state,ais,data):
 
 
 
-print do_GET(msg)
+print(do_GET(msg))
 

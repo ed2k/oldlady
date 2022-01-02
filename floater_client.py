@@ -123,6 +123,7 @@ class State:
       self.seat_sock[seat] = self.current_sock
       self.table_seated[seat] = name
       return True
+
    def remove_client(self,sock):      
       self.clients_conn.remove(sock)
       #also remove the client name on the seat if exist
@@ -131,10 +132,12 @@ class State:
          self.seat_sock[seat] = ''
          self.table_seated[seat] = ''
       except ValueError: pass
+
    def all_seated(self):
       for v in self.table_seated:
          if v == '': return False
       return True
+
    def own_seat(self): return self.where_is_my_seat()
    def get_deal(self, handid, suit, bids, plays):
       seat = self.where_is_my_seat()
@@ -159,6 +162,7 @@ class State:
       for i in range(4):
          idx = i * 13
          self.deal.hands[i] = f2o_hand([int(x) for x in s[idx:idx+13]])
+
    def first_lead(self):
       auc = self.bid_status
       handid = self.hand_id
@@ -193,7 +197,7 @@ class State:
       # first lead is over, everybody else see the dummy's hand
       
       for c in self.play_status:
-         #print 'play',deal.player,f2o_card(c)
+         print('play',deal.player, f2o_card(c))
          deal.play_card(f2o_card(c))
          if deal.trick.cards[deal.player] is not None:
             ai.trick_complete()
@@ -287,8 +291,10 @@ def encode_args(seqs):
 
 def handleData(state, data):
    data = data.decode('utf-8')
+   # print('handleData', data)
    rmsg = []
    for line in data.split('\r\n')[:-1]:
+      print('handleData', line)
       if line[:9] == "Floater '":
          rmsg.append("Floater 'shake")
          rmsg.append(state.encode_message('J',['8z','K']))

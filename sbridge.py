@@ -465,16 +465,16 @@ class Deal:
         Play a card in the current trick.
         """
         mycards = self.hands[self.player]
-        if mycards != None:
+        if mycards:
             print(f'try to remove {card} from player {self.player}')
-            print_hand(mycards)
             mycards.remove(card)
             print_hand(mycards)
             
-        self.trick.play_card (card)
+        self.trick.play_card(card)
         self.played_hands[self.player].append(card)
-        
+        print([str(c) for c in self.played_hands[self.player]])
         self.player = (self.player + 1) % 4
+        # TODO why it is always True?
         self.opening_lead = True
     def originalHand(self, player): return self.hands[player]+self.played_hands[player]        
     def trickCompleted(self):
@@ -677,16 +677,12 @@ class Rubber:
         return scoring
 
 
-
 def print_hand(hand):
-   suits = [[],[],[],[]]
-   for c in hand:
-      suits[c.suit].append('0123456789TJQKA'[c.rank])
-   r = []
-   for i in SUITS:
-       r.append(''.join(suits[i]))
-   r.reverse()
-   print(r)
+    r = []
+    for c in hand:
+      card = 'SHDC'[c.suit] + '0123456789TJQKA'[c.rank]
+      r.append(card)
+    print(r)
 
 def test_deal_gen(obj, hands):
     import floater_client
