@@ -350,7 +350,7 @@ class Deal:
         for suit in SUITS:
             for rank in RANKS:
                 deck.append (Card (suit, rank))
-        random.shuffle (deck)
+        random.shuffle(deck)
 
         self.hands = [deck[0:13], deck[13:26], deck[26:39], deck[39:52]]
         for hand in self.hands:
@@ -466,13 +466,13 @@ class Deal:
         """
         mycards = self.hands[self.player]
         if mycards:
-            print(f'try to remove {card} from player {self.player}')
+            #print(f'try to remove {card} from player {self.player}')
             mycards.remove(card)
-            print_hand(mycards)
+            #print_hand(mycards)
             
         self.trick.play_card(card)
         self.played_hands[self.player].append(card)
-        print([str(c) for c in self.played_hands[self.player]])
+        #print('hands', [str(c) for c in self.played_hands[self.player]])
         self.player = (self.player + 1) % 4
         # TODO why it is always True?
         self.opening_lead = True
@@ -512,7 +512,7 @@ class Rubber:
         Start another deal, returning the deal for convenience.
         """
 
-        self.deal = Deal (self.dealer)
+        self.deal = Deal(self.dealer)
         self.deal.shuffle()
         self.dealer = (self.dealer + 1) % 4
         self.hands = [hand[:] for hand in self.deal.hands]
@@ -682,7 +682,7 @@ def print_hand(hand):
     for c in hand:
       card = 'SHDC'[c.suit] + '0123456789TJQKA'[c.rank]
       r.append(card)
-    print(r)
+    #print('ph', r)
 
 def test_deal_gen(obj, hands):
     import floater_client

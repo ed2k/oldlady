@@ -25,7 +25,7 @@ import os
 import defs
     
 #sayc = bidding.Bidding ()
-def debug(s,level = 0):
+def debug(s, level = 0):
     #if not defs.testing: return
     #print('sai:',s)
     open('debug.log', 'a+').write('-debug: '+str(s)+'\n')
@@ -536,7 +536,7 @@ class OneHand:
       if opcode == '==': return (left == right)
       if opcode == 'in':
           minv,maxv = right
-          print([left, minv, maxv, right])
+          print('op', [left, minv, maxv, right])
           return (left >= minv) and (left <= maxv)
       if opcode == 'is': return left == right
       if opcode == 'isnot': return left != right
@@ -698,12 +698,48 @@ class AIBidStatus:
            t =  Translate2Tcl(self, p)
            for rule in self.handsEval[p].accept:
                if rule is None:
-                   print ('generateDealScript sth wrong, rule is None')
+                   print('generateDealScript sth wrong, rule is None')
                    continue
-               tcl.append( t.go(rule))
+               tcl.append(t.go(rule))
        s = ' && '.join(tcl)
-       print ('gends', s)
-       head = ''' source lib/utility.tcl
+       print('gends', s)
+       head = '''source lib/utility.tcl
+proc len_major {hand} {
+    set s [spades $hand]
+    set h [hearts $hand]
+    if {$s > $h} {return $s}
+    return $h
+}
+proc len_minor {hand} {
+    set d [diamonds $hand]
+    set c [clubs $hand]
+    if {$d > $c} {return $d}
+    return $c
+}
+proc shortage {hand} {
+    set suits "spades hearts diamonds clubs"
+    set r 0
+    foreach suit "$suits" {
+        set n [eval $suit $hand]
+        if {$n == 0} {
+          set r [expr $r + 5]
+        } elseif {$n == 1} {
+                set r [expr $r + 3]
+        } elseif {$n == 2} {
+                    set r [expr $r + 1]
+        }
+    }
+    return $r
+}
+proc length_points {hand} {
+    set suits "spades hearts diamonds clubs"
+    set r 0
+    foreach suit "$suits" {
+        set n [eval $suit $hand]
+        if {$n > 4} {set r [expr $r + $n - 4]}
+    }
+    return $r
+}
 main { if { 
 '''
        if s != '': self.distributionsScripts = head+s+' } accept } \n'
@@ -762,13 +798,13 @@ class Translate2Tcl:
 
                   
     def get(self, symbol):
+       s = self.seat
        if symbol == 'hcp': return '[hcp '+self.seat+']'
        if symbol == 'longest':return self.longest()
        if symbol == 'newsuit':return self.newsuit(self.bidState.currentBid[1])
        if symbol == 'newsuit0': return self.newsuit0(self.bidState.currentBid[1])
-       # if symbol == 'hcp+shortage':return '[hcp '+self.seat+'] + [shortage '+ self.seat+']'
-       if symbol == 'hcp+shortage':return '[hcp '+self.seat+']'
-       if symbol == 'hcp+shortage+length':return self.hcp()+self.shortage()+self.lengthPoints()
+       if symbol == 'hcp+shortage':return f'[expr [hcp {s}] + [shortage {s}]]'
+       if symbol == 'hcp+shortage+length':f'[expr [hcp {s}] + [shortage {s}]+ [length_points {s}]]'
        if symbol == 'shape_type': return 'shape_type'
        if symbol == 'len_major': return '[len_major '+self.seat+']'
        if symbol == 'len_minor': return '[len_minor '+self.seat+']'
@@ -878,9 +914,9 @@ def DealGenerator(ai, player):
     mine = o2dstack_hand(ai.deal.originalHand(myseat))
     cmd = defs.DEAL_PATH + '/deal -i format/pbn -'+sbridge.seat_str(myseat)+' "'+mine+'"'
     others = list(sbridge.PLAYERS[:])
-    print(others)
+    #print(others)
     others.remove(myseat)
-    print(others)
+    #print(others)
     if ai.deal.finishBidding():
         seat2 = ai.deal.dummy
         assert seat2 != myseat
@@ -900,9 +936,10 @@ def DealGenerator(ai, player):
     cmd += ' -i '+tempTcl+' 7'
     debug(cmd)
 
+    #TODO popen timeout
     deals = deal2list(os.popen(cmd).read())
     #print str(ai.deal.trick)
-    print('deals', deals)
+    #print('deals', deals)
    
     currentTrick = []
     seat = sbridge.seat_prev(player)
@@ -917,9 +954,9 @@ def DealGenerator(ai, player):
            seat = sbridge.f2o(i)
            for c in ai.deal.played_hands[seat]:
               s = 3-c.suit
-              print(ddeal[i][s])
+              #print(ddeal[i][s])
               ddeal[i][s].remove(str(c)[0])
-              print(ddeal[i][s])
+              #print(ddeal[i][s])
         tmp = []
         for p in ddeal:
             tmp.append('.'.join([''.join(d) for d in p]))

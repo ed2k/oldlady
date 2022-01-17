@@ -21,9 +21,6 @@
 import floater_client
 import sAi
 import sbridge
-import defs
-
-import os
 
 
 PLAY_CARD, CONFIRM_TRICK, CONFIRM_DEAL, CONFIRM_GAME, CONFIRM_RUBBER = range (5)
@@ -31,21 +28,10 @@ PLAY_CARD, CONFIRM_TRICK, CONFIRM_DEAL, CONFIRM_GAME, CONFIRM_RUBBER = range (5)
 def _(a):return a
 
 
-
 class App:
-    """
-    The main application winodw for Old Lady.
-    """
-
     def __init__ (self):
-        #self.xml = glade.XML (os.path.join (defs.PKG_DATA_DIR, "oldlady.glade"))
-        #self.xml.signal_autoconnect (self)
-
-        #self.show_all_cards = False
-
         self.ais = [sAi.ComputerPlayer (seat) for seat in sbridge.PLAYERS]
         self.start_next_rubber ()
-
 
     def distribute_deal(self):
         # clone deal to show AI only its own hand        
@@ -59,7 +45,7 @@ class App:
         Prepare for the next deal of cards.
         """
 
-        self.deal = self.rubber.next_deal ()
+        self.deal = self.rubber.next_deal()
             
         self.distribute_deal()
 
@@ -102,15 +88,16 @@ class App:
         to confirm each trick.
         """
         while True:
+            #print('ai')
             if self.deal.contract is not None and self.deal.contract.is_pass ():
                 self.messages = [_("Deal abandoned; all players passed")]
                 self.action = CONFIRM_DEAL
                 return
             elif self.deal.trick is None:
-                bid = self.ais[self.deal.player].bid ()
+                bid = self.ais[self.deal.player].bid()
                 for ai in self.ais:
-                    ai.bid_made (bid)
-                self.deal.bid (bid)
+                    ai.bid_made(bid)
+                self.deal.bid(bid)
                 # check if bidding is over
                 if self.deal.finishBidding():
                     # show dummy hand to declarer
@@ -134,22 +121,18 @@ class App:
                     #self.update_scores ()
                     return
                 if self.deal.player != self.deal.dummy:
-                    card = self.ais[self.deal.player].play_self ()
+                    card = self.ais[self.deal.player].play_self()
                     # notify other players
                     for ai in self.ais: ai.deal.play_card(card)
                     self.deal.play_card(card)
                 else:
-                    card = self.ais[self.deal.declarer].play_dummy ()
+                    card = self.ais[self.deal.declarer].play_dummy()
                     # notify other players
                     for ai in self.ais: ai.deal.play_card(card)
                     self.deal.play_card(card)
-    ##########################################################################
-    #
-    # Tableau callbacks
-    #
-    ##########################################################################
 
-    def run (self):
+    def run(self):
+        #print('start', self.action)
         if self.action == PLAY_CARD:
             if self.deal.trick is not None:
                 card = self.hand_renderers[self.deal.player].card_at (event.x, event.y)
@@ -170,10 +153,10 @@ class App:
                 self.action = PLAY_CARD
             #self.update_scores ()
         elif self.action == CONFIRM_DEAL:
-            if not self.deal.contract.is_pass ():
-                self.messages = self.rubber.score_game ()
-                print (self.messages)
-                self.update_scores ()
+            if not self.deal.contract.is_pass():
+                self.messages = self.rubber.score_game()
+                print('confirm_deal', self.messages)
+                self.update_scores()
                 if len (self.messages) > 0:
                     self.action = CONFIRM_GAME
                 else:
@@ -196,7 +179,6 @@ class App:
 
         if self.action is None or self.action == PLAY_CARD:
             self.play_for_ais ()
-
 
 
 if __name__ == "__main__":

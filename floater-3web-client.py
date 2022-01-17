@@ -35,7 +35,7 @@ if __name__ == "__main__":
          pass
          #print 'r',[data]
 
-      handleData(st,data)
+      handleData(st, data)
       message = handle_auction(st)
       if message.find(' pxp p')>0: 
          break

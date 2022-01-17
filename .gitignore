@@ -1,0 +1,3 @@
+*.log
+[0-3]temp.tcl
+__pycache__

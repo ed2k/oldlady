@@ -1,4 +1,4 @@
-import sys, random,time
+import random, time
 import defs
 
 import sbridge, sAi
@@ -23,7 +23,7 @@ def card52_kn(idx):
    i = idx
    return 'cdhs'[i//13]+'23456789tjqka'[ i % 13]
 def cardkn_52(card):
-   return KIDX[card[0].lower()] * 13 + PBN_HIDX[card[1].lower()]
+   return sbridge.KIDX[card[0].lower()] * 13 + sbridge.PBN_HIDX[card[1].lower()]
 def convert_str2play(line):
    '''a string of c7h3sa to a list of number'''
    played = []
@@ -376,10 +376,10 @@ def one_client(st=State()):
    s.connect(('localhost', 10100)) # connect to server on the port
 
    while True:
-      data = s.recv(10240)  # receive up to 10K bytes
+      data = s.recv(1024)  # receive up to 1K bytes
       if len(data) == 0: break
       #print 'r----------',[data]
-      messages = handleData(st,data)
+      messages = handleData(st, data)
       if messages is None: continue
       for m in messages:
          if m is None: continue

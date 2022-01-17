@@ -139,11 +139,11 @@ class App:
 
         self.messages = []
         # print deal
-        print '-'*80
+        print('-'*80)
         for s in sbridge.PLAYERS:
-            print s,
-            for c in self.deal.hands[s]: print c,
-            print
+            print(s, )
+            for c in self.deal.hands[s]: print(c,)
+            print()
         self.play_for_ais ()
         self.update_scores ()
 
