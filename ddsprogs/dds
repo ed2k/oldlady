@@ -2,7 +2,7 @@
 
 import sys
 
-sys.path.append('/home/a/bridge_env')
+sys.path.append('../ddsprogs')
 
 from deal import Deal
 import time

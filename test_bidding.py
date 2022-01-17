@@ -30,7 +30,7 @@ def _(a):return a
 
 class App:
     def __init__ (self):
-        self.ais = [sAi.ComputerPlayer (seat) for seat in sbridge.PLAYERS]
+        self.ais = [sAi.ComputerPlayer(seat) for seat in sbridge.PLAYERS]
         self.start_next_rubber ()
 
     def distribute_deal(self):

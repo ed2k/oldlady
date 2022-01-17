@@ -62,17 +62,17 @@ class ComputerPlayer:
         self.bidState = AIBidStatus(self)
         self.history = []
 
-    def bid_made (self, bid):
+    def bid_made(self, bid):
         """
         Called after each bid is placed.
         """
         self.deal.bid(bid)
-        self.history.insert (0, bid)
+        self.history.insert(0, bid)
         # relys on the history to find out the opening
         if self.deal.finishBidding() and self.seat == self.deal.dummy: return
         self.bidState.evaluateBid(bid)
         
-    def trick_complete (self):
+    def trick_complete(self):
         """
         Called at the end of each trick.
 
@@ -82,7 +82,7 @@ class ComputerPlayer:
 
         self.deal.next_trick()
 
-    def bid (self):
+    def bid(self):
         """
         Place a bid during the bidding phase.
 
@@ -92,7 +92,7 @@ class ComputerPlayer:
         #bid = sayc.choose_bid (self.deal.hands[self.seat], self.history)
         #print 'prolog:',self.seat,bid
         bid = self.bidState.evaluate_deal()
-        #print (self.seat,'pybid:',bid)
+        print(self.seat, 'pybid:', bid)
         return bid
         
     
@@ -293,6 +293,13 @@ sayc_respons1_1n = [
      ['4n', 'hcp in 15..16'],
      ['6n', 'hcp in 17..19'],
      ['7n', 'hcp >= 20']],
+    # ['shape_type is semibalanced',
+    #  [' p','hcp <= 7'],
+    #  ['2n', 'hcp in 8..9'],
+    #  ['3n', 'hcp in 10..14'],
+    #  ['4n', 'hcp in 15..16'],
+    #  ['6n', 'hcp in 17..19'],
+    #  ['7n', 'hcp >= 20']],
     ['shape_type is unbalanced',
      ['2s', 'hcp <= 7, s >= 5'],
      ['2h', 'hcp <= 7, h >= 5'],
@@ -432,12 +439,18 @@ class OneHand:
        return response  
 
    def shape_type(self):
-       r = [len(self.suits[x]) for x in sbridge.SUITS]
-       #print 'shape pattern',r
-       r.sort()
-       if r[0] <= 1: return 'unbalanced'
-       if r[1] == 2: return 'semibalanced'
-       return 'balanced'
+       """balanced {($h<5)&&($s<5)&&($s*$s+$h*$h+$d*$d+$c*$c)<=47}
+semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
+       """
+       shape = 'unbalanced'
+       c,d,h,s = [len(self.suits[x]) for x in sbridge.SUITS]
+       if (h<5)and(s<5)and((s*s+h*h+d*d+c*c)<=47): 
+         shape = 'balanced'
+       elif h<=5 and s<=5 and d<=6 and c<=6 and c>=2 and d>=2 and h>=2 and s>=2:
+         # TODO semiblanced result in the same result as balanced, find a way to backtrack
+         shape = 'unbalanced'
+       print('type', c,d,h,s, shape)
+       return shape
    def getLongestSuit(self):
        idx = 0
        slen = 0
@@ -536,13 +549,13 @@ class OneHand:
       if opcode == '==': return (left == right)
       if opcode == 'in':
           minv,maxv = right
-          print('op', [left, minv, maxv, right])
+          #print('op_in', [left, minv, maxv, right])
           return (left >= minv) and (left <= maxv)
       if opcode == 'is': return left == right
       if opcode == 'isnot': return left != right
-      print ('unknown op',left,opcode,right)
+      print('unknown op', left, opcode, right)
 
-#first 8 chars are user for keywords
+# first 8 chars are used for keywords
 BIDSTATE_IDX = {'opening1':0,'opening2':1,'respons1':2,'respons2':3,'openerNextBid':4, 'respons1_1n':2}
 class AIBidStatus:
     ''' Another class record bid history, but interpret as hcp, shape etc. to help bidding and playing'''
@@ -559,6 +572,7 @@ class AIBidStatus:
         self.bid_system = ('sayc','sayc')
         self.hand = OneHand(self)
         self.distributionsScripts = 'main { accept }'
+
     def setOpening(self):
         if self.ai.history == []: return None
         if self.first5[0] is not None: return self.first5[0]
@@ -571,11 +585,13 @@ class AIBidStatus:
                 return (player, bid)
             player = sbridge.seat_next(player)
         return None
+
     def getBid(self, ask):
         if ask == 'respons1': return self.first5[2]
         elif ask == 'respons1_type': return self.first5[2].type()
         elif ask == 'opening1': return self.first5[0][1]
         elif ask == 'opening1_type': return self.first5[0][1].type()
+
     def rcheck2(self,bid,state):
         ''' based on bidding history and biding system rules, find out possible
         rules that are corresponding to the biding''' 
@@ -600,19 +616,20 @@ class AIBidStatus:
                   if mainrule != '':
                       return mainrule+','+onerule[1]
                   return onerule[1]
-              
-
 
     def evaluateBid(self, bid):
+        """
+        Evaluate the bid.
+        """
         heval = self.handsEval[sbridge.seat_prev(self.ai.deal.player)]
         openbid = self.setOpening()
      
         if not bid.is_pass() and not bid.is_double() and not bid.is_redouble():
             self.currentBid = (self.ai.deal.player, bid)
-        if self.ai.seat == sbridge.NORTH:
-            print ('N evaluateBid', str(bid), self.state)
+
+        print('evaluateBid', self.ai.seat, self.ai.deal.player, str(bid), self.state)
         if openbid is None:
-            heval.opening = False            
+            heval.opening = False
         elif openbid is not None and self.state == 'not opened':
             self.state = 'opening1'
             for rule in sayc_opening1:
@@ -623,7 +640,7 @@ class AIBidStatus:
             self.state = 'opening2'
             self.first5[1] = bid
             b = self.first5[0][1].difftype(bid)
-            if self.ai.seat == sbridge.NORTH: print ('opening2',b)
+            if self.ai.seat == sbridge.NORTH: print('opening2',b)
             for rule in sayc_opening2:
                 if str(bid) == rule[0]:
                     heval.accept.append(rule[1])
@@ -643,7 +660,7 @@ class AIBidStatus:
             if self.ai.seat == sbridge.NORTH:
                for p in sbridge.PLAYERS:
                    heval = self.handsEval[p]  
-                   print ('rule', p, heval.accept)
+                   print('rule', p, heval.accept)
             self.generateDealScript()        
         
     def evaluate_deal(self):
@@ -796,7 +813,6 @@ class Translate2Tcl:
             f.append(self.op(left,right,op))
         return ' && '.join(f)
 
-                  
     def get(self, symbol):
        s = self.seat
        if symbol == 'hcp': return '[hcp '+self.seat+']'
@@ -825,7 +841,6 @@ class Translate2Tcl:
       if opcode == 'is': return ' '.join([left, '==', right])
       if opcode == 'isnot': return ' '.join([left, '!=', right])
       print ('unknown op',left,opcode,right)
-                 
 
 
 def dds_solver_api(trump, currentTricks, deal):
@@ -936,7 +951,8 @@ def DealGenerator(ai, player):
     cmd += ' -i '+tempTcl+' 7'
     debug(cmd)
 
-    #TODO popen timeout
+    #TODO popen timeout, means distribuion is not agree with the hand
+    print('deal', player, myseat, ai.deal.dummy, cmd)
     deals = deal2list(os.popen(cmd).read())
     #print str(ai.deal.trick)
     #print('deals', deals)
