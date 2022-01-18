@@ -135,11 +135,12 @@ class App:
         #print('start', self.action)
         if self.action == PLAY_CARD:
             if self.deal.trick is not None:
-                card = self.hand_renderers[self.deal.player].card_at (event.x, event.y)
-                if card is not None and self.deal.legal_card (card):
-                    self.deal.play_card (card)
-                    if self.deal.trick.cards[self.deal.player] is not None:
-                        self.action = CONFIRM_TRICK
+                print('should never come here')
+                # card = self.hand_renderers[self.deal.player].card_at (event.x, event.y)
+                # if card is not None and self.deal.legal_card (card):
+                #     self.deal.play_card (card)
+                #     if self.deal.trick.cards[self.deal.player] is not None:
+                #         self.action = CONFIRM_TRICK
                     #self.update_scores ()
                     #tableau.queue_draw ()
         elif self.action == CONFIRM_TRICK:

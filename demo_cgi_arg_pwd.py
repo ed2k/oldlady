@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-print "Content-type: text/plain\n"
+print("Content-type: text/plain\n")
 import sys
 #print sys.version
 
@@ -14,9 +14,9 @@ import cgitb; cgitb.enable()
 #cgi.print_environ_usage()
 form = cgi.FieldStorage()
 msg = form.getvalue('flproxyB','')
-print '--svrcv',msg
+print('--svrcv',msg)
 
 import os
 cmd = 'pwd'
 r = os.popen(cmd).read() 
-print r
+print(r)
