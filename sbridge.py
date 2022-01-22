@@ -451,16 +451,19 @@ class Deal:
             print('dealer',self.dealer,'player',self.player, 'dummy',self.dummy,'declarer',self.declarer,'contract',self.contract)
         else:
             self.contract = Bid (PASS)
-    def finishBidding(self): return self.trick is not None
-    def finishTrick(self):return self.trick.cards[self.player] is not None
-    def legal_card (self, card):
+    def finishBidding(self):
+        return self.trick is not None
+
+    def finishTrick(self):
+        return self.trick.cards[self.player] is not None
+
+    def legal_card(self, card):
         """
         Check whether a card is legal to play in the current trick.
         """
-
         return self.trick.lead is None or (self.trick.lead == card.suit) or len ([c for c in self.hands[self.player] if c.suit == self.trick.lead]) == 0
 
-    def play_card (self, card):
+    def play_card(self, card):
         """
         Play a card in the current trick.
         """
