@@ -17,6 +17,7 @@ class App:
     def __init__ (self):
         self.ais = [sAi.ComputerPlayer(seat) for seat in sbridge.PLAYERS]
         self.start_next_rubber ()
+        self.action = None
 
     def distribute_deal(self):
         # clone deal to show AI only its own hand        
@@ -37,19 +38,14 @@ class App:
         print('-'*80)
         print([floater_client.o2pbn_hand(self.deal.hands[s]) for s in sbridge.PLAYERS])
 
-        self.play_for_ais ()
-        #self.update_scores ()
-
     def start_next_rubber (self):
         """
         Start playing for a new rubber.
         """
+        self.rubber = sbridge.Rubber(sbridge.WEST)
+        self.start_next_deal()
 
-        self.rubber = sbridge.Rubber (sbridge.WEST)
-        self.start_next_deal ()
-
-
-    def update_scores (self):
+    def update_scores(self):
         """
         Update the displays of scores and tricks taken.
         """
@@ -63,7 +59,7 @@ class App:
             'Tricks WE', self.deal.tricks_taken[sbridge.WEST_EAST],
             'NS',self.deal.tricks_taken[sbridge.NORTH_SOUTH])
         
-    def play_for_ais (self):
+    def play_for_ais(self):
         """
         Have the AIs make their moves, continuing until it is the human
         player's turn again.  If the human is dummy, he will still need
@@ -121,9 +117,9 @@ class App:
                 self.start_next_deal ()
                 self.action = None
         elif self.action == CONFIRM_GAME:
-            self.messages = self.rubber.score_rubber ()
+            self.messages = self.rubber.score_rubber()
             #self.update_scores ()
-            if len (self.messages) > 0:
+            if len(self.messages) > 0:
                 self.action = CONFIRM_RUBBER
             else:
                 self.start_next_deal ()
@@ -133,7 +129,7 @@ class App:
             self.action = None
 
         if self.action is None:
-            self.play_for_ais ()
+            self.play_for_ais()
 
 
 if __name__ == "__main__":

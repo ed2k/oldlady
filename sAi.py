@@ -17,6 +17,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02111-1301, USA.
 
+import importlib
 import sbridge
 from sbridge import *
 import bidding
@@ -206,167 +207,6 @@ def hcp(hand):
    return h
 def shape(hand): return 0
 
-# bidding tree,
-# 1. given rule find the bidding
-# 2. given bidding find the rule
-sayc_opening1= [['1n','hcp in 16..18, shape_type is balanced'],
-    ['1s','hcp in 13..21, s > h, s >= 5'],
-    ['1h','hcp in 13..21, h >= 5,h >= s'],
-    ['1d','hcp in 13..21, s < 5,h < 5,d >= 3, d > c'],
-    ['1c','hcp in 13..21, s < 5,h < 5,c >= 3, c >= d'],
-    ['2n','hcp in 22..24, shape_type is balanced'],
-    ['3n','hcp in 25..27, shape_type is balanced'],
-    ['2c','hcp >= 22'],
-    ['2d','hcp in 6..10, d == 6'],
-    ['2h','hcp in 6..10, h == 6'],
-    ['2s','hcp in 6..10, s == 6'],
-    ['3c','hcp < 13, c == 7'],
-    ['3d','hcp < 13, d == 7'],
-    ['3h','hcp < 13, h == 7'],
-    ['3s','hcp < 13, s == 7'],               
-    ['rule of two and three','hcp < 13, longest >= 7'],
-    ['game in hand', 'hcp+shortage+length >= 26'],
-    ]
-sayc_opening2=[[' x','hcp >= 16'],
-               [' x','opening1_type is 1major','hcp >= 12, suit < 4'],
-               [' x','opening1_type is 1minor','hcp >= 12, suit < 4'],
-               ['new0','hcp in 9..16, newsuit0 >= 5'],
-               ['new','hcp in 11..16, newsuit >= 5'],
-               ['jumpshift', 'opening1_type isnot nt, hcp in 6..10, newsuit >= 6'],
-               ]
-''' short means the length of shortest suit, long means the lenght of longest suit
-      suit the one in opening bid
-      newsuit0 means if bid only in same level (c -> dhs, d -> hs)
-for easy implementation to find bidding from rule, branch rules are from bidding history,
-not from hand distribution
-      '''
-sayc_respons1= [
-    ['opening1_type is 1major',
-     ['+1','hcp+shortage in 6..10, suit >= 3'],
-     ['+2','hcp+shortage >= 13,suit >= 3'],
-     ['1n','hcp in 6..10'],
-     ['2c','hcp in 6..18, c >= 4'],
-     ['2d','hcp in 6..18, d >= 4'],
-     ['2h','opening1 is 1s, hcp in 11..18, h >= 5'],
-     ['1s','opening1 is 1h, hcp in 6..18, s >= 4'],
-     ['+3','hcp+shortage in 6..10, suit >= 4, shape_type is unbalanced'],
-     ['jumpshift','hcp >= 19'],
-     ['new','hcp in 11..12'],
-     ],
-    ['opening1_type is 1minor',
-     ['+1','hcp+shortage in 6..10, suit >= 5, len_major < 4'],
-     ['+2','hcp+shortage in 11..12, suit >= 5, len_major < 4'],     
-     ['1d','opening1 is 1c, hcp in 6..18, d >= 4'],
-     ['1h','opening1 is 1c, hcp in 6..18, h >= 4'],
-     ['1s','opening1 is 1c, hcp in 6..18, s >= 4'],
-     ['1h','opening1 is 1d, hcp in 6..18, h >= 4'],
-     ['1s','opening1 is 1d, hcp in 6..18, s >= 4'],
-     ['1n','hcp in 6..10'],   
-     ['2n','opening1_type is 1minor, hcp in 13..15, shape_type is balanced'],
-     ['3n','opening1_type is 1minor, hcp in 16..18, shape_type is balanced'],          
-     ['2d','opening1 is 1d, hcp in 6..10, d >= 4'],
-     ['2c','opening1 is 1c, hcp in 6..10, c >= 5'],
-     ['2d','opening1 is 1d, hcp >= 13, d >= 4'],
-     ['2c','opening1 is 1c, hcp >= 13, c >= 5'],
-     ['new','hcp in 11..12'],
-     ['jumpshift','hcp >= 19'],     
-     ],
-    ['opening1 is 1n', 'refer respons1_1n'],
-    ['opening1 is 2c',
-     ['2d','hcp <= 7'] , ['2n','hcp >= 8, s < 5, h < 5, d < 5, c < 5'],
-     ['2s' , 'hcp >= 8, s >= 5'], ['2h' ,'hcp >= 8, h >=  5'],
-     ['3c' , 'hcp >= 8, c >= 5'], ['3d' ,'hcp >= 8, d >=  5']],
-    ['opening1_type is 2d',
-     ['3d', 'hcp < 10, d >= 3']],
-    ['opening1_type is 2major',
-     ['2n', 'hcp > 10']],
-    ['opening1_type is 3minor',
-     ['+2', 'hcp in 13..15'], ['+3', 'hcp in 16..20'], ['+4', 'hcp > 20']],
-    ['opening1_type is 3major',
-     ['+1', 'hcp in 13..15'], ['+3', 'hcp in 16..20'], ['+4', 'hcp > 20']],
-    ]
-sayc_respons1_1n = [
-    ['shape_type is balanced',
-     [' p','hcp <= 7'],
-     ['2n', 'hcp in 8..9'],
-     ['3n', 'hcp in 10..14'],
-     ['4n', 'hcp in 15..16'],
-     ['6n', 'hcp in 17..19'],
-     ['7n', 'hcp >= 20']],
-    # ['shape_type is semibalanced',
-    #  [' p','hcp <= 7'],
-    #  ['2n', 'hcp in 8..9'],
-    #  ['3n', 'hcp in 10..14'],
-    #  ['4n', 'hcp in 15..16'],
-    #  ['6n', 'hcp in 17..19'],
-    #  ['7n', 'hcp >= 20']],
-    ['shape_type is unbalanced',
-     ['2s', 'hcp <= 7, s >= 5'],
-     ['2h', 'hcp <= 7, h >= 5'],
-     ['2d', 'hcp <= 8, d >= 5'],
-     ['2d','hcp <= 8, c >= 5'],
-     ['2c', 'hcp >= 8, len_major >= 4'],
-     ['3_', 'hcp >= 9, longest >= 5'],
-     ['6_', 'hcp in 17..19, longest >= 6'],
-     ['7_', 'hcp >= 21, longest >= 6'],
-     ['game', 'hcp >= 9, longest >= 6']],
-    ['len_major >= 5', 'case 1'],
-    ['len_minor >= 5', 'case 0'],
-    ]
-sayc_respons2 = [['new','hcp > 20']]
-sayc_openerNextBid = [
-    ['opening1_type is 1major, respons1_type is 2major',
-     ['+1','respons1_type is +1, hcp+shortage in 16..18'],
-     ['+2','respons1_type is +1, hcp+shortage in 19..21']],
-    ['opening1_type is 1major, respons1_type is 3s',
-     ['+1','respons1_type is +2, hcp+shortage in 13..15'],
-     ['+2','respons1_type is +2, hcp+shortage in 16..18'],
-     ['+3','respons1_type is +2, hcp+shortage in 19..21']],
-    ['opening1_type is 1major, respons1 is 1n',
-     ['new','hcp in 13..15, shape is unbalanced'],
-     ['2n','hcp in 16..18'],
-     ['3_','hcp+shortage in 16..18'],
-     ['3n','hcp in 19..21'],
-     ['4_','hcp+shortage in 19..21']],
-    ['opening1_type is 1major, respons1 is 2n',
-     ['3n','hcp in 13..17'],
-     ['4_','hcp+shortage in 13..18'],  
-     ['5n','hcp in 18..19'],
-     ['6n','hcp in 20..21'],
-     ['6_','hcp+shortage in 19..21']],
-    ['opening1_type is 1major, respons1 is 3n',
-     ['5n','hcp in 15..16'],
-     ['4_','hcp+shortage in 13..15'],  
-     ['5n','hcp in 18..19'],
-     ['6n','hcp in 20..21'],
-     ['6_','hcp+shortage in 19..21']],
-    ['opening1_type is 1minor, respons1_type is 2major',
-     ['+1','respons1_type is +1, hcp+shortage in 16..18'],
-     ['+2','respons1_type is +1, hcp+shortage in 19..21']],
-    ['opening1_type is 1major, respons1_type is 3s',
-     ['+1','respons1_type is +2, hcp+shortage in 13..15'],
-     ['+2','respons1_type is +2, hcp+shortage in 16..18'],
-     ['+3','respons1_type is +2, hcp+shortage in 19..21']],
-    ['opening1_type is 1major, respons1 is 1n',
-     ['new','hcp in 13..15, shape is unbalanced'],
-     ['2n','hcp in 16..18'],
-     ['3_','hcp+shortage in 16..18'],
-     ['3n','hcp in 19..21'],
-     ['4_','hcp+shortage in 19..21']],
-    ['opening1_type is 1major, respons1 is 2n',
-     ['3n','hcp in 13..17'],
-     ['4_','hcp+shortage in 13..18'],  
-     ['5n','hcp in 18..19'],
-     ['6n','hcp in 20..21'],
-     ['6_','hcp+shortage in 19..21']],
-    ['opening1_type is 1major, respons1 is 3n',
-     ['5n','hcp in 15..16'],
-     ['4_','hcp+shortage in 13..15'],  
-     ['5n','hcp in 18..19'],
-     ['6n','hcp in 20..21'],
-     ['6_','hcp+shortage in 19..21']],    
-    ]
-
 
 class OneHand:
    '''
@@ -496,14 +336,18 @@ semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
       #print 'got',ruleseqs   
       return True
    def checkAndReturn(self, state):
-       bidsys = self.ai.bidState.bid_system[sbridge.team(self.ai.deal.player)]
-       ruleseqs = getattr(sAi,bidsys+'_'+state)
+       team = sbridge.team(self.ai.deal.player)
+       bm = self.ai.bidState
+       bidsys = bm.bid_system[team]
+       ruleseqs = getattr(bm.bid_sys_m[team], bidsys+'_'+state)
        for rule in ruleseqs:
            if self.check(rule[1]): return rule[0]
        return ' p'
    def check2(self, state):
-      bidsys = self.ai.bidState.bid_system[sbridge.team(self.ai.deal.player)]
-      rules = getattr(sAi, bidsys+'_'+state)       
+      bm = self.ai.bidState
+      team = sbridge.team(self.ai.deal.player)
+      bidsys = bm.bid_system[team]
+      rules = getattr(bm.bid_sys_m[team], bidsys+'_'+state)       
       for rule in rules:
           if not self.check(rule[0]): continue
           if type(rule[1]) == type(''):
@@ -569,7 +413,12 @@ class AIBidStatus:
         # not pass, double
         self.currentBid = None
         self.state = 'not opened'
-        self.bid_system = ('sayc','sayc')
+        self.bid_system = ('sayc', 'mynew')
+        self.bid_sys_m = [None] * 2
+        for idx in range(len(self.bid_sys_m)):
+            bidsys = self.bid_system[idx]
+            self.bid_sys_m[idx] = importlib.import_module(f'bidsys_{bidsys}')
+
         self.hand = OneHand(self)
         self.distributionsScripts = 'main { accept }'
 
@@ -594,9 +443,10 @@ class AIBidStatus:
 
     def rcheck2(self,bid,state):
         ''' based on bidding history and biding system rules, find out possible
-        rules that are corresponding to the biding''' 
-        bidsys = self.bid_system[sbridge.team(sbridge.seat_prev(self.ai.deal.player))]
-        rules = getattr(sAi, bidsys+'_'+state)
+        rules that are corresponding to the biding'''
+        team = sbridge.team(sbridge.seat_prev(self.ai.deal.player))
+        bidsys = self.bid_system[team]
+        rules = getattr(self.bid_sys_m[team], bidsys+'_'+state)
         b = self.first5[0][1].difftype(bid)
         for rule in rules:
           mainrule = ''
@@ -621,7 +471,12 @@ class AIBidStatus:
         """
         Evaluate the bid.
         """
-        heval = self.handsEval[sbridge.seat_prev(self.ai.deal.player)]
+        prev_player = sbridge.seat_prev(self.ai.deal.player)
+        team = sbridge.team(prev_player)
+        bidsys = self.bid_system[team]
+        rule_opening1 = getattr(self.bid_sys_m[team], bidsys+'_opening1')
+        rule_opening2 = getattr(self.bid_sys_m[team], bidsys+'_opening2')
+        heval = self.handsEval[prev_player]
         openbid = self.setOpening()
      
         if not bid.is_pass() and not bid.is_double() and not bid.is_redouble():
@@ -632,7 +487,7 @@ class AIBidStatus:
             heval.opening = False
         elif openbid is not None and self.state == 'not opened':
             self.state = 'opening1'
-            for rule in sayc_opening1:
+            for rule in rule_opening1:
                 if str(bid) == rule[0]:
                     heval.accept.append(rule[1])
                     break
@@ -641,7 +496,7 @@ class AIBidStatus:
             self.first5[1] = bid
             b = self.first5[0][1].difftype(bid)
             if self.ai.seat == sbridge.NORTH: print('opening2',b)
-            for rule in sayc_opening2:
+            for rule in rule_opening2:
                 if str(bid) == rule[0]:
                     heval.accept.append(rule[1])
                     break
