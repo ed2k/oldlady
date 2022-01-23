@@ -187,3 +187,20 @@ r='''
        hcp in 17..18, support >= 4 -> +1
        
       '''
+'''
+   define: balanced, semi-balance, un-balance
+   opening bids,
+   hcp=22+, 2NT hcp=22-24 shape=balanced
+        3NT hcp=25-27 shape=balanced
+        2C else
+   hcp=0-12, 2x hcp=6-10, len=6x (x=DHS)
+         3x (up to 5D), len=7+ (rule of two and three?)
+         Pass else
+   hcp=13-21, 1NT hcp=16-18 shap=balanced
+          1H/S, len=5+, the longest, (if the same len, 1H)
+          1D, len=4+
+          1C, len=2+
+          
+   hcp=9+, len=5+ Overcall
+   takeout double, hcp=12+, len(enemysuit)=short
+'''

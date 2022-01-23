@@ -79,21 +79,7 @@ class App:
                 self.deal.bid(bid)
                 # check if bidding is over
                 if self.deal.finishBidding():
-                    # show dummy hand to declarer
-                    tm = self.deal
-                    self.ais[tm.declarer].deal.hands[tm.dummy] = tm.hands[tm.dummy][:]
-                    p = sbridge.seat_prev(tm.declarer)
-                    self.ais[p].deal.hands[tm.dummy] = tm.hands[tm.dummy][:]
-                    # dummy no need to think
-                    self.ais[tm.dummy].deal.hands[tm.dummy] = None
-                    p = sbridge.seat_next(tm.declarer)
-                    # play frist card
-                    card = self.ais[p].play_self()
-                    # show dummy to leader
-                    self.ais[p].deal.hands[tm.dummy] = tm.hands[tm.dummy][:]
-                    # notify all players
-                    for ai in self.ais: ai.deal.play_card(card)
-                    self.deal.play_card(card)
+                    print('finish bidding')
             else:
                 #print('dds play trick')
                 #self.update_scores ()

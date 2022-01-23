@@ -21,12 +21,10 @@ import importlib
 from typing import List
 import sbridge
 from sbridge import *
-import bidding
-import sAi
 import os
 import defs
     
-#sayc = bidding.Bidding ()
+
 def debug(s, level = 0):
     #if not defs.testing: return
     #print('sai:',s)
@@ -35,17 +33,16 @@ def debug(s, level = 0):
 class ComputerPlayer:
     """
     A computer player.
-
-    Currently, the AI is dumb as rocks, but it'll at least play by the rules.
     """
     bidState = None
-    def __init__ (self, seat):
+    def __init__(self, seat):
         self.algorithm = 'debug'
         self.seat = seat
         self.rubber = None
-        self.deal = None
+        self.deal: sbridge.Deal = None
         self.history = []
-    def new_deal (self, deal):
+
+    def new_deal(self, deal):
         """
         Reset the computer player's state for a new deal.
 
@@ -66,12 +63,13 @@ class ComputerPlayer:
 
     def bid_made(self, bid):
         """
-        Called after each bid is placed.
+        Called after each bid is placed. get notified of bid from others
         """
         self.deal.bid(bid)
         self.history.insert(0, bid)
         # relys on the history to find out the opening
-        if self.deal.finishBidding() and self.seat == self.deal.dummy: return
+        if self.deal.finishBidding() and self.seat == self.deal.dummy:
+            return
         self.bidState.evaluateBid(bid)
         
     def trick_complete(self):
@@ -81,24 +79,19 @@ class ComputerPlayer:
         This should be used as part of keeping track of which cards have
         been played, but for now, does nothing.
         """
-
         self.deal.next_trick()
 
     def bid(self):
         """
         Place a bid during the bidding phase.
-
-        Currently, this just passes all the time.  Eventually, it will use
-        an actual, usable bidding strategy....
         """
         #bid = sayc.choose_bid (self.deal.hands[self.seat], self.history)
         #print 'prolog:',self.seat,bid
         bid = self.bidState.evaluate_deal()
-        print(self.seat, 'pybid:', bid)
-        return bid
-        
+        print(self.seat, 'ai_bid:', bid)
+        return bid       
     
-    def play_self (self):
+    def play_self(self):
         """
         Play a card from the AI's own hand during a trick.
         """
@@ -218,24 +211,6 @@ def shape(hand):
 
 
 class OneHand:
-   '''
-   define: balanced, semi-balance, un-balance
-   opening bids,
-   hcp=22+, 2NT hcp=22-24 shape=balanced
-        3NT hcp=25-27 shape=balanced
-        2C else
-   hcp=0-12, 2x hcp=6-10, len=6x (x=DHS)
-         3x (up to 5D), len=7+ (rule of two and three?)
-         Pass else
-   hcp=13-21, 1NT hcp=16-18 shap=balanced
-          1H/S, len=5+, the longest, (if the same len, 1H)
-          1D, len=4+
-          1C, len=2+
-          
-   hcp=9+, len=5+ Overcall
-   takeout double, hcp=12+, len(enemysuit)=short
-   
-   '''
    def __init__(self, bids):
       self.ai = bids.ai
       self.bidState = bids
@@ -363,16 +338,19 @@ semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
       bidsys = bm.bid_system[team]
       rules = getattr(bm.bid_sys_m[team], bidsys+'_'+state)       
       for rule in rules:
-          if not self.check(rule[0]): continue
+          if not self.check(rule[0]):
+              continue
+          print('check2', bidsys, state, rule[1])
           if type(rule[1]) == type(''):
               if rule[1][:4] == 'case':
                   rule = rules[int(rule[1][-1])]
                   for onerule in rule[1:]:
-                      if self.check(onerule[1]): return onerule[0]
+                      if self.check(onerule[1]):
+                          return onerule[0]
               elif rule[1][:5] == 'refer':
                   return self.check2(rule[1].split()[1])
               else:
-                  print('unknown item',rule)
+                  print('unknown item', rule)
               
           for onerule in rule[1:]:
               if self.check(onerule[1]): return onerule[0]
@@ -400,6 +378,7 @@ semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
        try:
            return int(symbol)
        except: return symbol
+
    def op(self, left, right, opcode):
       if opcode == '<': return (left < right)
       if opcode == '>': return (left > right)
@@ -414,15 +393,15 @@ semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
       if opcode == 'isnot': return left != right
       print('unknown op', left, opcode, right)
 
+
 # first 8 chars are used for keywords
 BIDSTATE_IDX = {'opening1':0,'opening2':1,'respons1':2,'respons2':3,'openerNextBid':4, 'respons1_1n':2}
 class AIBidStatus:
     """ Another class record bid history, but interpret as hcp, shape etc. to help bidding and playing
     opening2 means the overcall to the RHO opening bid
     """
-    
     def __init__(self, ai):
-        self.ai = ai
+        self.ai:ComputerPlayer = ai
         self.handsEval = []
         for p in sbridge.PLAYERS:
             self.handsEval.append(HandEvaluation())
@@ -430,7 +409,7 @@ class AIBidStatus:
         # not pass, double
         self.currentBid = None
         self.state = 'not opened'
-        self.bid_system = ('btc2k', 'mynew')
+        self.bid_system = ('mynew', 'btc2k')
         self.bid_sys_m = [None] * 2
         for idx in range(len(self.bid_sys_m)):
             bidsys = self.bid_system[idx]
@@ -536,21 +515,26 @@ class AIBidStatus:
             self.generateDealScript()        
         
     def evaluate_deal(self):
-       ''' find the proper bid
+       """ find the proper bid
        hand, in suit order
        print hcp, shape, estimate partner and opponents
-       '''
+       map bid sequence to state symbols
+       TODO: how to detect cuebid and other convertions
+       """
        deal = self.ai.deal
-
+       print('evaluate_deal', deal.player, [str(b) for b in self.ai.history])
        #mysuits = hand2suits(hand)
-       if deal.trick is not None:           return
+       if deal.trick is not None:
+           return
        #print 'HCP', self.hand.hcp()
        bid = ' p'
        openbid = self.first5[0]
        #determine bid state, opening, opening2, respons1, respons2
        # openerNextBid, Stayman, blackwood, jacob
        if self.state == 'not opened': bid = self.hand.opening()
-       elif self.state == 'opening2': bid = self.hand.response1(openbid[1])
+       elif self.state == 'opening2':
+           # TODO if there is interference, call intres1
+           bid = self.hand.response1(openbid[1])
        elif self.state == 'opening1':  bid = self.hand.opening2(openbid[1])
        elif self.state == 'respons1': bid = self.hand.response2()
        elif self.state == 'respons2': bid = self.hand.openerNextBid()

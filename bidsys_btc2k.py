@@ -3,7 +3,7 @@ bid system
 name_state variables
 TODO, get all blue team clubs conventions in code
 ex: controls A=2 K=1, canape, distribution
-
+inteference of opening1
 """
 
 btc2k_opening1= [
@@ -53,16 +53,14 @@ btc2k_respons1= [
      ['new','hcp in 11..12'],
      ],
     ['opening1_type is 1minor',
-     ['+1','hcp+shortage in 6..10, suit >= 5, len_major < 4'],
-     ['+2','hcp+shortage in 11..12, suit >= 5, len_major < 4'],     
-     ['1d','opening1 is 1c, hcp < 7'],
+     ['1d','opening1 is 1c, hcp < 7, controls <= 2'],
      ['1h','opening1 is 1c, hcp >= 7, controls <= 2'], # TODO GF
-     ['1s','opening1 is 1c, controls in 3..3'],  # TODO not sure show 3-6 controls mean
-     ['2c','opening1 is 1c, controls in 4..4'],  # other responses show particular 1-suiters,
-     ['2d','opening1 is 1c, controls in 5..6'], # some weak some strong
+     ['1s','opening1 is 1c, controls in 3..3'],
+     ['1n','opening1 is 1c, controls in 4..4'],
+     ['2c','opening1 is 1c, controls in 5..5'],
+     ['2d','opening1 is 1c, controls in 6..6'],
      ['1h','opening1 is 1d, hcp in 6..18, h >= 4'],
      ['1s','opening1 is 1d, hcp in 6..18, s >= 4'],
-     ['1n','hcp in 6..10'],   
      ['2n','opening1_type is 1minor, hcp in 13..15, shape_type is balanced'],
      ['3n','opening1_type is 1minor, hcp in 16..18, shape_type is balanced'],          
      ['2d','opening1 is 1d, hcp in 6..10, d >= 4'],
