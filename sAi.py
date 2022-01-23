@@ -18,6 +18,7 @@
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02111-1301, USA.
 
 import importlib
+from typing import List
 import sbridge
 from sbridge import *
 import bidding
@@ -200,12 +201,20 @@ def hand2suits(hand):
    return suits
 
 
-def hcp(hand):
+def hcp(hand: List[Card]):
    h = 0
    for c in hand:
        h += c.hcp()
    return h
-def shape(hand): return 0
+
+def controls(hand: List[Card]):
+   h = 0
+   for c in hand:
+       h += c.controls()
+   return h
+
+def shape(hand):
+    return 0
 
 
 class OneHand:
@@ -232,7 +241,12 @@ class OneHand:
       self.bidState = bids
       self.hand = self.ai.deal.hands[self.ai.seat]
       self.suits = hand2suits(self.hand)
-   def hcp(self): return hcp(self.hand)
+   def hcp(self):
+       return hcp(self.hand)
+
+   def controls(self):
+       return controls(self.hand)
+
    def shortage(self):
        points = 0
        for s in sbridge.SUITS:
@@ -366,6 +380,7 @@ semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
                   
    def get(self, symbol):
        if symbol == 'hcp': return self.hcp()
+       if symbol == 'controls': return self.controls()
        if symbol == 'longest':return self.longest()
        if symbol == 'newsuit':return self.newsuit(self.bidState.currentBid[1])
        if symbol == 'newsuit0': return self.newsuit0(self.bidState.currentBid[1])
@@ -402,7 +417,9 @@ semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
 # first 8 chars are used for keywords
 BIDSTATE_IDX = {'opening1':0,'opening2':1,'respons1':2,'respons2':3,'openerNextBid':4, 'respons1_1n':2}
 class AIBidStatus:
-    ''' Another class record bid history, but interpret as hcp, shape etc. to help bidding and playing'''
+    """ Another class record bid history, but interpret as hcp, shape etc. to help bidding and playing
+    opening2 means the overcall to the RHO opening bid
+    """
     
     def __init__(self, ai):
         self.ai = ai
@@ -413,7 +430,7 @@ class AIBidStatus:
         # not pass, double
         self.currentBid = None
         self.state = 'not opened'
-        self.bid_system = ('sayc', 'mynew')
+        self.bid_system = ('btc2k', 'mynew')
         self.bid_sys_m = [None] * 2
         for idx in range(len(self.bid_sys_m)):
             bidsys = self.bid_system[idx]
@@ -482,7 +499,7 @@ class AIBidStatus:
         if not bid.is_pass() and not bid.is_double() and not bid.is_redouble():
             self.currentBid = (self.ai.deal.player, bid)
 
-        print('evaluateBid', self.ai.seat, self.ai.deal.player, str(bid), self.state)
+        #print('evaluateBid', self.ai.seat, self.ai.deal.player, str(bid), self.state)
         if openbid is None:
             heval.opening = False
         elif openbid is not None and self.state == 'not opened':
@@ -495,7 +512,7 @@ class AIBidStatus:
             self.state = 'opening2'
             self.first5[1] = bid
             b = self.first5[0][1].difftype(bid)
-            if self.ai.seat == sbridge.NORTH: print('opening2',b)
+            if self.ai.seat == sbridge.NORTH: print('opening2', b)
             for rule in rule_opening2:
                 if str(bid) == rule[0]:
                     heval.accept.append(rule[1])
@@ -624,28 +641,7 @@ class HandEvaluation:
         self.accept = []
         self.reject = []
 
-r='''
-      if self.check(['hcp <= 9', 'long >= 5', 'short <= 1']): return '1'
-      if self.check(['hcp >= 6','c < 5','d >= 4','h < 4','s < 4','opening1 == 1c']): return 'id'
 
-       opening1 == minor, hcp >= 6, h == 4, h >= s -> 1h
-       opening1 == minor, hcp >= 6, h > 4, h > s -> 1h
-       opening1 == minor, hcp >= 6, s >= 4, s >= h -> 1s
-       opening1 == minor, hcp >= 6, s == 4, h < 4 -> 1s
-       opening1 == 1h, hcp >= 6, h < 3, s >= 4 -> 1s
-       deny-opener-support openning ==  major, suit < 3
-               or suit < 5
-       denom_lt opening1 == 1, hcp >= 11, deny-opener-support, long >= 4 -> new at 2
-       denom_lt opening1 == 1, hcp >= 19, deny-opener-support, long > 5 -> new at 2
-       hcp in 6..10, deny_opener_support long < 4 -> 1n
-       hcp >= 13 -> 2n jacoby_2n
-       hcp in 15..17, balanced, suit >= 2 -> 3n
-
-       rebid: support is the suit partner bid previously
-       hcp in 13..16, support >= 4 -> +1
-       hcp in 17..18, support >= 4 -> +1
-       
-      '''
 class Translate2Tcl:
     def __init__(self, bids, player):
         self.seat = ['north','east','south','west'][player]
@@ -671,6 +667,7 @@ class Translate2Tcl:
     def get(self, symbol):
        s = self.seat
        if symbol == 'hcp': return '[hcp '+self.seat+']'
+       if symbol == 'controls': return '[controls '+self.seat+']'
        if symbol == 'longest':return self.longest()
        if symbol == 'newsuit':return self.newsuit(self.bidState.currentBid[1])
        if symbol == 'newsuit0': return self.newsuit0(self.bidState.currentBid[1])

@@ -66,13 +66,13 @@ class App:
         to confirm each trick.
         """
         while True:
-            print('ai')
+            # print('ai')
             if self.deal.contract is not None and self.deal.contract.is_pass ():
                 self.messages = [_("Deal abandoned; all players passed")]
                 self.action = CONFIRM_DEAL
                 return
             elif self.deal.trick is None:
-                print("bidding")
+                #print("bidding")
                 bid = self.ais[self.deal.player].bid()
                 for ai in self.ais:
                     ai.bid_made(bid)
@@ -95,14 +95,14 @@ class App:
                     for ai in self.ais: ai.deal.play_card(card)
                     self.deal.play_card(card)
             else:
-                print('dds play trick')
+                #print('dds play trick')
                 #self.update_scores ()
                 self.action = CONFIRM_GAME
                 return
 
 
     def run(self):
-        print('start', self.action)
+        #print('start', self.action)
         if self.action == CONFIRM_DEAL:
             if not self.deal.contract.is_pass():
                 self.messages = self.rubber.score_game()

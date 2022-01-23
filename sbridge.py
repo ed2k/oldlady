@@ -192,8 +192,8 @@ class Card:
     A single playing card.
     """
     def __init__(self, suit, rank):
-        self.suit = suit
-        self.rank = rank
+        self.suit = suit # 0-3
+        self.rank = rank # 2-14
 
     def __str__(self):
         return rank_to_string(self.rank) + denomination_to_string(self.suit)
@@ -206,6 +206,13 @@ class Card:
 
     def hcp(self):
         if self.rank > 10: return self.rank-10
+        return 0
+    
+    def controls(self):
+        if self.rank == 14: # Ace
+            return 2
+        elif self.rank == 13: # King
+            return 1
         return 0
 
 KIDX = {'c':0,'d':1,'h':2,'s':3,'n':4}

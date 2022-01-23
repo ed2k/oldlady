@@ -1,44 +1,45 @@
 """
-bid system tree
+bid system 
 name_state variables
-TODO, variation opening on 3rd, 4th seat
-TODO, slam bidding
-TODO, overcalls
+TODO, get all blue team clubs conventions in code
+ex: controls A=2 K=1, canape, distribution
+
 """
 
-sayc_opening1= [['1n','hcp in 15..17, shape_type is balanced'],
-    ['1s','hcp in 13..22, s > h, s >= 5'],
-    ['1h','hcp in 13..22, h >= 5,h >= s'],
-    ['1d','hcp in 13..22, s < 5,h < 5,d >= 3, d > c'],
-    ['1c','hcp in 13..22, s < 5,h < 5,c >= 3, c >= d'],
-    ['2n','hcp in 20..21, shape_type is balanced'],
+btc2k_opening1= [
+    ['1n','hcp in 15..17, shape_type is balanced'],  # TODO 5422 solid doubleton in the majors
+    ['1s','hcp in 12..16, s > h, s >= 5'],
+    ['1h','hcp in 12..16, h >= 5,h >= s'],
+    ['1d','hcp in 12..16, s < 5,h < 5,d >= 3, d > c'],
+    ['1c','hcp >= 17'], # TODO how to express forcing
+    ['2n','hcp in 22..24, shape_type is balanced'],
     ['3n','hcp in 25..27, shape_type is balanced'],
-    ['2c','hcp >= 22'],  # TODO or 9 tricks
-    ['2d','hcp in 5..11, d == 6'],
-    ['2h','hcp in 5..11, h == 6'],
-    ['2s','hcp in 5..11, s == 6'],
-    ['3c','hcp in 5..11, c == 7'],
-    ['3d','hcp in 5..11, d == 7'],
-    ['3h','hcp in 5..11, h == 7'],
-    ['3s','hcp in 5..11, s == 7'],
-    ['4c','hcp in 5..11, c == 8'], # TODO 4+ opening for 7+ card suit, also consider vulnarable
+    ['2c','hcp >= 22'],
+    ['2d','hcp in 6..10, d == 6'],
+    ['2h','hcp in 6..10, h == 6'],
+    ['2s','hcp in 6..10, s == 6'],
+    ['3c','hcp < 13, c == 7'],
+    ['3d','hcp < 13, d == 7'],
+    ['3h','hcp < 13, h == 7'],
+    ['3s','hcp < 13, s == 7'],               
     ['rule of two and three','hcp < 13, longest >= 7'],
     ['game in hand', 'hcp+shortage+length >= 26'],
     ]
-sayc_opening2=[[' x','hcp >= 16'],
-               [' x','opening1_type is 1major','hcp >= 12, suit < 4'],
-               [' x','opening1_type is 1minor','hcp >= 12, suit < 4'],
-               ['new0','hcp in 9..16, newsuit0 >= 5'],
-               ['new','hcp in 11..16, newsuit >= 5'],
-               ['jumpshift', 'opening1_type isnot nt, hcp in 6..10, newsuit >= 6'],
-               ]
+btc2k_opening2=[
+    [' x','hcp >= 16'],
+    [' x','opening1_type is 1major','hcp >= 12, suit < 4'],
+    [' x','opening1_type is 1minor','hcp >= 12, suit < 4'],
+    ['new0','hcp in 9..16, newsuit0 >= 5'],
+    ['new','hcp in 11..16, newsuit >= 5'],
+    ['jumpshift', 'opening1_type isnot nt, hcp in 6..10, newsuit >= 6'],
+]
 """ short means the length of shortest suit, long means the lenght of longest suit
       suit the one in opening bid
       newsuit0 means if bid only in same level (c -> dhs, d -> hs)
 for easy implementation to find bidding from rule, branch rules are from bidding history,
 not from hand distribution
       """
-sayc_respons1= [
+btc2k_respons1= [
     ['opening1_type is 1major',
      ['+1','hcp+shortage in 6..10, suit >= 3'],
      ['+2','hcp+shortage >= 13,suit >= 3'],
@@ -54,18 +55,18 @@ sayc_respons1= [
     ['opening1_type is 1minor',
      ['+1','hcp+shortage in 6..10, suit >= 5, len_major < 4'],
      ['+2','hcp+shortage in 11..12, suit >= 5, len_major < 4'],     
-     ['1d','opening1 is 1c, hcp in 6..18, d >= 4'],
-     ['1h','opening1 is 1c, hcp in 6..18, h >= 4'],
-     ['1s','opening1 is 1c, hcp in 6..18, s >= 4'],
+     ['1d','opening1 is 1c, hcp < 7'],
+     ['1h','opening1 is 1c, hcp >= 7, controls <= 2'], # TODO GF
+     ['1s','opening1 is 1c, controls in 3..3'],  # TODO not sure show 3-6 controls mean
+     ['2c','opening1 is 1c, controls in 4..4'],  # other responses show particular 1-suiters,
+     ['2d','opening1 is 1c, controls in 5..6'], # some weak some strong
      ['1h','opening1 is 1d, hcp in 6..18, h >= 4'],
      ['1s','opening1 is 1d, hcp in 6..18, s >= 4'],
      ['1n','hcp in 6..10'],   
      ['2n','opening1_type is 1minor, hcp in 13..15, shape_type is balanced'],
      ['3n','opening1_type is 1minor, hcp in 16..18, shape_type is balanced'],          
      ['2d','opening1 is 1d, hcp in 6..10, d >= 4'],
-     ['2c','opening1 is 1c, hcp in 6..10, c >= 5'],
      ['2d','opening1 is 1d, hcp >= 13, d >= 4'],
-     ['2c','opening1 is 1c, hcp >= 13, c >= 5'],
      ['new','hcp in 11..12'],
      ['jumpshift','hcp >= 19'],     
      ],
@@ -83,7 +84,7 @@ sayc_respons1= [
     ['opening1_type is 3major',
      ['+1', 'hcp in 13..15'], ['+3', 'hcp in 16..20'], ['+4', 'hcp > 20']],
     ]
-sayc_respons1_1n = [
+btc2k_respons1_1n = [
     ['shape_type is balanced',
      [' p','hcp <= 7'],
      ['2n', 'hcp in 8..9'],
@@ -111,8 +112,8 @@ sayc_respons1_1n = [
     ['len_major >= 5', 'case 1'],
     ['len_minor >= 5', 'case 0'],
     ]
-sayc_respons2 = [['new','hcp > 20']]
-sayc_openerNextBid = [
+btc2k_respons2 = [['new','hcp > 20']]
+btc2k_openerNextBid = [
     ['opening1_type is 1major, respons1_type is 2major',
      ['+1','respons1_type is +1, hcp+shortage in 16..18'],
      ['+2','respons1_type is +1, hcp+shortage in 19..21']],

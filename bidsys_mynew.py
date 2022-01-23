@@ -1,11 +1,10 @@
 """
 bid system 
 name_state variables
+TODO, get all blue team clubs conventions in code
+ex: controls
 """
 
-# bidding tree,
-# 1. given rule find the bidding
-# 2. given bidding find the rule
 mynew_opening1= [
     ['1n','hcp in 16..18, shape_type is balanced'],
     ['1s','hcp in 13..21, s > h, s >= 5'],
@@ -165,3 +164,26 @@ mynew_openerNextBid = [
      ['6n','hcp in 20..21'],
      ['6_','hcp+shortage in 19..21']],    
     ]
+
+r='''
+      if self.check(['hcp <= 9', 'long >= 5', 'short <= 1']): return '1'
+      if self.check(['hcp >= 6','c < 5','d >= 4','h < 4','s < 4','opening1 == 1c']): return 'id'
+
+       opening1 == minor, hcp >= 6, h == 4, h >= s -> 1h
+       opening1 == minor, hcp >= 6, h > 4, h > s -> 1h
+       opening1 == minor, hcp >= 6, s >= 4, s >= h -> 1s
+       opening1 == minor, hcp >= 6, s == 4, h < 4 -> 1s
+       opening1 == 1h, hcp >= 6, h < 3, s >= 4 -> 1s
+       deny-opener-support openning ==  major, suit < 3
+               or suit < 5
+       denom_lt opening1 == 1, hcp >= 11, deny-opener-support, long >= 4 -> new at 2
+       denom_lt opening1 == 1, hcp >= 19, deny-opener-support, long > 5 -> new at 2
+       hcp in 6..10, deny_opener_support long < 4 -> 1n
+       hcp >= 13 -> 2n jacoby_2n
+       hcp in 15..17, balanced, suit >= 2 -> 3n
+
+       rebid: support is the suit partner bid previously
+       hcp in 13..16, support >= 4 -> +1
+       hcp in 17..18, support >= 4 -> +1
+       
+      '''
