@@ -3,6 +3,17 @@ bid system
 name_state variables
 TODO, get all blue team clubs conventions in code
 ex: controls
+micro bridge catagories,
+general, one in a suit, raises, two in a suit, slam, overcalls,
+1NT, 2NT, three level, offensive bids, defensive bids,
+bid, PV, HCP, DP, Total, PT, AK, cdhs, status, apply, alert
+bid: P, XX, 1-7, CDHSN
+possible expression symbols: numbers, -, 23- 22-22, 0-D, 0-H, 0-h, 0-s, 0-S
+KQT, QJx, Kx, Qx, AK, AKQx, KQt%, ---, 0-c, 11+11, 6-I
+good, balanced
+status: NF (none forcing), FG (forcing game), MP (making partner?), GS,
+apply: A, S, ST, NS, I
+PV: numnrt, VN
 """
 
 mynew_opening1= [
