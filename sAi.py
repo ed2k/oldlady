@@ -20,7 +20,7 @@
 import importlib
 from typing import List
 import sbridge
-from sbridge import *
+from sbridge import Bid, Card
 import os
 import defs
     
@@ -40,7 +40,7 @@ class ComputerPlayer:
         self.seat = seat
         self.rubber = None
         self.deal: sbridge.Deal = None
-        self.history = []
+        self.history: List[Bid] = []
 
     def new_deal(self, deal):
         """
@@ -66,7 +66,7 @@ class ComputerPlayer:
         Called after each bid is placed. get notified of bid from others
         """
         self.deal.bid(bid)
-        self.history.insert(0, bid)
+        self.history.append(bid)
         # relys on the history to find out the opening
         if self.deal.finishBidding() and self.seat == self.deal.dummy:
             return
@@ -88,7 +88,12 @@ class ComputerPlayer:
         #bid = sayc.choose_bid (self.deal.hands[self.seat], self.history)
         #print 'prolog:',self.seat,bid
         bid = self.bidState.evaluate_deal()
-        print(self.seat, 'ai_bid:', bid)
+        if bid in self.deal.legal_bids():
+            print(self.seat, 'ai_bid:', bid)
+        else:
+            print(self.seat, 'ai_bid:', bid, [str(b) for b in self.deal.legal_bids()])
+            assert 0 == 1
+
         return bid       
     
     def play_self(self):
@@ -240,31 +245,32 @@ class OneHand:
    def n_h(self): return len(self.suits[2])
    def n_d(self): return len(self.suits[1])
    def n_c(self): return len(self.suits[0])
-   def opening(self):
-       rsp = self.checkAndReturn('opening1')
+   def opening(self, bid_history: List[Bid]):
+       rsp = self.checkAndReturn('opening1', bid_history)
        return rsp
-   def opening2(self,openbid):
-       self.opening = openbid
-       rsp = self.checkAndReturn('opening2')
+   def opening2(self, bid_history: List[Bid]):
+       # TODO handle O1-P-P case
+       self.opening = bid_history[-1]
+       rsp = self.checkAndReturn('opening2', bid_history)
        return rsp
-   def gameon(self):
+   def gameon(self, bid_history: List[Bid]):
        '''idea is upto opener rebit, use predetermined bidding rule
        after that, use the exsiting bidding to generator possible deals, then
        use solvers to tell how many tricks possible to win,
        based on that go for invitation, game, or slams bidding convention'''
        return ' p'
-   def response1(self, openbid):
+   def response1(self, bid_history: List[Bid]):
       ''' short means the length of shortest suit, long means the lenght of longest suit
       suit the one in opening bid
       '''
-      #print 'openbid',openbid
-      rsp = self.check2('respons1')
+      #print('openbid', bid_history)
+      rsp = self.check2('respons1', bid_history)
       return rsp
-   def response2(self):
-      response = self.checkAndReturn('respons2')
+   def response2(self, bid_history: List[Bid]):
+      response = self.checkAndReturn('respons2', bid_history)
       return response
-   def openerNextBid(self):
-       response = self.check2('openerNextBid')
+   def openerNextBid(self, bid_history: List[Bid]):
+       response = self.check2('openerNextBid', bid_history)
        return response  
 
    def shape_type(self):
@@ -315,45 +321,54 @@ semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
        for suit in range(denom+1,4):
            r.append(len(self.suits[suit]))
        return max(r)   
-   def check(self, ruleseqs):
-      if ruleseqs == 'catchall': return True
+   def check(self, ruleseqs, bid_history: List[Bid]):
+      if ruleseqs == 'catchall':
+          return True
       for r in ruleseqs.split(','):
-         left,op,right = r.split()
+         left, op, right = r.split()
          left = self.get(left)
          right = self.get(right)
-         if not self.op(left,right,op): return False
+         if not self.op(left, right, op):
+             return False
       #print 'got',ruleseqs   
       return True
-   def checkAndReturn(self, state):
+   def checkAndReturn(self, state, bid_history):
        team = sbridge.team(self.ai.deal.player)
        bm = self.ai.bidState
        bidsys = bm.bid_system[team]
        ruleseqs = getattr(bm.bid_sys_m[team], bidsys+'_'+state)
        for rule in ruleseqs:
-           if self.check(rule[1]): return rule[0]
+           if self.check(rule[1], bid_history):
+               return rule[0]
        return ' p'
-   def check2(self, state):
+   def check2(self, state, bid_history: List[Bid]):
       bm = self.ai.bidState
       team = sbridge.team(self.ai.deal.player)
       bidsys = bm.bid_system[team]
-      rules = getattr(bm.bid_sys_m[team], bidsys+'_'+state)       
+      rules = getattr(bm.bid_sys_m[team], bidsys+'_'+state)
+      last_bid = bid_history[-1] 
       for rule in rules:
-          if not self.check(rule[0]):
+          if not self.check(rule[0], bid_history):
               continue
           print('check2', bidsys, state, rule[1])
           if type(rule[1]) == type(''):
               if rule[1][:4] == 'case':
                   rule = rules[int(rule[1][-1])]
                   for onerule in rule[1:]:
-                      if self.check(onerule[1]):
+                      if Bid(onerule[0]) <= last_bid:
+                          continue
+                      if self.check(onerule[1], bid_history):
                           return onerule[0]
               elif rule[1][:5] == 'refer':
-                  return self.check2(rule[1].split()[1])
+                  return self.check2(rule[1].split()[1], bid_history)
               else:
                   print('unknown item', rule)
               
           for onerule in rule[1:]:
-              if self.check(onerule[1]): return onerule[0]
+              if Bid(onerule[0]) <= last_bid:
+                continue              
+              if self.check(onerule[1], bid_history):
+                return onerule[0]
       return ' p'
                   
    def get(self, symbol):
@@ -406,6 +421,7 @@ class AIBidStatus:
         for p in sbridge.PLAYERS:
             self.handsEval.append(HandEvaluation())
         self.first5 = [None,None,None,None,None]
+        self.bid_history: List[Bid] = []
         # not pass, double
         self.currentBid = None
         self.state = 'not opened'
@@ -423,7 +439,7 @@ class AIBidStatus:
         if self.first5[0] is not None: return self.first5[0]
         player = self.ai.deal.dealer
         bids = self.ai.history[:]
-        bids.reverse()
+        # bids.reverse()
         for bid in bids:
             if not bid.is_pass():
                 self.first5[0] = (player, bid)
@@ -437,18 +453,20 @@ class AIBidStatus:
         elif ask == 'opening1': return self.first5[0][1]
         elif ask == 'opening1_type': return self.first5[0][1].type()
 
-    def rcheck2(self,bid,state):
+    def rcheck2(self, bid, state):
         ''' based on bidding history and biding system rules, find out possible
         rules that are corresponding to the biding'''
         team = sbridge.team(sbridge.seat_prev(self.ai.deal.player))
         bidsys = self.bid_system[team]
         rules = getattr(self.bid_sys_m[team], bidsys+'_'+state)
         b = self.first5[0][1].difftype(bid)
+        bid_history = self.ai.history[:]
         for rule in rules:
           mainrule = ''
           if rule[0][:7] not in ['opening','respons']:
               mainrule = rule[0]
-          elif not self.hand.check(rule[0]): continue
+          elif not self.hand.check(rule[0], bid_history):
+            continue
           if type(rule[1]) == type(''):
               if rule[1][:4] == 'case':
                   rule = rules[int(rule[1][-1])]
@@ -522,7 +540,8 @@ class AIBidStatus:
        TODO: how to detect cuebid and other convertions
        """
        deal = self.ai.deal
-       print('evaluate_deal', deal.player, [str(b) for b in self.ai.history])
+       bid_history = self.ai.history[:]
+       print('evaluate_deal', deal.player, [str(b) for b in bid_history])
        #mysuits = hand2suits(hand)
        if deal.trick is not None:
            return
@@ -531,17 +550,17 @@ class AIBidStatus:
        openbid = self.first5[0]
        #determine bid state, opening, opening2, respons1, respons2
        # openerNextBid, Stayman, blackwood, jacob
-       if self.state == 'not opened': bid = self.hand.opening()
+       if self.state == 'not opened': bid = self.hand.opening(bid_history)
        elif self.state == 'opening2':
            # TODO if there is interference, call intres1
-           bid = self.hand.response1(openbid[1])
-       elif self.state == 'opening1':  bid = self.hand.opening2(openbid[1])
-       elif self.state == 'respons1': bid = self.hand.response2()
-       elif self.state == 'respons2': bid = self.hand.openerNextBid()
+           bid = self.hand.response1(bid_history)
+       elif self.state == 'opening1':  bid = self.hand.opening2(bid_history)
+       elif self.state == 'respons1': bid = self.hand.response2(bid_history)
+       elif self.state == 'respons2': bid = self.hand.openerNextBid(bid_history)
        elif self.state == 'openerNextBid':
            # guess the hand distribtution,(running massive simulation on all possible hands,
            # eval the level we can make, select stratege accordingly
-           bid = self.hand.gameon()
+           bid = self.hand.gameon(bid_history)
                  
        if bid[0] == '+':
            inc = int(bid[1])

@@ -14,10 +14,10 @@ btc2k_opening1= [
     ['1c','hcp >= 17'], # TODO how to express forcing
     ['2n','hcp in 22..24, shape_type is balanced'],
     ['3n','hcp in 25..27, shape_type is balanced'],
-    ['2c','hcp >= 22'],
-    ['2d','hcp in 6..10, d == 6'],
-    ['2h','hcp in 6..10, h == 6'],
-    ['2s','hcp in 6..10, s == 6'],
+    ['2c','hcp in 12..16, c > 5'], # TODO 2 top honors, possible 4 cards in a side suit major
+    ['2d','hcp in 12..16, d > 5'],
+    ['2h','hcp in 8..12, h == 6'], # TODO good suit, 3rd 4th quite weak hands
+    ['2s','hcp in 8..12, s == 6'],
     ['3c','hcp < 13, c == 7'],
     ['3d','hcp < 13, d == 7'],
     ['3h','hcp < 13, h == 7'],

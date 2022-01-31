@@ -25,9 +25,9 @@ SUITS = range(4)
 DENOMINATIONS = range(5)
 CLUBS, DIAMONDS, HEARTS, SPADES, NO_TRUMP = DENOMINATIONS
 
-PASS = -1
+PASS = -3
 DOUBLE = -2
-REDOUBLE = -3
+REDOUBLE = -1
 
 PLAYERS = range(4)
 NORTH, EAST, SOUTH, WEST = PLAYERS
@@ -229,24 +229,87 @@ def f2o_bid(b):
    else:
       level = int(b[0])
       denom = KIDX[b[1]]
-   return Bid(level,denom)
+   return Bid(level, denom)
 
 class Bid:
     """
     A bid made during the opening phase of a deal.
     """
+    def init_str(self, s_bid: str) -> None:
+        """ two character form ?c,?d,?h,?s,?n,[ |-]p,[ |-]x,xx
+        or do, re
+        """
+        self.level = PASS
+        self.denom = PASS
+        if len(s_bid) != 2:
+            return
+        level = s_bid[0].lower()
+        denom = s_bid[1].lower()
+        if level in ' -d':
+            if denom in 'x' or level in 'd':
+                self.level = DOUBLE
+                self.denom = DOUBLE
+        elif level in 'xr':
+            self.level = REDOUBLE
+            self.denom = REDOUBLE
+        elif level in '1234567':
+            if denom in 'cdhsn':
+                self.level = int(level)
+                self.denom = KIDX[denom]
+        
 
-    def __init__(self, level, denom=None):
-        self.level = level
-        self.denom = denom
+    def __init__(self, level, denom: int=0) -> None:
+        if type(level) == str:
+            self.init_str(level)
+        elif level == DOUBLE:
+            self.level = DOUBLE
+            self.denom = DOUBLE
+        elif level == REDOUBLE:
+            self.level = REDOUBLE
+            self.denom = REDOUBLE
+        elif level in range(1, 8) and denom in range(5):
+            self.level = level
+            self.denom = denom
+        else:
+            self.level = PASS
+            self.denom = PASS
 
     def __lt__(self, other):
-        d = self.level - other.level
-        if d != 0: return d
-        d = self.denom - other.denom
-        return d
+        if self.is_pass():
+            return True
+        if other.is_pass():
+            return False
+        if self.is_double():
+            if other.is_double():
+                return False
+            return True
+        if other.is_double():
+            return False
+        if self.is_redouble():
+            if other.is_redouble():
+                return False
+            return True
+        if other.is_redouble():
+            return False
+        return self.to_num() < other.to_num()
     
     def __ge__(self, other):
+        if other.is_pass():
+            return True
+        if self.is_pass():
+            return False
+        if other.is_double():
+            if self.is_double():
+                return False
+            return True
+        if self.is_double():
+            return False
+        if other.is_redouble():
+            if self.is_redouble():
+                return False
+            return True
+        if self.is_redouble():
+            return False
         return not self.__lt__(other)
 
     def __eq__(self, other):
@@ -300,6 +363,7 @@ class Bid:
         elif self.denom == SPADES or self.denom == HEARTS: return str(self.level)+'major'
         elif self.denom == NO_TRUMP: return 'nt'
         return ''
+
     def difftype(self, bid):
         '''assume the bid is large then self '''
         if bid.is_pass() or bid.is_double() or bid.is_redouble(): return str(bid)
@@ -310,6 +374,12 @@ class Bid:
         if d == 0: return 'new0'
         if d == 1 and n < 0: return 'new'
         return 'jump'
+
+    def to_num(self):
+        if self.is_pass(): return 52
+        if self.is_double(): return 53
+        if self.is_redouble(): return 54
+        return 55 + self.level*5 + self.denom
 
 class Trick:
     """
@@ -393,7 +463,7 @@ class Deal:
         if (self.contract is not None and self.passes == 3) or self.passes == 4:
             return []
 
-        legal = [Bid(PASS)]
+        legal = [Bid('-P')]
         if self.contract is not None:
             for denom in range(self.contract.denom + 1, NO_TRUMP + 1):
                 legal.append(Bid(self.contract.level, denom))
@@ -456,7 +526,7 @@ class Deal:
             self.trick = Trick(self.player, self.contract.denom)
             print('dealer',self.dealer,'player',self.player, 'dummy',self.dummy,'declarer',self.declarer,'contract',self.contract)
         else:
-            self.contract = Bid(PASS)
+            self.contract = Bid('-P')
     def finishBidding(self):
         return self.trick is not None
 
