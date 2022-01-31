@@ -20,7 +20,7 @@
 import importlib
 from typing import List
 import sbridge
-from sbridge import Bid, Card
+from sbridge import Bid, Card, seat_next, seat_move, PLAYERS, print_hand, partner
 import os
 import defs
     
