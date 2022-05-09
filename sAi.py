@@ -725,7 +725,7 @@ but trump is shdc -> 3210, and currentTricks is list shdc->3210, in play order
    if len(currentTricks) > 0:   
       test.append(':'.join(['.'.join(s),'.'.join(r)]))
    arg = ' '.join([str(x) for x in test])
-   arg = defs.DDS_PATH + '/dds ' + arg
+   arg = defs.DDS_PATH + '/ddspy3 ' + arg
    debug(arg)
    coutput = os.popen(arg).read()
    debug([coutput])

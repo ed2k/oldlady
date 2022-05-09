@@ -48,3 +48,16 @@ mode = 1
 r = dds._solve_board(deal1, strain, leader, target, sol, mode, tricks)
 print 'result: %d %d %d' % (r.suit[0], r.rank[0], r.score[0])
 
+"""
+ 4:trump 5:first 6:cards[52+3+4*3+2] 7:currentTricks[3]
+['S', "N:QJ6.K652.J85.T98 873.J97.AT764.Q4 K5.T83.KQ9.A7652 AT942.AQ4.32.KJ3", 'xxxxxx']);
+$ ddsprogs/dds a a a 3 0 QJ6.K652.J85.98:873.J97.AT764.4:K5.T83.KQ9.7652:AT942.AQ4.32.KJ3 3.3.3:10.12.14
+Calculating IMP_TABLE
+IMP_TABLE CALCULATION COMPLETED
+QJ6.K652.J85.98:873.J97.AT764.4:K5.T83.KQ9.7652:AT942.AQ4.32.KJ3 [[3, 3, 3], [10, 12, 14]]
+[[3, 3, 3], [10, 12, 14]]
+[[3, 3, 3], [10, 12, 14]]
+3 10
+result: 3 3 5
+
+"""
