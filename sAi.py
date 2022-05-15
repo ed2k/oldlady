@@ -432,7 +432,7 @@ class AIBidStatus:
             self.bid_sys_m[idx] = importlib.import_module(f'bidsys_{bidsys}')
 
         self.hand = OneHand(self)
-        self.distributionsScripts = 'main { accept }'
+        self.distributionsScripts = 'from redeal import *\n\ndef accept(deal):\n    return True\n'
 
     def setOpening(self):
         if self.ai.history == []: return None
@@ -593,48 +593,50 @@ class AIBidStatus:
                    print('generateDealScript sth wrong, rule is None')
                    continue
                tcl.append(t.go(rule))
-       s = ' && '.join(tcl)
+       s = ' and '.join(tcl)
        print('gends', s)
-       head = '''source lib/utility.tcl
-proc len_major {hand} {
-    set s [spades $hand]
-    set h [hearts $hand]
-    if {$s > $h} {return $s}
-    return $h
-}
-proc len_minor {hand} {
-    set d [diamonds $hand]
-    set c [clubs $hand]
-    if {$d > $c} {return $d}
-    return $c
-}
-proc shortage {hand} {
-    set suits "spades hearts diamonds clubs"
-    set r 0
-    foreach suit "$suits" {
-        set n [eval $suit $hand]
-        if {$n == 0} {
-          set r [expr $r + 5]
-        } elseif {$n == 1} {
-                set r [expr $r + 3]
-        } elseif {$n == 2} {
-                    set r [expr $r + 1]
-        }
-    }
-    return $r
-}
-proc length_points {hand} {
-    set suits "spades hearts diamonds clubs"
-    set r 0
-    foreach suit "$suits" {
-        set n [eval $suit $hand]
-        if {$n > 4} {set r [expr $r + $n - 4]}
-    }
-    return $r
-}
-main { if { 
-'''
-       if s != '': self.distributionsScripts = head+s+' } accept } \n'
+       head = '''from redeal import *
+def len_major(hand):
+    s = len(hand.spades)
+    h = len(hand.hearts)
+    if s > h:
+      return s
+    return h
+
+def len_minor(hand):
+    d = len(hand.diamonds)
+    c = len(hand.clubs)
+    if d > c:
+        return d
+    return c
+
+def shortage(hand):
+    suits = "spades hearts diamonds clubs".split()
+    r = 0
+    for suit in suits:
+        n = len(getattr(hand, suit))
+        if n == 0:
+          r += 5
+        elif n == 1:
+          r += 3
+        elif n == 2:
+          r += 1
+    return r
+
+def length_points(hand):
+    suits = "spades hearts diamonds clubs".split()
+    r = 0
+    for suit in suits:
+        n = len(getattr(hand, suit))
+        if n > 4:
+          r += n - 4
+    return r
+
+
+def accept(d):
+  return '''
+       if s != '':
+           self.distributionsScripts = head+s+'\n'
        
        
 class HandEvaluation:
@@ -660,28 +662,29 @@ class Translate2Tcl:
             if left == 'shape_type':
                 if right == 'unbalanced':
                     continue
-                f.append('['+right+ ' '+self.seat+']')
+                f.append(f'd.{self.seat}.{right}')
                 continue
             left = self.get(left)
             right = self.get(right)
             f.append(self.op(left,right,op))
-        return ' && '.join(f)
+        return ' and '.join(f)
 
     def get(self, symbol):
        s = self.seat
-       if symbol == 'hcp': return '[hcp '+self.seat+']'
-       if symbol == 'controls': return '[controls '+self.seat+']'
+       if symbol == 'hcp': return f'd.{self.seat}.hcp'
+       if symbol == 'controls': return f'controls(d.{self.seat})'
        if symbol == 'longest':return self.longest()
        if symbol == 'newsuit':return self.newsuit(self.bidState.currentBid[1])
        if symbol == 'newsuit0': return self.newsuit0(self.bidState.currentBid[1])
-       if symbol == 'hcp+shortage':return f'[expr [hcp {s}] + [shortage {s}]]'
-       if symbol == 'hcp+shortage+length':f'[expr [hcp {s}] + [shortage {s}]+ [length_points {s}]]'
+       if symbol == 'hcp+shortage':return f'({s}.hcp + shortage({s}))'
+       if symbol == 'hcp+shortage+length':f'({s}.hcp + shortage({s})+length_points({s}))'
        if symbol == 'shape_type': return 'shape_type'
-       if symbol == 'len_major': return '[len_major '+self.seat+']'
-       if symbol == 'len_minor': return '[len_minor '+self.seat+']'
+       if symbol == 'len_major': return f'len_major({self.seat})'
+       if symbol == 'len_minor': return f'len_minor({self.seat})'
        if symbol == 'suit': symbol = 'cdhs'[self.bidState.getBid('opening1').denom]
        if symbol in 'cdhs':
-           return  '['+{'c':'clubs','h':'hearts','d':'diamonds','s':'spades'}[symbol]+' '+self.seat+']'
+           suit = {'c':'clubs','h':'hearts','d':'diamonds','s':'spades'}[symbol]
+           return  f'len(d.{self.seat}.{suit})'
        if symbol.find('..') > 0:
            minv, maxv = symbol.split('..')
            return (minv, maxv)
@@ -692,7 +695,7 @@ class Translate2Tcl:
           return ' '.join([left,opcode,right])
       elif opcode == 'in':
           minv,maxv = right
-          return ' '.join([left, '>=', minv, '&&', left, '<=', maxv])
+          return ' '.join([left, '>=', minv, 'and', left, '<=', maxv])
       if opcode == 'is': return ' '.join([left, '==', right])
       if opcode == 'isnot': return ' '.join([left, '!=', right])
       print ('unknown op',left,opcode,right)
@@ -755,11 +758,21 @@ def o2dstack_hand(hand):
    return ' '.join(h)
 
 def deal2list(s):
-    '''input: lines of deal308 output in pbn formats
+    '''input: lines of redeal output in pbn formats
        output: in list of list (hands) of list (suits)
+$ python -mredeal -f pbn -S "J5 Q653 762 AKJ7" -n 7 2temp.py
+[Deal "N:AK7.8.AT983.T954 Q9842.J974.J5.82 J5.Q653.762.AKJ7 T63.AKT2.KQ4.Q63"]
+[Deal "N:T98.KT74.K3.9643 AKQ73.J.AQJT85.5 J5.Q653.762.AKJ7 642.A982.94.QT82"]
+[Deal "N:Q973.AKJT8.85.54 K82..AKQT94.9632 J5.Q653.762.AKJ7 AT64.9742.J3.QT8"]
+[Deal "N:KQ984.KT842.A.94 A732.J.9543.QT63 J5.Q653.762.AKJ7 T6.A97.KQJT8.852"]
+[Deal "N:9842.AJ984.Q83.Q A6.K2.AKJ5.T8543 J5.Q653.762.AKJ7 KQT73.T7.T94.962"]
+[Deal "N:QT842.J98.AJ9.96 A976.A2.KQ85.QT4 J5.Q653.762.AKJ7 K3.KT74.T43.8532"]
+[Deal "N:KT.K94.A4.QT8542 Q987642.AJT7.JT. J5.Q653.762.AKJ7 A3.82.KQ9853.963"]
+
+Tries: 7
     '''
     r = []
-    for line in s.splitlines()[0::2]:
+    for line in s.splitlines()[0:7]:
         newdeal = line.split('"')[1][2:].split()
         #debug(newdeal)
         ddeal = [[],[],[],[]]
@@ -777,12 +790,12 @@ def DealGenerator(ai, player):
      dummy should not be as ai.seat
     '''
     #ai.bidState.generateDealScript()
-    tempTcl = str(player)+'temp.tcl'
+    tempTcl = str(player)+'temp.py'
     open(tempTcl,'w').write(ai.bidState.distributionsScripts)
     
     myseat = ai.seat
     mine = o2dstack_hand(ai.deal.originalHand(myseat))
-    cmd = defs.DEAL_PATH + '/deal -i format/pbn -'+sbridge.seat_str(myseat)+' "'+mine+'"'
+    cmd = 'python -mredeal -f pbn -'+sbridge.seat_str(myseat)+' "'+mine+'"'
     others = list(sbridge.PLAYERS[:])
     #print(others)
     others.remove(myseat)
@@ -802,8 +815,8 @@ def DealGenerator(ai, player):
            for c in ai.deal.played_hands[i]:
               eargs.append(str(c).upper())       
            eargs.append(';')
-        cmd +=  ' -e "'+' '.join(eargs)+'"'
-    cmd += ' -i '+tempTcl+' 7'
+        # cmd +=  ' -e "'+' '.join(eargs)+'"'
+    cmd += ' -n 7 '+tempTcl
     debug(cmd)
 
     #TODO popen timeout, means distribuion is not agree with the hand

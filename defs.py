@@ -17,7 +17,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02111-1301, USA.
 
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 PACKAGE = "oldlady"
 DATA_DIR = "/local/scratch/oldlady-0.1.0"
 PKG_DATA_DIR = "/local/scratch/oldlady-0.1.0"
