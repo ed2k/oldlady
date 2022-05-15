@@ -214,6 +214,13 @@ class Card:
         elif self.rank == 13: # King
             return 1
         return 0
+    
+    def suit_str(self):
+        return denomination_to_string(self.suit)
+    
+    def rank_str(self):
+        return rank_to_string(self.rank)
+
 
 KIDX = {'c':0,'d':1,'h':2,'s':3,'n':4}
 def f2o_bid(b):

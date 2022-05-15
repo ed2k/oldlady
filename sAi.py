@@ -773,7 +773,11 @@ Tries: 7
     '''
     r = []
     for line in s.splitlines()[0:7]:
-        newdeal = line.split('"')[1][2:].split()
+        try:
+            newdeal = line.split('"')[1][2:].split()
+        except IndexError:
+            print('error', s)
+            return r
         #debug(newdeal)
         ddeal = [[],[],[],[]]
         # put estimated deal in 4x4 format
@@ -807,21 +811,30 @@ def DealGenerator(ai, player):
             hand2 = o2dstack_hand(ai.deal.originalHand(seat2))
             cmd += ' -'+sbridge.seat_str(seat2)+' "'+ hand2 + '"'
             others.remove(seat2)
-        # take out played cards
-        eargs = []
+        # setup others from played cards
+        hands = {}
         for i in others:
-           if ai.deal.played_hands[i] != []:
-              eargs.append(sbridge.PLAYER_NAMES[i].lower()+' gets')
+           hands[i] = ['-'] * 4
            for c in ai.deal.played_hands[i]:
-              eargs.append(str(c).upper())       
-           eargs.append(';')
-        # cmd +=  ' -e "'+' '.join(eargs)+'"'
+              # spade first at index zero 0
+              hands[i][3-c.suit] += c.rank_str()
+        for i in others:
+            for j in range(4):
+                if hands[i][j] != '-':
+                    # remove empty symbol dash -
+                    hands[i][j] = hands[i][j][1:]
+            hand = ' '.join(hands[i])
+            if hand != '- - - -':
+                cmd += f' -{sbridge.seat_str(i)} "{hand}"'
     cmd += ' -n 7 '+tempTcl
     debug(cmd)
 
     #TODO popen timeout, means distribuion is not agree with the hand
     print('deal', player, myseat, ai.deal.dummy, cmd)
     deals = deal2list(os.popen(cmd).read())
+    if deals == []:
+        # remove rules from bidding
+        deals = deal2list(os.popen(cmd[:-9]).read())
     #print str(ai.deal.trick)
     #print('deals', deals)
    
