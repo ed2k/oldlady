@@ -266,9 +266,11 @@ class OneHand:
       #print('openbid', bid_history)
       rsp = self.check2('respons1', bid_history)
       return rsp
+
    def response2(self, bid_history: List[Bid]):
       response = self.checkAndReturn('respons2', bid_history)
       return response
+
    def openerNextBid(self, bid_history: List[Bid]):
        response = self.check2('openerNextBid', bid_history)
        return response  
@@ -286,6 +288,7 @@ semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
          shape = 'unbalanced'
        print('type', c,d,h,s, shape)
        return shape
+
    def getLongestSuit(self):
        idx = 0
        slen = 0
@@ -662,7 +665,10 @@ class Translate2Tcl:
             if left == 'shape_type':
                 if right == 'unbalanced':
                     continue
-                f.append(f'd.{self.seat}.{right}')
+                if right == 'balanced':
+                    f.append(f'balanced(d.{self.seat})')
+                else:
+                    f.append(f'd.{self.seat}.{right}')
                 continue
             left = self.get(left)
             right = self.get(right)
@@ -679,8 +685,8 @@ class Translate2Tcl:
        if symbol == 'hcp+shortage':return f'({s}.hcp + shortage({s}))'
        if symbol == 'hcp+shortage+length':f'({s}.hcp + shortage({s})+length_points({s}))'
        if symbol == 'shape_type': return 'shape_type'
-       if symbol == 'len_major': return f'len_major({self.seat})'
-       if symbol == 'len_minor': return f'len_minor({self.seat})'
+       if symbol == 'len_major': return f'len_major(d.{self.seat})'
+       if symbol == 'len_minor': return f'len_minor(d.{self.seat})'
        if symbol == 'suit': symbol = 'cdhs'[self.bidState.getBid('opening1').denom]
        if symbol in 'cdhs':
            suit = {'c':'clubs','h':'hearts','d':'diamonds','s':'spades'}[symbol]
