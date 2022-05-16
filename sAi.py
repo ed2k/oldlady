@@ -249,6 +249,8 @@ class OneHand:
        rsp = self.checkAndReturn('opening1', bid_history)
        return rsp
    def opening2(self, bid_history: List[Bid]):
+       """ overcall case
+       """
        # TODO handle O1-P-P case
        self.opening = bid_history[-1]
        rsp = self.checkAndReturn('opening2', bid_history)
@@ -258,6 +260,8 @@ class OneHand:
        after that, use the exsiting bidding to generator possible deals, then
        use solvers to tell how many tricks possible to win,
        based on that go for invitation, game, or slams bidding convention'''
+       print('gameon', [str(b) for b in bid_history])
+
        return ' p'
    def response1(self, bid_history: List[Bid]):
       ''' short means the length of shortest suit, long means the lenght of longest suit
@@ -268,10 +272,13 @@ class OneHand:
       return rsp
 
    def response2(self, bid_history: List[Bid]):
+      """ partener repsonse to overcall
+      """
       response = self.checkAndReturn('respons2', bid_history)
       return response
 
    def openerNextBid(self, bid_history: List[Bid]):
+       print("openerNextBid", [str(b) for b in bid_history])
        response = self.check2('openerNextBid', bid_history)
        return response  
 
@@ -325,6 +332,8 @@ semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
            r.append(len(self.suits[suit]))
        return max(r)   
    def check(self, ruleseqs, bid_history: List[Bid]):
+      """ 
+      """ 
       if ruleseqs == 'catchall':
           return True
       for r in ruleseqs.split(','):
@@ -333,7 +342,7 @@ semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
          right = self.get(right)
          if not self.op(left, right, op):
              return False
-      #print 'got',ruleseqs   
+      print('check', ruleseqs)
       return True
    def checkAndReturn(self, state, bid_history):
        team = sbridge.team(self.ai.deal.player)
@@ -345,13 +354,21 @@ semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
                return rule[0]
        return ' p'
    def check2(self, state, bid_history: List[Bid]):
+      """ bid sys with data lake [previous_bid_rules]
+        previous_bid_rules: [previouse_bid, bid_rule1, bid_rule2, ...]
+        bid_rule: [bid, 'rule1, rule2, ...']
+      """ 
       bm = self.ai.bidState
       team = sbridge.team(self.ai.deal.player)
       bidsys = bm.bid_system[team]
       rules = getattr(bm.bid_sys_m[team], bidsys+'_'+state)
-      last_bid = bid_history[-1] 
+      last_bid = bid_history[-1]
+      if state == 'openerNextBid':
+          #print('openerNextBid', rules)
+          pass
       for rule in rules:
           if not self.check(rule[0], bid_history):
+              #print(bidsys, rule[0], 'failed')
               continue
           print('check2', bidsys, state, rule[1])
           if type(rule[1]) == type(''):
@@ -544,7 +561,7 @@ class AIBidStatus:
        """
        deal = self.ai.deal
        bid_history = self.ai.history[:]
-       print('evaluate_deal', deal.player, [str(b) for b in bid_history])
+       print('evaluate_deal', deal.player, self.state, [str(b) for b in bid_history])
        #mysuits = hand2suits(hand)
        if deal.trick is not None:
            return
@@ -564,6 +581,7 @@ class AIBidStatus:
            # guess the hand distribtution,(running massive simulation on all possible hands,
            # eval the level we can make, select stratege accordingly
            bid = self.hand.gameon(bid_history)
+           exit()
                  
        if bid[0] == '+':
            inc = int(bid[1])
@@ -590,7 +608,7 @@ class AIBidStatus:
        for p in sbridge.PLAYERS:
            if p == self.ai.seat: continue
            if self.ai.deal.hands[p] is not None: continue
-           t =  Translate2Tcl(self, p)
+           t =  Translate2Python(self, p)
            for rule in self.handsEval[p].accept:
                if rule is None:
                    print('generateDealScript sth wrong, rule is None')
@@ -650,7 +668,7 @@ class HandEvaluation:
         self.reject = []
 
 
-class Translate2Tcl:
+class Translate2Python:
     def __init__(self, bids, player):
         self.seat = ['north','east','south','west'][player]
         self.player = player
@@ -783,6 +801,7 @@ Tries: 7
             newdeal = line.split('"')[1][2:].split()
         except IndexError:
             print('error', s)
+            exit()
             return r
         #debug(newdeal)
         ddeal = [[],[],[],[]]

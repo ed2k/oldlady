@@ -3,8 +3,6 @@ from __future__ import division, print_function
 # for pypy compatibility we do not use unicode_literals in this module
 from ctypes import *
 import os
-import sys
-import warnings
 import numpy as np
 from config import *
 from bridge_utils import convert_id2rank, convert_id2suit

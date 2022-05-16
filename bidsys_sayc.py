@@ -162,5 +162,5 @@ sayc_openerNextBid = [
      ['4_','hcp+shortage in 13..15'],  
      ['5n','hcp in 18..19'],
      ['6n','hcp in 20..21'],
-     ['6_','hcp+shortage in 19..21']],    
+     ['6_','hcp+shortage in 19..21']],
     ]
