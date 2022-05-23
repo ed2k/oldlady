@@ -280,6 +280,9 @@ class OneHand:
    def openerNextBid(self, bid_history: List[Bid]):
        print("openerNextBid", [str(b) for b in bid_history])
        response = self.check2('openerNextBid', bid_history)
+       # TODO thinking of a way to include both bridge captain symbols
+       # also with given current bids, translate to distribution then simulate
+       # to find the best result
        return response  
 
    def shape_type(self):
