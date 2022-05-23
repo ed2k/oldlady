@@ -2,6 +2,9 @@ lines = []
 with open('BTC2000_gmeier.txt', 'r') as f:
     for line in f:
         line = line.rstrip()
+        test = line.replace(' ', '').replace('-', '')
+        if len(test) == 0:
+            line = ''
         lines.append(line)
 
 
