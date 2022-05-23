@@ -1,0 +1,4272 @@
+Arturo Franco and Marco Pancotti
+ 
+1S-2S
+1S-2S 3C singleton club
+1S-2S  3D singleton diamond
+1S-2S  3H singleton heart
+1S-2S  3S barrage 
+
+
+
+2C-2D asking bid
+2C-2D  2H maximum, or minimum with 4 hearts 
+2C-2D  2H  2S relay GF+ seeking 6C 4H min 
+2C-2D  2H  2S  2NT one-suiter, maximum 
+2C-2D  2H  2S 2NT 3C asks for stops 
+2C-2D  2H  2S 2NT 3C  3D 1 stop 
+2C-2D  2H  2S 2NT 3C 3D 3H hearts/diamonds stoppers
+2C-2D  2H  2S 2NT 3C 3D 3S spades/diamonds stoppers
+2C-2D  2H  2S 2NT 3C 3D 3NT  spades/hearts stoppers
+2C-2D  2H  2S 2NT 3C  3H H/D stoppers
+2C-2D  2H  2S 2NT 3C 3S S/D stoppers
+2C-2D  2H  2S 2NT 3C 3NT H/S stoppers
+2C-2D  2H  2S 3C 6 clubs/4 hearts minimum
+2C-2D  2H  2S 3C 3D feature for 3NT, or strong hearts 
+2C-2D  2H  2S 3C  3H to play 
+2C-2D  2H  2S 3C 3S feature for 3NT or strong H without D cue 
+2C-2D  2H  2S 3C 4C club fit, SI
+2C-2D  2H  2S  3D 6 clubs/4 diamonds, maximum
+2C-2D  2H  2S 3H 6 clubs/4 hearts, maximum 
+2C-2D  2H  2S  3S 6 clubs/4 spades, maximum 
+2C-2D  2H  2S 3NT maximum with 3 stoppers 
+2C-2D 2H 2NT relay with 4 hearts, GI, passable 
+2C-2D 2H 3C relay with 4 spades, GI, passable with a minimum 
+2C-2D   2S 6 clubs/ 4 spades, minimum 
+2C-2D   2NT 6 clubs, minimum, 2 stoppers
+2C-2D   2NT  3C to play
+2C-2D   2NT   3D  asks stoppers 
+2C-2D   2NT   3D  3H hearts/diamonds stoppers 
+2C-2D   2NT   3D   3S spades/diamonds stoppers 
+2C-2D   2NT   3D  3NT spades/hearts stoppers 
+
+2C-2D  3C minimum one-suiter, 1 stopper 
+2C-2D  3C 3D asks which 
+2C-2D 3C   3D 3H/S/NT stopper in the suit (NT = diamonds) 
+2C-2D 3D/H/S 6-5 reverse 
+
+2C-2H 5 hearts, 1F
+2C-2H 2S 6 clubs/4 spades
+2C-2H 2NT 1F, holdings in D/S, and/or maximum (possible 3 card fit) 
+2C-2H  3C 6 clubs, minimum
+2C-2H 3D/S reverse in the suit
+2C-2H 3H 3 card raise, minimum
+2C-2H 3NT to play
+2C-2H  4C/D reverse in hearts with/without club Ace
+2C-2H  4H 4 card raise minimum 
+2C-2S
+2C-2S2NT 1F, values in D/H, and/or maximum (possible 3 card fit) 
+2C-2S 3C 6 clubs, minimum
+2C-2S 3D/H reverse in the suit
+2C-2S 3S 3 card raise, minimum
+2C-2S 3NT to play
+2C-2S 4C/D/H reverse spades with/without club Ace
+2C-2S 4S 4 card raise, minimum 
+2C-2NT GF, looking for slam in diamonds
+2C-2NT 3C forced relay for normal hands without 3 diamonds 
+2C-2NT-3C 3D asking for stoppers with normal continuations 
+2C-2NT-3C 3H/S/NT natural, 4 cards (NT = diamonds) 
+2C-2NT  3D 3 card diamond raise
+2C-2NT 3H/S reverse 6-5
+2C-2NT 3NT no interest in D, stoppers in majors 
+
+2D-2H;
+2D-2H 2S spade stopper, minimum 
+2D-2H 2NT heart stopper, minimum 
+2D-2H 3C club stopper, minimum
+2D-2H 3D maximum, only one stopper 
+2D-2H- 3D 3H hearts/clubs stoppers 
+2D-2H- 3D 3S spades/clubs stoppers 
+2D-2H- 3D 3NT hearts/spades stoppers
+2D-2H 3H maximum, hearts/clubs stoppers 
+2D-2H3S maximum, spades/clubs stoppers 
+2D-2H3NT maximum, hearts/spades stoppers 
+
+2D-2S 5 spades, F1
+2D-2S  2NT minimum, clubs/hearts stoppers
+2D-2S  3C maximum, club stopper, possible xxx spade support mm 3D minimum
+2D-2S 3H maximum, heart stopper, possible xxx spade support mm 3S 3 card fit, minimum
+2D-2S  3NT to play (maximum with hearts/clubs stoppers)
+2D-2S  4C cue bid, diamond Ace, Hxx spade support
+2D-2S 4D cue bid, diamond Ace, Hxx spade support
+2D-2S 4H cue bid, diamond Ace, Hxx spade support
+2D-2S 4S HHx spade support, can't cue bid 
+2D-2NT 5 hearts, F1
+2D-2NT  3C maximum, club stopper, possible xxx heart support 
+2D-2NT  3D minimum
+2D-2NT  3H 3 card support, minimum
+2D-2NT  3S maximum, spade stopper, possible xxx heart support 
+2D-2NT  3NT to play (maximum with spades/clubs stoppers)
+2D-2NT  4C cue bid, diamond ace, Hxx heart support
+2D-2NT  4D cue bid, diamond ace, Hxx heart support
+2D-2NT 4H HHx heart support, maximum (can't cue bid) 
+
+2D-3C natural, looking for slam (limit by passed hand)
+2D-3C    3D minimum 
+2D-3C    3H heart strength (A/K), fit in clubs
+2D-3C    3S spade strength (A/K), fit in clubs
+2D-3C    3NT to play
+2D-3C    4C accepts invitation to slam, to determine if small or grand slam 
+
+2NT-3C game forcing relay, OR invite with hearts 
+2NT-3C - 3D minimum; 
+2NT-3C - 3D - 3H invite 
+2NT-3C - 3D - 3S forcing, fixing spades, SI 
+2NT-3C - 3D - 4C/4D forcing cue, fixing hearts, SI f
+2NT-3C - 3H 6 hearts – 5 spades maximum 
+2NT-3C - 3H  - 3S or immediate cue-bid sets spades as trumps 
+2NT-3C - 3H  - 3NT sets hearts as trumps 3
+2NT-3C - 3S 6 spades – 5 hearts maximum 
+2NT-3C - 3S 3NT hearts are trumps 
+2NT-3C - 3S cue-bid spades are trumps
+2NT-3C -  3NT 5-5 maximum without shortage; 
+2NT-3C -  3NT 4C hearts trumps 
+2NT-3C -  3NT 4D spades trumps
+2NT-3C - 4C club shortage, maximum; 
+2NT-3C - 4C 4D spades trumps 
+2NT-3C - 4C 4NT hearts trumps
+2NT-3C -  4D diamond shortage, maximum; 
+2NT-3C -  4D 4NT hearts trumps
+2NT-3C -  4D  cue-bid spades trumps 
+
+2NT-3D asks better major, OR invite in spades
+2NT-3D - 3H preference 
+2NT-3D - 3H - 3S invitational
+2NT-3D - 3S preference 
+
+
+ 
+Arturo Franco  -  Marco Pancotti 
+ 
+ 
+Blue Team Club 
+Third Edition ( Sept, 2001 ) 
+ 
+Translated into English from Italian by Daniel. J. Neill 
+ 
+           NOTE – this version uses Marco's modified Scanian responses to 1N  ( see his site for the original, i.e. without Scanian )  
+
+ 
+
+PREFACE 
+CHARACTERISTICS OF THE SYSTEM 
+THE PRINCIPAL IDEAS OF THE SYSTEM 
+BRIDGE IS A GAME OF SUITS 
+IT IS BETTER NOT TO ENTER THE RACE THAN NOT TO BE ABLE TO WIN 
+DON'T TELL THE OPPONENTS HOW TO PLAY THE HAND 
+OPENING BIDS IN THE SYSTEM 
+OPENING 1C 
+RESPONDING 1D 
+RESPONDING 1H 
+RESPONDING 1S 
+RESPONDING 1NT 
+RESPONDING 2C 
+3C AFTER THE 2NT REBID RESPONDING 2H AND 2S RESPONDING 2NT 
+RESPONDING 3NT 
+1D OPENING BID 
+1H RESPONSE 
+1S Rebid 
+1NT Rebid 
+2C Rebid 
+2D Rebid 
+1S RESPONSE 
+1NT Rebid 
+2C Rebid 
+2D Rebid 
+1NT RESPONSE 
+2C RESPONSE 2D Rebid 2D RESPONSE 
+2NT RESPONSE 
+1H OPENING BID RESPONSES TO THE OPENING OF 1H/1S NATURAL SEQUENCES OVER 1H AND 1S 
+BIDDING 2-SUITERS AS NORTH AFTER OPENING 1H/1S 
+1S RESPONSE 
+1NT Rebid 
+2C Rebid 2D Rebid 
+2H Rebid 
+2S Rebid 
+2NT Rebid 
+3C Rebid 
+1NT RESPONSE 
+2C Rebid 2D Rebid 
+2H Rebid 
+2S Rebid 
+2NT Rebid 
+3C Rebid 
+2C RESPONSE 
+2D Rebid 
+2H Rebid 
+2S Rebid 
+2D RESPONSE 
+GAME INVITATIONS IF DEFINITE FIT 
+2H RESPONSE 2S Rebid 
+2S RESPONSE 
+1S OPENING BID 
+1NT RESPONSE 
+2C Rebid 2D Rebid 
+2H Rebid 
+2S Rebid 
+2NT Rebid 
+3C Rebid 
+2C RESPONSE 2D Rebid 
+2D RESPONSE 
+2H Rebid 
+2S Rebid 
+2S RESPONSE 2NT Rebid 
+2NT RESPONSE 
+3C Relay 
+INTERFERENCE OVER OPENINGS OF 1D/H/S 
+OVER A DOUBLE: 
+OVER A SUIT: 
+INTERFERENCE OF 1NT 
+TWO-SUITED INTERFERENCE 
+1NT OPENER 
+LIMITED RESPONSES 
+TRANSFER RESPONSES 
+THE SUPER-ACCEPTANCE OF A MAJOR TRANSFER 
+APPLICATION OF TRANSFER RESPONSES 
+2D RESPONSE 
+2H Rebid 
+Other Rebids 
+2H RESPONSE 
+2S Rebid 
+Other Rebids 
+2S RESPONSE 
+2NT RESPONSE 
+RESPONSE OF 2C 
+SEQUENCES FOLLOWING 2C 
+POSSIBLE VARIANTS 
+OPPENENTS' INTERFERENCE OVER THE 1NT OPENING 
+Over X 
+Opponents' suit interference Interference over the 2C ask 
+Inteference over a major transfer 
+2C OPENING BID 
+2D OPENING BID 
+2H RESPONSE 
+2S RESPONSE 
+2NT RESPONSE 3C RESPONSE 
+OPENING 2H/S 
+SOUTH'S BID AFTER AN INITIAL PASS 
+OPENING 2NT 
+INTERFERENCE OVER OPPENENTS' OPENINGS 
+DOUBLE OF A SUIT 
+OVERCALLING 1 OF A SUIT 
+OVERCALLING 1NT 
+2-LEVEL OVERCALLS (NON-JUMP) 
+OVERALLING THE ENEMY 14-18 NT (STRONG) 
+OVERCALLING THE ENEMY 11-15 NT (WEAK) 
+DOUBLING A WEAK TWO VARIATIONS IN LEADING HONORS 
+ 
+SLAM-BIDDING 
+ 
+
+
+Preface to the Second Edition 
+ 
+This second edition of the Blue Team Club comes after a year of circulation of the first edition. To my great satisfaction and, I believe, to the satisfaction of Arturo as well, the availability of complete outline of the system has augmented the spread. It is fitting that a true and proper Club be furnished with (and how could one do less?) a proper Internet site (www.mclink.it/personal/MC6246/BlueTeamClub). 
+ 
+The electronic format of this document is therefore, from this edition on, directly available from the site. Furthermore, always at the site, are instructive examples of sequences, hands from the table, variants in the system structure and anything else that could be useful to whoever wants to explore the system. 
+ 
+The Club today is composed of about ten Milan players who are using the Blue Team Club in real play and who are meet every week under the supervision of Arturo Franco. 
+ 
+This edition reflects numerous adjustments, minor and fundamental, in sequences that, in the previous version, had not been reported in a completely correct fashion. 
+ 
+My wish is that, thanks to this work, the Club can soon find new associates, even from another city or from other countries. 
+ 
+The site always has an email address: BlueTeamClub@go.to. I continue to enthusiastically invite questions, errors and omissions found, bidding examples and whatever can be used to better the completed work. 
+ 
+This English version would not exist without the help of Daniel J. Neill. Thanks a lot, Daniel, from us and from all the Web. 
+ 
+And thanks to all those that helped me. 
+ 
+Milan, 14 September, 1999 
+ 
+Preface to the Third Edition  
+About 6 months after the release of the second edition, it was necessary to make a complete review of the text to correct some imperfections and complete some sequences that were still ambiguous. 
+ 
+In the meantime, to our great satisfaction, the system has been downloaded from the Internet around 100 times per month, about 70% of the time the 
+English translation by Daniel J. Neill.  Evidently, despite being a system created more than 30 years ago, it still has its fascination and its admirers. 
+ 
+A discussion group on the Internet has been created. Those interested can visit http://clubs.yahoo.com/clubs/blueteamclub. There can be found interesting observations, hands from actual play, and questions/answers about the system (nearly always answered by Arturo personally). 
+In order to save tedious searching, we summarize the most important changes from the previous version (And the only ones I changed.  They are in blue font.  The page numbers are approximate. -DJN):  
+Pag. 13 
+Some changes in responses after interference over 1C 
+Pag. 15 
+1C-1D; 1S correction 
+Pag. 17 
+1C-1D;2C-2D; 3C correction 
+Pag. 18 
+Comments on hands with 5 diamonds, 4 clubs, 3-1 majors 
+Pag. 27 
+1D-1M; 2C-2D corrections 
+Pag. 29 
+Introducing 2NT as a general shape-ask after any canape reverse 
+Pag. 40 
+1H-1S;2C-2D;2S-2NT modifications 
+Pag. 41 
+1S-1NT; 2C and 1S-1NT; 2D corrections 
+Pag. 49 
+1H-2D;2NT-3C corrections 
+Pag. 50 
+1S-2D;2NT-3C continuations 
+Pag. 52 
+Different meanings of the 4H and 4S responses to 2S (over 
+1H) and 2NT (over 1S) and respective relays 
+Pag. 53 
+2NT raise over an enemy double promises 2 defensive tricks. 
+Pag. 57 
+Introducing major-suit transfer superacceptance. 
+Pag. 61 
+Over 1NT-2C;2D-2H introducing 2NT and 3C 
+Pag. 64 
+Modifications to the responses after enemy interference over a 1NT opening. 
+Pag. 67/68 
+Light modifications to the continuations over a 2C opening. 
+Pag. 71 
+Introducing invites in both majors after an opening 2NT. 
+Pag. 75 
+ 
+Overcalling the enemy strong 1C. 
+ 
+About This Document 
+When you open this document, Word may display a box with the title "Warning" and text which begins: 
+ 
+The document you are opening contains customizations or macros. Some macros contain viruses that could harm your computer. 
+ 
+The reason for this warning is that our document does indeed contain custom macros. We have macros that assist us in organizing the document and other macros that make it easier for you to navigate within the document. 
+ 
+If you wish to be completely safe against possible computer viruses that may have been inserted into this document without our knowledge then click the "Disable Macros" button. You will lose the special navigational aids that we have provided, but Word's standard navigational aids will still be available and the text of the document will be intact. 
+Standard Navigation 
+Navigation refers to the ability to move quickly within a document when you are viewing it on your computer. Word has a number of standard features that make it fairly easy to navigate through this document. You can use any or all of these standard features even if you disabled macros when you first opened the document. 
+ 
+Table of Contents 
+ 
+If the table of contents is visible on your screen, you can jump directly to any section by single-clicking on its page number in the right-hand column. 
+ 
+Go Back (Shift-F5) 
+ 
+Whenever you jump to a location in the document, by whatever mechanism, you can return to the previous location by pressing Shift-F5 on the keyboard. 
+ 
+Bookmarks (Control-G) 
+ 
+A bookmark is a named location within the document. We have bookmarks for many of the top-level sections and for the table of contents. If you want to jump directly to a bookmark, either Press Control-G on the keyboard or choose 
+Edit-GoTo from the menu. Word will display a box entitled "Find and Replace". Click the "Go To" tab, select "Bookmark" from the "Go to what:" list and then clink the down arrow underneath "Enter bookmark name". Word will display a scrollable list with all of the bookmark names. Either double-click the name that you want or single-click the name and then click the "Go To" button. 
+ 
+We also have a very large number of bookmarks that you can use to locate any specific bidding sequence. Names for these bookmarks begin with "x_" so that they appear after the names for the top-level sections' bookmarks. The third and subsequent characters of the bookmark name correspond to the bids within the bidding sequence. For example, the bidding sequence of 1C-1D-1H-1S-1NT would have a bookmark named "x_1C_1D_1H_1S_1NT". 
+ 
+
+Hyperlinks 
+ 
+A hyperlink within the document is like a link on a web page. By clicking the link, you jump to a different location within the document. All of the hyperlinks are colored blue and are underlined. 
+ 
+A very common hyperlink within this document is "[see below]" within a bidding diagram. This tells you that there is another, lower-level diagram that describes for the bid in question, and you can jump to that diagram by clicking the link.  
+Conventional Symbols 
+The following symbols are used to indicate the strength of a hand: 
+ 
+F1  
+Forcing one round 
+GI  
+Game invitational 
+GI+  
+Game invitational or better 
+GF  
+Game forcing 
+GF+  
+Game forcing or better 
+SI  
+Slam invitational 
+ 
+The following symbols are used to indicate the quality of trump support: 
+ 
+xxx  
+3 card support without A, K or Q 
+Hxx  
+3 card support with A, K or Q 
+HHx  
+3 card support with AK, AQ or KQ 
+xxxx  
+4 card support without A, K or Q 
+Hxxx  
+4 card support with A, K or Q 
+HHxx  
+4 card support with AK, AQ or KQ 
+ 
+By convention, opener is North, and responder is South. 
+ 
+Revision History 
+ 	August, 1999  	 	Marco Pancotti 
+ 
+ 	 	Second Italian language version 
+ 
+ 	September, 1999 	 	Daniel J. Neill 
+ 
+ 	 	Translate second version from Italian to English 
+ 
+ 	February 21, 2000  	Luke Gillespie 
+ 
+ 	 	Add the "About This Document" section 
+ 	 	Define bookmarks for the first few top-level sections 
+ 
+ 	May, 2000  	 	 	Gunther Schutzenmeier 
+ 
+ 	 	Add the "About This Document" section 
+ 	 	Defined bookmarks for additional levels as hyperlinks 
+ 	 	Corrected various minor typos in text  	 	Present document and html version on WebPage 
+ 	 	http://members.rogers.com/blueclub 
+ 
+ 	Sept, 2001 	 	 	Gunther Schutzenmeier 
+ 
+Updated as per the third edition  rewritten by Marco Pancotti and  translated by Dan Neill 
+ 
+ 
+Characteristics of the System 
+The system described represents Arturo Franco's version of the Blue Team Club. 
+ 
+It is characterized by the following aspects: 
+D Strong club with control-showing responses; 
+D Basically natural one-level suit openings, with 1D destined also to describe balanced hands with longer clubs; 
+D canape structure [bid short suit, then long suit – DJN] for reverser hands 
+D Bidding structure so as to best anticipate a major fit 
+D classic 1NT opening, 15-17 HCP without a 5-card major; 
+D 2C and 2D openings with a good 6+ card suit, as a base for further competition and, right from the start, preemption of the enemy's majors; 
+D 2H and 2S openings with a solid sub-opening hand, 8-12 HCP, decent suit and probable side values (thus a little dangerous for the opponents to overcall); 
+D 2NT opening used with both majors, 7-11, which preempts the opponents' minor fit(s). 
+ 
+The responses, for the most part natural, may utilize relay sequences to reveal the length and strength of the opener's hand. 
+ 
+A good part of the attention of the system is dedicated to the determination of the quality of fit, identification of side controls, and the knowledge of the side suits. There are mechanisms to differentiate the strength of the hand in many tight ranges. 
+ 
+The system, in any case, does not refrain from exercising a preemptive effect, in that all the two-level openings are at the same time descriptive, solid and annoying for left-hand opponent.  At the same time, the partner of opener knows with great precision the characteristics of the hand, and can, in case of enemy interference, always exercise the most correct competitive decision.  
+The Principal Ideas of the System 
+The basic principles on which the system is based, all right from the ideas of Arturo Franco, are basically three, and each merit adequate space for explaining. 
+1. Bridge is a game of suits 
+2. It is better not to enter the race than not to be able to win 
+3. Don't tell the opponents how to play the hand 
+Bridge is a game of suits 
+The cards don't always play the same way. On offense, a queen is somewhat useless in with two low cards, however it is a certain trick with an ace and king. On defense a suit headed by three major honors might not come to a trick, whereas a hand with a double fit, each to concentrated honors in a long suit, on offense, produce a quantity of tricks absolutely 
+disproportionate in respect to their HCP total. Two mirroring 4333's require a huge number of honors to develop tricks, but the presence of a singleton or void reduces drastically the strength necessary for game or slam in a suit. 
+ 
+They are, these, all familiar principles to any player agonista, but they seem to be forgotten when other used systems are examined.  
+ 
+The systems that adopt the five-card major are among those that more than others ignore this simple principle. Requiring 5 cards to open 1H or 1S causes the 1C or 1D openings to be often made on 2 or 3 low cards. This approach favors the opponents entering the bidding and hinders the discovery of a 4-4 major fit.  But, still more serious, it doesn't allow the responder to estimate with clarity the potential of the proper bidding in which the first minor bid may consist of a solid 6 card suit or 3 small cards. 
+ 
+Studying the hands in the world championships one can observe with what frequency occur game and slam swings in hands where the partnership that play 5-card majors has had to opened one of a minor only to, after having found a fit in a major, not find a further way to communicate the distributional values of the actual hand. 
+ 
+Also, certainly the incorrect application of the law of tricks is a clear sign of ignoring the fact that bridge is a game of suits. The breakdown of high cards and the presence of unusual distributions carry such an importance, in truth, on the play of the hand, such that renders nearly insignificant the use of the law of total tricks. Larry Cohen, in his books, places such and so many conditions for a correct application of his laws, to render obvious how imprecise the Law is in the absence of the distributional information. 
+ 
+To be able to take correct competitive action, in fact, it is necessary to know the suits and the distribution of partner's high cards and to inform partner likewise of one's own high cards and suits. Otherwise the appraisal of the offensive and defensive potentialities of the deal could be based alone on absolutely generic considerations, and so often lead to wrong competitive choices. 
+ 
+Not always, obviously, does the auction allow the exchange of all necessary information. A good system, consequently, tries to anticipate the problem through a structure of openings and responses that permits a rapid transmission of the essential elements of the hand in terms of distribution, strength, and honor concentration. 
+ 
+The Blue Team Club, to this regard, adopts the following schemes: 
+D All openings other than 1C are limited to 16 points. In competition, therefore, the opener can hold an aggressive stance, if the makeup of his hand demands, knowing he isn't tricking his partner on the high card strength and defensive strength of his hand. 
+D The openings of 1H and 1S are very frequent, since the system provides for opening a 4-card major on any normal hand.  Competition over a major is handled more easily from the immediate knowledge of a 4-4 or 5-4 fit, which is very useful on offense and similarly useless on defense. 
+D No-trump bids, whether by opener or responder, maintain almost always natural significance and describe balanced hands with distributed honors or concentration in the short suits, also sometimes with a 3 card fit for partner's major. 
+D The openings of 2C and 2D place the opener with 6+ cards and at least 2 top honors. They constitute a robust foundation for competition in the minors, an area in which the natural systems, and in particular those with 5-card majors, show weakness. 
+D The openings of 2H and 2S are always made with hands with a strength limit of 12 HCP. This action guarantees the fact that the opening of one of a major, followed by a bid which shows at least 6 cards in the opened suit, indicates non-minimum strength, on which partner may compete with modest hands. At the same time, the guarantee of decent values allows, in competition, the penalizing of an over agressive opponent. 
+ 
+The limited nature of the opening permits direct and conclusive bidding that does not give out information, to the enemy side, of the actual distribution. It is possible, for example, to respond 1NT, to the opening of 1D, with four of a major, where opener, when she has a 4-card major, systemically has a balanced hand with just 4 bad cards in the major. Or there is frequently the sequence 1S-2/3S, in a 4-4 fit, that hides completely a 5-card side suit in which, all the same, the defensive side decides to reopen, with bloody results. 
+  
+The emphasis on the importance of the strength of the hands is illustrated by the different ways to bid the 12-16 HCP hands. The system makes the distinction between weak, average, and reverser hands.  No hand can be characterized as a reverse unless it is in the position to take by itself 8 tricks (or 7 ½ in a one-suiter). Thus, a reverse sequence shows a strong hand (15-16 HCP), with concentration of honors in the long suits. 
+ 
+It is difficult, moreover, for a one-suited hand with dispersed honor strength or a 2-suiter with 9 cards in the suits to produce 8 tricks with only 16 HCP.  So reverse sequences guarantee long 2-suiters or strong 1suiters, hands in which it is fundamental to value the honors that are "in" (high honors in the bid suits),  and to devalue the honors "out" (Aces and intermediate honors on the outside of the declared suits). 
+ 
+For normal hands with good strong honors, the system allows the responder to know, in the second round, whether the hand should be considered minimum or maximum, always limited by the fact that it wasn't opened 1C and a reverse was not made.  
+The precision that derives from this approach allows an accurate assessment of game and slam, superior to a number of natural systems. The huge range of opening strength is in fact handicap in natural sequences, where a same level change of suit can come from a hand with 17-18 HCP while reverses can be made with less than 19 HCP. 
+ 
+Because of this approach the system cannot include conventions like Multi 2D or Michaels that don't show immediately the suits on which it is based, nor can it accommodate weak NT, that, often, ends with exercising against ones own side the preemptive effect that was meant to hinder the opponents. 
+ 
+In the Blue Team Club, finally, there will not be found relay sequences in which one of two players is completely passive and knows nothing of the distribution of the partner. Where the distributional relays are seen, the responder has the essential elements to judge if her own cards are "in" or "out" and therefore the ability to promote or hold back her partner's ambitions. 
+It is better not to enter the race than not to be able to win 
+In a competitive contest dominated by aggressiveness, this principle is an inviting reminder, for the effectiveness of proper bridge, to not forget good sense and knowledge of the fundamentals of the game. 
+ 
+In the Blue Team Club the bidding is not intended exclusively to destroy opponents' bidding. All the openings and responses are always with the objective of limiting the strength and precise distribution and the goals are, at the same time, constructive and destructive. 
+ 
+Openings should be solid, and the structure of responses is already aggressive enough and is oriented toward finding game "to the limit". The 2level openings surely have a preemptive effect, but they do not expose the opener to excessive risks and guarantee a sufficient solidity to bid game or slam without fearing a nasty surprise in some suit length or suit quality of the opener. 
+ 
+The jump overcalls always show a solid hand, 1-suited or 2-suited, under the limits of a reverse, but with characteristics of strength and distribution to render improbable a heavy penalty and plausible the assignment of a final contract. 
+ 
+Playing Blue Team does not mean giving up disturbing the opponents' bidding. Indeed, in the system, for example, is seen the overcall in a 4-card major, to permit interfering with hands where one can't double and where a 5-card minor is to weak to be bid.  The opening of 2NT is strongly preemptive, whereas as in overcalling is seen the use of Ghestem to show two-suiters that, in favorable vulnerability, can be very limited in high card strength. 
+ 
+Just like openings, 1H and 1S overcalls, used both in short-long and longshort bidding style [canape and non-canape – DJN], often constitute the base for a blocking barrage throughout the whole auction.  
+Those that are looked down upon by the Blue Team are the sub-minimum openings, the 2-level openings with no restriction on suit quality, the conventions that do not immediately name a suit, the weak jumps, the weak preempts, the weak NT and the myriad of gadgets invented meant only to create a chaotic situation, and to cost one's own side disastrous penalties. 
+ 
+The attitude suggested by the system is to take maximum advantage of the assets of the same system, without trying to win also where the Blue Team 
+Club does not offer a particular advantage. To win at bridge don't expect to win points at all the hands, it is sufficient to score as well as possible for one's own side and to punish the opponents each time they err. 
+Don't tell the opponents how to play the hand 
+This principle should be applied not only to offensive bids, but to defensive bids as well. In Blue Team each suit opening bid is limited to 16 HCP and the opener, in the second or third bid, is always in the best position to show her own strength, showing if she has a reverser hand, a maximum, or a minimum. The result of this approach is soon responder is in a great position, when he can exclude slam, to make the final call. 
+ 
+The system therefore encourages following direct sequences, that don't allow the enemy into the auction and that do not give out distributional info. 
+ 
+Sequences like 1S-3S;4S, or 1D-3NT, or 1H-2C;2H-4H are typical of the system, that, often, doesn't reward the opponents with a real indication of suits which are effective to attack.  Using systematically this approach, sometimes (rarely) one will miss a slam, but it will always be a close slam, difficult to reach for the opponents too. The payback will come from the innumerable "stolen" games thanks to avoiding the good leads from other defenders who knew more about their opponents' hands. 
+ 
+The partnership Hamman-Wolff, which has always played a variant of the Blue 
+Team Club, has always avoided opening 1D with a good 4-card major to allow the responder to hide her own 4-card major and proceed directly to 3NT. A sequence 1D-3NT, in Blue Team, is extremely efficient in how much it reveals about opener's hand, about which only one thing is known, and can be carried out with a vast variety of distributions.  
+ 
+Also the four card major opening, always anticipating a fit, allows simple and rapid quantitative sequences, that reveal nothing of the presence of a 5card side suit. 
+ 
+On defense, however, the system tries to facilitate overcalling in the auction without transmitting too much info to the opponents. The overcalls 1H or 1S, for example, can also be made in canape, and show a great variety of hands, some of which, in other systems, cannot properly overcall or must overcall as a weak jump. 
+ 
+The weak jump overcalls and responses are instead avoided, because, when the opponents get to NT,  they can rapidly isolate the "dangerous" hand and play against the partner, certain of the fact that, most of the time, the only communications available is in the overcalled long suit. 
+ 
+In studying the system it is good to remember the three base ideas. One will discover very soon that each sequence, each architectural choice, each convention in fact, is always the application of one or more of these principles.  
+Opening Bids in the System 
+The system adopts the following scheme of openings and responses: 
+ 
+I. Opening 1C: 	17+ HCP, any distribution, artificial and forcing. 
+ 
+	Responses: 	control-showing, 1D negative, 1H max 2 controls but 7+ 
+HCP (GF), 1S to 2D to show 3-6 controls. Other responses show particular 1-suiters, some weak, some strong. 
+ 	 
+ 	The auction continues on natural lines with some relays dedicated to the handling of strong balanced hands and some minimum 5-5 two-suiters. 
+ 
+II. Opening 1D:  	12-16 HCP, maybe without diamonds, artificial but not forcing 
+ 
+Responses: 	Natural, normally in long-short order, but short-long (canape) is used for a reverse (stronger than a minimum opening). 
+ 
+	 	Possible relays to describe the opener's distribution. 
+ 
+III. Opening 1H/1S: 12-16 HCP, natural. 
+ 
+Responses: 	Natural, normally in long-short order, but short-long (canape) is used for a reverse (stronger than a minimum opening). 
+ 
+	 	Frequent use of relays to find out opener's 
+distribution. 
+ 	 
+ 	The strong raises distinguish between weak and strong fit and between hands with a singleton/void and balanced or semi-balanced. 
+ 
+IV. Opening 1NT 	15-17 HCP, natural, without a 5-card major. Possibly 
+5422 with solid doubletons in the majors 
+ 
+Responses: 	Treatment modified from the " Scanian Way ", that uses transfer to the majors sometimes with 4 carders, transfer to the minors after Stayman and the use of certain sequences to identify weakness in both hands.  
+V. Opening 2C: 	12-16, 6+ cards in clubs to at least 2 top honors, possibly 4 cards in a side suit major. 
+ 
+Responses: 	2D distributional relay, 2NT is 5+ Diamonds, other natural responses are natural and, if a new suit, forcing. 
+VI. Opening 2D:    12-16, 6+ cards in diamonds in a one-suited hand headed by at least two top honors. 
+ 
+Responses: 	2H relay with a balanced hand, other responses natural, and if a new suit, forcing.  
+VII. Opening 2H/S:  8-12 in a good 6 card suit. Third and first seats can be quite weak hands. 
+ 
+	Responses 	2NT strong relay with responses. 
+ 	 
+	 	New suit forcing, preemptive raises. 
+ 
+VIII. Opening 2NT: 8-12 major 2 suiter, at least 5-5. 
+ 
+Responses 	3C distributional ask for major suits.  
+IX. Opening 3C: 	11-13 minor 2 suitor without a 3 card major. 
+ 
+Responses 	Responses partly artificial with 3H as a distributional relay. 
+ 
+X. Opening 3D/H/S: Solid preempt with 3 top honors or 2 and a side Ace or King. 
+ 
+XI. Opening 3NT: 	Clubs, similar to a 3 level preempt, losers depending on position and vulnerability.  
+XII. Opening 4D/H: Constructive preempt in Hearts/Spades, 8 winners with a side Ace. 
+ 
+XIII. Opening 4H/S: Prempt in Hearts/Spades with at most 7 winners. 
+ 
+Opening 1C 
+1C-1D 
+1C-1H 
+1C-1S 
+1C-1NT 
+1C-2C 
+1C-2H/2S 
+1C-2NT 
+1C-3C/3D 
+1C-3H/3S 
+1C-3NT 
+ 
+This is the strong opening of the system, used with 17+ HCP hands (18+ with balanced hands). It features the showing of controls according to the following chart: 
+1D 
+0-6, 0-2 controls, forcing one round; 
+1H 
+7+, 0-2 controls, forcing to game or 4 of a minor; 
+1S 
+3 controls, GF; 
+1NT 
+4 controls, GF; 
+2C 
+5 controls, GF; 
+2D 
+6 controls, GF; 
+2H/S 
+6 cards in the major, 3-6 HCP concentrated in the suit(with a stronger hand respond 1H, with a weaker suit, 1D); 
+2NT 
+solid seven card suit with a side void, no side control; 
+3C/D 
+KQxxxxx in the suit and nothing on the side; 
+3H/S 
+KQ/KJxxxxx in the suit and nothing on the side; 
+3NT 
+Solid seven card suit with no side void, possible side controls; 
+ 
+In case of interference: 
+X 	Pass = 0-4,XX = 7+, max 1 ctr., 1D 5-6 HCP, 1H = 7+ HCP, 2 ctr.,1S = 3  ctr., 1NT = 4 ctr., 2C = 5 ctr., 2D = 6+ ctr. 
+1D 	Pass = 0-6, X =7+ HCP, max 1 ctr., 1H = 7+ HCP, 2 ctr., 1S = 3 ctr., 1NT = 3/4 ctr. and stopper in the suit shown by the overcall, 2C = 4 ctr., 2D = 5+ ctr. 
+1H 	Pass = min, X =7+ HCP, max 2 ctr., 1S = 3 ctr.without a stopper, 1NT = 3/4 ctr. with stopper , 2C = 4 ctr. without a stopper, 2D = 5 ctr. , 2H = 6+ ctr. 
+1S     Pass = min, X = 7+ HCP, max 2 ctr., 1NT = 3/4 ctr. with a stopper, 2C 
+         = 3 ctr. without a stopper, 2D = 4 ctr. without a stopper, 2S=5+ ctr. 1NT+   Pass =0-7, X = 7+ balanced, suit = 7+ unbalanced 
+ 
+Note the use of the redouble, that shows a hand rich in honor strength (7+ HCP) but quite poor in controls (0-1). The opener can easily judge where to play or to punish the opponents. 
+ 
+Over suit interference, moreover, the jump bid of a suit shows a 7-card suit but the bid of 2NT (non-jump) shows a balanced hand of 7+ HCP with a stopper. 
+ 
+A final summary: 
+D the overcalls of double and 1D are "helpful" in that they scale down a level the step responses and, in the case of the double, allows distinguishing between 0-4 HCP and 5-6 HCP.  The cue bid, over suit interference, indicates the most controls possible. 
+ 
+1C-1D ; 
+1C-1D;1H 
+1C-1D;1S 
+1C-1D;1NT 
+1C-1D;2C 
+1C-1D;2D 
+1C-1D;2H/2S 
+1C-1D;2NT 
+1C-1D;3C/3D 
+ 
+ 
+ 
+Over the response of 1D, that can even come from a worthless hand, the opener bids: 
+1H/S 
+Natural, passable only by an absolute minimum. A quite natural continuations is applied, taking into account South's maximum of 6 HCP. North can have a balanced 21-22 HCP with at least a 4-card major or a balanced 18-20 with both 4-card majors 
+1NT 
+18-20 balanced with at most one 4-card major. With both majors it is better to bid 1H. The same responses to an opening 1NT are used, remembering that responder has at most 6 HCP. 
+2C 
+Forcing one round, used by a hand with long clubs or with a balanced 
+25+. Continuations follow the opening of 2C with the exception that 
+1C-1D;2C-2D;2H-2S;2NT shows the balanced 25+; 
+2D 
+At least 5 diamonds, forcing one round. Also possible a strong 3suiter with a singleton club; 
+2H 
+One/two-suiter forcing to game with at least 5 hearts or a balanced 
+23-24. Over the 2S relay North, with the balanced 23-24, bids 2NT;  
+2S 
+Game forcing, one/two-suiter with at least 5 spades;  
+2NT 
+Balanced 21-22 without a 4-card major or 5-card minor.  Conventional continuations; 
+3C 
+2-suited minimum hand, 5-5, with the minors (17-20); 
+3D 
+2-suited maximum hand, 5-5, with the minors (21+); 
+3H/S 
+Nine tricks playing in the suit, one-suiter. 
+ 
+It is interesting to note that all the balanced hands can be shown, with adequate precision of their ranges, by the level of 2NT. In order to facilitate the memorization of ranges it is enough to remember that the more "low" the sequence, the stronger the hand (2NT immediately with 21-22, 
+2H...2NT with 23-24 and 2C...2NT with 25+). 
+ 
+ 
+Criteria for the rebid of opener after 1D 
+ 
+North, with a minimum 5-4 2-suiter (17-21)and at least one major, bids the major followed by the other suit (the two majors always long-short order, the major-minor 2-suiters in canape order, major first). 
+ 
+South, who must strive to rebid at least once, with a minimum, can hold the bidding open a second round, using the same sequences used over an opened major. In particular, it is necessary that South not deny the 3-card major fit with opener in cases of a major of ambiguous length (the opener bids a major before a minor). 
+ 
+The partnership finds itself bidding as over a natural opening, with about a 5-HCP range, but from 17-21 instead of 12-16 and with a responder that is definitely weak. The main differences are: 
+D the second bid of 2C and 2D is always natural (5+ cards) and is not forcing, whereas the second bid of 2H is natural and semi-forcing, passable only with a minimum and a misfit; 
+D after 1C-1D;1H the rebid of 2NT shows a balanced hand of exactly 6 HCP. 
+D when the opener bids 1H or 1S, receives the rebid of 2C or 2D (non forcing) and bids 2NT, this creates a one round force without denying other suits, and she immediately bids over 2NT only with a 5-carder or maximum hand. 
+D In the sequence 1C-1D; 2C/D-2H/S 2NT shows a misfit and is passable. Also passable is rebidding a suit or the single raise, but a new suit is forcing one round. 
+ 
+ 
+ 
+ 
+ 
+To recap: 
+Over 1C-1D;1H 
+ 	-- 1S natural, forcing 
+ 	-- 1NT natural, non-forcing 
+ 	-- 2C/D natural, non-forcing; then 2NT or new suit is F1 
+ 	-- 2H/3H natural raise, non-forcing 
+ 	-- 2S raise with singleton, GI+, forcing 
+ 	-- 2NT 6 HCP balanced, non-forcing 
+ 	-- 3C/D 6-card suit to 2 top honors, non forcing 
+ 	-- 3S 6 spades, 2-6 HCP with strength on the side 
+ 
+Over 1C-1D;1S 
+ 	-- 1NT natural, non-forcing 
+ 	-- 2C/D natural, non-forcing; then 2NT or new suit is F1 
+ 	-- 2H natural, forcing 
+ 	-- 2S/3S natural raise, non-forcing 
+ 	-- 2NT raise with singleton, GI+, forcing 
+ 	-- 3C/D 6-crd suit to 2 top honors, non forcing 
+ 	-- 3H 7 hearts with side strength 
+ 	-- 3S 6 spades, 2-6 HCP with side strength 
+ 
+With a very strong hand North can, after having bid a major, jump in a minor showing a long strong 2-suiter (4 losers), for which a small fit in one of the two suits may be enough for game. In this case the hand is bid in longshort fashion. 
+ 
+When the opener has a maximum 2-suited hand in the majors (20-22) he bids in reverse fashion, canape, even with only 9 cards in the suits.  
+With a 2-suited hand with less than 4 losers and a long it is possible to bid first the minor and then the major, sequences through which it is possible to show both the minimum (4 losers or 20-22 HCP) and the maximum (3 losers, or 23+ HCP) at a reasonably safe level. The bid of the minor is in fact forcing, and a maximum bid by North shows a GF hand. 
+ 
+To game forcing hands with at least a 5-card major (3 losers) is available the immediate jump in a major. 
+ 
+The 2-suited minor 5-5 hands are bid immediately with the bids of 3C (4/5 losers) and 3D (3/4 losers or less). 
+ 
+ 
+General Criteria for bids after opening 1C The following rules, in general, apply: 
+D After a response of 1D, one tends to use the same sequence of bids and relays after an opening bid, with the necessary varying of strength requirements: 
+D After the strong responses (from 1H up): 
+a) The immediate raise of partner's major shows at least an honor third (4 low are not equal to an honor third) and an unbalanced hand, but with a weak side 5-card suit that is eventually shown as North bids the first step as a relay; 
+b) The immediate raise in a minor suit shows at least an honor third and a side 5-card minor;  a side 5-card major is always shown immediately, even at the cost of delaying showing the minor fit; 
+c) The non-jump bid of NT shows a balanced hand (no 5-card suit) and can hide a fit, even honor third; 
+d) The bid of a new major by South over North's bid major denies an honor third fit with opener's major 
+e) After having bid NT, the bidding of partner's suit below game shows the honor third fit (and denies, logically, a five card side suit with the fit). Lacking a major honor it is necessary to force to game or make a cue bid intending a delayed raise, which ensures that a direct simple raise always contains a major honor. 
+f) The jump in a new suit shows at the same time at least an honor third fit and a solid side 5-card suit(in the other minor if a fit in a minor). 
+g) The jump in a major over opener's minor shows an almost self-sufficient suit (AKQxxx). 
+h) The bid of NT by South is substituted for the relay suit after a rebid of 2C and 2D by North (over which 2D and 2H are the relay); 
+i) When North bids 1NT (balanced) and South shows a five card major so applies the same principles used over an opening 1NT. North, therefore, shows an honor third fit with 2NT, whereas lacking the honor third fit bid he bids a side 4-card suit, eventually giving a delayed raise with 
+3 or 4 low. 
+j) The bid of 3NT is nearly always to play, except when North has shown a spade-heart 2-suiter and the fit in hearts is already certain. In this case the bid serves to fix the spade suit as trump. 
+k) The bid of NT by opener always tends to show a minimum hand. 
+ 
+The following reviews the concepts of the immediate raise. 
+ 
+ 
+No raise 
+Weak raise 
+Strong raise 
+Balanced 
+NT 
+NT 
+NT 
+Weak 5-card suit 
+Suit 
+Suit 
+Immediate Fit 
+Strong 5-card suit 
+Suit 
+Suit 
+Jump in a suit 
+ 
+The Rebid of 2C  
+These continuations are also seen over opening 2C, but the sequence 1C1D;2C-2D;2H-2S;2NT shows 25+ balanced(GF). 
+Since it is necessary to make some changes to the continuations over 2C, the entire structure is displayed. 
+2C-2D Relay ask, without a 5-card major or decent 5-card diamond suit 
+ 	-- 2H maximum hand, or intermediate hand with 4 hearts (20-22) 
+ 	- 
+-- 2S GF Relay 
+ 	- 
+- 
+-- 2NT 25+ balanced 
+ 	- 
+- 
+- -- 3C Baron-like relay 
+ 	- 
+- 
+- -- 3D 5+ diamonds, 0-4 HCP, possibly a 4-card major 
+ 	- 
+- 
+- -- 3H/S 5+ clubs, 4 in the major (without the Baron club) 
+ 	- 
+- 
+-- 3C 5+ clubs/4 hearts (20-22 HCP) 
+ 	- 
+- 
+- -- 3D just diamonds, or a slamish heart fit 
+ 	- 
+- 
+- -- 3H heart fit, sign-off 
+ 	- 
+- 
+- -- 3S stop in spades, no D stop, or fit in hearts, SI  
+ 	- 
+- 
+- -- 4C club fit 
+ 	- 
+- 
+- -- 3NT/4H to play 
+ 	- 
+- 
+-- 3D 5+ clubs/4 diamonds and a maximum (23+ p., GF) 
+ 	- 
+- 
+-- 3H 5+ clubs/4 hearts, maximum (23+ HCP, GF) 
+ 	- 
+- 
+-- 3S 5+ clubs/4 spades, maximum (23+ HCP, GF) 
+ 	- 
+- 
+-- 3NT 6+ clubs, maximum one-suiter with 3 stoppers, GF 
+ 	- 
+-- 2NT with 4 hearts, weak hand (3-4 HCP), passable with a minimum 
+ 	- 
+-- 3C with 4 spades, weak hand (3-4 HCP), passable with a minimum 
+ 	-- 2S 5+ clubs/4 spades, intermediate hand (20-22 HCP) 
+ 	-- 2NT single-suiter(20-22 HCP) or 2-suiter with diamonds and no sing. 
+ 	- -- 3C to play 
+ 	- -- 3D natural, 4/5 cards, 5+ cards if very weak 
+ 	- -- 3H/S stopper or natural, North bids as if it were as stopper 
+ 	- -- 3NT natural with no major stoppers (otherwise 3H or 3S) 
+ 	-- 3C minimum single-suiter (17-19), non-forcing 
+ 	- -- 3D diamond stopper (3H= H stop, 3S= S stop, 3NT= no major stop) 
+ 	- -- 3H/S/NT stoppers (NT = diamonds), possible another stopper 
+ 	-- 3D/H/S 6-5 reverse (GF) 
+ 	-- 3NT 6 clubs/5 diamonds GF 
+ 
+2C-2H 5 hearts, F1 
+ 	-- 2S 5+ clubs/4 spades, at least intermediate (20+) 
+ 	-- 2NT 1F, holding spades/diamonds, normally 19+ HCP one-suiter 
+ 	-- 3C 6 clubs, minimum (17-19), heart misfit, non-forcing 
+ 	-- 3D/S reverse in the suit, GF 
+ 	-- 3H 3+ card raise, minimum 
+ 	-- 3NT to play 
+ 	-- 4C/D heart reverse with/without the club ace 
+ 	-- 4H heart raise, maximum hand, no slam 
+ 
+2C-2S 5 spades, F1 
+ 	-- 2NT F1, holdings in hearts/diamonds, usually one-suited, 19+  
+ 	-- 3C 6 clubs, minimum (17-19), no spade fit, non-forcing 
+ 	-- 3D/H reverse in the suit, GF 
+ 	-- 3S at least 3 card raise, minimum 
+ 	-- 3NT to play 
+ 	-- 4C/D/H spade reverse with (4C)/without (4D/H) ace of clubs 
+ 	-- 4S spade raise, maximum 
+2C-2S 
+ X-3H 5 spades/4+ hearts, GI 
+ 
+2C-2NT five diamonds (footnote1), F1 
+ 	-- 3C relay without 3 card support 
+ 	- -- 3D asks for stoppers with the usual continuation 
+ 	- -- 3H/S natural, 4 cards 
+ 	- -- 3NT major stoppers, to play 
+ 	-- 3D 3 card raise 
+ 	-- 3H/S 6-4+ reverse, GF (with 6-4 bid 3C) 
+ 	-- 3NT to play, natural without diamond interest 
+*Note that over a 2C opener a 2N response shows slam interest, while after 
+1C-1D-2C, it just shows diamonds. 
+ 
+2C-3D 5 spades/4+ hearts game forcing 
+    -- 3H/3S agreeing the suit and inviting a cue-bid 
+    
+2C-3H/3S invitational 6-carder not suitable for the immediate 2H/S response  
+2C-3NT 5 spades/5 hearts 
+ 
+Rebid of 2D 
+Different from the opening 2D, which is only a one-suiter, the rebid of 2D can be made with a 2-suiter (forcing one round). South is obliged, if balanced, to bid 2H over which: 
+1C-1D;2D-2H 
+ 	 	-- 2S 4 spades and a minimum, or any maximum (exc. minor 2-suiter) 
+ 	 	- -- 2NT GF relay 
+ 	 	-  	-- 3C minimum 2-suiter with 4 spades (4 losers) 
+ 	 	-  	-- 3D maximum one-suiter 
+ 	 	-  	-- 3H 5+ diamonds - 4 hearts, maximum (GF) 
+ 	 	-  	-- 3S 5+ diamonds - 4 spades, maximum (GF) 
+ 	 	-  	-- 3NT solid diamonds and 9 tricks (GF) 
+ 	 	-- 2NT minimum heart-diamond 2-suiter  (4/5 losers) 
+ 	 	-- 3C club-diamond 2-suiter, F1 
+ 	 	-- 3D minimum diamond 1-suiter (17-19) 
+ 	 	-- 3H 6+ diamonds, 5 hearts, GF 
+ 	 	-- 3S 6+ diamonds, 5 spades, GF 
+ 	 	-- 3NT reverse with 6 diamonds-5 clubs GF 
+*With 5D-4C-(3-1) and a minimum hand, opener should rebid the 3-card major at the 1-level if it has a couple honors.  Else, an imperfect 1NT rebid is best. 
+ 
+Rebid of 2H 
+The 2H rebid is normally GF with 5+ hearts, but may be 23-24 balanced. South bids 2S with any minimum hand, but with a good 5-card suit and 5/6 HCP (usually KQxxx) shows the suit immediately (2NT for spades).  
+
+Over the 2S relay North bids 2NT if balanced, changes suit with a GF 2-suiter and repeats hearts with a GF 1-suiter.  Further bidding is natural.  
+ 
+ 
+ 
+Rebid of 2NT 
+The rebid of 2NT shows 21-22 HCP balanced without a 4-card major or a 5-card minor. Asking bids for majors therefore don't exist. South can pass, sign off in 3NT or bid:  
+1C-1D; 2NT 
+-- 3C puppet to 3D, intending to signoff in a suit 
+- 
+-- 3D no game interest in diamonds 
+- 
+- -- pass signoff in diamonds 
+- 
+- -- 3H signoff in hearts 
+- 
+- -- 3S signoff in spades 
+- 
+- -- 3NT signoff in clubs 
+- 
+-- 3H game interest in diamonds but not clubs 
+- 
+- -- pass signoff in hearts 
+- 
+- -- 3S signoff in spades 
+- 
+- -- 3NT diamonds 
+- 
+- -- 4C signoff in clubs 
+-- 3D asks for minor suits 
+- -- 3H 2=3=4=4 
+- -- 3S 3=2=4=4 
+- -- 3NT 3=3=3=4 or 3=3=4=3 
+-- 3H 5+ card suit, GF 
+-- 3S 5+ card suit, GF 
+-- 3NT to play 
+-- 4C 6 card suit with two top honors 
+-- 4D 6 card suit with two top honors
+1C-1H ; 
+The 1H response to 1C shows high card strength to guarantee game in 3NT or a major, but with at most 2 controls. 
+ 
+Further bidding is natural in long-short fashion, with 1S by North showing 5+ cards in the suit (so it is possible to raise with honor third support).  
+ 
+Balanced 24+ HCP hands with 5 spades are bid first with 1S, and over the eventual 1NT response, then 2C. 
+ 
+1C-1H; 1S 
+ 	 	-- 1NT balanced, no decent 5 carder, possible honor third in spades 
+ 	 	- -- 2C natural, or balanced SI 
+ 	 	- - -- 2D no honor third spade raise 
+ 	 	- - -- 2H 5 spades/4 clubs, natural continuations 
+ 	 	- - -- 2S 6 spades/4 clubs, natural continuations 
+ 	 	- - -- 2NT 5332, SI 
+	 	- -	-- 3C 5 spades/5 clubs, natural continuations 
+	 	- - 
+	 	- - -- 2H honor fourth club fit 
+	 	- - -- 2S honor third spade fit, no honor fourth club fit 
+	 	- - -- 2NT spade and club fit, honor third in spades 
+	 	- - 
+	 	- -- 2D/H/S/NT natural 
+ 	 	- -- 3C/D/H slamish 2-suiter 
+ 	 	- 
+ 	 	-- 2C/D/H 5-carder, without honor third in spades 
+ 	 	-- 2S honor third support, with bad 5 card side suit 
+ 	 	-- 3C/D/H honor third support, good 5-cards in suit bid [fit jump] 
+ 	 	-- 3S raise, solid 5-cards(like jumping in a spade suit) 
+1C-1S ; 
+In the case of the 1S (3 controls) response the situation is GF and further bidding is natural. Make sure with minimum 2-suiters to show them below 3NT to allow the correct contract in case of a misfit.  
+ 
+There are in fact 2 dangerous situations: 
+D when, with non-touching 5-5 suits, North's rebid risks having to bid above 3NT; 
+D when with 5-5 minors South has to decide to show a club fit at the 4 level without knowing if there are slam chances; 
+ 
+In these cases North directly bids 2NT (useless for the balanced hands which will all be shown slowly) over which: 
+ 
+1C-1S; 2NT 
+ 	 	-- 3C relay 
+ 	 	 	-- 3D 5-5 diamonds and spades 
+ 	 	 	-- 3H 5-5 clubs and hearts 
+ 	 	 	-- 3S 5-5 majors 
+ 	 	 	-- 3NT 5-5 minors 
+ 
+ 
+1C-1S; 2H/S-2NT; 
+ 	 	 	-- 4C/D/H = 3-suiter with void in the bid suit 
+1C-1NT; 
+The 1NT response presents the problem of finding a 4-4 when North has a balanced hand. For this reason, North inverts the meanings of 2C (balanced, or semibalanced with clubs) and 2NT (at least 6 clubs, one-suiter), leaving all other bids natural. 
+ 
+1C-1NT; 
+ 	-- 2C balanced or 2-suiter with 5+ clubs 
+ 	- -- 2D relay, denying a 5 card major 
+ 	- 
+-- 2H/S/NT/3C 4 card suits, balanced 
+ 	- 
+-- 3D slamish 5 clubs, 4 diamonds 
+ 	- 
+-- 3H slamish 5 clubs, 4 hearts  
+ 	- 
+-- 3S slamish 5 clubs, 4 spades 
+- 
+- -- 2H/S/NT 5-card suits (NT = diamonds) 
+- 
+-- 2D/H/S length in the suits 
+- 
+-- 2NT 6 clubs 
+1C-2C ; 
+Also 2C creates the problem of finding the 4-4 fit. For this reason 2D for the hands with at least 4 diamonds whereas 2NT is reserved for balanced hands without 4 diamonds. 
+In this way the subsequent 3C asking bid can have more responses than to normal Stayman, all to find another 4-4 fit. 
+ 
+1C-2C 
+ 	-- 2D 4+ diamonds  
+ 	- -- 2H balanced, further bids are 4-card suits 
+ 	- -- 2S/NT/C 5 card spades/hearts/clubs 
+ 	- -- 3D diamond fit 
+ 	- 
+ 	-- 2H/S 5-cards 
+ 	- 
+ 	-- 2NT balanced without 4 diamonds 
+ 	- 
+-- 3C asking 
+ 	- 
+- -- 3D at least one 4-card major, without 4 clubs  
+ 	- 
+- - --  3H asks (3S/NT= 4 spade/hearts) 
+ 	- 
+- -- 3H 4 hearts, 4 clubs 
+ 	- 
+- -- 3S 4 spades, 4 clubs 
+ 	- 
+- -- 3NT 4/5 clubs, no major. 
+ 	- 
+-- 3D/H/S 5-card suits 
+ 	-- 3C/D 5+ cards 
+ 3C after the 2NT rebid 
+The sequence 1C-1S..2D;2H-2NT;3C and 1C-1S..2D;2S-2NT;3C are artificial, and show many types of hands: 
+a) 1C-X;2H-2NT;3C can be 2-suited with 4+ clubs, 2-suited with 4 spades or slamish and balanced; 
+b) 1C-X;2S-2NT;3C can be 2-suited with 4+ clubs or slamish and balanced. 
+In both cases, 3D by South denies a 3-card fit with opener's major. The sequence has thus the following meanings: 
+ 
+1C-X;2H-2NT; 
+ 	 	-- 3C 2-suiter with 4+ clubs or with 4+ spades or slam balanced 
+ 	 	- -- 3D no 3card heart fit 
+ 	 	- - -- 3H 5+ hearts, 4 clubs 
+ 	 	- - -- 3S 5+ hearts, 4 spades  	 	- -- 3NT slam balanced 
+ 	 	- -- 4C 5+ hearts, 5+ clubs 
+ 	 	- -- 4D balanced at least small slam, invites cue-bids 
+	 	-- 3H 3 card heart fit, no spade or club interest 
+
+	 	-- 3S heart fit, spade interest (3NT = spades, 4X = heart cue) 
+	 	- -- 3NT 3 card heart fit, interest in clubs 
+	 	- 
+	 	-- 3D 5 hearts, 4+ diamonds 
+	 	-- 3H heart 1-suiter 
+	 	-- 3S 6 hearts, 5 spades 
+
+1C-X;2S-2NT; 
+ 	 	-- 3C 2-suiter with 4+ clubs or balanced slamish 
+ 	 	- -- 3D no 3-card spade fit 
+ 	 	- - -- 3H 5+ spades, 4+ clubs 
+ 	 	- - -- 3S 6 spades, 4+ clubs 
+ 	 	- - -- 3NT slammish balanced 
+ 	 	- - -- 4C 5+ spades, 5+ clubs 
+ 	 	- - -- 4D balanced, at least small slam, asks for cue 
+ 	 	- - 
+ 	 	- -- 3H 3 spades, interest in clubs 
+ 	 	- -- 3S 3 spades, no club interest 
+ 	 	- 
+ 	 	-- 3D 5 spades, 4+ diamonds 
+ 	 	-- 3H 5 spades, 4+ hearts  	 	-- 3S just spades 
+1C-2H and 2S; 
+Shows a 6 card suit 3-6 HCP concentrated in the suit (with 7+ respond 1H, with 3-6 HCP and scattered strength, 1D). Opener can find out the exact texture of the suit with 2NT, over which: 
+3C 
+QJ or K (3 HCP) 
+3D 
+KJ or A (4 HCP) 
+3H 
+AJ or KQ (5 HCP) (or KQJ) 
+3S 
+AQ (6 HCP not KQJ) 
+ 1C-2NT ; 
+2NT shows a solid 7 card suit with a void on the side. 
+3C asks location of the void, and responder bids the void. There is no upper limit of strength. 
+ 1C-3NT ; 
+3NT shows a solid 7 card suit with no void.  
+4C asks for side controls, whereas 4D asks for the suit. 
+ 
+ 1D Opening Bid 
+1D-1H 
+1D-1S 
+1D-1N 
+1D-2C 
+1D-2D 
+1D-2N 
+ 
+A conventional opening, it shows 12-16 HCP, without 4 biddable hearts or spades in a balanced hand or without 4 in a major, no matter how poor, in an unbalanced hand. One can open 1D with short diamonds (even a void) with long clubs not good enough to open 2C (which would guarantee 6+ cards to two top honors). 1D is somewhat limited in a system that opens 4-card 1H and 1S and has 2C and 2D for the one-suiters with at least 2 top honors. 
+ 
+The responses to 1D, with the following details, are: 
+D 1H can be bid with a hand with only 3 hearts but 5+ diamonds and a nonminimum (rebids 2D) or with a reverser (rebids 3D, but here with 4 hearts). 
+D 2C is natural, but forces 2D by all normal hands to allow description of 
+South's hand, which is often a canape reverse; 
+D 2D forces opener to bid 2H, and is often the base of a reverse to a 5+ card major; only used with GF or limit (in which case the diamonds are rebid) diamond single suiters. 
+D 2NT shows balanced 15-19 HCP with no 4-card major  
+ 
+The following bids are some characteristics: 
+D over the 1H response, 1S by North is conventional, and shows diamond-club 
+2-suiter with 5+ diamonds, or a hand with 4 bad spades; 
+D over the sequence 1D-1H/S;1NT, or 1D-1H;1S,  South uses the relay 2C to ask about the strength and distribution of North; 
+D North's rebid of 2C shows a club one-suiter or the minor 2-suiter with longer clubs, thus guaranteeing clubs and leaving diamonds ambiguous; 
+D South's 2C followed by 2NT is balanced invitational without a 4 card major, whereas 3NT is 12-14, also without a major. 
+ 
+The responses to 1D follow: 
+1H/S 
+natural, 4+ cards 6+HCP Possible canape. With 4/5 diamonds and a nonminimum, 1H may also be just 3 cards, so then bidding diamonds at the 2 or 3 level shows values or a reverse; 
+1NT 
+natural, 6-10 even with a 4-card major; 
+2C/D 
+forcing, 4+ cards in clubs/diamonds, possibly the base of a reverse into a 5+ card major in a strong hand; 
+2H/S 
+GF, at least 6 good cards; 
+2NT 
+15-19 balanced with no 4-card major or 5-card minor; 
+3C/D 
+natural, solid seven-card suit (AKQ) 
+1D-1H ; 
+After 1H/S North bids mainly naturally: 
+- 1NT with a balanced hand without 4-card support for the major; 
+- 1S (over 1H) with 4 bad spades or a club-diamond hand with at least 5 diamonds; 
+- A simple raise of the bid major with 4 cards (if hearts, definitely a bad suit, otherwise open 1H) or with 3 good cards and a singleton in the other major (possibly 5 clubs);  
+- 2C with 5+ clubs (if 6+ clubs, then no two top honors, else open 2C). The length of diamonds is not yet known; 
+- 2D with 6 diamonds (not to two top honors) or, over 1S, with 5 decent cards; - jump raise with a reverse, 4+ diamonds and 5+ cards in responder's suit; 
+- reverse in the other major, with 4+ diamonds and 5+ in the reverse suit 
+- 2NT with a maximum 5-5 minor 2-suiter (14-16) 
+- 3C with a great 5-5 minor 2-suiter reverser(8 winners) 
+- 3D reverse with 6 diamonds and 4 clubs (just diamonds not possible, otherwise open 2D). 
+ 
+1D-1H; 
+-- 1S either 4 weak spades OR 5+ diamonds, 4+ clubs [see below] 
+-- 1NT 12-14 balanced, not 4 weak spades [see below] 
+-- 2C 5+ clubs [see below] 
+-- 2D 6+ diamonds 
+-- 2H either 4 weak hearts or 3 good hearts, singleton spade 
+-- 2S reverse with 5+ spades, 4+ diamonds 
+-- 2NT 5 diamonds, 5 clubs, not 3 hearts, maximum 
+-- 3C reverse with 5 diamonds, 5 clubs 
+-- 3D reverse with 6 diamonds, 4 clubs 
+-- 3H reverse with 5+ hearts, 4+ diamonds 
+ 
+1D-1H ; 1S- 
+The 1S rebid shows either a balanced 12-14 with 4 weak spades or a minor twosuiter with 5+ diamonds and 4+ clubs. 
+ 
+1D-1H; 1S 
+-- 1NT to play, opener bids 2C with minor 2-suiter 
+-- 2C relay, GI+ [see below] 
+-- 2D semi-positive with 5 diamonds, 3-4 hearts 
+-- 2H to play 
+-- 2S reverse with 5+ spades, 4+ hearts 
+- 
+-- 2NT without a good spade fit, 5 diamonds/4 clubs 
+- 
+-- 3C without a good spade fit, 5 diamonds/5 clubs, minimum 
+- 
+-- 3D without a good spade fit, 5 diamonds/4 clubs, maximum 
+- 
+-- 3H/4C/4D cue-bid with a good spade raise and good hand 
+- 
+-- 3S 4 card spade raise in a minimum hand 
+- 
+-- 3NT sign-off, 5 diamonds/4 clubs, minimum misfit 
+ 
+The 2C relay asks opener to describe his hand. Opener rebids as follows: 
+ 
+1. 2D and 2NT show 5 diamonds and 4 clubs and show respectively minimum and maximum without 3 hearts; 
+2. 2H and 2S are balanced or semibalanced without 4 clubs and respectively with/without 3 hearts; 
+3. 3C shows the 5-5 minimum without 3 hearts (the 5-5 maximums without 3 hearts are bid immediately with 2NT); 
+4. 3H and 4C show 5-5 with 3 hearts respectively minimum/maximum; 
+5. 3D and 3NT show 5-4 with 3 hearts and respectively minimum/maximum; 
+6. 3S and 4D show 6-4 with 3 hearts and respectively minimum/maximum. 
+ 
+1D-1H; 1S-2C; 
+-- 2D 3=1=5=4 or 2=2=5=4, minimum 
+-- 2H balanced with 3 hearts: 4=3=4=2 or 4=3=3=3 or 4=3=2=4 
+-- 2S balanced w/o 3 hearts: 4=2=4=3 or 4=2=3=4 
+-- 2NT 3=1=5=4 or 2=2=5=4, maximum 
+-- 3C x=y=5=5, not 3 hearts, minimum 
+-- 3D 1=3=5=4, minimum 
+-- 3H 0=3=5=5, minimum 
+-- 3S 0=3=6=4, minimum 
+-- 3NT 1=3=5=4, maximum 
+-- 4C 0=3=5=5, maximum 
+-- 4D 0=3=6=4, maximum 
+ 
+1D-1H ; 1NT- 
+A second artificial sequence occurs with 2C after a 1NT rebid. 
+ 
+1D-1H; 1NT-2C 
+-- 2D no 3 card heart support 
+- 
+-- 2H 5 card suit, GI 
+- 
+- -- 2NT signoff 
+- 
+-- 2S distributional relay 
+- 
+- -- 2NT 3=2=4=4 
+- 
+- -- 3C 3=2=3=5 
+- 
+- -- 3D 3=2=5=3 
+-- 2H 3-card heart support, minimum 
+- 
+-- 2S relay 
+- 
+- -- 2NT 2=3=4=4 
+- 
+- -- 3C 3=3=3=4 
+- 
+- -- 3D 3=3=4=3 
+- 
+- -- 3H 2=3=3=5 or 3=3=2=5 (H=C) 
+- 
+- -- 3S 2=3=5=3 or 3=3=5=2 (S=D) 
+-- 2S 5 clubs, 4 diamonds (??? 2=2=4=5) 
+-- 2NT 3 card heart support, maximum  
+ 
+It is good to remember that South, with a balanced 11-12, over 1NT simply bids 2NT, whereas with a weak hand and long clubs, bids 2C and then rebids 3C 
+(sign-off). Thus after 2C by South, a bid in any new suit by South creates a GF situation in a 5-4, 4-5 or 5-5 2 suiter. 
+ 
+1D-1H ; 2C- 
+A third artificial sequence occurs over a 2C rebid by opener showing 5+ clubs and 2-4 diamonds. Here, South, with 2D, can ask for distribution. 
+ 
+To understand this ask one must take into account that North may not have diamonds, and that the sequence 1D…2C is equivalent to the natural sequence 1C…2C, excluding the solid suit shown by opening 2C. 2D is not therefore natural but is really a new suit, that implies at least a semi-positive hand and that wants to find an eventual 3-card fit in the bid major or if opener has diamonds. 
+ 
+The general rule is that the 3-card major comes before showing diamonds. The immediate 3C and 2NT are used to show a club one-suiter (minimum and maximum) whereas the other bids show both minors.  
+ 
+The asking sequence is constructed as to allow playing in 2NT or 3C in case of a club-based hand of minimum strength. 
+ 
+1D-1H; 2C-2D distributional ask 
+ 	 	-- 2H 3-heart raise (bad hearts; if good, better to raise earlier) 
+ 	 	- -- 2S distributional ask 
+ 	 	-  	-- 2NT one-suiter, maximum 
+ 	 	-  	-- 3C  one-suiter, minimum 
+ 	 	-  	-- 3D 5+ clubs, 4 diamonds, minimum 
+ 	 	-  	-- 3H 5+ clubs, 4 diamonds, maximum  
+ 	 	- 
+ 	 	-- 2S 5 clubs, 4 diamonds, minimum 
+ 	 	-- 2NT single-suiter in clubs, maximum 
+ 	 	-- 3C single-suiter in clubs, minimum 
+ 	 	-- 3D 5 clubs, 4 diamonds, maximum 
+ 	 	-- 3H 6 clubs, 4 diamonds, 3 hearts, minimum 
+ 	 	-- 3S 6 clubs, 4 diamonds, 3 bad hearts, maximum 
+ 	 	-- 3NT 6 clubs, 4 diamonds, 3 hearts to top honor, maximum 
+ 
+ 
+1D-1H/1S ; 2D 
+1D-1H/S; 2D-2NT forcing relay, asking for 3 card support  
+1D-1S; 
+ 
+1D-1S; 
+-- 1NT balanced 12-14 [see below] 
+-- 2C 5+ clubs [see below] 
+-- 2D 6+ diamonds 
+-- 2H reverse with 5+ hearts, 4+ diamonds 
+-- 2S either 4 weak spades or 3 good spades, singleton heart 
+-- 2NT maximum with 5 diamonds, 5 clubs, not 3 spades 
+-- 3C reverse with 5 diamonds, 5 clubs 
+-- 3D reverse with 6 diamonds, 4 clubs 
+-- 3S reverse with 5+ spades, 4+ diamonds 
+ 
+1D-1S ; 1NT- 
+A second artificial sequence occurs with 2C after a 1NT rebid. 
+1D-1S; 1NT = balanced 12-14 
+-- 2C relay [see below] 
+-- 2D semi-positive with 5 diamonds, 3-4 hearts (LG) 
+-- 2H  
+-- 2S to play 
+-- 2NT balanced 11-12 
+-- 3C reverse with 4 spades, 5 clubs 
+-- 3D reverse with 4 spades, 5 diamonds 
+-- 3H reverse with 4 spades, 5 hearts 
+-- 3S 6 spades, forcing 
+-- 3NT to play 
+ 
+1D-1S; 1NT-2C; ( Relay ) 
+ 
+1D-1S; 1NT-2C 
+-- 2D no 3-card support 
+- 
+-- 2H distributional relay 
+- 
+- -- 2S 1=3=4=5 or 1=3=5=4 
+- 
+- -- 2NT 2=3=4=4 
+- 
+- -- 3C 2=3=3=5 
+- 
+- -- 3D 2=3=5=3 
+- 
+-- 2S 5 card suit, GI 
+- 
+- -- 2NT signoff 
+-- 2H 2=2=4=5 or 2=2=5=4 
+-- 2S 3-card support 
+- 
+-- 2NT relay 
+- 
+- 
+-- 3C 3=3=3=4 or 3=4=2=4 with weak hearts 
+- 
+- 
+- -- 3D asks for pattern 
+- 
+- 
+- - -- 3H 3=4=3=3 
+- 
+- 
+- - -- 3S 3=4=2=4 
+- 
+- 
+- - -- 3NT 3=3=3=4 
+- 
+- 
+-- 3D 3=3=4=3 or 3=4=4=2 with weak hearts 
+- 
+- 
+-- 3H 3=2=3=5 or 3=3=2=5 (H=C) 
+- 
+- 
+-- 3S 3=2=5=3 or 3=3=5=2 (S=D) 
+- 
+- 
+-- 3NT 3=2=4=4 
+-- 2NT maximum 3 card raise  
+ 
+1D-1S ; 2C- 
+ 
+1D-1S; 2C-2D distributional ask 
+-- 2H 5 clubs, 4 diamonds, minimum 
+-- 2S 3 spades 
+- 
+-- 2NT distributional ask 
+- 
+ 	-- 3C 6 card one-suiter, minimum 
+- 
+ 	-- 3D 5+ clubs, 4 diamonds, 3 spades, minimum 
+- 
+ 	-- 3H 5+ good clubs, maximum 
+- 
+ 	-- 3S maximum one-suiter in clubs  
+-- 2NT single-suiter in clubs, maximum 
+-- 3C single-suiter in clubs, minimum 
+-- 3D 5 clubs, 4 diamonds, maximum 
+-- 3H 6 clubs, 4 diamonds, 3 spades, minimum 
+-- 3S 6 clubs, 4 diamonds, 3 spades without top honor, minimum 
+-- 3NT 6 clubs, 4 diamonds, 3 spades without top honor, minimum 
+ 
+Responder's general rebids after a reverse by opener 
+ 
+In general after opener's reverse, 2NT by responder is an asking relay (1D1x;2M) over which : 
+D 3 of one sf the 2 remaining suits is always 6-4 with 3 cards in the bid suit 
+D 3m is always 5-5-2-1 
+D 3M is always 6-4-2-1 
+D 3NT is always 5-5-3-0 with 3 cards in the lower side suit 
+D 4C is always 5-5-3-0 with 3 cards in the higher side suit 
+D 4m is always 6M-5m  
+ 
+For example : 1D-1H-2S, 1D-1S-2H, 1D-1NT-2H/S  -2NT relay then : 
+ 	 	-- 3C = 6M, 4 diamonds, 3 clubs 
+ 	 	-- 3D = 5M, 5 diamsnds, and the rest 2-1 
+ 	 	-- 3H = 6 spades/4 diamonds/3 hearts, or 6 hearts/4 diamonds/2-1 
+ 	 	-- 3S = 6 hearts/4 diamonds/3 spades, or 6 spades/4 diamonds/2-1 
+ 	 	-- 3NT = 5M, 5 diamonds, 3 clubs 
+ 	 	-- 4C = 5M, 5 diamonds, 3 other M 
+ 	 	-- 4D = 6M, 5 diamonds  
+ 
+N. B. Use this scheme whenever opener has shown a reverse with canape or even-length.  The above structure assumes a major-minor two-suiter, so substitute the highest suit for the major and the lowest suit for the minor. 
+ 
+Use the scheme exactly over the following additional sequences : 
+ 	1D-2C-2H/S   
+ 	1D-2D-2S  
+  
+For 1D-2D-2NT (diamond/heart reverse) 3C relays, then: 
+ 	 
+-- 
+3D 
+= 5-5,  2-1 
+ 	 
+-- 
+3H 
+= 6 hearts, 4 diamonds, 2-1  
+ 	 
+-- 
+3S 
+= 6 hearts, 4 diamonds, 3 spades  
+ 	 
+-- 
+3NT = 5-5 , 3 clubs 
+ 	 
+-- 
+4C = 6 hearts, 4 diamonds, 3 clubs 
+ 	 
+-- 
+4D = 5-5, 3 spades  
+ 	 
+-- 
+4H = 6 hearts , 5 diamonds 
+1D-2C ; 
+
+
+ 
+1D-2C; 
+-- 2D obligatory with all non-reversers [see below] 
+-- 2H reverse with 5+ hearts, 4+ diamonds 
+-- 2S reverse with 5+ spades, 4+ diamonds 
+-- 2NT diamond one-suiter without 2 top honors, maximum 
+-- 3C 5-5 minors, non-minimum 
+-- 3D reverse with 6 diamonds, 4 clubs 
+ 
+1D-2C ; 2D- 
+1D-2C; 2D  
+-- 2H reverse with 5+ hearts, 4+ clubs [see below] 
+-- 2S reverse with 5+ spades, 4+ clubs [see below] 
+-- 2NT balanced 11-12 
+-- 3C GF 
+-- 3D 5+ diamonds, 4+ clubs, SI 
+ 
+1D-2C; 2D-2H; 
+-- 2S balanced without spade stopper (4th suit) 
+-- 2NT balanced, stops in unbid suits 
+-- 3C club raise 
+-- 3D weak one-suiter in diamonds 
+-- 3H Hxx heart support, balanced or with 5 diamonds 
+-- 3S Hxx heart support, long diamonds (S=D) 
+-- 3NT Hxx heart support, long clubs 
+-- 4C 5 clubs, 4 diamonds, 3 hearts, no top honor, maximum 
+-- 4D 5 diamonds, 4 clubs, 3 hearts, no top honor, maximum 
+-- 4H void in spades, honor third or better heart raise 
+ 
+1D-2C; 2D-2S; 
+-- 2NT balanced with heart stopper, not Hxx spade support 
+-- 3C club raise 
+-- 3D diamond one-suiter 
+-- 3H balanced without heart stop (4th suit) 
+-- 3S Hxx spade support 
+-- 3NT Hxx spade support, long clubs 
+-- 4C 3=1=4=5, xxx spade support, maximum 
+-- 4D 3=1=5=4, xxx spade support, maximum 
+              -- 4H 3=0=x=y, Hxx spade support  
+As an aid, it is sufficient to remember that over responder's reverse, the bids are mainly natural(other major = 4th suit). 
+ 
+If partner bids at the four level it denies a spade honor but shows fit and length in the bid suit. 
+ 
+The bids of 
+ 	 	 	 	3S/3NT over a heart reverse 
+ 	 	 	 	3NT    over a spade reverse both guarantee at least an honor third fit. 
+1D-2D ; 
+ 
+1D-2D game forcing relay 
+-- 2H with most non-reverse hands [see below] 
+-- 2S diamond/spade reverse 
+-- 2NT diamond/heart reverse 
+-- 3C diamond/club reverse 
+-- 3D diamond single-suiter 
+ 
+1D-2D ; 2H- 
+ 
+1D-2D; 2H  
+-- 2S reverse with 5+ spades, 4+ diamonds 
+-- 2NT reverse with 5+ hearts, 4+ diamonds 
+-- 3C GF with 5+ diamonds and 3/4 clubs 
+-- 3D GF in a single-suited diamond hand 
+	 	-- 3H fit in diamonds and heart stop 
+	 	-- 3S fit in diamonds and spade stop 
+	 	-- 3NT both major stops 
+ 
+1D-2NT ; 
+The 2NT response shows a balanced hand of 15-19 points without a 4-card major or a 5-card minor. The 3C rebid lets responder distinguish between minimum (15-17) and maximum (18-19) and to investigate a minor suit fit. 
+ 
+1D-2NT; 
+-- 3C ask to find minor fit 
+- -- 3D 3=3=4=3, 15-17 
+- -- 3H 2=3=4=4, 15-17 
+- -- 3S 3=2=4=4, 15-17 
+- -- 3NT 3=3=3=4, 15-17 
+- -- 4C 3=3=3=4, 18-19 
+- -- 4D 3=3=4=3, 18-19 
+- -- 4H 2=3=4=4, 18-19 
+- -- 4S 3=2=4=4, 18-19 
+-- 3D 
+-- 3H reverse with 5+ hearts, 4+ diamonds 
+-- 3S reverse with 5+ spades, 4+ diamonds 
+ 
+1H Opening Bid 
+1H-1S 
+1H-1N 
+1H-2C 
+1H-2D 
+1H-2S 
+ 
+ 
+ 
+ 
+ 
+ 
+One of a major bids are natural openings, showing 12-16 HCP with 4+ cards in the suit. Limited by the opening of 1C, used for stronger hands, and by 2H/S (one suit with 8-12 pts) used with 6 card suits which, in the absence of the weak 2, would have to be bid 1H…2H or 1S…2S. 
+ 
+The general method of the opening is natural, following the theory of finding the major fit, with 3 exceptions: 
+D the major 2-suiter is opened in regular order if not a reverse; 
+D the 2-suiter with 4-5 clubs, or with 6 clubs not headed by 2 honors, is opened in the major; 
+D the 2-suiter reverser (8 playing tricks, long good suit) is opened in canape order, with the exception of those with 4 clubs, which are opened in the major. 
+ 
+Balanced hands with four card majors are opened in a major if it is biddable 
+( at least Qxxx or JTxx ). With 4-4 majors, one opens 1H regardless of the relative quality of the suits.  With an unbalanced hand (2 or 3 suited) one opens in the 4 card major. 
+Responses to the opening of 1H/1S 
+ 
+Responses to 1H and 1S are mainly natural, with the following agreements: 
+D over 1H the responses of 1S, 2C and 2D guarantee only 4 cards, which could be the beginning of a reverse. 
+D The invitational raises are distinguished between balanced (double raise = no singleton, after which any cue bid is an honor) and unbalanced (2S over 1H and 2NT over 1S); 
+D The strong GF+ 2-suiter of 5+ clubs/4 diamonds is bid with 2C…3C, and could be just 4 diamonds (eventually shown by the opener); 
+D To avoid uselessly going past 3NT the strong 2-suiters with 5+ diamonds/4 clubs are bid in ascending order with slammish hands, and descending order with GF hands; 
+D 2D is dedicated to particular hands, where South is not interested in distributional details (otherwise she uses the 2C relay). It is bid, other than with diamond hands, with GF balanced hands or with hands with a fit for the major too weak to use a cue (which guarantees 3 to two honors, or an honor fourth). The sequence 2D… 2NT is GF; 
+D jumping to 3S over 1H is made with a broken 7 card suit (KJxxxxx) and nothing on the side, and has no similar cousin after a 1S opener. The splinter raise goes through 2S (which shows a singleton) followed by 3S (splinter in spades, GF). 
+D 3NT is reserved for a balanced hand with a 4-5 card without a 4 card side suit, 13-15 HCP.  Opener can immediately evaluate slam chances. The structure of responses is the following: 
+1S 
+4+ spades, forcing, possibly the start of a canape reverse;  
+1NT 
+natural, 6-10 without 4 spades; 
+2C 
+natural, forcing to at least 2NT. Over 1H it is possibly the start of a canape reverse (stronger hand than opener, always SI). The sequence 
+2C…3C is GF, whereas 2C…raising a rebid suit and 2C…2NT are invitational to game. 2C…3D is a slammish canape reverser; 
+2D 
+natural, forcing to at least 3D. Over 1H can be the start of a canape 
+reverse. 2D…3D is GI, whereas 2D…2NT is game-forcing and can hide a fit which is worse than 2 honors. 2D…3C is GF, but in long-short order; 
+2H/S 
+natural, 6-10 with 4 hearts/spades; 
+2S/NT 
+artificial, 4+ card fit, with a singleton (limit or slam) that is 
+shown after 2NT/3C relay; 
+2NT 
+strong single-suiter in spades (over 1H); 
+3C/D 
+strong single-suiter; 
+3H/S 
+GI with a 4 card fit without void; 
+3S 
+7 weak spades and nothing outside (inadequate for responding 1S); 
+3NT 
+13-15, 4-5 card balanced raise with no outside 4 card suit; 
+4C/D 
+GF splinter but not SI; 
+4H  
+to play (over 1S)  
+4H/S 
+to play (raise). 
+ 
+Natural Sequences over 1H and 1S 
+After responding at the one-level (1S or 1NT) the simple change of suit is ambiguous in terms of length (perhaps long-short, perhaps short-long) and strength (with 5-4 one could have 15-16 HCP).  
+ 
+Though many sequences are natural, Blue Team Clubs adopt some "treatments" that characterize it and follow: 
+ 
+D Repeating the major always shows an interesting hand (15-16 in 5332 or 1314 with 6 cards) while with 5332 and 13-14 HCP the second bid is 1NT, and the one-suited 11-12 HCP 6+ card majors are opened with a weak 2.  With a 13+ HCP 6 card major one repeats it, even with a 4 card side suit.  
+ 
+D Over rebidding the major, South can bid 2NT as a relay over which North bids 3C balanced, repeating the major with 6+ weak (13-14), bidding 3D/NT with the 2-suiter (maximum, otherwise one first changes and rebids the major) and bids the other major with a maximum one-suiter (15-16). An exception is 3S in the sequence 1H-1S;2H-2NT;3S that shows just a 3 card fit and nothing about minimum/maximum. 
+ 
+D With 5/6 cards in a major and 4/5 clubs, and a concentrated 15-16 HCP, one should bid 1H/S…3C, a unique long-short jump (or 5-5) in the system. 
+ 
+D In the sequence 1H-1S;2S the bid 2NT looks for a singleton minor or, for 5 hearts and 2-2 minors. 3S is bid with a balanced minimum and no game interest. A new suit (not hearts) however shows a singleton and is GI+. Thus slam-bidding is simplified by knowing immediately about singletons (in either hand) and that eventual cue bids suits are always honors. 
+ 
+D After 1H-1S, 1H-1NT and 1S-1NT the bid of 2NT is used to show a maximum 3-suited hand with singleton in the other major or 3-suited with 5 diamonds and void in the other major (the 2-suiters with 5 clubs and a void in the other major are shown via 2C). Over these sequences, any simple preference to a minor is to play, whereas 3H or 3S is forcing.  
+ 
+D The strong 2-suiters (1H…2S, 1H/S…3C/D/3H) are not ambiguous in terms of suit lengths (always short-long if the second suit isn't clubs, 6-4 or 5-5 if the second suit is clubs) and, when jumping from a higher suit into diamonds or hearts, guarantees a solid 6 card second suit. 
+ 
+The more complex "natural" sequences are shown below: 
+ 
+ 
+It is important, before studying the conventional sequences,  to understand the underlying rule of raising opener's suit when searching for slam as the system features a rigid distinction between 3 and 4 card raises and between solid raises(at least 2 honors in 3 or 4 cards), decent raises (one major honor, 3rd or 4th ) and low quality suit support.  
+ 
+The table below represents the possible sequences that describe opener's length and quality, and that describe responder's fit quality. It is intended, naturally, that responder, if he uses one of these sequences, must have enough strength for game to have prospects for slam. 
+ 
+Possible sequences for approaching slam 
+ 
+
+3 card raise, 0 or 1 top honor 
+3 card raise, 2 top honors 
+4 card raise, all small cards 
+4 card raise, 1 top honor 
+4 card raise, 2 top honors 
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+Four card opener 
+ 
+ 
+ 
+Splinter 
+ 2D…2NT 
+…raise 
+ 
+Splinter 
+ 
+2D…raise 
+ 
+1S/2C/D… relay… cue-bid 
+ 
+Splinter 
+ 
+1S/2C/D… cue-bid 
+ 
+ 
+Five card opener 
+ 
+2D…2NT  
+…raise 
+ 
+ 2C/D… cue-bid 
+ 
+2D…2NT  
+…raise 
+ 
+1S/2C/D… cue-bid 
+ 
+1S/2C/D…  cue-bid  
+
+
+ 
+Bidding 2-suiters as North after opening 1H/1S 
+ 
+There are certain sequences that, when first bid, are ambiguous as to suit length. Such are: 
+ 
+a)1H-1S;2C 
+b)1H-1S;2D 
+c)1H-1NT;2C 
+d)1H-1NT;2D 
+e)1S-1NT;2C 
+f)1S-1NT;2D 
+ 
+In all cases South's rebids are natural, except a bid that is left as an asking relay. 
+ 
+The relay is 2D in a), 2NT in b), e) and f) whereas in c) and d), where hearts is opened and the response is 1NT, 2S is the relay with 3 hearts, but 2NT is used as a non-forcing relay that shows game interest, but without 3 hearts and is passable by a minimum canape. 
+ 
+Remember that after responding 1NT South cannot use a suit as a relay, except 
+2S after the opening of 1H (spades cannot be held, since 1NT denied spades).  
+To allow easy memorization, of the relays 2S and 2NT the following general rules are adopted:  
+D 2NT, or passing a non-forcing 2NT, shows a minimum hand , suited for NT and, normally, with a 5-card minor; possible is a 5-card major after the non-forcing NT which denies a 3 card fit; 
+ 
+D Repeating the minor always shows a 5 card suit and a minimum hand; when it is possible to bid 2NT, or to pass partner's nonforcing 2NT, it shows a bad hand for NT;  
+D Repeating the major shows a 5 card suit in a maximum hand when 3 card support is unlikely, and a minimum hand when 3 card support is shown. With a 5-card major, but support denied, one can pass nonforcing 2NT. If the relay is forcing, with a 5 card major and a maximum, one bids the other minor. With a maximum, 5-card major, and guaranteed 3 card support, one bids game.  
+D Bidding the other minor is only used to show a minimum in long-short suit order. If the relay guarantees a 3 card major fit, it is used, however, when the bidding was short-long with 3 card in the other minor (not higher than 3D).  
+D 3 of the other major and 3NT are reserved for maximum 2-suiters (3NT long- short or short-long). 3NT is always a possible contract, and tends to show a stopper in the other major or 4 card suit (when it makes sense from the previous bidding). 3 of the other major can be bid to show weakness in the critical suit (the four-card suit or the other major), or to show a 3 card fit in the sequence 1H-1S;2D-2NT;3S. 
+ 
+The rule has some exceptions in the fact that, in certain cases, North cannot have a minimum or cannot have a stopper in the other major. In these cases some modifications, always logical and easy to remember, are made. 
+ 
+The following table highlights the important parts of the 2S and 2NT relays after opening 1H and responding 1NT. 
+ 
+ 
+ 
+Forcing relay (2S) 
+Forcing relay (2NT) 
+Non-forcing relay (2NT) 
+ 
+ 
+with 3H 
+not promising 3H 
+without 3H 
+5-4 
+Minimum 
+3H 
+3 oth. minor(om) 
+Pass 
+5-4 
+Maximum 
+4H 
+3H 
+3H 
+4-5 
+Minimum 
+3m 
+3m 
+Pass or 3m 
+4-5 
+Maximum 
+3S/3NT 
+3S/NT 
+3S/NT 
+4-5-3om 
+Min/Max 
+3om (max 3D) 
+ 
+3om (max 3D) 
+ 
+The following table deals with relays after the 1S opening and 1NT response. 
+ 
+ 
+ 
+ 
+Forcing relay (2NT) 
+ 
+5-4 
+Minimum 
+3om 
+5-4 
+Maximum 
+3H 
+4-5 
+Minimum 
+3m 
+4-5 
+Maximum 
+3S/NT 
+The various sequences follow below. 
+ 
+1H-1S; 2C  
+Some final observations: 
+D with a spade one-suiter South, after 1S, can rebid them (sign-off), bid 2D looking for 3 card support in an invitational hand or jump immediately with a GF hand (but not a self-sufficient suit, otherwise an immediate 2NT); 
+ 
+D with spades/diamonds in a weak canape South, not able to bid 2D in a natural sense, bids 2NT as a transfer to diamonds; 
+ 
+D with a balanced invitational hand South, not able to bid 2NT, goes through 
+2D; 
+ 
+D the 2D relay is used to very simply and quickly describe the following hands: 
+a) spade one-suiter, weak or GF; 
+b) raise with weak hearts GI, or SI with 2 top honors; 
+c) club raise, GI or SI; 
+d) spade-diamond hand, weak or GF; 
+e) balanced hand which wants to play 3NT; 
+ 
+b) 1H-1S; 2D 
+ 
+ 
+Final observations:  D with a spade one-suiter South, after 1S, can rebid them (sign-off), bid 2NT to look for a fit in an invitational hand or jump with a GF hand (not a solid suit, otherwise an immediate 2NT); 
+ 
+D with spades/clubs in a weak canape South, not having a convenient bid, passes or corrects to 2H; 
+ 
+D with a balanced invitational hand South, 2NT not available in a natural sense must use the relay and can play in a 5 card suit opposite a minimum response by North, or bid 3NT after a maximum response; 
+ 
+D 2NT is therefore reserved to describe quickly and simply many hands, such as: 
+a) weak or GF+ spade one-suiter; 
+b) hand with a weak heart raise, GI or SI with two major honors; 
+c) diamond raise, GI or SI; 
+d) two-suiter, spades/clubs GF+; 
+e) balanced to play 3NT. 
+ 
+ 1H-1S ; 
+1H-1S; 
+-- 1NT balanced 12-14 [see below] 
+-- 2C natural, lengths unspecified [see below] 
+-- 2D natural, lengths unspecified [see below] 
+-- 2H 5+ hearts, could have 4 diamonds [see below] 
+-- 2S four card support, minimum [see below] 
+-- 2NT 1=4=4=4 or 0=4=5=4, maximum [see below] 
+-- 3C reverse with 5+ hearts, 4+ clubs [see below] 
+-- 3D reverse with 4 hearts, 6 diamonds 
+-- 3H 8 trick one-suiter 
+-- 3S 4 card spade support, maximum 
+-- 3NT reverse with 5+ spades, 4+ hearts, no 1st round minor control 
+-- 4C reverse with 5+ spades, 4+ hearts, Ace/void of clubs 
+-- 4D reverse with 5+ spades, 4+ hearts, Ace/void of diamonds 
+ 
+ 1H-1S ; 1NT 
+The 1NT rebid shows a balanced hand with 12-14 HCP. 
+ 
+1H-1S; 1NT 
+-- 2C relay [see below] 
+-- 2D to play 
+-- 2H 5 spades and 3 hearts, less than invitational 
+-- 2S to play 
+-- 2NT GI without 5 spades and without 3 hearts 
+-- 3C reverse with 4 spades, 5+ clubs 
+-- 3D reverse with 4 spades, 5+ diamonds 
+-- 3H GI 
+-- 3S GI with 6 good cards 
+
+4C cue-bid with HHxx heart fit (otherwise use 2C) 
+4D cue-bid with HHxx heart fit (otherwise use 2C) 
+ 
+1H-1S; 1NT-2C 
+1H-1S; 1NT-2C; 
+-- 2D Not 3 spades 
+- 
+-- 2H GI with a 3 heart raise 
+- 
+-- 2S GI with 5 great/6 bad spades 
+- 
+-- 2NT GF, not 3 hearts, not 5 great spades  
+- 
+-- 3C to play 
+- 
+-- 3D SI, asking opener to cue-bid. Normally  
+- 
+-      with a strong single-suiter and non-solid suit 
+- 
+-      or with a balanced hand 
+- 
+-- 3H strong balanced hand, 3 hearts, GF 
+- 
+-- 3S 6 spades, GF 
+- 
+-- 3NT to play 
+- 
+-- 4C/D cue-bid with a 4 card heart fit, not 2 top honors 
+-- 2H 5 hearts and 3 cards in spades 
+- 
+-- 2S invitational 
+- 
+-- 2NT invitational 
+- 
+-- 3C to play 
+- 
+-- 3D SI, asking opener to cue-bid 
+- 
+-- 3H 3 hearts, invitational 
+- 
+-- 3S GF, 5+ spades 
+- 
+-- 4C/D/H cue-bid, heart fit, no 2 top honors 
+-- 2S 3 card spade raise, not 5 hearts, minimum 
+- -- 2NT GF, inviting opener to bid another 4 card suit 
+- -- 3C to play 
+- -- 3D SI, asking opener to cue-bid 
+- -- 3H/S GF+ 
+-- 2NT 3 card spade raise, not 5 hearts, maximum 
+              -- 3C min. 1=4=4=4 minimum (if max, bid 2NT earlier)  
+Notice that after the 2C relay, 3D is still conventional a balanced slam hand. North should begin cue-bidding assuming the hand will be played in NT. 
+1H-1S ; 2C- 
+The first sequence is characterized by the fact that South has shown spades and that the relay is the fourth suit; thus the responses are mostly natural and look for a 3 card spade fit.  
+ 
+1H-1S; 2C 
+-- 2D relay [see below] 
+-- 2H sign-off 
+-- 2S sign-off 
+-- 2NT weak 2-suiter with 5+ diamonds; invites correction to 3D 
+-- 3C invitational with 4+ clubs 
+-- 3D reverse with 4 spades, 5 diamonds 
+-- 3H invitational 
+3S forcing (with an invitational hand bid 2D) 
+3NT to play 
+-- 4C reverse with 4 spades, 5 clubs 
+-- 4D reverse with 4 spades, 5 hearts, 2 high heart honors 
+    (otherwise go through 2D relay) 
+ 
+1H-1S; 2C-2D 
+ 
+1H-1S; 2C-2D; 
+-- 2H 5 hearts, 4 clubs, not 3 spades, minimum 
+-- 2S 3 spades 
+- 
+-- 2NT forcing distributional relay 
+- 
+ 	-- 3C 4 hearts, 5 clubs, 3 spades min 
+- 
+ 	-- 3D 4 hearts, 5 clubs, 3 spades max 
+- 
+ 	-- 3H 5 hearts, 4 clubs, 3 spades min 
+- 
+ 	-- 3S 5 hearts, 4 clubs, 3 spades, max 
+- 
+ 	-- 3NT 5 hearts, 5 clubs, 3 spades  
+-- 2NT max + diamond stopper* or three suited with spade void 
+- 
+-- 3C asking bid 
+- 
+ 	-- 3D 0=4=4=5, maximum 
+- 
+ 	-- 3H 0=5=4=4, maximum 
+- 
+ 	-- 3S 0=5=5=3, maximum 
+- 
+ 	-- 3NT 4 hearts, 5+ clubs, diamond stopper, maximum 
+-- 3C 4 hearts, 5+ clubs, minimum, possible diamond stopper 
+-- 3D 4 hearts, 5+ clubs, no diamond stopper 
+-- 3H 5 hearts, 4 clubs, good hand, no diamond stopper** 
+-- 3S 5 hearts, 5+ clubs, maximum, no diamond stopper 
+-- 3NT 5 hearts, 4 clubs, maximum with a diamond stop 
+-- 4C 4 hearts, 6 clubs, 3 spades, maximum 
+-- 4D 5 hearts, 5 clubs, 3 spades, maximum 
+              -- 4H 6 hearts, 4 clubs, 3 spades, in-between (Axx Jxxxxx - AKQx) *2-suiter with 4 hearts only. 
+**No hand with 5H can be minimum, otherwise it would have rebid 2H over the 2D relay. 
+1H-1S ; 2D- 
+The second sequence is characterized by the fact that South has shown spades but there is no relay available at the 2 level, and 2H and 2S are both natural. 
+ 
+As might be noted, 2D excludes a maximum hand with 5 hearts, unless it is 55. With 5-4 at most one bids 2H, as a one-suiter, to later bid 3C (as if it was a 5332) and, over the 3D relay, reveal whether it is one-suited or 2suited. 
+ 
+The natural alternative bids to the 2NT relay are the following 1H-1S; 2D 
+-- 2H sign-off 
+-- 2S sign-off 
+2NT forcing asking relay [see below] 
+3C reverse in spades/clubs SI in canape, or 4th suit 
+-- 3D invitational with 4+ diamonds 
+-- 3H invitational 
+-- 3S forcing (with an invitational hand go through 2NT) 
+-- 3NT to play 
+-- 4C reverse with 4 spades, 5 hearts, 2 top heart honors 
+-- 4D reverse with 4 spades, 5 diamonds 
+ 
+1H-1S; 2D-2NT 
+ 
+1H-1S; 2D-2NT; 
+-- 3C 5+ hearts, minimum hand <OR> 5-5 maximum 
+- -- 3D asking relay, interest in spades 
+	-  	-- 3H minimum, 5+ hearts without 3 spades 
+	-  	-- 3S minimum, 5+ hearts and 3 spades 
+	-  	-- 3NT maximum, 5-5, without 3 spades 
+-- 3D min, 4 hearts, 5+ diamonds, possibly 3 spades 
+-- 3H min, 5-5, not 3 spades 
+-- 3S 3=4=5=1 or 3=4=6=0, maximum 
+-- 3NT max, 5 diamonds, not 3 spades 
+-- 4C 3=5=5=0, maximum 
+ 
+1H-1S ; 2H- 
+1H-1S; 2H 
+-- 2S semi-forcing with 5+ spades [see below] 
+-- 2NT relay [see below] 
+-- 3C  
+-- 3D  
+-- 3H  
+-- 3S  
+ 
+1H-1S; 2H-2S 
+Responder's rebid of 2S is semi-forcing with 5+ spades. Opener should only pass with a misfit for spades. 
+ 
+1H-1S; 2H-2S; 
+-- Pass misfit for spades (singleton?) 
+-- 2NT undefined 
+-- 3C 5332, 15-16 HCP <OR> 5 hearts, 4 diamonds, maximum 
+- 
+-- 3D asking (with interest in diamonds or spades) 
+- 
+ 	-- 3H 5 hearts, 4 diamonds, not 3 spades 
+- 
+ 	-- 3S 3=5=2=3 or 3=5=3=2 
+- 
+ 	-- 3NT 2=5=3=3 
+- 
+ 	-- 4C 3=5=4=1 (4D fixes diamonds as trump) 
+-- 3D 6 hearts, 4 diamonds, maximum 
+
+-- 3H 6 hearts, not 3 spades (min or max) 
+-- 3S 6 hearts, 3 spades (min or max) 
+-- 3NT 6 hearts, 4 clubs, maximum 
+ 
+1H-1S; 2H-2NT 
+ 
+1H-1S; 2H-2NT; 
+-- 3C 5332, 15-16 HCP <OR> 5 hearts, 4 diamonds, maximum 
+- 
+-- 3D relay (with interest in diamonds or spades) 
+- 
+ 	-- 3H 5 hearts, 4 diamonds, not 3 spades 
+- 
+ 	-- 3S 3=5=2=3 or 3=5=3=2 
+- 
+ 	-- 3NT 2=5=3=3 
+- 
+ 	-- 4C 3=5=4=1 (4D fixing diamonds as trump)  
+-- 3D 6 hearts, 4 diamonds, maximum 
+-- 3H 6 hearts, not 3 spades (min or max) 
+-- 3S 6 hearts, 3 spades (min or max) 
+-- 3NT 6 hearts, 4 clubs, maximum 
+ 
+ 
+1H-1S ; 2S 
+ 
+1H-1S; 2S 
+-- 2NT asks for a singleton, GI 
+- 
+-- 3C singleton club 
+- 
+-- 3D singleton diamond 
+- 
+-- 3H 4=5=2=2 
+- 
+-- 3S minimum balanced hand 
+- 
+-- 3NT maximum balanced hand  
+-- 3C singleton club, GI+ (invites cue-bid) 
+-- 3D singleton diamond, GI+ (invites cue-bid) 
+-- 3H singleton heart, GI+ (invites cue-bid) 
+ 
+1H-1S ; 2NT 
+The 2NT rebid shows a maximum with either 1=4=4=4 or 0=4=5=4 distribution. Note that if opener has 0=4=4=5 or 0=5=4=4 he should rebid 2C. 
+ 
+1H-1S; 2NT maximum 3-suiter with a singleton/void in spades 
+-- 3C to play 
+-- 3D to play 
+-- 3H forcing! (odd maybe, but strong hands need this bid) 
+-- 3S forcing, then 
+- -- 3NT spade singleton 
+- -- 4C with 5D and spade void 
+-- 3NT to play 
+-- 4C natural, slammish, with a high honor in the suit 
+          -- 4D natural, slammish, with a high honor in the suit  
+1H-1S ; 3C 
+The 3C rebid shows a reverse with either 5-5 or 6-4 in hearts and clubs. 
+ 
+1H-1S; 3C 
+-- 3D asking 
+- -- 3H 6 hearts, 4 clubs, not 3 spades 
+- -- 3S 3=6=0=4 
+- -- 3NT 5 hearts, 5 clubs, not 3 spades 
+- -- 4C 3=5=0=5 
+-- 3H  
+-- 3S  
+-- 3NT  
+-- 4C  
+-- 4D  
+-- 4H  
+1H-1NT ; 
+ 
+1H-1NT; 
+-- 2C natural, lengths unspecified [see below] 
+-- 2D natural, lengths unspecified [see below] 
+-- 2H 6 hearts <OR> 5332, 15-16 HCP [see below] 
+-- 2S reverse with 5+ spades, 4+ hearts [see below] 
+-- 2NT 1=4=4=4 or 0=4=5=4, maximum [see below] 
+-- 3C reverse with 5+ hearts, 4+ clubs [see below] 
+-- 3D reverse with 4 hearts, 6 diamonds 
+-- 3H 8 trick one-suiter 
+-- 3S reverse with 7 spades, 4 hearts 
+-- 3NT reverse with 6 spades, 5 hearts 
+ 
+1H-1NT ; 2C- 
+ 
+The third sequence is characterized by the response of 1NT and therefore the possibility of using the forcing relay 2S, that guarantees 3 hearts, and the nonforcing 2NT, that denies 3 hearts. 
+ 
+1H-1NT;2C 
+-- 2D to play 
+-- 2H to play 
+-- 2S forcing relay with 3 hearts [see below] 
+-- 2NT non-forcing relay without 3 hearts [see below] 
+-- 3C 8-10 with 4+ clubs 
+ 
+1H-1NT; 2C-2S 
+ 
+1H-1NT; 2C-2S; 
+-- 2NT 4 hearts, 5+ clubs, minimum, spade stop 
+-- 3C 4 hearts, 5+ clubs, minimum and denying spade stop 
+-- 3D 4 hearts, 5+ clubs, maximum and 3 diamonds -- 3H 5+ hearts, 4+ clubs, minimum 
+-- 3S 4 hearts, 5+ clubs, maximum, no spade stop 
+-- 3NT 4 hearts, 5+ clubs, maximum, spade stop 
+-- 4H 5+ hearts, maximum 
+ 
+Note the first 2 responses (2NT and 3C) are minimum hands and thus playable contracts. Moreover, since South is limited with at most 3 hearts, all the responses, except for 3H and 4H, are canapes.  
+1H-1NT; 2C-2NT 
+ 
+1H-1NT; 2C-2NT; 
+-- pass with any 5-4 minimum that is suited to NT 
+-- 3C 4+ hearts, 5+ clubs, minimum and denying a spade stop 
+-- 3D 4 hearts, 5+ clubs, maximum and 3 diamonds 
+-- 3H 5+ hearts, 4 clubs, maximum, probably no spade stop 
+-- 3S 4 hearts, 5+ clubs, maximum, no spade stop 
+-- 3NT maximum and spade stop, any distribution 
+ 
+In this case, a 3-card heart fit denied, North passes or bids 3NT even with 5 hearts. 3H suggests playing in hearts even with doubleton support, and comes only from a hand with 6 hearts or 5 good hearts without a fit in spades. 
+ 
+1H-1NT ; 2D- 
+ 
+The fourth sequence is also characterized by the response of 1NT and thus the ability to use 2S (with 3 hearts), or 2NT (without 3 hearts). 
+ 
+1H-1NT;2D 
+-- 2H to play 
+-- 2S forcing relay with 3 hearts [see below] 
+-- 2NT non-forcing relay without 3 hearts  [see below] 
+-- 3C to play 
+-- 3D 8-10 with 4+ diamonds 
+ 
+1H-1NT ;  2D-2S  ;  ( Forcing Relay ) 
+ 
+1H-1NT; 2D-2S; 
+-- 2NT 4 hearts, 5+ diamonds, minimum 
+-- 3C 4 hearts, 5+ diamonds, 3 clubs 
+-- 3D 4 hearts, 5+ diamonds, minimum in a bad hand for NT 
+-- 3H 5+ hearts, 4+ diamonds, minimum 
+-- 3S 4 hearts, 5+ diamonds, maximum, no spade stop 
+-- 3NT maximum and spade stop, to play even with 5 hearts 
+-- 4H 5+ hearts, maximum and a bad hand for NT 
+ 
+Also in this case the first 2 natural responses (2NT and 3D) are minimums and therefore passable. The hands with the 5 card major are rebid cheaply (minimum) or in a jump (maximum), whereas all other responses deny 5 hearts. 
+ 
+1H-1NT ; 2D-2NT ;  ( Non-Forcing Relay ) 
+ 
+1H-1NT;2D-2NT; 
+-- pass with any 5-4 minimum suited for NT 
+-- 3C 4+ hearts, 4+ diamonds, 3 clubs 
+-- 3D 4 hearts, 5+ diamonds, minimum 
+-- 3H 5+ hearts, 4+ diamonds, maximum  
+-- 3S 4 hearts, 5+ diamonds, maximum, no spade stop 
+-- 3NT maximum with spade stop, to play even with 5 hearts 
+ 
+Observe that 3C shows 3 clubs without revealing lengths. South in fact, if not interested in 3NT, can always rebid 3D over which North, with a maximum, 
+5 hearts and 4 diamonds, can correct to 3H. 
+ 
+The natural alternatives to 2S and 2NT relays are the following  
+1H-1NT ; 2H- 
+1H-1NT; 2H 
+-- 2S relay 
+- 
+-- 2NT 5 hearts, 4 spades max  
+- 
+-- 3C 5332 15-16 
+- 
+-- 3D 6 hearts and 4 diamonds 
+- 
+-- 3H minimum one-suiter (13-14) 
+- 
+-- 3S maximum one-suiter (15-16) 
+- 
+-- 3NT 6-4 with 4 clubs 
+-- 2NT 5-5 minors 
+ 
+1H-1NT ; 2S- 
+1H-1NT; 2S reverse in hearts/spades 
+ 	 	-- 2NT asks distribution  
+ 	 	 	-- 3C 6=4=0=3 
+ 	 	 	-- 3D 6=4=3=0 
+ 	 	 	-- 3H 5-5 
+ 	 	 	-- 3S 6-4 with rest 2-1 
+ 
+1H-1NT ; 2NT- 
+1H-1NT; 2NT maximum 3-suiter with singleton or void in spades 
+ 	 	-- 3C/D to play 
+ 	 	-- 3H forcing 
+ 	 	-- 3S forcing, to find out if there is a 5-carder 
+ 	 	- -- 3NT 4441 
+ 	 	- -- 4C 5 diamonds 
+ 	 	-- 3NT to play  
+ 
+1H-1NT ; 3C 
+1H-1NT; 3C  
+-- 3D asking 
+- -- 3H 6 hearts, 4 clubs, not 3 spades 
+- -- 3S 3=6=0=4 
+- -- 3NT 5 hearts, 5 clubs, not 3 spades 
+- -- 4C 3=5=0=5 
+-- 3H  
+-- 3S  
+-- 3NT  
+-- 4C  
+-- 4D  
+-- 4H  
+ 
+1H-2C ; 
+The 2C response begins an organized conventional sequences. 
+ 
+1H-2C; 
+-- 2D 4 hearts [see below] 
+-- 2H 5+ hearts [see below] 
+-- 2S reverse with 5+ spades, 4+ hearts [see below] 
+- 
+-- 2NT distributional relay 
+- 
+ 	-- 3C 6=4=0=3 
+- 
+ 	-- 3D 6=4=3=0 
+- 
+ 	-- 3H 5-5  
+- 
+ 	-- 3S 6-4 with rest 2-1 
+-- 2NT 5 hearts, 4 clubs, minimum 
+-- 3C reverse with 5 hearts, 5 clubs 
+-- 3D reverse with 4 hearts, 6 diamonds 
+-- 3H solid six card suit 
+-- 3S reverse with 7 spades, 4 hearts (LG) 
+-- 3NT reverse with 6 spades, 5 hearts (LG) 
+-- 4C 6 hearts, 4 clubs 
+1H-2C ; 2D 
+The 2D rebid indicates that the opening bid was based on a four card heart suit. Responder can relay with 2H 
+ 
+1H-2C; 2D 
+-- 2H relay [see below] 
+-- 2S reverse with 5+ spades, 4+ clubs 
+-- 2NT balanced GI (11-12) 
+-- 3C single-suiter in clubs or 2-suited clubs/diamonds GF+ 
+-- 3D 5+ diamonds, 4+ clubs, SI 
+-- 3H GF with Hxxx heart fit 
+-- 3S cue-bid with HHxx heart fit -- 3NT to play 
+-- 4C cue-bid with HHxx heart fit 
+-- 4D cue-bid with HHxx heart fit 
+ 
+1H-2C; 2D-2H 
+1H-2C; 2D-2H = relay 
+-- 2S minimum unbalanced hand [see below] 
+- -- 3C GF with 6 clubs 
+- -- 3H GF+, 4+ hearts not to 2 top honors, no side Ace 
+- -- 3NT to play 
+- -- 3S/4C/4D GF+, Ace cue, 4+ hearts not to 2 top honors 
+-- 2NT balanced 12-14 
+-- 3C 4 hearts, 5 clubs, maximum 
+- -- 3D distributional ask 
+	-  	-- 3H 2=4=2=5 
+	-  	-- 3S 1=4=3=5 (singleton spade) 
+	-  	-- 3NT 3=4=1=5 (singleton diamond) 
+-- 3D 4 hearts, 5 diamonds, singleton, maximum 
+- -- 3H singleton ask 
+	-  	-- 3S 1=4=5=3 (singleton spade) 
+	-  	-- 3NT 3=4=5=1 (singleton club) 
+-- 3H 4 hearts, 6 clubs, maximum (H=C) 
+-- 3S 4 hearts, 6 diamonds, maximum (S=D) 
+-- 3NT 2=4=5=2, maximum 
+-- 4C 0=4=4=5, maximum 
+-- 4D 0=4=5=4, maximum 
+-- 4H 4=4=0=5, maximum (H=C) 
+-- 4S 4=4=5=0, maximum (S=D) 
+ 
+1H-2C; 2D-2H; 2S 
+-- 2NT GF relay 
+-- 3C GF with 6 clubs 
+-- 3H GF+, 4+ hearts not to 2 top honors, no side Ace 
+-- 3NT to play 
+              -- 3S/4C/4D GF+, Ace cue, 4+ hearts not to 2 top honors  
+ 
+1H-2C ; 2H 
+1H-2C; 2H  
+-- 2S reverse with 5 spades, 4 clubs 
+- 
+-- 2NT minimum  
+- 
+-- 3C raise with small clubs 
+- 
+-- 3D 5 hearts and 5 diamonds 
+- 
+-- 3H 6 hearts, good hand 
+- 
+-- 3S fit in spades, at least honor third 
+- -- 4C strong hearts/clubs to an honor (12/14, else 2NT) 
+- -- 4S spade fit without an honor 
+-- 2NT limit (11-12) 
+-- 3C reverse in a club one-suiter GF or 5 clubs/4 diamonds 
+-- 3D 5 diamonds, 4 clubs, SI 
+-- 3H limit with 3 hearts (11-12) 
+-- 3S/4C/4D cue-bid with heart fit, min HHx or Hxxx 
+2S Rebid 
+1H-2C; 2S  
+-- 2NT distributional relay 
+- -- 3C 6=4=0=3 
+- -- 3D 6=4=3=0 
+- -- 3H 5-5 
+- -- 3S 6-4 with rest 2-1 
+-- 3C  
+-- 3D  
+-- 3H  
+-- 3S  
+ 
+1H-2D ; 
+2D can be natural, or a balanced GF, or a hand with a fit in opener's major less than Hxxx(honor fourth). In the case of 1H the rebid of 2H is made with all unbalanced hands of 5+ hearts, whereas the canape hands are bid immediately (non-minimum) or via 2NT (balanced 12-14 or 4-5 minimum). 
+ 
+1H-2D; natural, or balanced GF 
+-- 2H 5+ hearts 
+- 
+-- 2S reverse in diamonds/spades 
+- 
+-- 2NT strong balanced, possible bad heart fit 
+- 
+- -- 3C/D 4+ cards 
+- 
+- -- 3H at least 6-card single-suiter 
+- 
+- -- 3S balanced maximum 
+- 
+- -- 3NT to play, discouraging 
+- 
+-- 3C 5 diamonds, 4 clubs, GF 
+- 
+-- 3D limit 
+- 
+-- 3H limit 
+- 
+-- 3S heart fit, HHx or Hxxx 
+- 
+-- 4C heart fit, HHx or Hxxx 
+- 
+-- 4D heart fit, HHx or Hxxx 
+-- 2S reverse with 5+ spades, 4+ hearts 
+-- 2NT natural or minimum canape 
+- 
+-- 3C asking 
+- 
+- -- 3D 4+ diamonds 
+- 
+- -- 3H 4+ clubs 
+- 
+- -- 3S 4 spades 
+- 
+- -- 3NT 4333 
+- 
+-- 3D non-forcing 
+- -- 3H Hxx heart fit (otherwise use 3C asking) 
+- -- 3S reverse in diamonds/spades, GF 
+-- 3C/D canape, non-minimum 
+-- 3H reverse one-suiter, fixing trump suit 
+-- 3S reverse with 4 hearts, 7 spades 
+-- 3NT reverse with 5 hearts, 5 clubs 
+-- 4C reverse with 6 hearts, 4 clubs 
+-- 4D reverse with 4 hearts, 6 diamonds 
+Game invitations if definite fit 
+ 
+There are two situations in which one can make a game invitation (or slam), both based an inquiry for a singleton or shortage. 
+ 
+In the first case it is the opener who asks responder to show an eventual singleton or, lacking one, concentration of strength. 
+ 
+1H-2H; 2S asking relay 
+ 	 	-- 2NT any bal., or singleton spade or diamond in minimum hand 
+ 	 	- -- 3C interest in balanced maximum 
+ 	 	- - -- 3D balanced maximum 
+ 	 	- - -- 3H balanced minimum or unbalanced 
+ 	 	- -- 3D interested in singleton diamond 
+ 	 	- - -- 3H no singleton diamond 
+ 	 	- - -- 4H singleton diamond 
+ 	 	- -- 3H interest in singleton spade 
+ 	 	-  	-- Pass no singleton spade 
+ 	 	-  	-- 4H singleton spade 
+ 	 	- 
+ 	 	-- 3C singleton club, minimum or maximum 
+ 	 	- -- 3D asks minimum/maximum 
+ 	 	-  	-- 3H minimum 
+ 	 	-  	-- 4H maximum 
+ 	 	- 
+ 	 	-- 3D singleton diamonds, maximum 
+ 	 	- 
+ 	 	-- 3H singleton spade, maximum 
+ 
+In competition, there may not be enough space to distinguish the invitational raise from the competitive one. 
+ 
+The system remains as is only over a double, that takes up no space. In all other cases: 
+D the suit raise is competitive 
+D a new suit shows game interest and, if there is there is a choice of new suits below 3 of the major, indicates honor strength in the bid suit 
+D the double shows a balanced maximum, except in the case where the interference has taken up all the room (e.g. 1H-2H; overcall of 3D). In this last case, the double is the only available bid for an invitation to game.  
+The second game-invitational bid is also made by the opener, this time showing a singleton 
+ 
+1H-2H 
+ 	-- 2NT singleton spade 
+ 	-- 3C singleton club 
+ 	-- 3D singleton diamond 
+ 	-- 3H barrage 
+ 
+The third game-invitation (or slam) is instead made by responder, indicating immediately the presence of a splinter. 
+ 
+1H-2S GI or SI with a singleton, and 4 card support for hearts 
+ 	-- 2NT relay, asking about the singleton 
+ 	 	-- 3C/D/H singleton club/diamond/spade, limit 
+ 	 	-- 3S singleton spade, SI 
+ 	 	-- 3NT/4C singleton club/diamond, SI 
+ 	 	-- 4D shortage in spades, no slam 
+ 	 	-- 4H void in spades, SI 
+ 
+
+1S Opening Bid 
+1S-1NT 
+1S-2C 
+1S-2D 
+1S-2S 
+1S-2NT 
+ 
+ 
+ 
+ 
+ 
+ 
+1S-1NT ; 
+1S-1NT; 
+-- 2C natural, lengths unspecified [see below] 
+-- 2D natural, lengths unspecified [see below] 
+-- 2H 5 spades, 4 hearts 
+-- 2S 6 spades <OR> 5332, 15-16 HCP [see below] 
+-- 2NT 4=1=4=4 or 4=0=5=4, maximum [see below] 
+-- 3C reverse with 5+ spades, 4+ clubs [see below] 
+-- 3D reverse with 4 spades, 6 diamonds 
+-- 3H reverse with 4 spades, 6 hearts 
+-- 3S 8 trick one-suiter 
+-- 3NT reverse with 5 spades, 6 hearts 
+-- 4H reverse with 4 spades, 7 hearts 
+ 
+1S-1NT ; 2C- 
+ 
+1S-1NT;2C 
+-- 2D to play (corectable to 2H if holding 3H-1D) 
+-- 2H to play (correctable with a singleton or void in hearts) 
+-- 2S to play 
+-- 2NT non-forcing relay 
+- 
+-- 3C 4 spades, 5+ clubs, minimum 
+- 
+-- 3D 5+ spades, 4+ clubs, 3 diamonds, max 
+- 
+-- 3H 5+ spades, 4+ clubs, 3 hearts, max 
+- 
+-- 3S 5+ spades, 4+ clubs,2-2,  maximum 
+- 
+-- 3NT 4 spades, 5+ clubs, maximum, heart stop 
+-- 3C 8-10 with 4+ clubs 
+ 
+In this sequence North, with a minimum and 5 spades, must bid 3 of a minor. The 2NT relay must therefore be able to manage the response of 3D, that forces the partnership to at least 3S.  
+1S-1NT ; 2D- 
+ 
+The sixth sequence is the most compressed, with the necessity of using the 2NT relay 
+ 
+1S-1NT; 2D 
+ 	-- 2H to play  	-- 2S to play 
+ 	-- 2NT relay 
+ 	-   -- 3C 5+ spades, 4+ diamonds, minimum 
+
+   -- 3D 4 spades, 5+ diamonds, minimum 
+   -- 3H 5+ spades, 4+ diamonds, 3 hearts, maximum 
+   -- 3S 5+ spades, 4+ diamonds, maximum 
+-   -- 3NT 4 spades, 5+ diamonds, maximum 
+ 	-- 3C to play 
+ 	-- 3D 8-10 with 4+ diamonds  
+1S-1NT ; 2H- 
+ 
+1S-1NT ; 2S- 
+1S-1NT; 2S 
+ 	 	-- 2NT relay 
+ 	 	 	-- 3C 5332, 15-16 
+ 	 	 	-- 3D 6-4 with 4 diamonds and maximum (15-16) 
+ 	 	 	-- 3H single-suiter maximum (15-16) 
+ 	 	 	-- 3S single-suiter minimum (13-14) 
+ 	 	 	-- 3NT 6-4 with 4 clubs and maximum (15-16) 
+ 
+1S-1NT ; 2NT- 
+1S-1NT; 2NT maximum 3-suiter with singleton or void in hearts 
+ 	 	-- 3C/D to play 
+ 	 	-- 3H forcing 
+ 	 	-- 3S forcing, to find out a 5-carder 
+ 	 	- -- 3NT 4441 
+ 	 	- -- 4C 5 diamonds 
+ 	 	-- 3NT to play  
+ 
+1S-1NT ; 3C- 
+ 
+1S-2C ; 
+In the case of opening 1S the sequences over 2C are the following 
+ 
+1S-2C; 
+ 	-- 2D 4 spades [see below] 
+ 	-- 2H 5 spades, 4 hearts 
+ 	- 
+-- 2S spade fit, limit 
+ 	- 
+-- 2NT relay, GF even with a spade fit 
+ 	- 
+- -- 3C 5-4, 3+ clubs 
+ 	- 
+- -- 3D 5-4, 3+ diamonds 
+ 	- 
+- -- 3H 5-5 
+ 	- 
+- -- 3S 6-4 
+ 	- 
+- -- 3NT 5-4-2-2 
+ 	- 
+-- 3C club one-suiter, GF 
+ 	- 
+-- 3D 5+ diamonds, 4+ clubs, SI 
+ -- 3H heart fit, GF, Hxxx at least (else 2NT or cue-bid) 
+ -- 3S spade fit, GF+, HHx or Hxxx support (otherwise 2NT) 
+  -- 4C/4D cue-bid with at least HHxx heart fit - 
+ 	-- 2S 5 spades, not 4 hearts 
+ 	- 
+-- 2NT limit 
+ 	- 
+-- 3C club single-suiter GF, or two-suiter 5 clubs/4 diamonds 
+ 	- 
+-- 3D 5+ diamonds, 4+ clubs, SI 
+ 	- 
+-- 3H GF+ clubs/hearts long-short 
+ 	- 
+-- 3S limit 
+ 	- 
+-- 4C/4D/4H cue-bid with spade fit HHxx or Hxxx 
+ 	- 
+ 	-- 2NT 5 spades, 4 clubs, minimum 
+ 	-- 3C reverse in spades/clubs 5-5 
+ 	-- 3D reverse in spades/diamonds 4-6 
+ 	-- 3H reverse in spades/hearts 4-6 
+ 	-- 3S solid 6 card suit 
+ 	-- 4C 6 spades and 4 clubs  
+1S-2C ; 2D 
+1S-2C; 2D = 4 spades 
+ 	-- 2H relay 
+ 	- 
+-- 2S hand minimum unbalanced 
+ 	- 
+- 
+-- 2NT relay, GF 
+ 	- 
+- 
+- 
+-- 3C with 5 clubs 
+ 	- 
+- 
+- 
+- -- 3D asks for singleton  
+ 	- 
+- 
+- 
+-  	-- 3H singleton heart 
+ 	- 
+- 
+- 
+-  	-- 3S 2-2 
+ 	- 
+- 
+- 
+-  	-- 3NT singleton diamond 
+ 	- 
+- 
+- 
+-- 3D with 5 diamonds and the rest 3-1 
+ 	- 
+- 
+- 
+- -- 3H asks which singleton 
+ 	- 
+- 
+- 
+-  	-- 3S singleton club 
+ 	- 
+- 
+- 
+-  	-- 3NT singleton heart 
+ 	- 
+- 
+- 
+-- 3H 4 spades and 6 clubs (H=C), no top 2 clubs 
+ 	- 
+- 
+- 
+-- 3S 4 spades and 6 diamonds (S=D) 
+ 	- 
+- 
+- 
+-- 3NT 4 spades, 5 diamonds and the rest 2-2 
+ 	- 
+- 
+- 
+-- 4C 4 spades, 4 diamonds, 5 clubs, heart void 
+ 	- 
+- 
+- 
+-- 4D 4 spades, 4 clubs, 5 diamonds, heart void 
+ 	- 
+- 
+-- 3C 6 carder, GF 
+ 	- 
+- 
+-- 3S 4+ spades, no top honor, GF+, no side aces 
+ 	- 
+- 
+-- 3NT to play 
+ 	- 
+- 
+-- 4C/D/H 4+ spades, no top honor, GF+, ace cue 
+ 	- 
+- 
+
+ 	- 
+-- 2NT balanced 12-14 
+ 	- 
+-- 3C/D two-suiter 4 spades/5m, max 
+ 	- 
+-- 3H 4 spades, 6 clubs 
+ 	- 
+-- 3S 4 spades, 6 diamonds 
+ 	- 
+-- 3NT 4 spades, 5 diamonds 2-2 
+ -- 4C 4 spades, 4 diamonds, 5 clubs and heart shortage  
+ -- 4D 4 spades, 4 clubs, 5 diamonds heart shortage  
+-- 2S GI with 3-card spade fit 
+ 	-- 2NT GI balanced 
+ 	-- 3C GF+, single-suiter or two-suiter with 4 diamonds 
+ 	-- 3D SI with 4+ clubs/5+ diamonds 
+ 	-- 3H/4C/D cue-bid with a good spade fit (four to 2 top honors) 
+ 	-- 3S GF+, spade fit to 1 top honor (with 2, cue-bid; none, relay) 
+ 	-- 3NT to play 
+ 
+ 
+1S-2D ; 
+1S-2D; natural, or balanced GF 
+-- 2H 5 spades, 4 hearts [see below] 
+-- 2S 5 spades, not 4 hearts [see below] 
+-- 2NT natural, or minimum canape 
+- 
+-- 3C asking 
+- 
+- -- 3D diamonds (4+)  
+- 
+- -- 3H 4-1-4-4 (singleton heart)  
+- 
+- -- 3S 4-3-3-3 
+- 
+- -- 3NT clubs (4+) 
+-- 3C/D two-suiter, non minimum, short-long 
+-- 3H reverse with 4 spades, 6 hearts 
+-- 3S  
+-- 3NT reverse with 5 spades, 6 hearts 
+-- 4C reverse with 5+ spades, 4+ clubs 
+-- 4D reverse with 4 spades, 6 diamonds 
+ 
+1S-2D ; 2H- 
+1S-2D; 2H  
+-- 2S three card fit, limit 
+-- 2NT relay, possibly weak fit 
+- 
+-- 3C 5-4, 3 clubs 
+- 
+-- 3D 5-4, 3 diamonds 
+- 
+-- 3H 5-5 
+- 
+-- 3S 6-4 
+- 
+-- 3NT 5=4=2=2 
+-- 3C 5 diamonds, 4 clubs, no slam 
+-- 3D limit 
+-- 3H 4-card support, GF, not 2 honors 
+-- 3S fit GF, Hxxx or HHx in spades 
+-- 4C/D heart fit, HHxx 
+ 
+1S-2D ; 2S- 
+1S-2D; 2S  
+
+-- 2NT strong balanced, possible bad spade fit 
+- -- 3C/D 4 cards 
+- -- 3S at least 6 card single-suiter 
+- -- 3H balanced maximum 
+- -- 3NT balanced minimum 
+-- 3C 5 diamonds, 4 clubs, GF 
+-- 3D limit 
+-- 3H heart stopper, no club stopper 
+-- 3S limit, fit 
+-- 4C/D fit, HHx or Hxxx 
+ 
+Game invitations if definite fit 
+ 
+There are two situations in which one can make a game invitation (or slam), both based an inquiry for a singleton or shortage. 
+ 
+In the first case it is the opener who asks responder to show an eventual singleton or, lacking one, concentration of strength. 
+ 
+1S-2S; 2NT asking relay 
+ 	 	-- 3C balanced, or singleton club or heart in minimum hand 
+ 	 	- -- 3D interested in balanced maximum 
+ 	 	- - -- 3H balanced maximum 
+ 	 	- - -- 3S balanced minimum or unbalanced 
+ 	 	- -- 3H interested in singleton heart 
+ 	 	- - -- 3S no singleton heart 
+ 	 	- - -- 4S singleton heart 
+ 	 	- -- 3S interested in singleton club 
+ 	 	- - -- Pass no singleton club 
+ 	 	- - -- 4S singleton club 
+ 	 	- 
+ 	 	-- 3D singleton diamond, minimum or maximum 
+ 	 	- -- 3H asks minimum/maximum 
+ 	 	- - -- 3S minimum 
+ 	 	- - -- 4S maximum 
+ 	 	- 
+ 	 	-- 3H singleton heart, maximum 
+ 	 	- 
+ 	 	-- 3S singleton club, maximum 
+ 
+In competition, there may not be enough space to distinguish the invitational raise from the competitive one. 
+ 
+The system remains as is only over a double, that takes up no space. In all other cases: 
+D the suit raise is competitive 
+D a new suit shows game interest and, if there is there is a choice of new suits below 3 of the major, indicates honor strength in the bid suit 
+D the double shows a balanced maximum, except in the case where the interference has taken up all the room (e.g. 1H-2H; overcall of 3D). In this last case, the double is the only available bid for an invitation to game. 
+ 
+The second game-invitational bid is also made by the opener, this time showing a singleton 
+ 
+1S-2S 
+ 	-- 3C singleton club 
+ 	-- 3D singleton diamond 
+ 	-- 3H singleton heart 
+ 	-- 3S barrage 
+ 
+The third game-invitation (or slam) is instead made by responder, indicating immediately the presence of a splinter. 
+ 
+1S-2NT GI or SI with a singleton, and 4 card support for spades 
+ 	-- 3C relay, asking about the singleton 
+ 	 	-- 3D/H/S singleton diamond/heart/club, limit 
+ 	 	-- 3NT/4C/4D singleton club/diamond/heart, SI 
+ 	 	-- 4H singleton in hearts, no slam 
+ 	 	-- 4S void in hearts, SI 
+ 
+
+Interference over openings of 1D/H/S 
+ 
+In cases of opponents' interference, one follows the rules below. 
+Over a double:  
+ 
+In the case of opponent's double: 
+D new suit at 1 level is normally 5 cards and forcing; 
+D new suit at 2 level is passable; 
+D redouble shows 10+ HCP, balanced or semibalanced. 
+ 
+Over the opening of 1H and 1 S 
+D the simple raise remains natural (maybe a little weaker than normal), whereas the jump raise is weak and unbalanced; 
+D 2NT shows a balanced 4 card limit raise with two defensive tricks 
+D jump shifts are natural and invitational, unbalanced; 
+D 1NT is 8-10 HCP with at most 2 cards in the opening suit 
+D the pass followed by double shows a 3 card constructive raise (8-10 HCP)  
+Over a suit: 
+ 
+Over the interference in a suit over an opening one bid, the following rules: 
+D new suit at any level is forcing; 
+D double shows a balanced hand of any strength [?-DJN] or 8-11 unbalanced D 1NT is constructive (8-10) with a stopper in their suit; 
+ 
+Over openings of 1H and 1S 
+D the simple raise at the 2 level is competitive, whereas the jump raise shows a 4 card limit raise; 
+D the cue-bid shows a strong hand with support for opener 
+D the jump-cue is a splinter 
+ 
+After 1D and overcall, 2D shows a fit (at least 5 cards) and limit strength. 
+ 
+Interference of 1NT 
+Over interference of 1NT (balanced 15-18) 
+D double is penalty; 
+D cheapest raise or non-jump in new suit shows a weak unbalanced hand; 
+D the jump raise is unbalanced and constructive, game still possible 
+Two-suited interference 
+Bidding one of the opponents' shown suits is shortage. 
+Double shows a misfit and the desire to double the opponents in at least one of their suits.  
+
+1NT Opening 
+1NT 
+1NT-2C 
+1NT-2D 
+1NT-2H 
+1NT-2S 
+1NT-2NT 
+1NT-3 bids 
+1NT- other 
+Interf 
+ 
+ 
+Basis of the system 	Every system has its "treatment" for the 1NT opening, and even Blue Club 2000 cannot lack one. In this case
+does not come from reworking the original system, but from a completely new system. The NT of Blue Club 
+Characteristics of the Scandinavian method used 
+by the Blue Club 
+a) 
+b) 
+c) 
+d) 
+e) 
+f) 
+g) 
+covers a vast number of possible distributions of South, many more than standard Blue Club and most cover; is fast and efficient in invitational and game-forcing sequences, supplying nothing but the information a allows an adequate exchange of information in hands where South envisions slam, without excessive co difficult relay sequences; 
+strains to give minimal information about opener's hand in sequences where other systems cannot do a Stayman; allows play in a suit where other systems do not have sequences available for investigating a possible f creating a forcing situation; follows the normal tactics used when opening 1NT, tending to make the strong hand declarer, about w distributional information is known; though not elementary, once understood it does not demand much mnemonic effort. 
+ 	a variant of that put forth by Lindkvist, Nisland and Wirgen in the text, "Notrump Bidding – the Scanian Way  	The work done by the Scandinavians, in fact, blends well with the basic principles of Blue Club 2000. Their p has the following characteristics: 
+ 
+ 	In short, the principles of Arturo Franco (finding suit fits while concealing non-essential details) go hand in h  	objectives expressed by Lindkvist, Nisland and Wirgen. 
+ 
+ 
+System objectives and its 	In their text, the Scandinavians expressed their opinion on what makes a good system over the opening 1NT fundamentals 	their intention was to construct a method in a way, among other things, that: 
+1. adequately handles the major suits; 
+2. quickly identifies the end goal of the auction (game or slam) to allow North to consider his with respect to the target.  An acceptance of a game-invitation could even happen on cards one, instead, would decline a slam-invitation; 
+3. minimizes the exchange of information when the objective is only to play in game or a part
+4. makes play more likely from the undisclosed hand, avoiding, for who plays the hand, expla much about her own hand to the defense; 
+5. but nevertheless supplies details on South's hand when requested, which is when North ha possible final contracts and therefore needs to know something more about partner's hand.
+ 
+ 
+The tools used in handling the 1NT opening 
+The various tools used in Blue Club 2000 are: 
+Stayman for a major fit 
+It is used for the classic function of finding a major fit, but only with very weak hands (non-forcing Stayman) game-forcing hands. The invitational hands with four-card majors are actually bid through transfers. 
+Smolen convention 
+Over a 2D response Blue Club has adopted the Smolen convention, where one jumps in one of then majors t cards in the other major and 4+ cards in the bid major. After wards responder reveals the exact lengths of h 5 or 6-4) and her strength (game or slammish). 
+Repeated Stayman 
+Following the Stayman 2C responder has available a second asking bid (3D) to find out more about opener's and, in particular, to identify four-card minors. 
+Stayman as a base for transferring to the minors 
+Stayman can be used even without interest in the majors as a base for transfers to the minors, which are su revealed. 
+ 
+Transfers to the majors 
+Transfers to the majors even with just 4 cards 
+Major-suit transfers are not used in the standard manner. In fact, besides showing many hands with at least suit, they are even used in game-invitational hands with only 4 cards in the suit. 
+Superacceptance 
+Opener can simply complete the transfer, but with a maximum, good texture, four-card fit and a "useful" (xx doubleton can "superaccept" by bidding the doubleton. 
+Auction following the transfer 
+After normal completion of the transfer, responder follows the same rebid structure, no matter which suit int transferred: 
+D 1st step = invitational to game, 4 cards if the suit is spades, 4/5 cards if hearts 
+D 2NT (only over 2D-2H) 4-4 majors invitational to game 
+D 3C GF+ with 5 cards in the major 
+D 3D GI or SI with 6 cards in the major (if SI, then without a singleton) 
+D 3H GI, 2-suited in the majors, 4 spades - 5 hearts over 2H and 5-5 over 2D 
+D 3S 6+ cards in the major, SI with a singleton 
+D 3NT 5332 or 5422, choice of games 
+D 4C/D 5-5 with at least 3 top honors in the two suits (otherwise go through 3C) 
+Stayman 
+ 
+ 
+Transfers to the minors 
+ 
+Different from many other systems, the transfers to the minors are not direct (with 2S or 2NT) but go first t and then 2NT (transfer to clubs) or 3C (transfer to diamonds). 
+Continuations after the minor-suit transfer 
+Like the major-suit transfers, the minor-suit transfers can show a weak hand, but can even be the base for s cards in the minor and considerable strength, even slam. 
+The bid following the transfer immediately shows the strength of responder and the presence of a singleton suiter. 
+Use of the transfer with a weak diamond one-suiter 
+Since the weak single-suiter in diamonds can be shown by a direct 2S, going through Stayman shows a four which one hopes to find a fit) or when one fears a double of 2S which would allow the opposition to find the "economically."  
+ 
+2S response 
+The bid of 2S is used in the system when 
+Use of the "transfer" 2S (balanced or a hand with 
+minor suits) 
+D balanced GI without four-card majors (like 2NT in standard) 
+D two-suited minors, weak or GI 
+D weak single-suiter in diamonds 
+D two-suited minors GF, with a singleton in one major and max 3 cards in the other major. 
+ 
+2NT response 
+The bid of 2NT is used in the system for: 
+Use of the 2NT ask 
+D GI hands with a minor single-suiter where one needs an Hx+ fit 
+D balanced GF hands without interest in majors where one fears the lead in a weak doubleton 
+ 
+Jumps to 3 of a suit 
+Used for hands with a singleton/void in the suit bid and, in the case of 3H or 3S, with 4 cards in the other m
+ 
+ 
+Comparison between the treatment of Blue Club 2000 and that of the Blue T
+
+Compared to the classic treatment, this method allows handling with greater accuracy the following types of 
+Advantages of the Scanian methods compared to classical Blue Team 
+a) weak hands, single-suited in diamonds, two-suited minors or two-suited with 4 cards in a major and 6+
+b) GI hands 5-5 in non-touching suits, that in classic Blue Team cannot be played cheaply in 3 of the mino
+c) GI hands 5-4 with a singleton, that, in case of accepting the invitation, cannot be shown with precision play 3NT with a weak or short side suit when there is an alternative; 
+d) game or slam hands, two-suited in the majors, shown precisely in terms of strength and distribution 
+e) SI hands with a 6-card suit (major or minor), where much depends on what North holds in the singleto
+f) hands in which South is balanced with a weak doubleton, where one doesn't want to play in 3NT in cas weak doubleton in the same suit 
+Disadvantages of the Scanian methods compared to classical Blue Team 
+ 
+ 
+ 
+Compared to classical Blue Team this system cannot handle GI hands with a four-card major and five-card m method, in fact, one can show the four-card major and the strength but the five-card minor remains unknow
+Otherwise, in this treatment, the sequence 1NT-2D;2H-2S shows 4+ hearts GI (without 4 spades) and does five hearts. North is therefore constrained to bid 2NT all the time that she has a minimum with 3 hearts, and 2NT whenever she is not 5-5, even when an 8-card heart fit may exist but 2NT is convenient.  
+Overall one will find that this is a small price to pay for a series of advantages, and is a light price anyway sin computer-simulation, these potentially "dangerous" situations one risks occur in about 4 hands per 1000 ope many of these are playable in 2NT. 
+
+With a weak hand South can: 
+Handling weak hands through Stayman or transfers 
+g) Bid 2C Stayman and pass, bid 2H over 2D (pass or correct), bid 2NT or 3C over any response as a tran and diamonds and pass the forced completion of the transfer. 
+h) Transfer to hearts or spades and pass 
+i) Bid 2S with a minor two-suiter and pass (over 3C or 3D) or bid 3C (pass or correct) over 2NT, which s minimum hand 
+j) Bid 2S with a diamond single-suiter, and then bid 3D over 2NT or 3C 
+ 
+In short, adequately represented are: 
+Showable distributions in weak hands 
+D All single-suiters, including diamonds, which is not expressable in classic Blue Team 
+D Two-suiters with at least 8 cards in the majors 
+D Two-suiters with 4 cards in a major anda six-card minor, where, after after having looked for the major play in theminor, impossible in classic Blue Team 
+D Two-suiters in the minors, not biddable in classic Blue Team 
+ 	Arturo Franco 
+ 
+Weak hands 
+ 
+
+With a GI hand, South can: 
+Using Stayman and transfers with GI hands 
+k) Bid 2C with 5 spades, excluding 5-5 majors which is bid by transferring to hearts (2D) and rebidding 3
+l) Transfer to hearts and rebid 2S. With this sequence South shows a GI strength hand with all the possib except a 6-card single-suiter in hearts and a 4-4 majors two-suiter; 
+m) Transfer to hearts and rebid 2NT, showing 4-4 majors invitational; 
+n) Transfer to hearts and rebid 3D, showing a six-carder in hearts, invitational to game or invitational to s
+o) Transfer to hearts and rebid 3H, showing 5-5 majors invitational; 
+p) Transfer to spades and rebid 2NT, showing exactly 4 spades invitational to game; 
+q) Transfer to spades and rebid 3D, showing six-carder in spades, invitational to game or invitational to sl
+r) Transfer to spades and rebid 3H, showing 4 spades and 5+ hearts invitational; 
+s) Bid 2S with a GI balanced hand without four-card majors, inviting opener to bid 2NT with a minimum a preference between minors with a maximum (in case responser has the weak two-suiter minors); 
+t) Bid 2S with two-suited minors invitational to game, inviting opener to bid 2NT with a minimum and cho preference between minors with a maximum;  in this last case one shows a singleton or bids 3NT; 
+u) Bid 2NT with a six-card minor single-suiter to 1/2 top honors, asking opener to bid any weak doubleton bid only if the eventual doubleton of North does not coincide with either South's six-card minor or Sout
+The following distributions are therefore able to be shown: 
+Distributions shown with game-invitational hands 
+D balanced with at least one four-card major, after which opener, in case of a misfit, does not give out an her distribution; 
+D balanced without four-card majors, over which opener just shows minimum or maximum without revea
+distributional details;  
+D hands with a five-card major, but with ambiguity in the sequence 2D...2S where South can have 4 or 5
+D two-suited 4-4 and 5-4 majors 
+D any 5-5  
+D six-card single-suiters, major or minor 
+ 	Game-invitational hands 
+So it only loses, with respect to classical Blue Team, handling 4-5+ with a four-card major. 
+ 
+ 
+
+With a hand strong enough to play game, but not strong enough for a slam try, South can: 
+Use of Stayman and transfers in game hands 
+a) 
+sign off directly in game, bidding 3NT, 4H, 4S or transfer to the corresponding major through the bids 
+(South African Texas); 
+
+b) 
+transfer to a major and sign off in 3NT, showing 5 cards in the major and balanced (5332) or semibalan four-card minor); 
+
+c) 
+bid Stayman and then, over 2H or 2S, sign off in 4 of the suit shown by North or 3NT 
+
+d) 
+bid Stayman and, after 2D, sign off in 3NT, usually, but not necessarily, having shown interest in the m
+
+e) 
+bid Stayman and then, after 2H, sign off in 3NT. North may not correct the final contract because Sout in spades, can search for that fit with the asking bid 3D; 
+
+f) 
+bid Stayman and, over the 2H response, further inquire about distribution through the asking 3D, show spades; 
+
+g) 
+bid Stayman followed, over 2D, by a jump in a major, showing 4+ cards in the major shown and 5+ ca major (Smolen convention). After this South will clear up the exact lengths of her suits; 
+
+h) 
+bid Stayman, transfer to clubs via 2NT and then rebid 3D, showing a six-card minor with a singleton in minor.  North, with the 3H relay, can ask where the singleton is (and thus the six-card suit), to which S 3S with a singleton in diamonds and 3NT with a club singleton; 
+
+i) 
+bid Stayman then transfer to a minor and, finally, bid the major in which a singleton is held (without de spades if opener's Stayman respons was 2H). This sequence guarantees six-cards in the minor   
+
+j) 
+bid Stayman, transfer to a minor, and jump to 4 of a major, showing 5+ in the minor and 6 in the majo strength. 
+
+k) 
+transfer in to a major and rebid 3C, a relay used for all hands with a five-card major, a singleton and G for 5422 SI hands 
+
+l) 
+bid 2S and, over any response by North, bid 3H or 3S, showing 5-4 minors with a singleton in the suit than four cards in the other major; 
+
+m) bid an immediate splinter (from 3C to 3S) showing a singleton in the suit without excluding four-card m
+3D) or guaranteeing the four-card major (3H and 3S); 
+n) Bid 2NT, to verify the presence of some weak doubleton 
+Distributions shown with game hands 
+ 
+ 
+ 
+The system easily covers all hands in which South has 4 or more card majors, and shows singletons to avoid easily-defeated 3NT in case of a misfit. 
+With a minor-suited hand South signs off quickly in 3NT but, with both single-suiters and two-suiters, South singleton with safety in mind, to verify a stopper in the unguarded suit.  
+Finally the responder, with a balanced hand without majors, can bid a tactical 2C, to fool the opponents abo the majors, or bid 2NT when the hand contains a weak doubleton. 
+ 	Game hands 
+ 
+ 
+
+Slam hands 
+
+With slam hands, the system offers many options. 
+
+Two-suiter with at least 9 cards in minors 
+Balanced hands 
+With balanced hands responder can: 
+a) Bid Stayman and, over the response 2H or 2S, jump to 4C or 4D to show a slam hand with HHxx supp
+b) Bid Stayman, ask further with 3D and then go past 3NT with a minor-suit raise, cue-bid or 4NT (total m quantitative) 
+c) Bid Stayman and, after 2H or 2S, ask for more via 3D and, subsequently, raise the original response su sequence shows a slam hand but without HHxx support in the trump suit and tends to be balanced. 
+5332 hands with a five-card major 
+With semibalanced slam hands (5332) with a five-card major South first transfers to the major, then bids: d) 4NT immediately, quantitative, non forcing 
+e) 3C (five-card major GF+) then 4NT, stronger than the immediate 4NT but still passable 
+f) 3C (five-card major GF+) followed by 5NT, forcing at least to a small slam 
+5332 hands with a five-card minor 
+With semibalanced slam hands (5332) with a five-card minor South first goes through the delayed transfer to bids 3NT (MSI), 4NT (SI) or 5NT (slam force). 
+Six-card major single-suiter 
+With the six-card major single-suiters South has at her disposal various options: 
+a) Bid Texas and then ask for aces (RKCB for that major) 
+b) Transfer to hearts or spades and sign off in 4H or 4S, MSI without a singleton, whereas with SI one pr
+c) Transfer to hearts or spades and rebid 3S with a singleton or 3D without singleton (3D is initially ambi could be a GI hand and not SI) 
+Six-card minor single-suiter 
+With a six-card minor single-suiter the auction always goes through Stayman followed by transfer to the long clubs if a singleton in a minor). Thus: 
+g) one shows a singleton, having the shrewdness, in the sequence 2C...2NT...3D (minor single-suiter) to 3NT with a club singleton and slam strength.  Better to bid 4C.  If over these sequences North shows a with a cue-bid, or else can reopen over 3NT by her partner and show a slam hand; 
+h) one bids 4 of the minor into which she has transferred without a singleton 
+Two-suiter with at least 9 cards in majors 
+With at least 9 cards in the majors South first of all bids Stayman and then: 
+i) Over 2D, with 6-4 use Smolen by jumping to 3H or 3S, the four-card suit, showing at the same time 5+ other major. Therefore, after 3NT (misfit), South shows MSI by bidding 4 of the six-card suit, and show 5 of the suit. 
+j) Still over 2D, with 5-5 or 6-5 and at least 3 TH's in the two long suits, South jumps to 4C or 4D, showi singleton/void, whereas with a slam hand but with no more than 2 TH's in the majors bids Smolen with bids 4S (stronger than Smolen with 3H...4H, which just shows game). 
+With slam and at least 5-4 in the minors the auctions starts with 2S...3H/S showing the singleton. If North s South reopens showing the 5-card suit and slam interest. 
+With 5-5 and at least 3 TH's in the two suits South can take two paths: show diamonds first (2C...3C) and ju or show clubs first (2C...2NT) and jump to 4D, SI. 
+Two-suiter with 5 cards in a The two-suiters with 9 cards in the suits and longer minor are bid in different ways: 
+minor and 4 in a major 
+k) With 5-4-3-1 one immediately jumps in the singleton, reopening over 3NT by bidding the five-card mino
+l) With 5-4H-2-2 one bids Stayman and, in absence of a fit one bids as if having 5332 
+m) With 5-4S-2-2 one bids Stayman and bids as if holding 5332 over 2D. Over 2H (which doesn not deny looks for a spade fit via 3D and bids 4 of North's four-card suit or 4NT if a fit is not found. 
+Two-suiter with 6+ cards in a minor and 4 in a major 
+This type of distribution always begins with Stayman. In case of a major fit South has available 3 possible se than the immediate cue-bid with HHxx support): 
+v) Transfer to a minor followed by a jump raise. This is, of the slam invites, the weakest and is easily pass he does not have the perfect fit; 
+w) Transfer to a minor, then bid the singleton cheaply, then raise the major. This is stronger than the prev
+x) Transfer to a minor, and jump in the other major. This is the strongest of the sequences and shows a s the other major. 
+Three-suiter 
+One jumps to 3 of the singleton/void and, subsequently, keeping the auction open over 3NT (with 4NT if 444 five-card minor if 5440) 
+Two-suiter with 5+ cards in a major and 4+ in a minor The auction starts with a transfer to the major followed by 3C that shows a GF+ hand with 5+ cards in the m then shows her distribution and slam strength. 
+
+ 
+
+1NT – Structure of responses 
+ 
+Responses to 1NT without interference
+Opening 1NT is used for balanced hands with 14-16 HCP, but the system is even used over 1C-1D;1NT (bala The responses are: 
+2C 	normally Stayman, but can be used with minor-suited hands of various strengths; 
+2D 	transfer to hearts, perhaps only 4 cards; 
+2H 	transfer to spades, perhaps only 4 cards; 
+2S 	balanced GI without majors, two-suiter minors of various strengths or weak single-suiter in diamond
+2NT 	long minor GI or balanced GF con a weak doubleton somewhere 
+3C/D three-suiter with a singleton in the suit 
+3H/S three-suiter with a singleton in the suit 
+3NT 	to play 
+4C/D Texas to hearts and spades without slam interest 
+4H/S to play 
+4NT 	Blackwood, standard 4 aces 
+
+Continuation with a weak major two-suiter  or invitational with five spades 
+The reply 2H shows two-suiters with 8, 9 or 10 cards in the majors to be of a 4-3 fit at the two-level, when it is inconvenient to play 1NT. The is instead the only sequence to show GI with 5 spades. 
+Handling a weak major two-suiter and invitational hands with 5 spades 
+1NT-2C; 2D 
+1NT-2C; 2D 2H 4+/4+ major, North passes or corrects to 2S 
+1NT-2C; 2D 2S 5 spades, GI 
+1NT-2C; 2D 2S pass with 2/3 spades and minimum 
+1NT-2C; 2D 2S 2NT 2 spades and a non-minimum hand 
+1NT-2C; 2D 2S 3C/D/H 3/4 spades with a good bid suit, game try 
+1NT-2C; 2D 2S 3S 3/4 spades and a non-minimum hand, no outside good
+1NT-2C; 2D 2S 3NT/4S to play
+
+Responses to Stayman 
+The responses to Stayman only number three, since Stayman is non-forcing
+Responses to Stayman 	1NT-2C 
+1NT-2C 2D no major 
+1NT-2C 2H 4 hearts, possibly 4 spades (see below) 
+1NT-2C 2S 4 spades, no 4 hearts (see below) 
+ 
+2D Response (no major) 
+
+Transfers to the minors 
+These are used with six-card minors. Possibly a four-card major, most pr with a transfer to diamonds for which is available an immediate 2S 
+Transfer to the minors for weak hands or GF+ hands with or without a singleton 
+1NT-2C; 2D
+-- 2NT transfer to clubs 
+- -- 3C forced 
+-  	-- pass with 6+ clubs, possibly a four-card major, w
+-  	-- 3D singleton in a minor, six-cards in the other m
+-  	- -- 3H asks for singleton 
+-  	-  	-- 3S singleton diamond, game or slam 
+-  	-  	-- 3NT singleton club, game strength only 
+-  	-  	-- 4C singleton/void club, slam 
+-  	-  	-- 4D void diamonds, slam 
+-  	-- 3H/S singleton heart/spade, six-cards in clubs, G
+-  	-- 3NT single-suiter in clubs, MSI, no singleton 
+-  	-- 4C 6+ clubs, SI without a singleton 
+-  	-- 4D SI 5-5 minors, at least 3 TH's in suits 
+-  	- -- 4H asks number of TH's (3,4...) 
+-  	-- 4H/S 5+ clubs, 6 hearts/spades, game only 
+-- 3C transfer to diamonds 
+ 	-- 3D forced 
+ 	 	-- pass with 6+ diamonds, possibly a four-card major
+ 	 	-- 3H/S singleton heart/spade, six-cards in diamonds
+ 	 	-- 3NT single-suiter in diamonds, MSI, no singleton 
+ 	 	-- 4C 5-5 minors at least 3 TH's, less strength than
+ 	 	- -- 4D asks number of TH's (3,4...) 
+ 	 	-- 4D 6+ diamonds, SI without a singleton 
+ 	 	-- 4H/S 5+ diamonds, 6 hearts/spades, game only 
+ 
+Asking for the minors 
+Used with slam interest in at least a 4-4 minor fit 
+Search for a minor fit 
+1NT-2C; 2D  	 
+ 	 	-- 3D asking for minors 
+ 	 	 	-- 3H 4/5 clubs 
+ 	 	 	- -- 3NT to play 
+ 	 	 	- -- 4C fixing the suit, no spade cue-bid, no A of dia
+ 	 	 	- -- 3S/4D/H cue-bid (4D=Ace of diamonds, no spade cu
+ 	 	 	- -- 4NT quantitative, possibly five diamonds 
+ 	 	 	-- 3S 4/5 diamonds, continuations as over 3H 
+ 	 	 	-- 3NT 4-4 minors, 4C and 4D fix the suit 
+ 
+Smolen 
+The Smolen convention allows accurate description of the two-suited major hands with at least 9 cards in the
+Search for a major fit 
+1NT-2C; 2D  	 
+ 	 	-- 3H/S 4+ cards in the major, 5+ cards in the other major, G
+ 	 	 	-- 3NT misfit for the majors 
+ 	 	 	- -- 4C/D 5-4 majors, 3 of the minor 
+ 	 	 	- -- 4H over 3H 5-5 game, over 3S 4-6 game (six hearts
+	 	 	 	- -- 4S over 3H 6-4 game (6 spades, MSI), over 3S 5-5
+	 	 	 	- - less that 3 TH's in the two suits 
+	 	 	 	- -- 4NT 5-4-2-2, slam 
+	 	 	 	- -- 5H/S six cards, stronger slam try than 4H/S 
+	 	 	 	-- fit in the other major 
+	 	 	 	 	-- 4S or pass 4H with game 
+	 	 	 	 	-- cue-bid with slam 
+
+ 
+Other sequences over the 2D response 
+
+ 
+2H response (4 hearts, possibly 4 spades) 
+Transfers to the minors 
+
+Transfers to the minors after a response in a major 
+ 
+The last sequences over the 2D response are sign-offs (game) or shows slam interest (5-5 majors or Blackw
+Sign-off responses, SI 5-5 majors and Blackwood 
+1NT-2C; 2D  	 
+ 	 	-- 3NT to play, not necessarily with 4-card majors 
+ 	 	-- 4C/D 5-5 slammish majors, stiff/void in suit, 3+ top honor
+ 	 	- -- 1st step=asking for 3,4,5,6 TH's 
+ 	 	- -- other (not game) = cue-bid with 3 TH's (in the shown s
+ 	 	-- 4H/S 4-6 majors not SI, North reopens only with very good 
+ 	 	-- 4NT standard Blackwood, 4 aces 
+ 
+Continuations with 5+ spades, GI 
+In the case where South holds 5 spades GI he bids 2S, with continuations those examined over a  2D response 
+Handling GI hands with 5 spades 
+ 
+1NT-2C; 2H 
+ 	 	-- 2S 5 spades, GI 
+ 	 	 	-- pass with 2/3 spades and minimum 
+ 	 	 	-- 2NT 2 spades and a non-minimum 
+ 	 	 	-- 3C/D/H 3/4 spades and good bid suit, game try 
+ 	 	 	-- 3S 3/4 spades and a non-minimum, no good suit 
+ 	 	 	-- 3NT/4S to play 
+The transfers to the minors follow the lines already seen after the response of 2D.  Of note is that an eventu shows a singleton heart, even if North has 4, and does not show a fit as one would instinctively predict. This to upgrade a hand with a fit for the minor and Axxx – x in the major.  
+1NT-2C; 2H 
+ 	 	-- 2NT transfer to clubs 
+ 	 	- -- 3C forced 
+ 	 	-  	-- pass with 6+ clubs, weak, possibly 4 spades 
+ 	 	-  	-- 3D with a singleton minor, continuations like ove
+ 	 	-  	-- 3H six clubs, singleton heart, possibly four spad  	 	-  	-- 3S six clubs, singleton spade, possibly four hear
+ 	 	-  	-- 3NT single-suiter in clubs, MSI, without singleto
+ 	 	-  	-- 4C six clubs, SI, no singleton 
+ 	 	-  	-- 4D 5-5 minors, 3+ TH's in the suits, SI 
+ 	 	-  	- -- 4H asks number of TH's in the suits (3, 4...
+ 	 	-  	-- 4H/S 5+ clubs, 6 hearts/spades, game 
+ 	 	-- 3C transfer to diamonds 
+ 	 	 	-- 3D forced 
+ 	 	 	 	-- pass with 6+ diamonds, weak , possibly 4 spades 
+ 	 	 	 	-- 3H/S singleton heart/spade, six diamonds, GF+ 
+ 	 	 	 	-- 3NT single-suiter in diamonds MSI, without single  	 	 	 	-- 4C 5-5 minors, 3+ TH's in the suits, MSI 
+ 	 	 	 	- -- 4D asks number of TH's in the suits (3, 4...
+ 	 	 	 	-- 4D six diamonds, SI, no singleton 
+
+	 	 	 	 	-- 4H/S 5+ diamonds, 6 hearts/spades, game 
+
+ 
+ 
+
+Asking for the minors, or for spades 
+
+Other sequences over 2Hresponse 
+
+Sequences to play (3NT and 
+4H) or GI or SI with heart 
+fit 
+The other sequences, apart from 3NT which is to play, show a fit in hear limit, 4H to play, 4C/D cue-bid with at least 2 TH's in hearts, 3S with in majors and SI, 4NT Blackwood, others Voidwood) 
+Since the response of 2H does not deny 4 spades, the response to the ask more complicated, to accomodate 4 types of hands.  For this reason the r 3H is used for both 4333 hands and 4-4 hands with four clubs. 
+Asking for the minors, or 1NT-2C; 2H 
+spades, after the response of  
+ 
+ 
+-- 3D asking for minors 
+2H 
+ 
+
+
+
+
+
+ 
+-- 3H 4 clubs or 4-3-3-3 
+
+ 
+ 
+ 
+- -- 3S interest in clubs 
+
+ 
+ 
+ 
+- - -- 3NT 4-3-3-3 
+
+ 
+ 
+ 
+- - -- 4C 4 clubs minimum 
+
+ 
+ 
+ 
+- - -- 4D/H cue-bid with 4 clubs maximum 
+
+ 
+ 
+ 
+- -- 3NT no interest in clubs 
+
+ 
+ 
+ 
+- -- 4C/D/H heart fit, slam, not 2 TH's in hearts 
+
+ 
+ 
+ 
+- -- 4NT quantitative, possibly five diamonds 
+
+ 
+ 
+ 
+-- 3S 4 spades 
+
+ 
+ 
+ 
+- -- 4C/D cue-bid with spade fit 
+
+ 
+ 
+ 
+- -- 4H heart fit, slam, not 2 TH's in hearts 
+
+ 
+ 
+ 
+-- 3NT 4 diamonds 
+
+ 
+ 
+ 
+	 	-- 4C/D diamond fit 
+ 
+ 
+ 
+ 
+	 	-- 4H heart fit, balanced, slam, not 2 TH's in heart
+1NT-2C; 2H 
+ 	 	-- 3H heart fit, GI 
+ 	 	-- 3S at least 9 cards in the majors, fit, SI 
+ 	 	- -- 3NT=singleton? (4C/D = singleton, 4H=no singleton min
+ 	 	-- 3NT to play, says nothing about spades 
+ 	 	-- 4C/D cue-bid, heart fit, SI at least 2 TH's in hearts 
+ 	 	-- 4H to play 
+ 	 	-- 4NT RKCB for hearts 
+ 	 	-- 4S/5C/5D Voidwood 
+
+ 
+
+ 
+ 
+Transfer continuations 
+Transfer continuations follow the same rules as over 2H 
+Transfers to the minors over 1NT-2C; 2S 
+2S 
+ 	 	-- 2NT transfer to clubs 
+ 	 	- -- 3C forced 
+ 	 	-  	-- pass with 6+ clubs, weak, possibly 4 hearts 
+ 	 	-  	-- 3D singleton minor, continuations as over 2D 
+ 	 	-  	-- 3H six clubs, singleton heart, possibly four spad  	 	-  	-- 3S six clubs, singleton spade, possibly four hear
+ 	 	-  	-- 3NT single-suiter in clubs, MSI, without singleto
+ 	 	-  	-- 4C six clubs, SI, no singleton 
+  -  -- 4D 5-5 minors, 3 TH's in the suits, SI (stronger 3C...4C) 
+ 	 	-  	- -- 4H asks number of TH's (3, 4...) 
+ 	 	-  	-- 4H/S 5+ clubs, 6 hearts/spades, game 
+ 	 	-- 3C transfer to diamonds 
+ 	 	 	-- 3D forced 
+ 	 	 	 	-- pass with 6+ diamonds, weak, possibly 4 hearts 
+ 	 	 	 	-- 3H/S singleton heart/spade, six diamonds, GF+ 
+ 	 	 	 	-- 3NT single-suiter in diamonds MSI, without single
+ 	 	 	 	-- 4C 5-5 minors, 3 TH's in the suits, MSI (weaker t
+2NT...4D) 
+ 	 	 	 	- -- 4D asks number of TH's (3, 4...) 
+ 	 	 	 	-- 4D six diamonds, SI, no singleton 
+ 	 	 	 	-- 4H/S 5+ diamonds, 6 hearts/spades, game 
+ 
+Asking for the minors 
+After 2S the asking for the minors is very simple, and there are only 3 cases: 
+Asking for the minors after 
+2S 
+1NT-2C; 2S 
+ 	 	-- 3D asking about minors 
+ 	 	 	-- 3H 4 clubs 
+ 	 	 	-- 3S 4 diamonds 
+ 	 	 	-- 3NT 4333 
+ 
+Other sequences over 2S 
+The other sequences, apart from 3NT which is to play, shows a spade fit 
+4S to play, 4C/D cue-bid with at least 2 TH's in hearts, 3H with 9+ car majors and SI, 4NT Blackwood, others are Voidwood) 
+Sequences to play (3NT and 1NT-2C; 2S 
+4S) or GI or slam in spade  	 	-- 3S spade fit, GI 
+fit 	-- 3H at least 9 cards in the majors, fit, interest in slam 
+ 	 
+	 	 	- -- 3S=singleton? (3NT= no singleton, 4C/D = singleton) 
+	 	 	-- 3NT to play, says nothing about hearts                     
+	 	 	-- 4C/D/H cue-bid, spade fit, SI with at least 2 TH's in spad
+	 	 	-- 4S to play 
+2S response (4 spades, not 4 hearts) 
+
+	 	 	-- 4NT RKCB for hearts 
+	 	 	-- 5H/5C/5D Voidwood 
+ 
+
+ 
+ 	The transfer 2D guarantees at least 4 hearts and is made with many stren distributions. The two possible responses are normal completion of the t and superacceptance, which is bidding the doubleton with a maximum 4-car
+"useful" doubleton, xx or Ax.  
+The basic structure of responses is: 
+Structure of responses over 1NT-2D 
+the transfer 2D 
+ 	-- 2S,2NT(D),3C = 2 cards in the suit, max four-card raise 
+ 	-- 2H normal accept 
+ 	 	-- pass weak with 5+ hearts 
+ 	 	-- 2S GI, 4/5 hearts 
+ 	 	-- 2NT GI, 4-4 majors. North picks final contract 
+ 	 	-- 3C GF, 5+ hearts 
+ 	 	-- 3D GI or SI, 6+ hearts, if SI then no singleton 
+ 	 	-- 3H GI 5-5 majors. North picks final contract 
+ 	 	-- 3S 6+ hearts, SI with a singleton 
+ 	 	-- 3NT 5332 or 5422, game. North picks final contract 
+ 	 	-- 4C/D 5-5 SI 
+ 	 	-- 4H 6+ hearts, MSI (otherwise a direct 4C or 4H) 
+ 	 	-- 4NT 5332 or 5422, SI, North can pass 
+Superacceptance 
+After a superacceptance South retransfers and passes, signs off in game bids as a slam try. 
+Over normal acceptance South can pass, invite of force game, in the latt asking distribution. 
+Continuations after 2S GI 
+2S after normal acceptance of the transfer shows GI with 4 or 5 hearts. a minimum bids 2NT, whereas with a maximum can ask for South's distribut
+GI with 4 or 5 hearts 
+1NT-2D; 2H - 2S 4/5 hearts, GI 
+ 	 	 	-- 2NT 2/3 hearts, minimum 
+ 	 	 	- -- 3C/D 5-5 GI, North picks final contract 
+ 	 	 	-- 3C asking distribution, maximum   	 	 	 	-- 3D 4 hearts, singleton in a minor  	 	 	 	- -- 3H singleton? 
+ 	 	 	 	-  	-- 3S=diamonds, 3NT=clubs 
+ 	 	 	 	-- 3H 5 hearts 
+ 	 	 	 	-- 3S 4 hearts, singleton spade 
+ 	 	 	 	-- 3NT 4 hearts, no singleton 
+ 
+Continuations after 2NT GI 
+2NT shows 4-4 majors, GI. North can pass, bid 3 or 4 of the major, or si 3NT. With a weak doubleton in a minor, North can verify first if it is c
+3NT or not. 
+GI with  4-4 majors 
+1NT-2D; 2H - 2NT 4-4, GI 
+ 	 	 	--  pass,3H/3S/3NT/4H/4S to play 
+ 	 	 	-- 3C/3D weak doubleton in the suit? 
+ 	 	 	 	-- 3H yes, weak doubleton in the suit               
+ 	 	 	 	-- 3NT no, suit covered 
+2D transfer 
+
+
+ 3C GF 
+With 5 hearts and a game hand South always bids 3C, no matter what the distribution.  North normally asks only with a misfit, otherwise she dis between the Hxx(x)+ and xxx(x) fits. 
+ 
+GF hands with five hearts 
+1NT-2D; 2H - 3C 5+ hearts, GF+ 
+
+ 
+ 
+ 
+-- 3D asking, misfit or xxx fit with interest in 3NT 
+
+ 
+ 
+ 
+- -- 3H short spades or 5422 
+
+ 
+ 
+ 
+- - -- 3S (xxx heart fit) or 3NT 
+
+ 
+ 
+ 
+- -  	-- 4C/D 5422 slam 
+
+ 
+ 
+ 
+- -  	 	-- 4S/5om = implied minor fit 
+
+ 
+ 
+ 
+- -- 3S short diamonds, possibly SI 
+
+ 
+ 
+ 
+- -- 3NT short clubs GF 
+
+ 
+ 
+ 
+- -- 4C short clubs, TS 
+
+ 
+ 
+ 
+- -- 4D 6+ hearts, 4 diamonds, SI 
+
+ 
+ 
+ 
+- -- 4H 6+ hearts, 4 clubs, SI 
+
+ 
+ 
+ 
+- -- 4S 5-4-4-0 void in spades 
+
+ 
+ 
+ 
+-- 3H Hxx(x) or better heart fit 
+
+ 
+ 
+ 
+- -- 3NT/4H to play 
+
+ 
+ 
+ 
+- -- 3S SI without four-card minors, not necessarily c
+
+ 
+ 
+ 
+- -- 4C/D slam, 4 cards in the suit 
+
+ 
+ 
+ 
+-- 3S 3+ hearts, no TH, no four-card minors, maximum 
+
+ 
+ 
+ 
+-- 4C/D 3+ hearts, no TH, 4 cards in the suit 
+ 
+3D with a six-card suit 
+With 6+ hearts South can invite game or, if strong, can can show slam in bidding 3D. 
+Six-card heart suit, GI or slam 
+1NT-2D; 2H - 3D 6+ hearts, GI or SI 
+ 	 	 	-- 3H minimum, over which South cue-bids with SI 
+ 	 	 	-- 3NT to play if GI, South reopens with SI 
+ 	 	 	-- 3S/4C/4D cue-bid with maximum and heart fit 
+ 
+3H with 5-5 majors, GI 
+ 
+1NT-2D; 2H - 3H GI 5-5 majors 
+ 	 	 	-- pass/4H heart preference 
+ 	 	 	-- 3NT to play 
+ 	 	 	-- 3S/4S spade preference 
+ 
+3S with SI six-card suit and a singleton 
+ 
+When South has six hearts, slam strength and a singleton it is important opener knows which suit because she is the balanced hand with dispersed 
+SI six-card suit with a singleton 
+ 
+1NT-2D; 2H - 3S SI 6+ hearts and a singleton 
+ 	 	 	-- 3NT asks for singleton 
+ 	 	 	 	-- 4C/D/H (= S) singleton in the suit 
+ 
+Other sequences 
+Of the other sequences the more interesting are jumping in a minor, dedi
+5-5 slam hands with at least 3 TH's in the suits 
+Sequences with 5-5 slam 	1NT-2D; 2H - 3NT 5332 or 5422, game 
+	 	 	 	--  pass/4H to play 
+1NT-2D; 2H - 4C 5-5 hearts/clubs, slam with at least 3 TH's 
+	 	 	 	-- 4D = #TH's? 
+	 	 	 	- -- 4H = 3, 4S=4, etc. 
+	 	 	 	-- 4H/5C minimum and misfit 
+ 
+The transfer 2H guarantees at least 4 spades. If GI, South promises 4 sp otherwise the hand is shown via 2C  
+Structure of responses over the transfer 2H 
+1NT-2H 
+ 	-- 2NT(H),3C,3D = 2 cards in the suit, four-card max raise 
+ 	-- 2S normal transfer 
+ 	 	-- pass weak with 5+ spades 
+ 	 	-- 2NT GI, 4 spades 
+ 	 	-- 3C GF, 5+ spades 
+ 	 	-- 3D GI or SI, 6+ spades, if SI then no singleton 
+ 	 	-- 3H GI 4 spades / 5+ hearts. North picks final contract 
+ 	 	-- 3S 6+ spades, SI with a singleton 
+ 	 	-- 3NT 5332 or 5422, game. North picks final contract 
+ 	 	-- 4C/D 5-5 SI 
+ 	 	-- 4S 6+ hearts, MSI (otherwise a direct 4D or 4S)  
+ 	 	-- 4NT 5332 or 5422 SI, North can pass 
+ 
+Continuations over 2NT, GI with 4 spades 
+After the reply 2NT North can pass or ask for further distribution, in particular the location of a singleton. 
+Sequence with four spades GI 
+1NT-2H; 2S - 2NT 4 spades, GI 
+ 	 	 	-- 3C asking distribution, maximum  
+ 	 	 	 	-- 3D/H/S = singleton diamond, heart, club 
+ 	 	 	 	-- 3NT no singleton 
+ 
+3C, GF 
+With 5 spades GF South always bids 3C, no matter the distribution. North asks only with a misfit, otherwise shows quality of trump support. 
+GF with five spades. 
+1NT-2H; 2S - 3C 5+ spades, GF+ 
+ 	 	 	-- 3D asking, misfit or xxx fit with interest in 3NT 
+ 	 	 	- -- 3H short hearts or 5422  
+ 	 	 	- - -- 3S (xxx spade fit) or 3NT 
+ 	 	 	- -  	-- 4C/D with 5-4-2-2, slam 
+ 	 	 	- -  	 	-- 4H/5om = fit in the minor 
+ 	 	 	- -- 3S short diamonds 
+   -- 4S/4NT cue-bid in spades or diamonds, 3 TH's, invites  
+1NT-2D; 2H - 4D 5-5 hearts/diamonds, slam with at least 3 TH's 
+	 	 	 	-- 4S = #TH's? 
+	 	 	 	- -- 4S = 3, 4NT=4, etc. 
+	 	 	 	-- 4H/5D minimum and misfit 
+	 	 	 	-- 4NT , 5C cue-bid in spades or clubs, 3 TH's, invites c
+ 
+2H transfer 
+
+	 	 	 	- -- 3NT short clubs GF 
+	 	 	 	- -- 4C short clubs, SI 
+	 	 	 	- -- 4D 6+ spades, 4 diamonds, SI 
+	 	 	 	- -- 4H 5-4-4-0 void in hearts 
+	 	 	 	- -- 4S 6+ spades, 4 clubs, SI 
+	 	 	 	-- 3H raise with 3/4 spades, no TH, no 4 card minor 
+	 	 	 	-- 3S Hxx+ raise 
+	 	 	 	- -- 3NT/4S to play 
+	 	 	 	- -- 4H SI without a four-card minor 
+	 	 	 	- -- 4C/D slam, 4 cards in the suit 
+	 	 	 	-- 4C/D 3+ spades, no TH, four-cards in the suit 
+ 
+3D with six spades 
+                      As over the transfer to hearts, 3D guarantees six spades and shows GI or Six spades, GI or SI 	1NT-2H; 2S - 3D 6+ spades, GI or SI 
+	 	 	 	-- 3S minimum, over which South cue-bids if SI 
+	 	 	 	-- 3NT to play if GI, South reopens if SI 
+	 	 	 	-- 3H/4C/4D cue-bid with maximum and heart fit 
+ 
+
+
+With GI and 4 spades/5 hearts the system provides a canape transfer 
+4-5 majors, GI 
+1NT-2H; 2S - 3H GI 4-5 majors 
+ 	 	 	-- pass/4H heart preference                              
+ 	 	 	-- 3NT to play 
+ 	 	 	-- 3S/4S spade preference 
+ 
+3S with SI six-card suit and a singleton 
+3S, like over the transfer 2D, is dedicated to hands with 6+ cards in the suit and a side singleton, SI 
+Hands with 6 spades and a singleton, SI  
+1NT-2H; 2S - 3S SI with 6+ spades and a singleton 
+ 	 	 	-- 3NT asks for singleton 
+ 	 	 	 	-- 4C/D/H singleton in the suit 
+ 
+Other sequences 
+Again 5-5 slam hands to at least 3 TH's in the suits are described. 
+ Sequences with 5-5,  slam 
+1NT-2H; 2S - 3NT 5332 or 5422, game  
+ 	 	 	--  pass/4S to play 
+1NT-2H; 2S - 4C 5-5 spades/clubs, slam with at least 3TH's 
+ 	 	 	-- 4D = # TH's? 
+ 	 	 	- -- 4H = 3, 4S=4, etc. 
+ 	 	 	-- 4S/5C minimum and misfit 
+ 	 	 	-- 4H, 4NT cue-bid inhearts or diamonds, 3 TH's, invites  
+1NT-2H; 2S - 4D 5-5 spades/diamonds, slam with at least 3 TH's 
+ 	 	 	-- 4H = # TH's? 
+ 	 	 	- -- 4S = 3, 4NT=4, etc.                              
+ 	 	 	-- 4S/5D minimum and misfit 
+ 	 	 	-- 4NT, 5C cue-bid in hearts or clubs, 3 TH's, invites cu
+3H with 4-5 majors 
+
+Balanced GI hands without a major 
+ 
+ 5-5 minors, weak 
+ 
+Diamond single-suiter 
+Two-suited minors, strong 
+2S transfer 
+2S is used for GI balanced hands without four-card majors. Different fro sytems, where these hands are handled through Stayman, this treatment us find out whether opener's hand is minimum or maximum, without giving out distributional details. 
+When North holds a maximum she does not sign off in 3NT, but indicates a preference between the minors, since 2S can be made with a minors two-su with a diamond one-suiter.  In each case, a four-card major is denied. 
+1NT-2S weak diamond single-suiter, GI balanced, 5-5 minors, two-suited m
+ 	-- 2NT = minimum 
+ 	- -- pass = balanced. GI 
+ 	- -- 3C  5-5 minors weak or GI, North passes or corrects to 3D 
+ 	- -- 3D diamond single-suite, sign-off 
+ 	- -- 3H 5+/4+ minors, singleton heart, max 3 spades, GF+  
+ 	- -- 3S 5+/4+ minors, singleton spade, max 3 hearts, GF+ 
+ 	-- 3C = maximum, club preference if South has 5-5 minors 
+
+	 	- -- pass = 5-5 minors weak 
+	 	- -- 3D  weak diamond single-suiter, sign-off 
+	 	- -- 3H 5+/4+ minors, singleton heart, max 3 spades, GF+  
+	 	- -- 3S 5+/4+ minors, singleton spade, max 3 hearts, GF+ 
+	 	-- 3D = maximum, diamond preference if South has 5-5 minors 
+	 	 	-- pass = 5-5 minors weak or diamond single-suiter           
+	 	       -- 3H 5+/4+ minors, singleton heart, max 3 spades, GF+  
+	 	 	-- 3S 5+/4+ minors, singleton spades, max 3 hearts, GF+ 
+ 
+2NT asking bid 
+When South has a minor single-suiter to two TH's of intermediate strengt often wants to be in game, but it is necessary that North have the other or, if not, three spot cards. With a weak doubleton, in fact, the commun often insufficient to run the suit. 
+At the same time there are hands which South could, because of HCP's, bi where a weak doubleton gives him fear of quickly going down.  
+For both these situations is the 2NT bid, which simply asks opener to bi unless she holds a weak doubleton. In this case North bids the doubleton danger can be diagnosed.  Later bids over 3NT, in fact, show that both h the same weak doubleton and look for a more secure contract. 
+Bidding the weak doubleton 1NT-2NT minor single-suiter GI, or balanced with an unstopped doubleton 
+	 	-- 3C/D/H/S weak doubleton in the suit 
+	 	-- 3NT no weak doubleton 
+ 
+Splinters 
+The 3-bids are all splinters, and show GF+ strength and a singleton/void in the suit shown. 
+3C and 3D splinters 	Over a minor-suit splinter four-card suits are bid up the line. South do
+
+3H and 3S splinters above 3NT, if not having a slam hand, unless North shows inadequate cont short suit.  
+The major-suit splinters are like those in the minors but they guarantee in the other major. The 5431 hands with 9 cards in the minors actually g the transfer 2S. 
+
+Other responses 
+The last responses possible by South are South African Texas (4C for hearts and 4D for spades), the sign-of and 4 in a major) or the immediate Blackwood. 
+Remember that to bid 4NT quantitative one first bids Stayman, then one can ask for the minors, and finally, one can bid 4NT in the quantitative sense. 
+Transfers 4C and 4D North completes the transfer into the corresponding major 
+4NT Standard Blackwood, 4 aces
+
+Opponents' interference over the 1NT opening 
+ 
+Over X 
+ 
+In case of interference by double by 2nd hand: 
+D Pass shows the desire to play in 1NT; 
+D Redouble shows at least 7/8 HCP and is forcing to at least 2NT or the double of the opponents; 
+D 2C shows clubs, or a hand without a 5 card suit. Over a later double South: 
+- passes with clubs 
+- redoubles as SOS inviting partner to bid a suit 
+- bids a good 4 card suit 
+D 2D, 2H o 2S show weak 5 card suits. 
+ 
+In the case of a balancing double, the responder, if passed around to him, may: 
+D pass with a decent hand (5-7 HCP) 
+D bid a 5 card suit, if possible 
+D redouble as SOS to request a 4 card suit bid. 
+ 
+A possible variant of this scheme is: 
+1. Pass by responder is made also with two 4 card suits. Opener, if passed back to her, always redoubles, permitting South, with a weak hand, to bid the cheapest of her 4 card suits. 
+2. 2C, instead of showing just 5 clubs, is also bid with all 4333 weak hands, with 4441 hands with a singleton club, and with 5-5 majors.  Over the eventual double, South passes with clubs, redoubles with 4333, bids 2D with the 3 suiter, and 2H with 5-5 majors. 
+3. 2D is bid with 5-4 weak majors. Over enemy double, the redouble shows 5 spades whereas 2H shows 5 hearts.  
+This method has the obvious advantages of clarity and precision, but has the disadvantage of not being able to play 1NT doubled (either playing in a suit or playing in 1NT redoubled) and permits the opponents to let us play 
+(undoubled) absurd contracts like 2C or 2D with 2/3 total trumps! At least at matchpoints, it is better played NV than V. 
+ 
+ 
+Opponents' suit interference 
+ 
+In the case of an overcall, the following is used: 
+ 
+2C overcall: 
+D Double is takeout-oriented, and shows interest in the majors, GI+. Opener may pass with 4+ clubs, or can bid: 
+- At the lowest level possible, with a minimum; 
+- At the 3 level in a 4 card major with a maximum and a stopper in their suit(thus leaving the option of playing in 3NT); 
+- Cue-bid clubs without a stopper, with or without a 4 card major, but with a maximum. South bids a suit, looking for a fit; - 3NT with a maximum, stopper, and no 4 card major. 
+D 2NT shows a stopper, GF+ or a weak club suit (when 2C2is conventional). North must bid 3C3over which South bids: 
+- -  Pass weak clubs; 
+- -  3D balanced and interested in a major. North shows a major(4H with both 
+-       majors) or bids 3NT without a major;
+- -  3H/S with a 5 card suit. 
+3C is Stayman without a stopper, over which North bids: 
+- -  3D without a major without a stopper; 
+- -  3H with 4 hearts, possibly 4 spades; 
+- -  3S with 4 spades, without 4 hearts; 
+- -  3NT without a major, but with a stopper. 
+D Simple suit bid is to play; 
+D Jump in a suit is GF with 5+ cards and lacking a stopper (otherwise go through 2NT). 
+ 
+1. Over the interference of 2DDone applies the same rules but takes into account that, when 2DDis a transfer to hearts, the bids of hearts assume conventional meanings:
+1NT - 2DD- 2-: equivalent to a takeout double. The double shows 5+ diamonds 
+2.                and a distributional hand
+1NT - 2DD- 3C
+33: 4 spades and no heart stop (3S shows both spades and a stop) 
+1NT - 2DD- 3-: 3 suited or solid/semi-solid one-suiter slam hand. North 
+assumes the 3 suiter and thus bids her cheapest suit. The later bid of 4aaconfirms a 3-suiter, whereas a new suit sets the trump suit and invites cue-bids. 
+Over 2OOand 2S2one applies similar rules, and where hearts is a transfer to spades, all the spade bids are conventional (as noted above). 
+ 
+Over a 2-suited overcall, the following rules apply: 
+D Double shows at least 5 cards in an artificial overcall, of any strength, so that with a minimum, opener tends not to raise; 
+D Pass followed by a double is penalty; 
+D Pass followed by a cue-bid of another suit is GF, showing a stop in the bid suit (after which one will be in a position to double) and lacking a stop in the suit in which the opponents would have played; 
+D A cheap bid in a suit not shown by the opponents is weak, to play; 
+D An immediate cue-bid of one of the opponents' suits shows a strong hand with the corresponding suit (minor for minor, major for major) 
+D 2NT and 3C3remains asking for majors all the time the opponents don't show a major 2-suiter, showing a game hand respectively with or without stoppers in their suits. 
+ 
+Interference over the 2C ask 
+In the case of interference after 1NT – P – 2C2one bids as follows: 
+D over an enemy double one redoubles with 5 clubs, one passes with 4 clubs 
+without a major and one bids as normal with 2/3 clubs or with 4 clubs and a 4 card major. South, after a pass, bids 2DDwith 5 weak, 2wwwith 4-4 majors weak, 2NT natural and 3C3as Stayman. 
+D Over suit interference North doubles with 4/5 cards in the suit and passes otherwise. South, if he wants a response to Stayman bids 3S. Double by South is always penalty. 
+ 
+Interference over a major transfer 
+Over a double, North: 
+D Passes with 2 card support, either min or max. South redoubles as an invitation to game, bids the shown suit to play, or else bids with the system; 
+D Redoubles with 2 card support and 4/5 cards in the transfer suit, to suggest playing there doubled; 
+D Completes the transfer with 3 or 4 card support. 
+Over a suit bid, North passes always, and South may: 
+D Double with semi-balanced invitation and 3 cards in the bid suit; 
+D Bid normally with the system otherwise   
+
+2C Opening Bid 
+One/two-suiters with 6+ clubs to at least 2 top honors. Possibly a 4 or 5 card side major, but with a 5 card major one tends to open 1M. 
+ 
+Responses: 
+2D  
+asking relay, usually without a 5 card major 
+2H/S  
+5 cards, F1 
+2NT  
+GF+, looking for diamond slam 
+3C  
+barrage 
+3D  
+two-suiter 5 spades/4 hearts GF 
+3H/S  
+invitational 6 card suit 
+3NT  
+5-5 majors GF+ 
+ 
+ 
+2C-2D asking bid 
+ 	-- 2H maximum, or minimum with 4 hearts 
+ 	- 
+-- 2S relay GF+ seeking 6C 4H min 
+ 	- 
+- 
+-- 2NT one-suiter, maximum 
+ 	- 
+- 
+- -- 3C asks for stops 
+ 	- 
+- 
+- - -- 3D 1 stop 
+ 	- 
+- 
+- - - -- 3H hearts/diamonds stoppers 
+ 	- 
+- 
+- - - -- 3S spades/diamonds stoppers 
+ 	- 
+- 
+- - - -- 3NT spades/hearts stoppers 
+ 	- 
+- 
+- - -- 3H H/D stoppers 
+ 	- 
+- 
+- - -- 3S S/D stoppers 
+ 	- 
+- 
+- - -- 3NT H/S stoppers 
+ 	- 
+- 
+-- 3C 6 clubs/4 hearts minimum 
+ 	- 
+- 
+- -- 3D feature for 3NT, or strong hearts 
+ 	- 
+- 
+- -- 3H to play 
+ 	- 
+- 
+- -- 3S feature for 3NT or strong H without D cue 
+ 	- 
+- 
+- -- 4C club fit, SI 
+ 	- 
+- 
+-- 3D 6 clubs/4 diamonds, maximum 
+ 	- 
+- 
+-- 3H 6 clubs/4 hearts, maximum 
+ 	- 
+- 
+-- 3S 6 clubs/4 spades, maximum 
+ 	- 
+- 
+-- 3NT maximum with 3 stoppers 
+ 	- 
+-- 2NT relay with 4 hearts, GI, passable 
+ 	- 
+-- 3C relay with 4 spades, GI, passable with a minimum 
+ 	-- 2S 6 clubs/ 4 spades, minimum 
+ 	-- 2NT 6 clubs, minimum, 2 stoppers 
+ 	- 
+-- 3C to play 
+ 	- 
+-- 3D asks stoppers 
+ 	- 
+ 	-- 3H hearts/diamonds stoppers 
+ 	- 
+ 	-- 3S spades/diamonds stoppers 
+ 	- 
+ 	-- 3NT hearts/spades stoppers 
+ 	-- 3C minimum one-suiter, 1 stopper 
+ 	- -- 3D asks which 
+ 	-  	-- 3H/S/NT stopper in the suit (NT = diamonds) 
+ 	-- 3D/H/S 6-5 reverse 
+2C-2H 5 hearts, 1F 
+ 	-- 2S 6 clubs/4 spades 
+ 	-- 2NT 1F, holdings in D/S, and/or maximum (possible 3 card fit) 
+ 	-- 3C 6 clubs, minimum 
+ 	-- 3D/S reverse in the suit 
+ 	-- 3H 3 card raise, minimum 
+ 	-- 3NT to play 
+ 	-- 4C/D reverse in hearts with/without club Ace 
+ 	-- 4H 4 card raise minimum 
+ 
+2C-2S 
+ 	-- 2NT 1F, values in D/H, and/or maximum (possible 3 card fit) 
+ 	-- 3C 6 clubs, minimum 
+ 	-- 3D/H reverse in the suit 
+ 	-- 3S 3 card raise, minimum 
+ 	-- 3NT to play 
+ 	-- 4C/D/H reverse spades with/without club Ace 
+ 	-- 4S 4 card raise, minimum 
+ 
+2C-2NT GF, looking for slam in diamonds 
+ 	-- 3C forced relay for normal hands without 3 diamonds 
+ 	- -- 3D asking for stoppers with normal cintinuations 
+ 	- -- 3H/S/NT natural, 4 cards (NT = diamonds) 
+ 	-- 3D 3 card diamond raise 
+ 	-- 3H/S reverse 6-5 
+ 	-- 3NT no interest in D, stoppers in majors 
+ 
+2C-3C barrage 
+ 
+2C-3D GF, 5 spades/4 hearts 
+ 
+2C-3H/S invitational 6 hearts/spades 
+ 
+2C-3NT 5 spades 5 hearts 
+ 
+ 
+If the opponents overcall, double is takeout and new suit is forcing. 
+ 
+2D Opening Bid 
+12-16 HCP with single-suit to at least 2 major honors. Without these, opener should bid 1D and then repeat the suit. 
+The bids angle toward a major fit (if length in South) or, else, toward 3NT. If interference, double is penalty. Responses: 
+2H  
+balanced, asking bid 
+2S  
+5 spades, F1 
+2NT  
+5 hearts, F1 
+3C  
+5 clubs, looking for slam (or looking for 3NT) 
+3D  
+barrage 
+3H/S  
+6 card suit, invitational 
+3NT/4H/4S  to play 
+4C  
+splinter 
+4D  
+barrage 
+4NT  
+Blackwood 
+ 
+2H Response 
+2D-2H; 
+-- 2S spade stopper, minimum 
+-- 2NT heart stopper, minimum 
+-- 3C club stopper, minimum 
+-- 3D maximum, only one stopper 
+- -- 3H hearts/clubs stoppers 
+- -- 3S spades/clubs stoppers 
+- -- 3NT hearts/spades stoppers 
+-- 3H maximum, hearts/clubs stoppers 
+-- 3S maximum, spades/clubs stoppers 
+-- 3NT maximum, hearts/spades stoppers 
+ 
+2S Response 
+The two spade response shows a five card spade suit and is forcing for one round. With a minimum hand, opener raises with three card support, bids 2NT with both hearts and clubs stopped and otherwise bids 3D. With a maximum hand, opener  
+ 
+2D-2S 5 spades, F1 
+-- 2NT minimum, clubs/hearts stoppers 
+-- 3C maximum, club stopper, possible xxx spade support 
+-- 3D minimum 
+-- 3H maximum, heart stopper, possible xxx spade support 
+-- 3S 3 card fit, minimum 
+-- 3NT to play (maximum with hearts/clubs stoppers) 
+-- 4C cue bid, diamond Ace, Hxx spade support 
+-- 4D cue bid, diamond Ace, Hxx spade support 
+-- 4H cue bid, diamond Ace, Hxx spade support 
+-- 4S HHx spade support, can't cue bid 
+ 
+2NT Response 
+The two spade response shows a five card heart suit and is forcing for one round.  With a minimum hand, opener raises with three card support and otherwise bids 3D.  With a maximum hand, opener .. 
+ 
+2D-2NT 5 hearts, F1 
+-- 3C maximum, club stopper, possible xxx heart support 
+-- 3D minimum 
+-- 3H 3 card support, minimum 
+-- 3S maximum, spade stopper, possible xxx heart support 
+-- 3NT to play (maximum with spades/clubs stoppers) 
+-- 4C cue bid, diamond ace, Hxx heart support 
+-- 4D cue bid, diamond ace, Hxx heart support 
+-- 4H HHx heart support, maximum (can't cue bid) 
+ 
+3C Response 
+2D-3C natural, looking for slam (limit by passed hand) 
+-- 3D minimum 
+-- 3H heart strength (A/K), fit in clubs 
+-- 3S spade strength (A/K), fit in clubs 
+-- 3NT to play 
+     -- 4C accepts invitation to slam, to determine if small or grand slam  
+Opening 2H/S 
+Weak bid with a 6 card suit and 8-12 HCP. The suit is normally decent and lacks in defensive strength. 
+ 
+Responses 
+ 
+2S/3C/3D  
+Natural, 1F 
+2NT  
+ 
+Asking, North can: 
+- With a minimum rebid the suit cheaply or jump rebid (7 carder not good enough for a 3-bid); 
+- With a maximum hand show a side stopper; 
+- With AKQxxx and nothing on the side bid 3NT; 
+- With a 6-4 maximum jump shift in the side suit; 
+Raise 
+ 
+ 	Preemptive 
+Jump in a suit,  solid suit, GF. 
+ 
+Over a new suit response, opener can: 
+D Raise with an honor third fit; 
+D Repeat the opening suit in a minimum misfit; 
+D Bid 3NT to play; 
+D Bid a 3 card suit as a stopper or as an advance cue-bid with a maximum fit but without a top honor in responder's suit; 
+D Raise to 4 in responder's major lacking a top honor or a side cue (and thus a very good opening suit). 
+ 
+ 
+Over interference, double is penalty.  
+South's bid after an initial pass 
+When South does not have a strong hand, 2NT is the only forcing bid. New suits are passable. 
+
+Opening 2NT 
+Weak 5+ hearts/ 5+ spades. Is quite preemptive, but South can ask to know minimum/maximum and eventually shortage. 
+ 
+2NT-3C game forcing relay, OR invite with hearts 
+ 	-- 3D minimum;  
+	- 	-- 3H invite 
+ 	- -- 3S forcing, fixing spades, SI 
+ 	- -- 4C/4D forcing cue, fixing hearts, SI 
+ 	- 
+ 	-- 3H 6 hearts – 5 spades maximum 
+ 	- -- 3S or immediate cue-bid sets spades as trumps 
+ 	- -- 3NT sets hearts as trumps      
+ 	- 
+ 	-- 3S 6 spades – 5 hearts maximum 
+ 	- -- 3NT hearts are trumps 
+ 	- -- cue-bid spades are trumps 
+ 	- 
+ 	-- 3NT 5-5 maximum without shortage; 
+ 	- -- 4C hearts trumps 
+ 	- -- 4D spades trumps 
+ 	- 
+ 	-- 4C club shortage, maximum; 
+ 	- -- 4D spades trumps 
+ 	- -- 4NT hearts trumps 
+ 	- 
+ 	-- 4D  diamond shortage, maximum; 
+ 	 	-- 4NT hearts trumps 
+ 	 	-- cue-bid spades trumps 
+ 
+2NT-3D asks better major, OR invite in spades  -- 3H  preference 
+	 	-- 3S invitational 
+-- 3S  preference 
+ 
+As a mnemonic aid, one should remember: 
+D 4C/4D, when bid immediately and therefore not cue-bids, fix respectively hearts and spades 
+D 3/4NT always fix hearts 
+D cue-bid immediately, if 3/4NT available,  fix spades  D Over an enemy double:   	pass = to play  	XX = "they're in trouble" 
+ 	3C/D = to play 
+ 
+ 
+Interference over Opponents' openings 
+ 
+The system uses a basically natural system of overcalling, but in which the one-level overcalls may be canape. The system does not provide for weak jumps, and uses Ghestem. 
+ 
+The general structure is thus below. 
+ 
+Intervention 
+Description 
+Double 
+Natural, at least 3 cards in any unbid major or a strong hand (16/17+). One even doubles with 5 spades and 3 hearts, so as not to lose the heart fit. A double followed by a major is limited, with 12-15 HCP 
+1D 
+Natural, solid suit (for offense) or good hand. 
+1H/S 
+4+ cards, may be canape or balanced 15-18. A further canape is definitely a 5 card suit. Further repeating of the major, 
+NT and take-out double all show a 5 card original overcall. 
+1NT 
+15-18 without 4 card major 
+2C 
+Natural always, 5+ cards 
+2D over 1H/S 
+Natural, 5+ cards 
+2D over 1C/D 
+Two-suiter majors (Ghestem) 
+2H/S jump 
+Jump overcall in a good 6 card suit, 12-15 p. 
+2H/S cue 
+Two-suiter 5+ other major/5+ clubs (Ghestem) 
+3C over 1H/S 
+Two-suiter 5+ other major/5+ diamonds (Ghestem) 
+3C over 1C/D 
+Two-suiter spades-clubs (minimum over 1D) 
+3D over 1D 
+Two-suiter spades-clubs maximum 
+2NT over 1H/S 
+Two-suiter minors 
+2NT over 1C/D 
+Two-suiter hearts-other minor (minors) 
+3D/H/S 
+Double jump = barrage (1C-3D) 
+3D/H/S 
+Simple jump = 7 cards, opening strength (1S-3D) 
+3H/S over 1H/S 
+Asks for stopper for 3NT 
+ 
+Double of a suit 
+The responses to the double are mainly natural. A cheap bid shows 0-7 HCP. 
+With 8-11 HCP and a 5 card suit one jumps (only 4 over 1H-X)whereas with just 4 cards, one cue-bids (not GF). With GF strength, one cue-bids and then bids a suit. With a 5 card major and adequate strength, one can also jump directly to game. 
+ 
+The strength with which one cue-bids or jumps is basically the same that one has when one invites to game over the 1NT opener. 
+ 
+After a jump response to a double, 2NT is an asking relay with hopes of game or slam. 
+ 
+1S response to a double of 1H can be 3 cards in a minimum hand. 
+ 
+1NT is always constructive 8-10 HCP with a stopper in the enemy suit. 
+The sequence  (1m) -  X -  pass - 1S 
+ 	 pass - 3H 
+shows 6+ hearts, 4 losers and 3 spades, whereas 
+ 	(1m) -  X -  pass - 1S  	 pass - 2m - pass - 2X  	 pass - 3H shows the same strength but without 3 spades. 
+Overcalling 1 of a suit 
+Since 1H/S overcalls can be 4 cards, the structure should be able to rapidly distinguish between 3 and 4 card support. 
+ 
+It is important to distinguish between the sequences where 3rd hand passes and 3rd hand bids. In the case of pass, the simple raise, that shows 8-11 HCP, should be given with both 3 and 4 card support (the 4 card overcall is always made with a good suit). If 3rd hand bids, the raise is always 4 cards, whereas in the case of a 3 card raise with values one doubles then raises. 
+The new suit at the one level is forcing, whereas strong hands (13+) without a biddable suit at the one-level make a cue-bid. 
+ 
+The jump shift in a new suit shows a good long suit (12-15) not playable in any other suit. 
+  
+Structure of responses: 
+Situation 
+Response 
+Description 
+3rd hand passes 
+Simple raise 
+Competitive, 3/4 card fit 
+ 
+" 
+Jump raise 
+Mainly barrage with 4+ card fit 
+Vulnerable, GI unbalanced  
+" 
+Simple cue bid 
+4 cards fit GI+, or 13+ HCP with any distribution. 
+" 
+Cue bid at 3 level 
+GI+ with 4+ cards. Overcaller signs off at 3 level only with very weak hand 
+" 
+1NT 
+Constructive, 9-12 with stopper 
+" 
+New suit at same level  
+Forcing, 4+ cards in the suit 
+" 
+New suit at higher level 
+Non forcing, 5+ cards in the suit 
+" 
+Jump in new suit 
+Good 6 card suit, invitational 
+" 
+2NT over 1H/S overcall 
+13-15 balanced 
+3rd hand bids 
+Double 
+9-12 maybe with a 3 card fit 
+" 
+Simple raise 
+Competitive, 4+ card fit 
+" 
+Jump raise 
+NV, barrage with 4+ cards 
+Vulnerable, GI unbalanced 
+" 
+Cue-bid at 2 level  
+4+ card fit GI+, or GF in any distribution. 
+" 
+Cue-bid at 3 level 
+GI+ with fit of 4+ cards 
+" 
+2NT non-jump 
+10-12 with stopper(s) in the enemy suit(s) 
+" 
+New suit 
+Forcing at 1-level, 1S always 5crd Non-forcing at 2-level 
+" 
+Jump in new suit 
+Good 6-crd suit, invitational 
+
+
+Overcalling 1NT 
+Balanced 15-18 without a 4 card major (with one, prefer to double if 15-16 and bid a 4-card suit with 17-18). 
+ 
+Only forcing response is the cue-bid. All others are passable if cheaply bid, and invitational if a jump.  
+2-level overcalls (non-jump) 
+All new suits at the same level are forcing one round, and do not deny a 3 card fit. 
+ 
+The new suit at a higher level is non-forcing and denies a good fit with partner. 
+ 
+Simple raises are constructive whereas the jump raise is preemptive nonvulnerable or constructive unbalanced vulnerable.  
+Overalling the enemy 14-18 NT (strong) 
+One only uses Landy (2C with major 2-suiter), whereas all other bids are 1114 HCP natural, with a 6 card or solid 5 card suit. 
+ 
+Over Landy, 2D asks for the better major. 
+ 
+The double by 2nd hand shows a strong hand at least 2 HCP stronger than the minimum for their NT range.  
+Overcalling the enemy 11-15 NT (weak) 
+The double is used for all hands with at least 13 HCP with the provision that, if minimum, doubler has at least 3 spades. With 10-12 HCP, one uses Landy or overcalls. 
+Doubling a weak two 
+After North doubles West's weak 2 bid, South, with an intermediate hand and  4+ cards in the other major, bids 2NT conventionally, over which North bids: 
+ 
+3C 	with a minimum, promising 4+ cards in the other major; 
+3D 	with a maximum without 4 cards in the other major and without a stopper; 
+cue-bid 	maximum and 4 cards in the other major; 3 other major maximum and 5 cards in the other major; 3NT 	maximum, stopper, good hand for NT. 
+ 
+Leads against slam 
+ 
+Honors are underled: A denies King; King from AK; Queen from KQ. Obviously over a king lead partner, with the Ace, encourages whereas without the ace, she gives count.  
+Defense to 2 D Multi 
+ 
+X = 4+D with opening count. (possibly canape with clubs) 
+Pass and then X over 2H or 2S = penalty 
+2NT = tends to be balanced with the minors  
+Variations in leading honors 
+According to partnership, in suit contracts one can use Rusinow leads (K from AK, Q from KQ, etc.) in a bid suit. In this case, in fact, there is not ambiguity between leading from an honor sequence and leading from a doubleton. 
+ 
+ 
+Defense vs. strong club 
+The overcalls of a strong 1C show two-suiters ed and is the only case where we use the weak jump shift. 
+ 
+Double  = hearts/clubs two-suiter 
+1D  
+= natural or both minors 
+1H/S  
+= natural 
+1NT  
+= spades/clubs two-suiter 
+2C  
+= 6+ clubs 
+2D  
+= both majors 
+2H/S  
+= weak jump (!) 
+2NT  
+= hearts/diamonds two-suiter 
+3C  
+= spades/diamonds two-suiter 
+ 
+ 
+Slam-bidding 
+ 	Slam-bidding 
+ 
+ 
+ 
+Slam-bidding is one of the most debated subjects, and most important, of all bidding theory. The reward for slam is so significant, and the penalty in case of a mistake so great, that a good part of the basic structure of modern bidding systems are made for easily reaching the good slams and, of consequence, allowing early identification of the necessity of stopping in game. 
+Blue Club 2000 is a system of the Italian school, and as such still uses the methods that, around 40 years ago, changed the world of competitive bridge, introducing common concepts from which nearly all systems evolved. 
+For the construction of slams we need some "building blocks" that make up the structure and which should be carefully assembled and used, to avoid irrationality and inconsistency in the process of slam-bidding. 
+Exploitation of limited 
+HCP-ranges 
+The first "building block" consists of knowing the system well.  Whereas playing natural systems each opening can be a very strong hand, in Blue Team 1C is dedicated to all hands with 17+ points or hands with 9+ winners and good suits, even some with only 15/16 points. 
+The suit openings are therefore limited, but can easily contain hands with 8 winners. In that case opener makes a canape reverse, or opens 2C or 2D and shows a maximum hand. The system, in any case, can further separate intermediate hands into two-suiters of 9/10 cards insufficient for a reverse but strong enough to be considered a maximum upon inquiry of responder. From that point of view, therefore, the system, thanks to the limits on the natural opening, allows separation into three levels of strength all within the 12-16 HCP range. 
+The opening that, if not a reverse, shows the minors for eventual slam bidding is 1D, used, most of the time, for balanced weak hands or unbalanced hands with the minors that do not qualify for an opening of 2C of 2D. One finds therefore it is an opening that, in the slambidding phase, should be treated with some delicacy. 
+The responder too should show his strength in a similar way.  For example, with a two-suiter of at least 9 cards, 4 controls and 14+ HCP in response to an opening of 1D it is important to make a canape reverse, which shows the 4-card suit for an eventual 4-4 fit and, at the same time, shows a good hand. Not responding in a reverse sequence, when it was possible to do so, is therefore sure indication of lack of one of the requirements, in terms of strength, or in terms of distribution.  
+In conclusion, the partnership which plays Blue Team should always sign off, during the bidding, if the hand needed for slam is not consistent with the sequence chosen by partner. Different from natural systems, where the strength range is large, in the Blue Team it is easy to exclude at a low level the slam chances; and for the hands which are distributionally powerful, even if limited in points, bidding slam is very difficult in natural systems. 
+ 
+
+Solidity of the trump suit as a basis for slam-bidding Another of the fundamental "building blocks" in the Blue method for slam bidding is that of identifying quickly the hands with trump holdings too weak for slam.  
+
+Finding the 4-4 fit 
+
+Following that principle, the system provides, in particular for hands with a major fit, diverse ways to show a fit with a strong hand.  First is the solid raise, which contains at least 2 TH's if the fit is potentially only eight cards, and at least 1 TH if the fit is for sure at least nine cards. Second is the good raise, which is at least Hxx in case of an eight-card fit.  Third is the minimum raise, constituted by three or four small cards.  
+The principle can sometimes be applied even to hands with a minor fit, whereas other times one only succeeds in distinguishing between a fit with small cards only and a fit with a top honor.  But in general the system succeeds in signalling quickly the presence of trumps too weak for slam. 
+Because of this, the system often delays the communication of a fit in an apparently unnatural way.  The problem is that an immediate raise is, in many sequences, indicative of a good fit (at least Hxx), whereas an immediate cue-bid shows at least 2 TH's.  Thus the hands with an insufficient fit should be shown slowly and make a forcing bid which allows a proceeding delayed raise. 
+That approach can seem unnatural compared to the principle of "fast arrival", where the slow sequence is often more strong than a fast sequence.  But one only has to accept and understand an equally rational principle.  An immediate fit in a forcing situation always shows a minimum of trump suit quality, whereas an immediate jump cue-bid, when it would be possible to make a limited raise, shows an eight-card fit (at least 2 TH's) and slam prospects. 
+Unfortunately in not all the sequences is it possible to distinguish between a trump fit with an honor and one with none.  In this case it is necessary that none of the two partners go past the level of game without a major honor in trump, whereas one whose partner has refused to voluntarily go past game should be careful not to go past game with only one top trump if she has reason to suspect that her partner's problem is in trumps. 
+The method of cue-bidding should therefore serve as an instrument to verify the quality of the agreed trump suit, and not only to verify the presence of adequate controls. 
+Another "building block" says that, upon reaching a 5-3 fit  in a potential slam hand, the 
+
+system should allow finding a 4-4 fit in a side suit, as it is often possible, if there are useful discards and if the 4-4 fit is solid enough, to take one trick more in the 4-4 fit than in the 5-3.  
+There is of course an exception to this rule.  If the 4-4 fit is weak and the 5-3 is solid, it may be possible to get rid of a pair of losers in a third suit using the 5-3 fit, but the losers in trump are by definition unavoidable. 
+Cue-bids 	The key on which all slam bidding in the Italian school hinges is however the cue-bid.  While the American school from the post-war period made an initial distinction between cue-bids of first and second round controls, the Italian school Blue Team, which at the beginning was using the Neapolitan Club, already had adopted mixed cue-bidding and 4NT DeclarativeInterrogative (DI), and so never Blackwood if not made as a jump. 
+Moreover the American school, at least initially, essentially used the cue-bid for checking for controls in various suits, while the Italian school gave the cue-bid more meanings, like a solid trump suit and, in certain sequences, a better-than-minimum strength for what was previously shown. 
+Mixed cue-bidding has diffused to such a point that there are many variants. The American school tends to reserve 4NT for verification of keycards, nearly always adopting Roman Key Card Blackwood (RKCB), which is Blackwood which considers the K of trump equally with the aces and which allows verification below the 5 level of the presence of the Q of trump. Only a few pairs (Hamman-Wolff, for example) have completely adhered to the Italian approach. 
+The problem on verification of the keycards still exists, and only the great bidding judgement of the members of the Blue Team (and Hamman-Wolff, obviously) has ensured they always stay out of slam, not always to tell the truth (footnote2), off two aces. 
+Recently, in Italy, among advanced and expert players has spread a convention called "Turbo", which appears to be a combination of the ideas of the Italian school and an opportunity to check on keycards before bidding slam. 
+Turbo, adopted for example by Bocchi-Duboin and Buratti-Lanzarotti, is very simple and consists of reserving 4NT, in a cue-bidding sequence, to show an even number of key-cards (0-2-4 including the K of trump), whereas a cue-bid over 4NT instead shows strength in the suit bid and an odd number of key-cards (1-3-5 including the K of trump). 
+In its simplicity Turbo is most effective.  The cue-bidding sequence should not be broken, so as to show secondary controls like the Q or doubleton, while checking on key-cards can be done only at the cost of a cue-bid in the last-bid suit.  Sometimes it can be hard to distinguish between 1 and 3 key-cards, or 0 and 2, but the technique for handling the later auction allows resolving that problem very simply. 
+After verification of key-cards, the 5NT bid is used to check on the Q of trump.  In absence of the Q of trump one bids 5NT, whereas with it one bids the grand or makes a new cue-bid at the six-level. 
+In Blue Club 2000 will be seen adopted Turbo in all sequences where one doesn't know the exact number of controls. This includes all sequences starting with a non-1C opening or those beginning with 1C where, whether because of responses of 1D,1H, 2D, 2H or 2S, or because enemy interference has removed the precision of the responses, one hasn't knowledge of the exact number of controls.  But the times where responder has given a response from 1S to 2C, without enemy interference, Turbo is not in effect and cue-bidding is handled in the classic way, with the bid of 4NT dedicated to the counter-cue-bid or quantitative meanings. 
+
+ 
+ 
+
+Slam-bidding Tools in Blue Club 2000 
+
+ 	Blue Club 2000, obviously, remains faithful to the basic principles of classic Blue Team, but introduces some new ideas, which are discussed below. 
+ 
+The cue-bid and Turbo 
+General scheme for 	The cue-bidding method applied to Blue Club 2000 follows that of the traditional Italian handling the cue-bid 	school.  Consequently cue-bids are mixed, indifferent between A, K, singleton, void or Q in the long suit of partner, and are bid cheaply, without bidding first round controls before second round controls. 
+A cue-bid can be voluntary or "provoked".  If one of the two players has a hand of unlimited strength and begins cue-bidding the partner should continue the cue-bidding sequence at least until game.  Going past game is always a willful act, which implies strength, whereas bidding game shows that one's ability to hold open the auction has been exhausted. 
+Therefore, when one of the two players has limited her strength (bidding NT or making an immediate splinter, e.g.), this does not require the partner to keep a cue-bidding sequence alive, not even below the game level.  In that case a cue-bid by partner, even below the game level, shows at least some interest in slam. 
+ 
+Turbo as a tool for verifying Though generally respecting the classic style of Blue Team, Blue Club 2000 adopts an 
+the number of key-cards 
+important exception.  The bid of 4NT, in sequences where there is uncertainty about the total number of controls held, shows an even number of key-cards. A cue-bid past 4NT, therefore, shows an odd number of key-cards. 
+Later, 5NT allows one to check on the queen of trump.  Bidding 5NT denies holding the Q (no Queen, or the even number of key-cards was zero di Q di trump), whereas a successive cuebid, or immediately bidding a grand slam, implies the Q of trump. 
+This convention, called "Turbo" in this way allows very early identification of key-cards, but is never used over the opening of 1C when responder has been able to show exactly the number of her controls.  In that case, really, it is convenient for 4NT to revert to a responsive cue-bid. 
+When a cue-bid is doubled 
+Another important difference between the classical school and Blue Club 2000 relates to treatment of a doubled cue-bid.  When the future declarer is the one who made the double cue-bid, partner redoubles with first-round control, passes with 2nd round control and continues cue-bidding without any control (or returns to the trump suit). 
+In Blue Club 2000, instead, when the cue-bidder is slated to be dummy and the control comes under immediate attack, a Polish suggestion is adopted, which says that: 
+y) The redoubled shows first-round control (A or void). 
+z) The pass shows worry that the enemy has doomed the potential K of partner on the lead, with the ace behind it.  This implies 2 or more cards in the suit.  The one who made the doubled cue-bid returns to the trump suit with the feared "positional" cue (Kx), continues cue-bidding with a secure second-round control (KQx or x) and redoubles with first-round control (A or void). 
+aa) Continuing the cue-bidding shows help in the doubled suit (at least Qx) which could protect a control such as Kx. 
+ 
+ 
+10. if a player can bid 4NT and doesn't do so, making a higher cue-bid or returning to the trump suit, this shows an odd number of key-cards; 
+11. if the trump suit is clubs or diamonds and the first bid above the 4-level is 
+4NT, without any cue-bids having been made, that 4NT is "to play" and not Turbo; 
+Showing a singleton or void in the sequences where there was never a chance to splinter 
+A further difference between the classic school and the method adopted by Blue Club 2000 lies in the possibility, in some cases, of distinguishing between a singleton/void and the cuebid of an honor.  When a player bypasses a cue-bid, but reopens with 4NT (key-card even), cue-bidding the bypassed suit (key-card odd) or repeating a cue-bid already made (void in the suit and odd number of key-cards) this shows controls in all the side suits and a singleton/void in the suit of the first cue-bid.  Naturally this situation is rare, since it must be when the singleton is the higher available suit and all the other suits are adequately controlled.  When it occurs, however, one finds it a great way to quickly and very descriptively show one's controls. 
+ 
+Cue-bidding partner's long suit 
+Finally, different from that seen in the Blue Team of Arturo Franco, in Blue Club 2000 one avoids cue-bidding at the first opportunity a singleton/void in the suit of partner, unless of course there is large source of tricks (ruffs or a long side suit).  Partner, in fact, will tend to consider this cue-bid an honor card and will consider his long suit a side source of tricks. 
+On the second opportunity, obviously, the cue-bid of shortness is shown without a problem, and at that point is easily identifiable as such.  Often, instead, one shows a Q in partner's long suit, especially when one has shown few controls and despite this, partner shows interest in slam. 
+ 
+Summary 
+To recap: 
+6. the cue-bids are bid cheaply, following the rule "cue-bid bypassed = cue-bid denied", not distinguishing between A, K, singleton or void; 
+7. at the first opportunity one does not, normally, make a cue-bid of a singleton/void in the long suit of partner, while one can always show a Q in that suit, above all if afraid of not being able to show it later; 
+8. if a player denies a cue-bid in suit X, making a cue-bid in suit Y, and in order to reopen the auction shows explicitly or implicitly control of suit X, this is showing a strong hand, with a singleton/void in suit Y and control of all the suits; 
+9. the bid of 4NT, made in a cue-bidding sequence, shows an even number of key-cards; 
+12. in the case of a double of a cue-bid, partner redoubles with an Ace or void, continues cue-bidding with protection of the doubled cue-bid (second-round control or Q) and passes to let partner show the type of cue-bid she made.  In this final case the cue-bidder continues cue-bidding with a protected secondround control (KQ or x), redoubles with first-round controls and returns to the trump suit with an unprotected cue-bid. 
+ 
+ 
+
+Turbo and the subsequent auction 
+Continuations after Turbo 
+Once the number of key-cards is known there are various situations: 
+
+1. 
+sometimes one can figure out with certainty the number of key-cards is insufficient. In that case it is necessary to sign off immediately at the 5 level in the trump suit, and make no further invitations.  Parter could reopen, but only with a useful void, which makes up for lack of one ace. 
+
+2. 
+other times one knows there is exactly one key-card missing, and consequently it is possible to bid a small slam but not a grand; in that case, if one has enough general playing strength, one should immediately bid the small slam. 
+
+3. 
+other times one has the strength and sufficient key-cards to bid a grand slam, but doesn't know for sure about the Q of trump; in that case one should immediately bid 5NT, showing the lack of the Q of trump and willingness to play grand slam. 
+
+4. 
+ 
+in many cases, instead, the key-cards are sufficient, but there is still something lacking to bid slam, be it a little or a lot; in that case in that case the bidding is continued at the 5-level, indicating uncertaintly as to the level of the contract. Partner, with a minimum, does not go above the 5-level, whereas with a maximum  goes beyond the 5-level, eventually showing or denying the Q of trump.  In case of a minimum, further bidding shows that the uncertainty was whether the level should be 6 or 7. 
+Handling uncertaintly after Turbo 
+There may be many reasons for uncertaintly: weakness in trumps, lack of a specific control, needing third-round controls, needing intermediates, etc.  For sure the problem cannot be just number of key-cards, otherwise one would just sign off at the 5 or 6 level in trump. But sometimes one wants to distinguish between 0 and 2 key-cards, or 1 and 3 key-cards, when both cases make sense from the previous bidding. 
+So the partner of the one who expressed uncertatiny should make the decision, or should indicate previously undisclosed strength that cold help partner make a final decision. For example, one should always sign off at the 5-level in trumps if possessing the minimum number of key-cards, and with a hand with many honors, bid in in such a way to indicate the greater number of key-cards. 
+Turbo and cue-bids 
+As one can figure out, therefore, Turbo does not replace cue-bidding, but completely follows the philosophy, letting continue the dialogue which is fundamental to that style even after knowing the number of key-cards and even when the objective is just the small slam.  Not uncommon is a sequence that, having identified sufficient key-cards, one stops at the 5-level for lack of playing strength or fits in the suits shown. 
+ 
+Turbo 5NT 
+Checking on the Q of trump 
+When the bid 5NT has been bid cheaply, following a sequence of cue-bids, this shows a lack of the Q of trump, considered necessary (In serious bridge -DJN)  for playing at the 7 level.  Partner possessing the Q of trump nevertheless does not oblige her to bid 7.  Parter can in fact continue with the cue-bidding, until maybe selecting 7NT or figuring out a weakness in a suit which should be solid for grand slam. 
+Bypassing 5NT without signing off in slam shows the Q of trump but uncertainty about the grand.  Being certain of all the key-cards and three major honors in trump, partner is nearly always is a position to know if her cards are good for grand slam. 
+ 
+Josephine 
+The asking bid for number of top honors in trump 
+Sometimes one jumps to 5NT, or is the final bid of a sequence started with a strong club in which one knows exactly the number of controls present. 
+In that case 5NT is used to ask the number of top honors (TH's) in trump. 
+Josephine for the majors 
+Responses: 
+
+1) 
+spades trump 
+D 6C = no TH 
+D 6D = one TH 
+D 6H = two TH's 
+D 6S = one TH + one card more than previously shown 
+D 7S = three TH's 
+
+2) 
+ 
+hearts trump 
+D 6C = no TH 
+D 6D = one TH 
+D 6H = one TH + one card more than previously shown 
+D 7H = two honors major 
+Josephine for the minors 
+When clubs or diamonds is trump, it is better to use 5S as Josephine, to leave at least two responses for clubs 
+3) diamonds trump 
+D 5NT = no TH 
+D 6C = 1 TH 
+D 6D = one TH + 1 card more than previously shown 
+D 7D = two TH's 
+4) clubs trump 
+D 5NT = 0/1 TH 
+D 6C = 1 TH + 1 card more than previously shown 
+D 7C = 2 TH's 
+ 
+ 
+Voidwood 
+Using Voidwood 
+A rare bid, but very efficient.  One uses it only with interest in number of key-cards, but, with a void, so that the ace in that suit is useless and should not be shown.  In that case jumps in the void suit to the 5-level, over which partner bids key-cards according to the scale 0/3-1/4-2 without the Q of trump, 2 with the Q of trump. 
+Kickback Roman Key Card 
+Using Kickback 	Since the system relies on cue-bids, it is rare that one should immediately ask for key-cards like using Kickback.  Sometimes, however, once the fit is found, the only thing one needs to know are the key-cards and the Q of trump.  In these cases it is inefficient to launch into a long series of cue-bids.  It is better to jump immediately to the suit just above the trump suit (4NT = spades, 4S=hearts, 4H=diamonds, 4D=clubs) and in this way to find out the keycards and whether the Q of trump is held.  After this, one can hold open the auction, showing side kings, or bidding 4/5NT which deny a side K. 
+The idea of using the suit directly above the trump suit was popularized by Bergen, and is one of the little things from that author that has found its way into Blue Club 2000. 
+The reason it is such a good idea is that once key-cards are shown, there is always room to ask for the Q of trumps. 
+Still remains the problem of when the fit is explicitly agreed.  For simplicity let us say that a fit is agreed when a suit has been raised, or when only one of the two players has shown a suit while the other has shown a balanced hand or has made a cue-bid.  In that case the partner who has shown the suit can fix trump by jumping immediately to the 4-level in the suit above the one shown by partner. 
+The more important cases are in the sequence 2C-2D; 2NT/3C with Kickback as 4D, in the sequence 2D-2H;2x with Kickback as 4H and over 1NT-2C; 2H with Kickback as 4S. 
+ 
+ 
+footnote-1 Note that on the opening of 2C the response of 2NT shows a hand with a slam view, while after the opening of 1C it serves to show 5+ cards in diamonds. 
+footnote-2 In the famous Italy-USA final of 1983 Belladonna and Garozzo, on the penultimate hand, bid a slam off two aces.  The beauty is that Belladonna jumped to 4NT (Blackwood) and Garozzo responded correctly, showing only one ace. Irony of a sort.  It almost seemed like Blackwood, ignored for years by the Italians, had wanted its revenge.  In '79, the last win for Italy, Franco and De Falco bid a slam missing two aces.   Arturo maintained that it came from an error by Dano, but that error consisted of making a cue-bid at the 4-level with KQ in the suit in a heavily contested auction, where cue-bidding space was limited. I think that many players would have made the same bid. 
