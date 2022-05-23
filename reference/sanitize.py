@@ -1,3 +1,16 @@
+
+def format_bid(line):
+    if line[0] not in '1234567':
+        return line
+
+    for c in line:
+        if c not in '1234567CDHSNT- ;':
+            return line
+    
+    line = line.replace(';',' ').replace('-',' ')
+    return '-'.join(line.split())
+
+
 lines = []
 paragraph = []
 with open('BTC2000_gmeier.txt', 'r') as f:
@@ -11,7 +24,8 @@ with open('BTC2000_gmeier.txt', 'r') as f:
             if len(paragraph) > 0:
                 for i in paragraph:
                     lines.append(i)
-            paragraph = [line]
+            line = format_bid(line)
+            paragraph = [line]            
         elif paragraph[0][0] != '-':
             paragraph.append(line)
 
