@@ -1,14 +1,46 @@
+import re
+
 
 def format_bid(line):
     if line[0] not in '1234567':
         return line
 
-    for c in line:
-        if c not in '1234567CDHSNT- ;':
-            return line
-    
-    line = line.replace(';',' ').replace('-',' ')
-    return '-'.join(line.split())
+    if not re.compile('^[- ]*[1-7][CDHSN]').match(line):
+        return line
+
+    # find the start of non bid
+    i = 0
+    print(line)
+    while i < len(line) - 1:
+        c = line[i]
+        if c not in '1234567CDHSNT- ;/':
+            break        
+        if c in '1234567':
+            suit = line[i+1]
+            if suit not in 'CDHSN':
+                break
+            elif suit in 'N' and line[i+2] != 'T':
+                break
+            elif suit in 'N':
+                i += 1
+            i += 1
+        elif c in '/':
+            if line[i+1] not in 'CDHS':
+                break
+            i += 1
+        elif c not in '- ;':
+            break
+        i += 1
+    remainder = ''
+    if i < len(line) and i > 4:
+        remainder = line[i:]
+        if remainder[0] != '=':
+            remainder = '=' + remainder
+        line = line[:i]
+    if i > 4:
+        line = line.replace(';',' ').replace('-',' ')
+        return '-'.join(line.split()) + remainder
+    return line
 
 
 lines = []
