@@ -5,7 +5,7 @@ def format_bid(bid, line):
     leading_space = 0
     if line[0] not in '1234567':
         while leading_space < len(line):
-            if line[leading_space] not in ' \t':
+            if line[leading_space] not in '- \t':
                 break
             leading_space += 1
         if leading_space == 0 or line[leading_space] not in '1234567':
@@ -21,7 +21,7 @@ def format_bid(bid, line):
     i = 0
     while i < len(line) - 1:
         c = line[i]
-        if c not in '1234567CDHSNT- ;/':
+        if c not in 'X1234567CDHSNT- ;/':
             break        
         if c in '1234567':
             suit = line[i+1]
@@ -36,6 +36,8 @@ def format_bid(bid, line):
             if line[i+1] not in 'CDHS':
                 break
             i += 1
+        elif c in 'X':
+            pass
         elif c not in '- ;':
             break
         i += 1
@@ -47,7 +49,7 @@ def format_bid(bid, line):
         line = line[:i]
     if i > 4:
         line = line.replace(';',' ').replace('-',' ')
-        print(leading_space, line)
+        print(leading_space, line, remainder)
         return (line, '-'.join(line.split()) + remainder)
     return ('', line)
 
