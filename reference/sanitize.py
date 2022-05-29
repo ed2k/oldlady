@@ -1,16 +1,24 @@
 import re
 
 
-def format_bid(line):
+def format_bid(bid, line):
+    leading_space = 0
     if line[0] not in '1234567':
-        return line
-
+        while leading_space < len(line):
+            if line[leading_space] not in ' \t':
+                break
+            leading_space += 1
+        if leading_space == 0 or line[leading_space] not in '1234567':
+            return '', line
+        #line = line[leading_space:]
+        print(leading_space, line[leading_space:])
+        return '', line
+        
     if not re.compile('^[- ]*[1-7][CDHSN]').match(line):
-        return line
+        return '', line
 
     # find the start of non bid
     i = 0
-    print(line)
     while i < len(line) - 1:
         c = line[i]
         if c not in '1234567CDHSNT- ;/':
@@ -39,12 +47,14 @@ def format_bid(line):
         line = line[:i]
     if i > 4:
         line = line.replace(';',' ').replace('-',' ')
-        return '-'.join(line.split()) + remainder
-    return line
+        print(leading_space, line)
+        return (line, '-'.join(line.split()) + remainder)
+    return ('', line)
 
 
 lines = []
 paragraph = []
+bid = ''
 with open('BTC2000_gmeier.txt', 'r') as f:
     for line in f:
         line = line.rstrip()
@@ -56,7 +66,7 @@ with open('BTC2000_gmeier.txt', 'r') as f:
             if len(paragraph) > 0:
                 for i in paragraph:
                     lines.append(i)
-            line = format_bid(line)
+            bid, line = format_bid(bid, line)
             paragraph = [line]            
         elif paragraph[0][0] != '-':
             paragraph.append(line)
