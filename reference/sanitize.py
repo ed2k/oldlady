@@ -29,16 +29,16 @@ def format_bid(levels, bid, line):
             while levels[-1] != leading_space:
                 levels.pop()
                 back_steps -= 1
-            bid_prev = bid.split(' ')[:back_steps]
+            bid_prev = bid.split()[:back_steps]
             b = ' '.join(bid_prev)
             bid = f'{b} {f[0]}'
         else:
-            bid_prev = bid.split(' ')[:-1]
+            bid_prev = bid.split()[:-1]
             b = ' '.join(bid_prev)
             bid = f'{b} {f[0]}'
 
         print('r', levels, [bid], line)
-        return levels, bid, '-'.join(bid) + remainder
+        return levels, bid, '-'.join(bid.split()) + remainder
         
     if not re.compile('^[- ]*[1-7][CDHSN]').match(line):
         return [], '', line
