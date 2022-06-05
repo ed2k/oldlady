@@ -669,8 +669,8 @@ D In the sequence 1C-1D; 2C/D-2H/S 2NT shows a misfit and is passable. Also pass
 
 
 
-To recap:
-Over 1C-1D;1H
+To recap: Over 1C-1D-1H/S
+1C-1D;1H
  	-- 1S natural, forcing
  	-- 1NT natural, non-forcing
  	-- 2C/D natural, non-forcing; then 2NT or new suit is F1
@@ -680,7 +680,7 @@ Over 1C-1D;1H
  	-- 3C/D 6-card suit to 2 top honors, non forcing
  	-- 3S 6 spades, 2-6 HCP with strength on the side
 
-Over 1C-1D;1S
+1C-1D;1S
  	-- 1NT natural, non-forcing
  	-- 2C/D natural, non-forcing; then 2NT or new suit is F1
  	-- 2H natural, forcing
@@ -739,36 +739,35 @@ The Rebid of 2C
 These continuations are also seen over opening 2C, but the sequence 1C1D;2C-2D;2H-2S;2NT shows 25+ balanced(GF).
 Since it is necessary to make some changes to the continuations over 2C, the entire structure is displayed.
 2C-2D=Relay ask, without a 5-card major or decent 5-card diamond suit
- 	-- 2H maximum hand, or intermediate hand with 4 hearts (20-22)
-
--- 2S GF Relay
--- 2NT 25+ balanced
-- -- 3C Baron-like relay
-- -- 3D 5+ diamonds, 0-4 HCP, possibly a 4-card major
-- -- 3H/S 5+ clubs, 4 in the major (without the Baron club)
--- 3C 5+ clubs/4 hearts (20-22 HCP)
-- -- 3D just diamonds, or a slamish heart fit
-- -- 3H heart fit, sign-off
-- -- 3S stop in spades, no D stop, or fit in hearts, SI
-- -- 4C club fit
-- -- 3NT/4H to play
--- 3D 5+ clubs/4 diamonds and a maximum (23+ p., GF)
--- 3H 5+ clubs/4 hearts, maximum (23+ HCP, GF)
--- 3S 5+ clubs/4 spades, maximum (23+ HCP, GF)
--- 3NT 6+ clubs, maximum one-suiter with 3 stoppers, GF
--- 2NT with 4 hearts, weak hand (3-4 HCP), passable with a minimum
--- 3C with 4 spades, weak hand (3-4 HCP), passable with a minimum
- 	-- 2S 5+ clubs/4 spades, intermediate hand (20-22 HCP)
- 	-- 2NT single-suiter(20-22 HCP) or 2-suiter with diamonds and no sing.
+-- 2H maximum hand, or intermediate hand with 4 hearts (20-22)
+- -- 2S GF Relay
+ -- -- 2NT 25+ balanced
+ - -- -- 3C Baron-like relay
+ - -- -- 3D 5+ diamonds, 0-4 HCP, possibly a 4-card major
+ - -- -- 3H/S 5+ clubs, 4 in the major (without the Baron club)
+ -- -- 3C 5+ clubs/4 hearts (20-22 HCP)
+ - -- -- 3D just diamonds, or a slamish heart fit
+ - -- -- 3H heart fit, sign-off
+ - -- -- 3S stop in spades, no D stop, or fit in hearts, SI
+ - -- -- 4C club fit
+ - -- -- 3NT/4H to play
+ -- -- 3D 5+ clubs/4 diamonds and a maximum (23+ p., GF)
+ -- -- 3H 5+ clubs/4 hearts, maximum (23+ HCP, GF)
+ -- -- 3S 5+ clubs/4 spades, maximum (23+ HCP, GF)
+ -- -- 3NT 6+ clubs, maximum one-suiter with 3 stoppers, GF
+- -- 2NT with 4 hearts, weak hand (3-4 HCP), passable with a minimum
+- -- 3C with 4 spades, weak hand (3-4 HCP), passable with a minimum
+-- 2S 5+ clubs/4 spades, intermediate hand (20-22 HCP)
+-- 2NT single-suiter(20-22 HCP) or 2-suiter with diamonds and no sing.
  	- -- 3C to play
  	- -- 3D natural, 4/5 cards, 5+ cards if very weak
  	- -- 3H/S stopper or natural, North bids as if it were as stopper
  	- -- 3NT natural with no major stoppers (otherwise 3H or 3S)
- 	-- 3C minimum single-suiter (17-19), non-forcing
+-- 3C minimum single-suiter (17-19), non-forcing
  	- -- 3D diamond stopper (3H= H stop, 3S= S stop, 3NT= no major stop)
  	- -- 3H/S/NT stoppers (NT = diamonds), possible another stopper
- 	-- 3D/H/S 6-5 reverse (GF)
- 	-- 3NT 6 clubs/5 diamonds GF
+-- 3D/H/S 6-5 reverse (GF)
+-- 3NT 6 clubs/5 diamonds GF
 
 2C-2H=5 hearts, F1
  	-- 2S 5+ clubs/4 spades, at least intermediate (20+)
@@ -838,12 +837,12 @@ The rebid of 2NT shows 21-22 HCP balanced without a 4-card major or a 5-card min
 1C-1D-2NT
 -- 3C puppet to 3D, intending to signoff in a suit
 -- 3D no game interest in diamonds
-- -- pass signoff in diamonds
+- -- P signoff in diamonds
 - -- 3H signoff in hearts
 - -- 3S signoff in spades
 - -- 3NT signoff in clubs
 -- 3H game interest in diamonds but not clubs
-- -- pass signoff in hearts
+- -- P signoff in hearts
 - -- 3S signoff in spades
 - -- 3NT diamonds
 - -- 4C signoff in clubs
@@ -870,13 +869,13 @@ Balanced 24+ HCP hands with 5 spades are bid first with 1S, and over the eventua
  	 	- - -- 2H 5 spades/4 clubs, natural continuations
  	 	- - -- 2S 6 spades/4 clubs, natural continuations
  	 	- - -- 2NT 5332, SI
-	 	- -	-- 3C 5 spades/5 clubs, natural continuations
+ 	 	- - -- 3C 5 spades/5 clubs, natural continuations
 
-	 	- - -- 2H honor fourth club fit
-	 	- - -- 2S honor third spade fit, no honor fourth club fit
-	 	- - -- 2NT spade and club fit, honor third in spades
+ 	 	- - -- 2H honor fourth club fit
+ 	 	- - -- 2S honor third spade fit, no honor fourth club fit
+ 	 	- - -- 2NT spade and club fit, honor third in spades
 
-	 	- -- 2D/H/S/NT natural
+ 	 	- -- 2D/H/S/NT natural
  	 	- -- 3C/D/H slamish 2-suiter
 
  	 	-- 2C/D/H 5-carder, without honor third in spades
@@ -906,9 +905,8 @@ In these cases North directly bids 2NT (useless for the balanced hands which wil
 The 1NT response presents the problem of finding a 4-4 when North has a balanced hand. For this reason, North inverts the meanings of 2C (balanced, or semibalanced with clubs) and 2NT (at least 6 clubs, one-suiter), leaving all other bids natural.
 
 1C-1NT
- 	-- 2C balanced or 2-suiter with 5+ clubs
- 	- -- 2D relay, denying a 5 card major
-
+-- 2C balanced or 2-suiter with 5+ clubs
+- -- 2D relay, denying a 5 card major
 -- 2H/S/NT/3C 4 card suits, balanced
 -- 3D slamish 5 clubs, 4 diamonds
 -- 3H slamish 5 clubs, 4 hearts
@@ -921,15 +919,12 @@ Also 2C creates the problem of finding the 4-4 fit. For this reason 2D for the h
 In this way the subsequent 3C asking bid can have more responses than to normal Stayman, all to find another 4-4 fit.
 
 1C-2C
- 	-- 2D 4+ diamonds
- 	- -- 2H balanced, further bids are 4-card suits
- 	- -- 2S/NT/C 5 card spades/hearts/clubs
- 	- -- 3D diamond fit
-
- 	-- 2H/S 5-cards
-
- 	-- 2NT balanced without 4 diamonds
-
+-- 2D 4+ diamonds
+- -- 2H balanced, further bids are 4-card suits
+- -- 2S/NT/C 5 card spades/hearts/clubs
+- -- 3D diamond fit
+-- 2H/S 5-cards
+-- 2NT balanced without 4 diamonds
 -- 3C asking
 - -- 3D at least one 4-card major, without 4 clubs
 - - --  3H asks (3S/NT= 4 spade/hearts)
@@ -938,28 +933,29 @@ In this way the subsequent 3C asking bid can have more responses than to normal 
 - -- 3NT 4/5 clubs, no major.
 -- 3D/H/S 5-card suits
  	-- 3C/D 5+ cards
- 3C after the 2NT rebid
+
+3C after the 2NT rebid
 The sequence 1C-1S..2D;2H-2NT;3C and 1C-1S..2D;2S-2NT;3C are artificial, and show many types of hands:
 a) 1C-X;2H-2NT;3C can be 2-suited with 4+ clubs, 2-suited with 4 spades or slamish and balanced;
 b) 1C-X;2S-2NT;3C can be 2-suited with 4+ clubs or slamish and balanced.
 In both cases, 3D by South denies a 3-card fit with opener's major. The sequence has thus the following meanings:
 
 1C-X-2H-2NT=;
- 	 	-- 3C 2-suiter with 4+ clubs or with 4+ spades or slam balanced
- 	 	- -- 3D no 3card heart fit
- 	 	- - -- 3H 5+ hearts, 4 clubs
- 	 	- - -- 3S 5+ hearts, 4 spades
-  	 	- -- 3NT slam balanced
- 	 	- -- 4C 5+ hearts, 5+ clubs
- 	 	- -- 4D balanced at least small slam, invites cue-bids
-	 	-- 3H 3 card heart fit, no spade or club interest
+-- 3C 2-suiter with 4+ clubs or with 4+ spades or slam balanced
+- -- 3D no 3card heart fit
+- - -- 3H 5+ hearts, 4 clubs
+- - -- 3S 5+ hearts, 4 spades
+- -- 3NT slam balanced
+- -- 4C 5+ hearts, 5+ clubs
+- -- 4D balanced at least small slam, invites cue-bids
+-- 3H 3 card heart fit, no spade or club interest
 
-	 	-- 3S heart fit, spade interest (3NT = spades, 4X = heart cue)
-	 	- -- 3NT 3 card heart fit, interest in clubs
+-- 3S heart fit, spade interest (3NT = spades, 4X = heart cue)
+- -- 3NT 3 card heart fit, interest in clubs
 
-	 	-- 3D 5 hearts, 4+ diamonds
-	 	-- 3H heart 1-suiter
-	 	-- 3S 6 hearts, 5 spades
+-- 3D 5 hearts, 4+ diamonds
+-- 3H heart 1-suiter
+-- 3S 6 hearts, 5 spades
 
 1C-X-2S-2NT=;
  	 	-- 3C 2-suiter with 4+ clubs or balanced slamish
@@ -1616,7 +1612,8 @@ e) balanced to play 3NT.
 -- 3NT reverse with 5+ spades, 4+ hearts, no 1st round minor control
 -- 4C reverse with 5+ spades, 4+ hearts, Ace/void of clubs
 -- 4D reverse with 5+ spades, 4+ hearts, Ace/void of diamonds
- 1H-1S ; 1NT
+
+1H-1S ; 1NT
 The 1NT rebid shows a balanced hand with 12-14 HCP.
 
 1H-1S-1NT
@@ -1753,7 +1750,7 @@ The natural alternative bids to the 2NT relay are the following 1H-1S; 2D
 Responder's rebid of 2S is semi-forcing with 5+ spades. Opener should only pass with a misfit for spades.
 
 1H-1S-2H-2S
--- Pass misfit for spades (singleton?)
+-- P misfit for spades (singleton?)
 -- 2NT undefined
 -- 3C 5332, 15-16 HCP <OR> 5 hearts, 4 diamonds, maximum
 -- 3D asking (with interest in diamonds or spades)
@@ -1860,7 +1857,7 @@ Note the first 2 responses (2NT and 3C) are minimum hands and thus playable cont
 1H-1NT-2C-2NT
 
 1H-1NT-2C-2NT
--- pass with any 5-4 minimum that is suited to NT
+-- P with any 5-4 minimum that is suited to NT
 -- 3C 4+ hearts, 5+ clubs, minimum and denying a spade stop
 -- 3D 4 hearts, 5+ clubs, maximum and 3 diamonds
 -- 3H 5+ hearts, 4 clubs, maximum, probably no spade stop
@@ -1893,7 +1890,7 @@ Also in this case the first 2 natural responses (2NT and 3D) are minimums and th
 1H-1NT-2D-2NT=( Non-Forcing Relay )
 
 1H-1NT-2D-2NT
--- pass with any 5-4 minimum suited for NT
+-- P with any 5-4 minimum suited for NT
 -- 3C 4+ hearts, 4+ diamonds, 3 clubs
 -- 3D 4 hearts, 5+ diamonds, minimum
 -- 3H 5+ hearts, 4+ diamonds, maximum
@@ -2083,7 +2080,7 @@ In the first case it is the opener who asks responder to show an eventual single
  	 	- - -- 3H no singleton diamond
  	 	- - -- 4H singleton diamond
  	 	- -- 3H interest in singleton spade
- 	 	-  	-- Pass no singleton spade
+ 	 	-  	-- P no singleton spade
  	 	-  	-- 4H singleton spade
 
  	 	-- 3C singleton club, minimum or maximum
@@ -2164,16 +2161,16 @@ In this sequence North, with a minimum and 5 spades, must bid 3 of a minor. The 
 The sixth sequence is the most compressed, with the necessity of using the 2NT relay
 
 1S-1NT-2D
- 	-- 2H to play  	-- 2S to play
- 	-- 2NT relay
- 	-   -- 3C 5+ spades, 4+ diamonds, minimum
+-- 2H to play  	-- 2S to play
+-- 2NT relay
+-   -- 3C 5+ spades, 4+ diamonds, minimum
 
-   -- 3D 4 spades, 5+ diamonds, minimum
-   -- 3H 5+ spades, 4+ diamonds, 3 hearts, maximum
-   -- 3S 5+ spades, 4+ diamonds, maximum
+-- 3D 4 spades, 5+ diamonds, minimum
+-- 3H 5+ spades, 4+ diamonds, 3 hearts, maximum
+-- 3S 5+ spades, 4+ diamonds, maximum
 -   -- 3NT 4 spades, 5+ diamonds, maximum
- 	-- 3C to play
- 	-- 3D 8-10 with 4+ diamonds
+-- 3C to play
+-- 3D 8-10 with 4+ diamonds
 1S-1NT-2H
 
 1S-1NT-2S
@@ -2200,39 +2197,37 @@ The sixth sequence is the most compressed, with the necessity of using the 2NT r
 In the case of opening 1S the sequences over 2C are the following
 
 1S-2C
- 	-- 2D 4 spades [see below]
- 	-- 2H 5 spades, 4 hearts
-
--- 2S spade fit, limit
--- 2NT relay, GF even with a spade fit
+-- 2D 4 spades [see below]
+-- 2H 5 spades, 4 hearts
+--- 2S spade fit, limit
+--- 2NT relay, GF even with a spade fit
 - -- 3C 5-4, 3+ clubs
 - -- 3D 5-4, 3+ diamonds
 - -- 3H 5-5
 - -- 3S 6-4
 - -- 3NT 5-4-2-2
--- 3C club one-suiter, GF
--- 3D 5+ diamonds, 4+ clubs, SI
- -- 3H heart fit, GF, Hxxx at least (else 2NT or cue-bid)
- -- 3S spade fit, GF+, HHx or Hxxx support (otherwise 2NT)
-  -- 4C/4D cue-bid with at least HHxx heart fit -
- 	-- 2S 5 spades, not 4 hearts
+--- 3C club one-suiter, GF
+--- 3D 5+ diamonds, 4+ clubs, SI
+--- 3H heart fit, GF, Hxxx at least (else 2NT or cue-bid)
+--- 3S spade fit, GF+, HHx or Hxxx support (otherwise 2NT)
+--- 4C/4D cue-bid with at least HHxx heart fit -
+-- 2S 5 spades, not 4 hearts
+--- 2NT limit
+--- 3C club single-suiter GF, or two-suiter 5 clubs/4 diamonds
+--- 3D 5+ diamonds, 4+ clubs, SI
+--- 3H GF+ clubs/hearts long-short
+--- 3S limit
+--- 4C/4D/4H cue-bid with spade fit HHxx or Hxxx
+-- 2NT 5 spades, 4 clubs, minimum
+-- 3C reverse in spades/clubs 5-5
+-- 3D reverse in spades/diamonds 4-6
+-- 3H reverse in spades/hearts 4-6
+-- 3S solid 6 card suit
+-- 4C 6 spades and 4 clubs
 
--- 2NT limit
--- 3C club single-suiter GF, or two-suiter 5 clubs/4 diamonds
--- 3D 5+ diamonds, 4+ clubs, SI
--- 3H GF+ clubs/hearts long-short
--- 3S limit
--- 4C/4D/4H cue-bid with spade fit HHxx or Hxxx
- 	-- 2NT 5 spades, 4 clubs, minimum
- 	-- 3C reverse in spades/clubs 5-5
- 	-- 3D reverse in spades/diamonds 4-6
- 	-- 3H reverse in spades/hearts 4-6
- 	-- 3S solid 6 card suit
- 	-- 4C 6 spades and 4 clubs
 1S-2C-2D
 1S-2C-2D= 4 spades
- 	-- 2H relay
-
+-- 2H relay
 -- 2S hand minimum unbalanced
 -- 2NT relay, GF
 -- 3C with 5 clubs
@@ -2327,7 +2322,7 @@ In the first case it is the opener who asks responder to show an eventual single
  	 	- - -- 3S no singleton heart
  	 	- - -- 4S singleton heart
  	 	- -- 3S interested in singleton club
- 	 	- - -- Pass no singleton club
+ 	 	- - -- P no singleton club
  	 	- - -- 4S singleton club
 
  	 	-- 3D singleton diamond, minimum or maximum
@@ -2703,7 +2698,7 @@ Transfer to the minors for weak hands or GF+ hands with or without a singleton
 1NT-2C-2D
 -- 2NT transfer to clubs
 - -- 3C forced
--  	-- pass with 6+ clubs, possibly a four-card major, w
+-  	-- P with 6+ clubs, possibly a four-card major, w
 -  	-- 3D singleton in a minor, six-cards in the other m
 -  	- -- 3H asks for singleton
 -  	-  	-- 3S singleton diamond, game or slam
@@ -2718,7 +2713,7 @@ Transfer to the minors for weak hands or GF+ hands with or without a singleton
 -  	-- 4H/S 5+ clubs, 6 hearts/spades, game only
 -- 3C transfer to diamonds
  	-- 3D forced
- 	 	-- pass with 6+ diamonds, possibly a four-card major
+ 	 	-- P with 6+ diamonds, possibly a four-card major
  	 	-- 3H/S singleton heart/spade, six-cards in diamonds
  	 	-- 3NT single-suiter in diamonds, MSI, no singleton
  	 	-- 4C 5-5 minors at least 3 TH's, less strength than
@@ -2780,7 +2775,7 @@ Handling GI hands with 5 spades
 
 1NT-2C-2H
  	 	-- 2S 5 spades, GI
- 	 	 	-- pass with 2/3 spades and minimum
+ 	 	 	-- P with 2/3 spades and minimum
  	 	 	-- 2NT 2 spades and a non-minimum
  	 	 	-- 3C/D/H 3/4 spades and good bid suit, game try
  	 	 	-- 3S 3/4 spades and a non-minimum, no good suit
@@ -2789,7 +2784,7 @@ The transfers to the minors follow the lines already seen after the response of 
 1NT-2C-2H
  	 	-- 2NT transfer to clubs
  	 	- -- 3C forced
- 	 	-  	-- pass with 6+ clubs, weak, possibly 4 spades
+ 	 	-  	-- P with 6+ clubs, weak, possibly 4 spades
  	 	-  	-- 3D with a singleton minor, continuations like ove
  	 	-  	-- 3H six clubs, singleton heart, possibly four spad
   	 	-  	-- 3S six clubs, singleton spade, possibly four hear
@@ -2800,7 +2795,7 @@ The transfers to the minors follow the lines already seen after the response of 
  	 	-  	-- 4H/S 5+ clubs, 6 hearts/spades, game
  	 	-- 3C transfer to diamonds
  	 	 	-- 3D forced
- 	 	 	 	-- pass with 6+ diamonds, weak , possibly 4 spades
+ 	 	 	 	-- P with 6+ diamonds, weak , possibly 4 spades
  	 	 	 	-- 3H/S singleton heart/spade, six diamonds, GF+
  	 	 	 	-- 3NT single-suiter in diamonds MSI, without single
   	 	 	 	-- 4C 5-5 minors, 3+ TH's in the suits, MSI
@@ -2872,18 +2867,18 @@ Transfers to the minors over 1NT-2C; 2S
 2S
  	 	-- 2NT transfer to clubs
  	 	- -- 3C forced
- 	 	-  	-- pass with 6+ clubs, weak, possibly 4 hearts
+ 	 	-  	-- P with 6+ clubs, weak, possibly 4 hearts
  	 	-  	-- 3D singleton minor, continuations as over 2D
  	 	-  	-- 3H six clubs, singleton heart, possibly four spade
   	 	-  	-- 3S six clubs, singleton spade, possibly four heart
  	 	-  	-- 3NT single-suiter in clubs, MSI, without singleton
  	 	-  	-- 4C six clubs, SI, no singleton
-  -  -- 4D 5-5 minors, 3 TH's in the suits, SI (stronger 3C...4C)
+ 	 	-  	-- 4D 5-5 minors, 3 TH's in the suits, SI (stronger 3C...4C)
  	 	-  	- -- 4H asks number of TH's (3, 4...)
  	 	-  	-- 4H/S 5+ clubs, 6 hearts/spades, game
  	 	-- 3C transfer to diamonds
  	 	 	-- 3D forced
- 	 	 	 	-- pass with 6+ diamonds, weak, possibly 4 hearts
+ 	 	 	 	-- P with 6+ diamonds, weak, possibly 4 hearts
  	 	 	 	-- 3H/S singleton heart/spade, six diamonds, GF+
  	 	 	 	-- 3NT single-suiter in diamonds MSI, without single
  	 	 	 	-- 4C 5-5 minors, 3 TH's in the suits, MSI (weaker transfer 2NT...4D)
@@ -2904,18 +2899,20 @@ Asking for the minors after
 Other sequences over 2S
 The other sequences, apart from 3NT which is to play, shows a spade fit
 4S to play, 4C/D cue-bid with at least 2 TH's in hearts, 3H with 9+ car majors and SI, 4NT Blackwood, others are Voidwood)
-Sequences to play (3NT and 1NT-2C; 2S
-4S) or GI or slam in spade  	 	-- 3S spade fit, GI
-fit 	-- 3H at least 9 cards in the majors, fit, interest in slam
+Sequences to play (3NT and 
+4S) or GI or slam in spade fit
 
-	 	 	- -- 3S=singleton? (3NT= no singleton, 4C/D = singleton)
-	 	 	-- 3NT to play, says nothing about hearts
-	 	 	-- 4C/D/H cue-bid, spade fit, SI with at least 2 TH's in spad
-	 	 	-- 4S to play
 2S response (4 spades, not 4 hearts)
 
-	 	 	-- 4NT RKCB for hearts
-	 	 	-- 5H/5C/5D Voidwood
+1NT-2C; 2S
+-- 3S spade fit, GI
+-- 3H at least 9 cards in the majors, fit, interest in slam
+	 	 	- -- 3S=singleton? (3NT= no singleton, 4C/D = singleton)
+-- 3NT to play, says nothing about hearts
+-- 4C/D/H cue-bid, spade fit, SI with at least 2 TH's in spad
+-- 4S to play
+-- 4NT RKCB for hearts
+-- 5H/5C/5D Voidwood
 
 
 
@@ -2926,7 +2923,7 @@ Structure of responses over 1NT-2D
 the transfer 2D
  	-- 2S,2NT(D),3C = 2 cards in the suit, max four-card raise
  	-- 2H normal accept
- 	 	-- pass weak with 5+ hearts
+ 	 	-- P weak with 5+ hearts
  	 	-- 2S GI, 4/5 hearts
  	 	-- 2NT GI, 4-4 majors. North picks final contract
  	 	-- 3C GF, 5+ hearts
@@ -2947,8 +2944,8 @@ GI with 4 or 5 hearts
  	 	 	-- 2NT 2/3 hearts, minimum
  	 	 	- -- 3C/D 5-5 GI, North picks final contract
  	 	 	-- 3C asking distribution, maximum
-  	 	 	 	-- 3D 4 hearts, singleton in a minor
-  	 	 	 	- -- 3H singleton?
+ 	 	 	 	-- 3D 4 hearts, singleton in a minor
+ 	 	 	 	- -- 3H singleton?
  	 	 	 	-  	-- 3S=diamonds, 3NT=clubs
  	 	 	 	-- 3H 5 hearts
  	 	 	 	-- 3S 4 hearts, singleton spade
@@ -3025,13 +3022,21 @@ Sequences with 5-5 slam 	1NT-2D; 2H - 3NT 5332 or 5422, game
 	 	 	 	-- 4D = #TH's?
 	 	 	 	- -- 4H = 3, 4S=4, etc.
 	 	 	 	-- 4H/5C minimum and misfit
+	 	 	 	-- 4S/4NT cue-bid in spades or diamonds, 3 TH's, invites
+
+1NT-2D-2H-4D=5-5 hearts/diamonds, slam with at least 3 TH's
+	 	 	 	-- 4S = #TH's?
+	 	 	 	- -- 4S = 3, 4NT=4, etc.
+	 	 	 	-- 4H/5D minimum and misfit
+	 	 	 	-- 4NT , 5C cue-bid in spades or clubs, 3 TH's, invites c
+
 
 The transfer 2H guarantees at least 4 spades. If GI, South promises 4 sp otherwise the hand is shown via 2C
 Structure of responses over the transfer 2H
 1NT-2H
  	-- 2NT(H),3C,3D = 2 cards in the suit, four-card max raise
  	-- 2S normal transfer
- 	 	-- pass weak with 5+ spades
+ 	 	-- P weak with 5+ spades
  	 	-- 2NT GI, 4 spades
  	 	-- 3C GF, 5+ spades
  	 	-- 3D GI or SI, 6+ spades, if SI then no singleton
@@ -3050,39 +3055,36 @@ Sequence with four spades GI
  	 	 	 	-- 3D/H/S = singleton diamond, heart, club
  	 	 	 	-- 3NT no singleton
 
+
+
+
+2H transfer
+
 3C, GF
 With 5 spades GF South always bids 3C, no matter the distribution. North asks only with a misfit, otherwise shows quality of trump support.
 GF with five spades.
 1NT-2H-2S-3C=5+ spades, GF+
- 	 	 	-- 3D asking, misfit or xxx fit with interest in 3NT
- 	 	 	- -- 3H short hearts or 5422
- 	 	 	- - -- 3S (xxx spade fit) or 3NT
- 	 	 	- -  	-- 4C/D with 5-4-2-2, slam
- 	 	 	- -  	 	-- 4H/5om = fit in the minor
- 	 	 	- -- 3S short diamonds
-   -- 4S/4NT cue-bid in spades or diamonds, 3 TH's, invites
-1NT-2D-2H-4D=5-5 hearts/diamonds, slam with at least 3 TH's
-	 	 	 	-- 4S = #TH's?
-	 	 	 	- -- 4S = 3, 4NT=4, etc.
-	 	 	 	-- 4H/5D minimum and misfit
-	 	 	 	-- 4NT , 5C cue-bid in spades or clubs, 3 TH's, invites c
-
-2H transfer
-
-	 	 	 	- -- 3NT short clubs GF
-	 	 	 	- -- 4C short clubs, SI
-	 	 	 	- -- 4D 6+ spades, 4 diamonds, SI
-	 	 	 	- -- 4H 5-4-4-0 void in hearts
-	 	 	 	- -- 4S 6+ spades, 4 clubs, SI
-	 	 	 	-- 3H raise with 3/4 spades, no TH, no 4 card minor
-	 	 	 	-- 3S Hxx+ raise
-	 	 	 	- -- 3NT/4S to play
-	 	 	 	- -- 4H SI without a four-card minor
-	 	 	 	- -- 4C/D slam, 4 cards in the suit
-	 	 	 	-- 4C/D 3+ spades, no TH, four-cards in the suit
+			-- 3D asking, misfit or xxx fit with interest in 3NT
+			- -- 3H short hearts or 5422
+			- - -- 3S (xxx spade fit) or 3NT
+			- -  	-- 4C/D with 5-4-2-2, slam
+			- -  	 	-- 4H/5om = fit in the minor
+			- -- 3S short diamonds
+			- -- 3NT short clubs GF
+			- -- 4C short clubs, SI
+			- -- 4D 6+ spades, 4 diamonds, SI
+			- -- 4H 5-4-4-0 void in hearts
+			- -- 4S 6+ spades, 4 clubs, SI
+			-- 3H raise with 3/4 spades, no TH, no 4 card minor
+			-- 3S Hxx+ raise
+			- -- 3NT/4S to play
+			- -- 4H SI without a four-card minor
+			- -- 4C/D slam, 4 cards in the suit
+			-- 4C/D 3+ spades, no TH, four-cards in the suit
 
 3D with six spades
-                      As over the transfer to hearts, 3D guarantees six spades and shows GI or Six spades, GI or SI 	1NT-2H; 2S - 3D 6+ spades, GI or SI
+As over the transfer to hearts, 3D guarantees six spades and shows GI or Six spades, GI or SI
+1NT-2H; 2S - 3D 6+ spades, GI or SI
 	 	 	 	-- 3S minimum, over which South cue-bids if SI
 	 	 	 	-- 3NT to play if GI, South reopens if SI
 	 	 	 	-- 3H/4C/4D cue-bid with maximum and heart fit
@@ -3131,21 +3133,21 @@ Two-suited minors, strong
 When North holds a maximum she does not sign off in 3NT, but indicates a preference between the minors, since 2S can be made with a minors two-su with a diamond one-suiter.  In each case, a four-card major is denied.
 1NT-2S=weak diamond single-suiter, GI balanced, 5-5 minors, two-suited m
  	-- 2NT = minimum
- 	- -- pass = balanced. GI
+ 	- -- P = balanced. GI
  	- -- 3C  5-5 minors weak or GI, North passes or corrects to 3D
  	- -- 3D diamond single-suite, sign-off
  	- -- 3H 5+/4+ minors, singleton heart, max 3 spades, GF+
  	- -- 3S 5+/4+ minors, singleton spade, max 3 hearts, GF+
  	-- 3C = maximum, club preference if South has 5-5 minors
 
-	 	- -- pass = 5-5 minors weak
+	 	- -- P = 5-5 minors weak
 	 	- -- 3D  weak diamond single-suiter, sign-off
 	 	- -- 3H 5+/4+ minors, singleton heart, max 3 spades, GF+
 	 	- -- 3S 5+/4+ minors, singleton spade, max 3 hearts, GF+
-	 	-- 3D = maximum, diamond preference if South has 5-5 minors
-	 	 	-- pass = 5-5 minors weak or diamond single-suiter
-	 	       -- 3H 5+/4+ minors, singleton heart, max 3 spades, GF+
-	 	 	-- 3S 5+/4+ minors, singleton spades, max 3 hearts, GF+
+ 	-- 3D = maximum, diamond preference if South has 5-5 minors
+		-- P = 5-5 minors weak or diamond single-suiter
+			-- 3H 5+/4+ minors, singleton heart, max 3 spades, GF+
+		-- 3S 5+/4+ minors, singleton spades, max 3 hearts, GF+
 
 2NT asking bid
 When South has a minor single-suiter to two TH's of intermediate strengt often wants to be in game, but it is necessary that North have the other or, if not, three spot cards. With a weak doubleton, in fact, the commun often insufficient to run the suit.
@@ -3269,8 +3271,7 @@ invitational 6 card suit
 
 
 2C-2D=asking bid
- 	-- 2H maximum, or minimum with 4 hearts
-
+-- 2H maximum, or minimum with 4 hearts
 -- 2S relay GF+ seeking 6C 4H min
 -- 2NT one-suiter, maximum
 - -- 3C asks for stops
@@ -3541,7 +3542,7 @@ After a jump response to a double, 2NT is an asking relay with hopes of game or 
 The sequence  (1m) -  X -  pass - 1S
  	 pass - 3H
 shows 6+ hearts, 4 losers and 3 spades, whereas
- 	(1m) -  X -  pass - 1S  	 pass - 2m - pass - 2X  	 pass - 3H shows the same strength but without 3 spades.
+ 	(1m) -  X -  pass - 1S  	 pass - 2m - P - 2X  	 pass - 3H shows the same strength but without 3 spades.
 Overcalling 1 of a suit
 Since 1H/S overcalls can be 4 cards, the structure should be able to rapidly distinguish between 3 and 4 card support.
 
