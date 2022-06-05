@@ -3,7 +3,7 @@ from __future__ import division, print_function
 # for pypy compatibility we do not use unicode_literals in this module
 from ctypes import *
 import os
-import numpy as np
+#import numpy as np
 from config import *
 from bridge_utils import convert_id2rank, convert_id2suit
 
@@ -12,7 +12,7 @@ class Deal(Structure):
     """The deal struct.
     """
 
-    _fields_ = [("trump", c_int), # 0=S, 1=H, 2=D, 3=C, 4=NT
+    _fields_ = [("trump", c_int), # strain: 0=S, 1=H, 2=D, 3=C, 4=NT
                 ("first", c_int), # leader: 0=N, 1=E, 2=S, 3=W
                 ("currentTrickSuit", c_int * 3),
                 ("currentTrickRank", c_int * 3), # 2-14, up to 3 cards; 0=unplayed
@@ -20,14 +20,13 @@ class Deal(Structure):
 
     @classmethod
     def from_deal(cls, deal, strain, leader, ct=[[0,0,0],[0,0,0]]):
-        print(ct)
         self = cls(trump=strain,
                    first=leader,
                    currentTrickSuit=(c_int * 3)(ct[0][0],ct[0][1],ct[0][2]),
                    currentTrickRank=(c_int * 3)(ct[1][0],ct[1][1],ct[1][2]))
         # bit #i (2 ≤ i ≤ 14) is set if card of rank i (A = 14) is held
         for seat in Seat:
-            holding = np.zeros(4 ,dtype=np.int32)
+            holding = [0] * 4
             for card in deal[seat]:
                 suit = convert_id2suit(card)
                 rank = convert_id2rank(card)
@@ -105,9 +104,7 @@ SolveBoardStatus = {
 
 
 def _solve_board(deal, strain, leader, target, sol, mode, currentTricks=[[0,0,0],[0,0,0]]):
-    print(currentTricks)
     c_deal = Deal.from_deal(deal, strain, leader, currentTricks)
-    print (c_deal.currentTrickSuit[0], c_deal.currentTrickRank[0])
     futp = FutureTricks()
     status = dll.SolveBoard(c_deal, target, sol, mode, byref(futp), 0)
     if status != 1:

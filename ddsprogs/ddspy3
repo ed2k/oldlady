@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import sys
 
@@ -47,4 +47,12 @@ sol = 2
 mode = 1
 r = dds._solve_board(deal1, strain, leader, target, sol, mode, tricks)
 print ('result: %d %d %d' % (r.suit[0], r.rank[0], r.score[0]))
+
+R = '0123456789TJQKA'
+
+if sys.argv[1] == 'all':
+  for seat in range(4):
+    for strain in range(5):
+      r = dds._solve_board(deal1, strain, seat, target, sol, mode, tricks)
+      print('result:', 'NESW'[seat], 'SHDCN'[strain], 'SHDC'[r.suit[0]], R[r.rank[0]], r.score[0]-6)
 

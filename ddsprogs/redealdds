@@ -1,0 +1,51 @@
+#!/home/a/anaconda3/bin/python
+
+import sys
+
+from redeal import dds
+from redeal.redeal import Deal
+from redeal.global_defs import Strain, Seat, Suit, Rank
+
+#predeal = dict(N='KQJ763 95 AT92 3', E='T85 K843 7543 82', S='A942 AQT7 J AK96', W='- J62 KQ86 QJT754')
+
+cards = sys.argv[1]
+tricks = [[0,0,0], [0,0,0]]
+
+print (cards)
+
+h = [x for x in cards.split(':')]
+
+predeal = {}
+
+hands = cards.split(':')
+for s in range(4):
+  hand = hands[s]
+  h = hand.split('.')
+  pbn_h = []
+  for c in h:
+    if c == '':
+      pbn_h.append('-')
+    else:
+      pbn_h.append(c)
+  predeal[Seat(s)] = ' '.join(pbn_h)
+
+print(predeal)
+
+dealer = Deal.prepare(predeal)
+deal1 = dealer(accept_func=lambda d: True)
+
+
+target = -1
+sol = 2
+mode = 1
+
+for leader in range(4):
+  for strain in range(5):
+    #print(Strain(strain), 'SHCDN'[strain], 'NESW'[leader], Seat(leader))
+    # strain is CDHSN, dds is SHCDN
+    s = strain
+    if strain < 4:
+      s = 3 - strain
+    r = dds._solve_board(deal1, Strain(s), Seat(leader), target, sol, mode)
+    print ('result:', 'NESW'[leader], 'SHDCN'[strain], 'SHDC'[r.suit[0]], Rank(r.rank[0]), r.score[0]-6)
+
