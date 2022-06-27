@@ -224,33 +224,21 @@ A very common hyperlink within this document is "[see below]" within a bidding d
 Conventional Symbols
 The following symbols are used to indicate the strength of a hand:
 
-F1
-Forcing one round
-GI
-Game invitational
-GI+
-Game invitational or better
-GF
-Game forcing
-GF+
-Game forcing or better
-SI
-Slam invitational
+F1=Forcing one round
+GI=Game invitational
+GI+=Game invitational or better
+GF=Game forcing
+GF+=Game forcing or better
+SI=Slam invitational
 
 The following symbols are used to indicate the quality of trump support:
 
-xxx
-3 card support without A, K or Q
-Hxx
-3 card support with A, K or Q
-HHx
-3 card support with AK, AQ or KQ
-xxxx
-4 card support without A, K or Q
-Hxxx
-4 card support with A, K or Q
-HHxx
-4 card support with AK, AQ or KQ
+xxx=3 card support without A, K or Q
+Hxx=3 card support with A, K or Q
+HHx=3 card support with AK, AQ or KQ
+xxxx=4 card support without A, K or Q
+Hxxx=4 card support with A, K or Q
+HHxx=4 card support with AK, AQ or KQ
 
 By convention, opener is North, and responder is South.
 
@@ -399,7 +387,7 @@ distribution.
 
 IV. Opening 1NT 	15-17 HCP, natural, without a 5-card major. Possibly
 5422 with solid doubletons in the majors
-1H=15-17 HCP, without a 5-card major, balanced ?
+1NT=15-17 HCP, without a 5-card major, balanced ?
 
 Responses: 	Treatment modified from the " Scanian Way ", that uses transfer to the majors sometimes with 4 carders, transfer to the minors after Stayman and the use of certain sequences to identify weakness in both hands.
 
@@ -462,23 +450,24 @@ This is the strong opening of the system, used with 17+ HCP hands (18+ with bala
 1C-3NT=Solid seven card suit with no side void, possible side controls;
 
 In case of interference:
-1C-X-Pass=0-4,XX = 7+, max 1 ctr.
-1C-X-1D= 5-6 HCP, 
-1C-X-1H= 7+ HCP, 2 ctr.,
-1C-X-1S= 3  ctr., 
-1C-X-1NT= 4 ctr., 
-1C-X-2C= 5 ctr.,
-1C-X-2D= 6+ ctr.
-1C-(1D)-Pass = 0-6, 
+1C-X-Pass=0-4 HCP,
+1C-X-XX=7+, max 1 ctr.
+1C-X-1D=5-6 HCP, 
+1C-X-1H=7+ HCP, 2 ctr.,
+1C-X-1S=3 ctr., 
+1C-X-1NT=4 ctr., 
+1C-X-2C=5 ctr.,
+1C-X-2D=6+ ctr.
+1C-(1D)-Pass = 0-6 HCP,
 1C-(1D)-X=7+ HCP, max 1 ctr., 
 1C-(1D)-1H= 7+ HCP, 2 ctr., 
 1C-(1D)-1S= 3 ctr., 
 1C-(1D)-1NT= 3/4 ctr. and stopper in the suit shown by the overcall, 
 1C-(1D)-2C= 4 ctr., 
 1C-(1D)-2D= 5+ ctr.
-1C-(1H)-Pass = min, 
+1C-(1H)-Pass = min,
 1C-(1H)-X =7+ HCP, max 2 ctr., 
-1C-(1H)-1S = 3 ctr.without a stopper, 
+1C-(1H)-1S = 3 ctr. without a stopper, 
 1C-(1H)-1NT = 3/4 ctr. with stopper , 
 1C-(1H)-2C = 4 ctr. without a stopper, 
 1C-(1H)-2D = 5 ctr. , 
@@ -487,9 +476,12 @@ In case of interference:
 1C-(1S)-X = 7+ HCP, max 2 ctr., 
 1C-(1S)-1NT = 3/4 ctr. with a stopper, 
 1C-(1S)-2C= 3 ctr. without a stopper, 
-1C-(1S)-2D = 4 ctr. without a stopper, 2S=5+ ctr. 
-1C-(1NT+)-Pass =0-7, 
-1C-(1NT+)-X = 7+ balanced, suit = 7+ unbalanced
+1C-(1S)-2D= 4 ctr. without a stopper, 
+1C-(1S)-2S=5+ ctr. 
+1C-(1NT+)-Pass=0-7 HCP,
+1C-(1NT+)-X = 7+ HCP, balanced, or suit = 7+ unbalanced
+1C-(1NT+)-X = suit 7+ HCP unbalanced
+
 
 Note the use of the redouble, that shows a hand rich in honor strength (7+ HCP) but quite poor in controls (0-1). The opener can easily judge where to play or to punish the opponents.
 
@@ -518,8 +510,8 @@ Over the response of 1D, that can even come from a worthless hand, the opener bi
 1C-1D-2H=One/two-suiter forcing to game with at least 5 hearts or a balanced 23-24. Over the 2S relay North, with the balanced 23-24, bids 2NT;
 1C-1D-2S=Game forcing, one/two-suiter with at least 5 spades;
 1C-1D-2NT=Balanced 21-22 without a 4-card major or 5-card minor.  Conventional continuations;
-1C-1D-3C=2-suited minimum hand, 5-5, with the minors (17-20);
-1C-1D-3D=2-suited maximum hand, 5-5, with the minors (21+);
+1C-1D-3C=2-suited minimum hand, 5-5, with the minors 17-20 HCP;
+1C-1D-3D=2-suited maximum hand, 5-5, with the minors 21+ HCP;
 1C-1D-3H/S=Nine tricks playing in the suit, one-suiter.
 
 It is interesting to note that all the balanced hands can be shown, with adequate precision of their ranges, by the level of 2NT. In order to facilitate the memorization of ranges it is enough to remember that the more "low" the sequence, the stronger the hand (2NT immediately with 21-22,
