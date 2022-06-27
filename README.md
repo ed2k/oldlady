@@ -15,6 +15,9 @@ ddsprogs/dds 0 3 1 0 1 73.QJT.AQ54.T752:QT6.876.KJ9.AQ8:5.A95432.7632.K6:AKJ9842
 ddsprogs/dds a a a 3 0 QJ6.K652.J85.T98:873.J97.AT764.Q4:K5.T83.KQ9.A7652:AT942.AQ4.32.KJ3
 ddsprogs/ddspy3 a a a 3 0 QJ6.K652.J85.T98:873.J97.AT764.Q4:K5.T83.KQ9.A7652:AT942.AQ4.32.KJ3
 ./redealdds QJ6.K652.J85.T98:873.J97.AT764.Q4:K5.T83.KQ9.A7652:AT942.AQ4.32.KJ3
+result: lead strain suit rank opponent (4 leads x 5 strains = 20 rows)
+result: N S D 5 -1
+
 
 oldlays/deal319> python3 ../demo_bidding_play.py
 

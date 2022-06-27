@@ -47,5 +47,5 @@ for leader in range(4):
     if strain < 4:
       s = 3 - strain
     r = dds._solve_board(deal1, Strain(s), Seat(leader), target, sol, mode)
-    print ('result:', 'NESW'[leader], 'SHDCN'[strain], 'SHDC'[r.suit[0]], Rank(r.rank[0]), r.score[0]-6)
+    print ('result:', 'NESW'[leader], 'SHDCN'[strain], 'SHDC'[r.suit[0]], Rank(r.rank[0]), r.score[0])
 
