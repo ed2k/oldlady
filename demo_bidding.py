@@ -16,7 +16,7 @@ def _(a):return a
 class App:
     def __init__ (self):
         self.ais = [sAi.ComputerPlayer(seat) for seat in sbridge.PLAYERS]
-        self.start_next_rubber ()
+        self.start_next_rubber()
         self.action = None
 
     def distribute_deal(self):
@@ -26,7 +26,7 @@ class App:
             deal.hands[ai.seat] = self.deal.hands[ai.seat][:]
             ai.new_deal(deal)
             
-    def start_next_deal (self):
+    def start_next_deal(self):
         """
         Prepare for the next deal of cards.
         """
@@ -38,7 +38,7 @@ class App:
         print('-'*80)
         print([floater_client.o2pbn_hand(self.deal.hands[s]) for s in sbridge.PLAYERS])
 
-    def start_next_rubber (self):
+    def start_next_rubber(self):
         """
         Start playing for a new rubber.
         """
@@ -66,7 +66,7 @@ class App:
         to confirm each trick.
         """
         while True:
-            print('step')
+            print('ai step')
             if self.deal.contract is not None and self.deal.contract.is_pass():
                 self.messages = [_("Deal abandoned; all players passed")]
                 self.action = CONFIRM_DEAL
@@ -80,7 +80,7 @@ class App:
                 self.deal.bid(bid)
                 # check if bidding is over
                 if self.deal.finishBidding():
-                    print('finish bidding')
+                    raise Exception('finish bidding')
             else:
                 print('confirm game')
                 #self.update_scores ()
@@ -90,7 +90,7 @@ class App:
 
 
     def run(self):
-        #print('start', self.action)
+        print('start', self.action)
         if self.action == CONFIRM_DEAL:
             if not self.deal.contract.is_pass():
                 self.messages = self.rubber.score_game()

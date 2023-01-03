@@ -175,6 +175,7 @@ mynew_openerNextBid = [
      ['6n','hcp in 20..21'],
      ['6_','hcp+shortage in 19..21']],    
     ]
+mynew_after = []
 
 r='''
       if self.check(['hcp <= 9', 'long >= 5', 'short <= 1']): return '1'

@@ -32,7 +32,7 @@ if ROOT_PATH[-len('oldlady'):] == 'oldlady':
 # 
 DEAL_PATH = os.path.join(ROOT_PATH, "../deal319")
 DDS_PATH = os.path.join(ROOT_PATH, "../ddsprogs")
-testing = False
+testing = True
 hands = [
 ['KQJ763', '95', 'AT92', '3'],
 ['T', 'J8642', 'K8', 'JT752'],
@@ -47,4 +47,6 @@ hands = ['A83.96.865.T87J6', 'T7.QJT3.JT3.9543', 'KJ9.7A84.Q94.AKQ', '64Q52.K52.
 hands = ['KT76.J6.AQ9T8.73', '5J4.KQT5.5.K8962', 'A3Q8.8A7.K43.AJ4', '29.9432.J762.QT5']
 # test interference bidding
 hands = ['K6T974.QJ6.T.952', 'QJ823.T54.894.J6', '.A92.KQ6725.Q743', 'A5.7K83.A3J.AKT8']
+hands = ['AT7.JAQ3.T7.9742', 'J9532.4.KJ59.683', '8.K9652.Q846.JT5', 'KQ64.T87.3A2.AKQ']
+
 hands = [x.split('.') for x in hands]

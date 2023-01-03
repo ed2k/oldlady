@@ -120,7 +120,7 @@ btc2k_openerNextBid = [
      ['+2','respons1_type is +2, hcp+shortage in 16..18'],
      ['+3','respons1_type is +2, hcp+shortage in 19..21']],
     ['opening1_type is 1major, respons1 is 1n',
-     ['new','hcp in 13..15, shape is unbalanced'],
+     ['new','hcp in 13..15, shape_type is unbalanced'],
      ['2n','hcp in 16..18'],
      ['3_','hcp+shortage in 16..18'],
      ['3n','hcp in 19..21'],
@@ -145,7 +145,7 @@ btc2k_openerNextBid = [
      ['+2','respons1_type is +2, hcp+shortage in 16..18'],
      ['+3','respons1_type is +2, hcp+shortage in 19..21']],
     ['opening1_type is 1major, respons1 is 1n',
-     ['new','hcp in 13..15, shape is unbalanced'],
+     ['new','hcp in 13..15, shape_type is unbalanced'],
      ['2n','hcp in 16..18'],
      ['3_','hcp+shortage in 16..18'],
      ['3n','hcp in 19..21'],
@@ -163,23 +163,23 @@ btc2k_openerNextBid = [
      ['6n','hcp in 20..21'],
      ['6_','hcp+shortage in 19..21']],
     ['opening1 is 1c, respons1 is 1d',
-     ['1h','h_better_than_s, h >= 4, s >= 4, balanced, hcp in 18..20'],
-     ['1h','h_better_than_s, h >= 4, balanced, hcp in 21..22'],
-     ['1s','s_better_than_h, s >= 4, balanced, hcp in 21..22'],
-     ['1s','s_better_than_h, h >= 4, s >= 4, balanced, hcp in 18..20'],
-     ['1n','s+h <= 7, balanced, hcp in 18..20'],
-     ['2c','balanced, hcp >= 25, Forcing1'],
+     ['1h','h >= s, h >= 4, s >= 4, shape_type is balanced, hcp in 18..20'], # TODO better_than
+     ['1h','h >= s, h >= 4, shape_type is balanced, hcp in 21..22'], # TODO better_than
+     ['1s','s >= h, s >= 4, shape_type is balanced, hcp in 21..22'], # TODO better_than
+     ['1s','s >= h, h >= 4, s >= 4, shape_type is balanced, hcp in 18..20'], # TODO better_than
+     ['1n','len_major <= 4, shape_type is balanced, hcp in 18..20'],
+     ['2c','shape_type is balanced, hcp >= 25, Forcing1'],
      ['2c','c >= 5, forcing1'],
      ['2d','d >= 5, forcing1'],
      ['2d','c == 1, forcing1'],
      ['2h','h >= 5, suiter, forcing_game'], # TODO one/two suiter
-     ['2h','balanced, hcp in 23..24, forcing_game'],
+     ['2h','shape_type is balanced, hcp in 23..24, forcing_game'],
      ['2s','s >= 5, suiter, forcing_game'], # TODO one/two suiter
-     ['2n','balanced, hcp in 21..22, major < 4, minor < 5'],
-     ['3c','suited_min 2, c >= 5, d >= 5 , hcp in 17..20'], # TODO minimum hand
-     ['3d','suited_max 2, c >= 5, d >= 5, hcp > 20'], # TODO maximum hand
-     ['3h','h tricks 9 2'], # nine tricks playing in the suit, one-suiter
-     ['3s','s tricks 9 2'], # nine tricks playing in the suit, one-suiter
+     ['2n','shape_type is balanced, hcp in 21..22, major < 4, minor < 5'],
+     ['3c','c >= 5, d >= 5 , hcp in 17..20'], # TODO minimum hand
+     ['3d','c >= 5, d >= 5, hcp > 20'], # TODO maximum hand
+     ['3h','h tricks 9'], # nine tricks playing in the suit, one-suiter
+     ['3s','s tricks 9'], # nine tricks playing in the suit, one-suiter
     ],
     ['opening1 is 1c, respons1 is 1h', []],
     ['opening1 is 1c, respons1 is 1s', []],
@@ -217,6 +217,9 @@ btc2k_openerNextBid = [
     ['opening1 is 2d, respons1 is 3c', []],
     ]
 
+btc2k_after = [
+
+]
 """
 1h-1s-1n-2c-2d=not 3 spades
 1h-1s-1n-2c-2d-2h=GI with a 3 heart raise

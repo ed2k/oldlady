@@ -212,6 +212,7 @@ def controls(hand: List[Card]):
    return h
 
 def shape(hand):
+    raise Exception('')
     return 0
 
 
@@ -285,6 +286,14 @@ class OneHand:
        # to find the best result
        return response  
 
+   def after(self, bid_history: List[Bid]):
+       print("after", [str(b) for b in bid_history])
+       response = self.check2('after', bid_history)
+       # TODO thinking of a way to include both bridge captain symbols
+       # also with given current bids, translate to distribution then simulate
+       # to find the best result
+       return response  
+
    def shape_type(self):
        """balanced {($h<5)&&($s<5)&&($s*$s+$h*$h+$d*$d+$c*$c)<=47}
 semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
@@ -308,13 +317,13 @@ semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
        return idx
    def longest(self):
        return len(self.suits[self.getLongestSuit()])
-   def newsuit(self,bid):
+   def newsuit(self, bid):
        r = []
        for suit in range(4):
            if suit == bid.denom: continue
            r.append(len(self.suits[suit]))
        return max(r)
-   def getNew(self,bid):
+   def getNew(self, bid):
        slen = self.newsuit(bid)
        for suit in sbridge.SUITS:
            if suit == bid.denom: continue
@@ -333,17 +342,24 @@ semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
        r = []
        for suit in range(denom+1,4):
            r.append(len(self.suits[suit]))
-       return max(r)   
+       return max(r)
+   def tricks(self, holding, number):
+       """simulation have number of tricks"""
+       # TODO
+       return False
    def check(self, ruleseqs, bid_history: List[Bid]):
       """ 
       """ 
       if ruleseqs == 'catchall':
           return True
       for r in ruleseqs.split(','):
+         if len(r.split()) != 3:
+            raise Exception(f"{r} not in left op right format")
          left, op, right = r.split()
          left = self.get(left)
          right = self.get(right)
          if not self.op(left, right, op):
+             # print('False', r, left, op, right)
              return False
       print('check', ruleseqs)
       return True
@@ -388,8 +404,9 @@ semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
                   print('unknown item', rule)
               
           for onerule in rule[1:]:
+              print(onerule)
               if Bid(onerule[0]) <= last_bid:
-                continue              
+                continue
               if self.check(onerule[1], bid_history):
                 return onerule[0]
       return ' p'
@@ -429,7 +446,8 @@ semibalanced {$h<=5&&$s<=5&&$d<=6&&$c<=6&&$c>=2&&$d>=2&&$h>=2&&$s>=2}
           return (left >= minv) and (left <= maxv)
       if opcode == 'is': return left == right
       if opcode == 'isnot': return left != right
-      print('unknown op', left, opcode, right)
+      if opcode == 'tricks': return self.tricks(left, right)
+      raise Exception('unknown op', left, opcode, right)
 
 
 # first 8 chars are used for keywords
@@ -549,6 +567,8 @@ class AIBidStatus:
             self.state = 'openerNextBid'
             self.first5[4] = bid
         elif self.state == 'openerNextBid':
+            self.state = 'after'
+        elif self.state == 'after':
             if self.ai.seat == sbridge.NORTH:
                for p in sbridge.PLAYERS:
                    heval = self.handsEval[p]  
@@ -556,7 +576,7 @@ class AIBidStatus:
             self.generateDealScript()        
         
     def evaluate_deal(self):
-       """ find the proper bid
+       """ find and return the proper bid
        hand, in suit order
        print hcp, shape, estimate partner and opponents
        map bid sequence to state symbols
@@ -580,10 +600,12 @@ class AIBidStatus:
        elif self.state == 'opening1':  bid = self.hand.opening2(bid_history)
        elif self.state == 'respons1': bid = self.hand.response2(bid_history)
        elif self.state == 'respons2': bid = self.hand.openerNextBid(bid_history)
-       elif self.state == 'openerNextBid':
+       elif self.state == 'openerNextBid': bid =self.hand.after(bid_history)
+       elif self.state == 'after':
            # guess the hand distribtution,(running massive simulation on all possible hands,
            # eval the level we can make, select stratege accordingly
            bid = self.hand.gameon(bid_history)
+           print('TODO: decide next bid')
            exit()
                  
        if bid[0] == '+':
@@ -693,7 +715,7 @@ class Translate2Python:
                 continue
             left = self.get(left)
             right = self.get(right)
-            f.append(self.op(left,right,op))
+            f.append(self.op(left, right, op))
         return ' and '.join(f)
 
     def get(self, symbol):
@@ -725,7 +747,8 @@ class Translate2Python:
           return ' '.join([left, '>=', minv, 'and', left, '<=', maxv])
       if opcode == 'is': return ' '.join([left, '==', right])
       if opcode == 'isnot': return ' '.join([left, '!=', right])
-      print ('unknown op',left,opcode,right)
+      if opcode == 'better_than': return '?better_than' 
+      print('trans: unknown op', left, opcode, right)
 
 
 def dds_solver_api(trump, currentTricks, deal):
