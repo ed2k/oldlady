@@ -15,6 +15,18 @@ RANKS = range(len(BID_RANK_STR))
 TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE, V_TRUMP_u, V_TRUMP_v, V_TRUMP_w, MAIN_TRUMP, SMALL_JOKER, BIG_JOKER = RANKS
 VICE_TRUMP_RANKS = [V_TRUMP_u, V_TRUMP_v, V_TRUMP_w]
 
+
+def str_card(card):
+    if card > 105:
+        return 'JM'
+    if card > 103:
+        return 'Jm'
+    if card > 51:
+        card = card - 52   
+    rank = card % 13
+    suite = card // 13
+    return f'{SUITS_STR[suite]}{BID_RANK_STR[rank]}'
+    
 def get_suite_rank(bid, card):
     assert bid[0] != BID_PASS
     # bid two char, suite CDHSJ + rank 2-A, 3-vice-trump(uvw same rank), 
@@ -103,9 +115,11 @@ class sAi(object):
                         self.deal.hands[p] = None
                 self.bidState = []
                 self.history = []
-            def bid(self):
+            def bid(self, current_bid):
                 """
+                current_bid contains seat and bid string
                 select trump with given level, find the max number
+                TODO, handle over bid
                 """
                 for card in self.deck:
                     # set fake bid big MAO to parse card
@@ -120,6 +134,7 @@ class sAi(object):
                 self.deck.append(card)
                 self.remaining_cards.append(card)
             def bid_made(self, bid_player, bid):
+                """TODO save whole bid history"""
                 self.declarer = bid_player
                 self.declarer_bid = bid
             def take_extra(self, deck):
@@ -155,7 +170,7 @@ class sAi(object):
 
                 return ':'.join(hands)
             def remember_play(self, player, cards):
-                print(self.seat, player, self.prt(cards), self.prt(self.remaining_cards))
+                print(self.seat, player, cards, self.prt(cards), self.prt(self.remaining_cards), self.remaining_cards)
                 assert len(cards) == 1
                 if player == self.seat:
                     for card in cards:
@@ -181,6 +196,7 @@ class sAi(object):
                         return p
                     p = sjc.seat_next(p)
             def cards_bigger(self, cards1, cards2):
+                """assume cards2 plays first"""
                 assert len(cards1) == len(cards2) == 1
                 suite1, rank1 = get_suite_rank(self.declarer_bid, cards1[0])
                 suite2, rank2 = get_suite_rank(self.declarer_bid, cards2[0])
@@ -189,7 +205,7 @@ class sAi(object):
                 if suite2 < suite1:
                     return False
                 if rank1 in VICE_TRUMP_RANKS and rank2 in VICE_TRUMP_RANKS:
-                    return True
+                    return False
                 if rank1 > rank2:
                     return True
                 return False
@@ -215,7 +231,7 @@ class App:
             card = self.deck[i]
             ai = self.ais[player]
             ai.take(card)
-            bid = ai.bid()
+            bid = ai.bid(top_bid)
             if bid != BID_PASS:
                 print(player, 'bid', bid)
                 for ai in self.ais:
@@ -223,6 +239,8 @@ class App:
             player = sjc.seat_next(player)
 
         # TODO handle top_bid still pass
+        # TODO in the first round, bid winner take the extra (bottom)
+        # TODO following round last round winner take turn in counter clockwise
         self.ais[self.dealer].take_extra(self.deck[-8:])
             
     def start_next_deal(self):
@@ -230,6 +248,9 @@ class App:
         self.play_for_ais()
 
     def start_next_rubber(self):
+        """start from 2, bid winner take the bottom. then winning team member
+        in the counter clockwise take the bottom.
+        """
         self.start_next_deal()
         
     def play_for_ais(self):
@@ -238,27 +259,33 @@ class App:
         player's turn again.  If the human is dummy, he will still need
         to confirm each trick.
         """
-        p = self.dealer
-        ai = self.ais[p]
-        while len(self.ais[p].remaining_cards) > 0:
+        player = self.dealer
+        while len(self.ais[player].remaining_cards) > 0:
+            ai = self.ais[player]
             tm = [[]]*NUM_OF_PLAYER
             for i in range(NUM_OF_PLAYER):
                 cards = ai.play_card()
-                n = p
-                if i == 0:
+                n = player
+                if i == 0: # check if play is valid, if not pick small
                     for _ in range(NUM_OF_PLAYER-1):
                         n = sjc.seat_next(n)
                         cards = self.ais[n].pick_small(cards)
-                ai.remember_play(p, cards)
-                n = p
-                for _ in range(NUM_OF_PLAYER-1-i):
+                n = player
+                for _ in range(NUM_OF_PLAYER):
+                    self.ais[n].remember_play(player, cards)
                     n = sjc.seat_next(n)
-                    self.ais[n].remember_play(p, cards)
-                tm[p] = cards
-                print('table', tm)
-                p = sjc.seat_next(p)
-                ai = self.ais[p]
-            p = ai.next_player(p, tm)
+                tm[player] = cards
+                str_tm = []
+                for c in tm:
+                    if len(c) == 1:
+                        str_tm.append(str_card(c[0]))
+                    else:
+                        str_tm.append('')                    
+                print('table', str_tm)
+                player = sjc.seat_next(player)
+                ai = self.ais[player]
+            # TODO calculate score
+            player = ai.next_player(player, tm)
 
 
 if __name__ == "__main__":
