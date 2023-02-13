@@ -3,19 +3,22 @@ import random
 
 BID_PASS = 'p'
 SUITS_STR = 'CDHSJ'
+SUITS_NO_J = 'CDHS'
 TOTAL_CARD_NUM = 108
 NUM_BRIDGE_CARD = 52
 NUM_OF_PLAYER = 4
 SUITE_TRUMP = 4
 PLAYERS = range(NUM_OF_PLAYER)
 NORTH, EAST, SOUTH, WEST = PLAYERS
-RANKS = range(17)
-TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE, LEVEL_OTHER, LEVEL_TRUMP, SMALL_JOKER, BIG_JOKER = RANKS
-BID_RANK_STR = '23456789TJQKAuUmM'
+BID_RANK_STR = '23456789TJQKAuvwUmM'
+RANKS = range(len(BID_RANK_STR))
+TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE, V_TRUMP_u, V_TRUMP_v, V_TRUMP_w, MAIN_TRUMP, SMALL_JOKER, BIG_JOKER = RANKS
+VICE_TRUMP_RANKS = [V_TRUMP_u, V_TRUMP_v, V_TRUMP_w]
 
 def get_suite_rank(bid, card):
     assert bid[0] != BID_PASS
-    # bid two char, suite CDHSJ + rank 2-A, small mao, big MAO
+    # bid two char, suite CDHSJ + rank 2-A, 3-vice-trump(uvw same rank), 
+    # 1-main-trump U, 1small mao, big MAO
     rank = card % 13
     suite = card // 13
     if card >= (2*NUM_BRIDGE_CARD):
@@ -23,15 +26,20 @@ def get_suite_rank(bid, card):
         rank = SMALL_JOKER + (card - 2*NUM_BRIDGE_CARD) // 2
     elif card >= (NUM_BRIDGE_CARD):
         suite = (card-NUM_BRIDGE_CARD) // 13
-    if bid[0] != SUITS_STR[-1]:
+    if bid[0] != SUITS_STR[-1]: # bid suit
+        old_rank, old_suite = rank, suite
+        if bid[1] == BID_RANK_STR[old_rank]:
+          suite = SUITE_TRUMP
+          if bid[0] == SUITS_NO_J[old_suite]:
+            rank = MAIN_TRUMP
+          else:
+            # convert to trump rank based on suit index
+            v_trump_rank = list(SUITS_NO_J)
+            v_trump_rank.remove(bid[0])
+            index = v_trump_rank.index(SUITS_NO_J[old_suite])
+            rank = V_TRUMP_u + index
         if bid[0] == SUITS_STR[suite]:
             suite = SUITE_TRUMP
-        if bid[1] == BID_RANK_STR[rank]:
-          suite = SUITE_TRUMP
-          if bid[0] == BID_RANK_STR[rank]:
-            rank = LEVEL_TRUMP
-          else:
-            rank = LEVEL_OTHER
     return (suite, rank)
             
 def same_suit(bid, card1, card2):
@@ -180,6 +188,8 @@ class sAi(object):
                     return True
                 if suite2 < suite1:
                     return False
+                if rank1 in VICE_TRUMP_RANKS and rank2 in VICE_TRUMP_RANKS:
+                    return True
                 if rank1 > rank2:
                     return True
                 return False
@@ -188,8 +198,6 @@ class sAi(object):
 
 # ---------------- running loop -------
 PLAY_CARD, CONFIRM_TRICK, CONFIRM_DEAL, CONFIRM_GAME, CONFIRM_RUBBER = range(5)
-
-def _(a):return a
 
 class App:
     def __init__ (self):
@@ -255,5 +263,3 @@ class App:
 
 if __name__ == "__main__":
     App()
-
-        
